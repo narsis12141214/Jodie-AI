@@ -80,6 +80,10 @@ Active workstreams live in `projects/`. Each has a `README.md` with a one-line d
 
 Reusable templates live in `templates/`. Use `templates/session-summary.md` to close out working sessions and capture what was done, decided, and what's next.
 
+## Brand Assets
+
+Visual assets live in `brand-assets/`. This includes logos, headshots, and other brand materials. Reference these when creating content, thumbnails, or anything that needs Hadi's visual identity.
+
 ## References
 
 - SOPs (standard operating procedures): `references/sops/`
