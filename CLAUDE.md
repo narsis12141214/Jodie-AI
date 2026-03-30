@@ -92,3 +92,24 @@ Visual assets live in `brand-assets/`. This includes logos, headshots, and other
 ## Archives
 
 Don't delete outdated material. Move it to `archives/` instead.
+## Session Protocol
+
+### START of every Claude Code session:
+1. Read @context/me.md
+2. Read @context/current-priorities.md
+3. Read @context/decisions.md
+4. State today's top priority before doing anything else
+
+### END of every Claude Code session:
+1. Update @context/current-priorities.md:
+   - Change "Last updated" date
+   - Mark completed items with [x] and date
+   - Add any new priorities or pipeline changes
+2. Append to @memory/session-log.md:
+   - Date + what was done + what's next (3 lines max)
+3. If a decision was made, add to @context/decisions.md
+
+### Rules:
+- Never start work without reading context first
+- Never end a session without updating current-priorities.md
+- Pipeline status must always reflect reality, not hope
