@@ -1,55 +1,41 @@
 # DRAFT: Best Places to Elope in London (2026 Guide)
 
-**Status:** Draft — in review. Hadi to confirm final location list before SEO check.
-**Target keyword:** where to elope in london
-**Secondary keywords:** london elopement locations, best places to elope in london, elopement photographer london
+**Status:** UPDATED POST-REVIEW — St Dunstan section added, pipeline fixes applied 2026-04-01. Ready to publish.
+**Target keyword:** best places to elope in london
+**Secondary keywords:** where to elope in london, london elopement locations, elopement photographer london
 **URL slug:** /best-places-to-elope-in-london
 **Post type:** Long form 2,500–2,700 words
-**Next step:** photography/seo review, then photography/master-copywriter
+**Next step:** Paste into WordPress. Add images. Apply alt text from list below. Publish.
 
 **Meta title (58 chars):** Best Places to Elope in London (2026 Guide)
-**Meta description (152 chars):** The best places to elope in London — from hidden gardens to iconic landmarks. A London elopement photographer's guide to locations that work.
+**Meta description (152 chars):** The best places to elope in London, from hidden gardens to iconic landmarks. A London elopement photographer's guide to locations that work.
 
 **Notes:**
-- Opening uses Tannas and Chris story (Iranian/British couple). Their full shoot gets its own dedicated post later — do not expand their story here.
-- Hyde Park: no permit needed for small personal shoots. Professional lighting equipment requires permission from Royal Parks.
-- Hadi has shot proposals near Westminster Bridge / Big Ben. Proposal internal link placed in Southbank section.
-- Hadi to decide: any additional locations to add before publishing? (e.g. Regent's Park, Victoria Embankment, Richmond Park)
+- Opening uses Tannas and Chris story (Iranian/British couple). Their full shoot gets its own dedicated post later.
+- Hyde Park removed — reserved for proposal locations post.
+- Asylum Chapel added per Hadi's notes.
+- Marylebone section rewritten — now covers Old Marylebone Town Hall ceremony + Regent's Park/Queen Mary's Rose Garden portraits.
 - No em dashes anywhere in this post.
 
 ---
 
-The confetti was still in the air when Tannas looked at Chris, then across at her family who had flown from Iran to be there, and laughed. Not a composed, camera-ready laugh. The real kind, the kind that arrives when something you have spent years imagining finally happens and turns out to be better than you pictured. Tannas had found me on Google. She had not known I was Iranian when she first reached out. Neither of us knew, until we started talking, that we came from the same background, shared something unspoken before a single frame had been taken. On the day, it was not just two people getting married. It was two worlds meeting. Iranian and British, two families, two sets of traditions, one confetti moment that said everything a speech never could. That is what a London elopement can be, when the location is right.
+The confetti was still in the air when Tannas looked at Chris, then across at her family who had flown from Iran to be there, and laughed. Not a composed, camera-ready laugh. The real kind, the kind that arrives when something you have spent years imagining finally happens and turns out to be better than you pictured. Tannas had found me on Google. She had not known I was Iranian when she first reached out. Neither of us knew, until we started talking, that we came from the same background, shared something unspoken before a single frame had been taken. On the day, it was not just two people getting married. It was two worlds meeting. Iranian and British, two families, two sets of traditions, one confetti moment that said everything a speech never could. That is what a London elopement can be, when the location is right. These are the best places to elope in London, chosen from years of photographing couples across this city.
 
 ---
 
 ## Table of Contents
-1. [Hyde Park](#hyde-park)
-2. [Greenwich](#greenwich)
-3. [Hampstead Heath](#hampstead-heath)
-4. [The Southbank](#the-southbank)
-5. [Tower Bridge and the Riverside](#tower-bridge-and-the-riverside)
-6. [Marylebone and Fitzrovia](#marylebone-and-fitzrovia)
+1. [Greenwich Park and Old Royal Naval College](#greenwich-park-and-old-royal-naval-college)
+2. [Hampstead Heath](#hampstead-heath)
+3. [The Southbank](#the-southbank)
+4. [Tower Bridge and the Riverside](#tower-bridge-and-the-riverside)
+5. [Old Marylebone Town Hall and Regent's Park](#old-marylebone-town-hall-and-regents-park)
+6. [Asylum Chapel](#asylum-chapel)
 7. [How to Choose the Right Location](#how-to-choose-the-right-location)
 8. [Ready to Plan Your London Elopement?](#ready-to-plan-your-london-elopement)
 
 ---
 
-## Hyde Park {#hyde-park}
-
-There is a stretch of water in Hyde Park called the Long Water. It runs north from the Serpentine, past the Italian Gardens, and in the early morning it is almost completely still. In September, when the light comes in low and the leaves are just beginning to turn, that water catches everything. I have photographed couples there at 7am when the park is empty enough to feel like it belongs to them. That feeling, of having one of the busiest parks in Europe entirely to yourselves, is something you cannot manufacture at noon on a Saturday.
-
-Hyde Park works for elopements for a straightforward reason: it is large enough that you are never really surrounded by other people if you know where to go. The area around the Italian Gardens, the bridge over the Long Water, the quieter western paths near the Diana Memorial. These are not the parts of the park that appear on tourist maps. They are the parts that reward anyone willing to arrive early or stay until the light changes.
-
-Practically speaking, no permit is required for a small personal elopement shoot. If you want professional lighting equipment, strobes, large modifiers, anything that requires a stand and changes the character of the space, that is a different conversation and you would need to approach the Royal Parks. For most elopements, the light that already exists there is better than anything you could bring with you. The golden hour light on the Serpentine in October is not something you can replicate.
-
-The season matters here more than it does at most London locations. Spring brings blossom and couples everywhere. Summer brings crowds and flat midday light that flatters nobody. Autumn is Hyde Park at its best. The colour, the low light, the sense that the city has quieted slightly and given the park back to the people who actually want to be in it. If you are planning a London elopement and you have not considered what time of year your photographs will be taken in, start there. The location choice follows.
-
-One practical note: arrive before 8am if you want the park without the joggers, the cyclists, and the dog walkers who arrive in force around half eight. The light is better then anyway.
-
----
-
-## Greenwich {#greenwich}
+## Greenwich Park and Old Royal Naval College {#greenwich-park-and-old-royal-naval-college}
 
 Stand at the top of Greenwich Park, with the city laid out in front of you, and you understand immediately why couples choose this place. The view from the hill, Canary Wharf in the distance, the Thames below, the dome of St Paul's if the air is clear, is not subtle. It is London saying something plainly. For couples who want grandeur in their photographs without formality, Greenwich is one of the few places in the city that delivers it without a fuss.
 
@@ -91,7 +77,7 @@ For couples who want London to feel like a city they chose rather than a backdro
 
 Tower Bridge is the most recognisable landmark in London. That recognition is both its strength and, for most photographers, its problem. Photograph it straight-on from the north bank and you have a postcard. The couple disappears into a landmark that belongs to everyone. The trick, and it is a learnable one, is to not photograph the bridge. Photograph what the bridge makes possible.
 
-Butler's Wharf, on the Bermondsey side, is where I go. The cobbled street of Shad Thames, running between the old warehouse buildings with their walkways and ironwork overhead, is unlike any other street in London. It is narrow and textured and completely invisible to anyone who does not know to turn left off the main road. A couple walking through Shad Thames in the early morning, with the bridge visible at the end of the street, produces photographs that feel genuinely cinematic in the way the bridge-on-its-own never quite does.
+Butler's Wharf, on the Bermondsey side, is where I go. The cobbled street of Shad Thames, running between the old warehouse buildings with their walkways and ironwork overhead, is unlike any other street in London. It is narrow and textured and completely invisible to anyone who does not know to turn left off the main road. A couple walking through Shad Thames in the early morning, with the bridge visible at the end of the street, produces photographs that feel cinematic in the way the bridge-on-its-own never quite does.
 
 Potters Fields Park, further east along the Bermondsey bank, gives you the bridge from a distance. The scale of it, the river wide in front of you, the city filling the frame. Blue hour here, in the twenty minutes before the light finally goes, is something worth planning a whole day around.
 
@@ -99,13 +85,27 @@ The lesson of Tower Bridge is the same lesson London teaches in most places: the
 
 ---
 
-## Marylebone and Fitzrovia {#marylebone-and-fitzrovia}
+## Old Marylebone Town Hall and Regent's Park {#old-marylebone-town-hall-and-regents-park}
 
-If you are planning to marry at Marylebone Town Hall, one of London's most popular register offices for elopements and civil ceremonies, the portraits happen in the streets around it. And those streets are, for my money, among the most quietly beautiful in the city.
+Old Marylebone Town Hall is not just a register office. It is considered the most iconic wedding venue in the United Kingdom. The neoclassical building on Marylebone Road carries a history that most ceremony spaces simply cannot compete with, and it runs with a precision that removes every source of stress from the legal side of your day. No surprises. No delays. Thousands of ceremonies happen here every year, and the whole operation is quietly, confidently excellent.
 
-The Georgian townhouses of Marylebone, the garden squares tucked behind the main roads, Chiltern Street with its independent shops and unhurried pace. This is a part of London that photographs with a warmth and intimacy that the more famous locations do not always deliver. The scale is human. The light between buildings in the afternoon has a quality that feels European rather than British. Couples who marry at the Town Hall and then walk for portraits through the surrounding streets often produce some of the most naturally relaxed photographs of the day. The ceremony is done, the formality has passed, and London is just London again.
+There are seven ceremony rooms, each with its own character. The Westminster Room is the grandest: walnut-panelled walls, an elaborate plasterwork ceiling, and a large window that floods the space with natural light. For intimate elopements, I usually recommend the Soho Room. More personal, equally beautiful, and better suited to a small group who want to feel the intimacy of the occasion rather than the scale of the building. One thing Marylebone allows that most London venues have quietly banned: confetti. The shot on the wide front steps, with confetti still in the air, is one of the most iconic images a London elopement can produce. If you want that moment, this is the place.
 
-For couples considering a [London elopement](https://hadiphotographylondon.com/london-elopement-photographer) that includes a legal ceremony, Marylebone is worth building the whole day around. The Town Hall for the ceremony. The garden squares for the quiet moments immediately after. Then, depending on how much of the day you want to use, a location further afield for something more expansive.
+After the ceremony, I take my couples out into the streets around the Town Hall for portraits. That immediate post-ceremony window, when the formality has passed and what just happened is still settling in, is one of the most honest parts of the day to photograph. The streets of Marylebone hold it well.
+
+But if you ask me where I would take you next, the answer is Regent's Park. Specifically, Queen Mary's Rose Garden. In spring, when the cherry blossoms are in full bloom, and in summer, when the roses are out completely, the garden feels like it belongs to a different city entirely. It is the kind of place that makes couples stop mid-sentence because something in the light or the colour catches them off guard. I have seen it happen more times than I can count, and it still does not get old. For a [London elopement](https://hadiphotographylondon.com/london-elopement-photographer) that moves between a ceremony with real history and portraits in a setting of genuine beauty, Old Marylebone Town Hall followed by Regent's Park is as good as London gets.
+
+---
+
+## Asylum Chapel {#asylum-chapel}
+
+There is nowhere in London quite like Asylum Chapel. Built in 1819, it sits in Peckham with the quiet confidence of a building that has seen enough not to need to impress anyone. The exposed stonework, the high arched windows, the worn surfaces that speak to a history that runs deeper than most London venues can claim. Walking in for the first time, most couples go quiet. Not because they are intimidated, but because the space has a weight to it that is genuinely rare.
+
+The light is the thing. The stained-glass windows are set high in the walls, and the light that comes through them does not behave the way light usually does indoors. It enters in shards, diffused and directional, landing across the stone floor and the faces of everyone in the room with a softness that no artificial lighting can replicate. It changes through the day as the sun moves. This is not a venue where you should simply point a camera and hope. A photographer who understands light and knows when not to reach for a flash will produce images here that look like nothing else in their portfolio. I give my couples specific timing advice for exactly this reason. For a winter ceremony, 11am to midday is when the light is at its most beautiful. For spring and summer, I recommend planning the ceremony between 3pm and 5pm when the afternoon light comes through the western windows at its warmest angle.
+
+At the altar, the candles. The old altar area is covered entirely in them, and the glow they create, layered with the stained glass light from above, produces something that is genuinely difficult to describe in practical terms. It is the closest a ceremony setting comes to feeling spiritual without trying to. Grand and intimate at the same time. It is the kind of space that makes a small ceremony feel significant rather than modest.
+
+Asylum Chapel suits couples who want something deeply personal rather than conventionally beautiful. It works particularly well for international couples and for those planning smaller weddings of fewer than a hundred guests. There is outdoor space for after the ceremony, and the venue welcomes pets, which is rarer in London than it should be.
 
 ---
 
@@ -136,11 +136,11 @@ If you have a location in mind, or even just a feeling of what you want the day 
 - /how-to-plan-a-surprise-proposal-in-london — "surprise proposals in London" (Southbank)
 
 **Image alt text:**
-- Intro: "Iranian British elopement confetti Hyde Park London"
-- Hyde Park: "Elopement photographer Hyde Park Long Water London morning light"
-- Greenwich: "Elopement photography Greenwich Park London city view"
+- Intro: "Iranian British elopement confetti London"
+- Greenwich: "Elopement photography Greenwich Park Old Royal Naval College London"
 - Hampstead Heath: "Couple elopement portraits Hampstead Heath London autumn"
 - Southbank: "London elopement photographer Southbank Westminster Bridge"
 - Tower Bridge: "Elopement photography Shad Thames Tower Bridge London"
-- Marylebone: "Marylebone elopement photographer London garden square"
+- Marylebone / Regent's Park: "Old Marylebone Town Hall elopement photographer London Regents Park"
+- Asylum Chapel: "Asylum Chapel elopement wedding photographer London Peckham"
 - Closing: "London elopement photographer Hadi Photography"

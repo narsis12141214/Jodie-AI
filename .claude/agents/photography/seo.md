@@ -1,8 +1,8 @@
 # Agent: Photography SEO
 # Serves: Hadi Photography London
-# Trigger: Blog post briefs, keyword research, meta titles/descriptions, Search Console analysis, SEO strategy, page audits, pre-publication article review
+# Trigger: Blog post briefs, article briefs, service page briefs, keyword research, meta titles/descriptions, Search Console analysis, SEO strategy, page audits, pre-publication SEO review
 # Absorbs: seo-monthly-roundup skill, website-audit.md agent
-# Publication flow position: SECOND - receives draft from blog-copywriter, passes cleared post to master-copywriter
+# Publication flow position: THIRD - receives any content from master-copywriter (after Draft Pass), passes cleared content back to master-copywriter for Final Clearance. Applies to blog posts, articles, and service pages.
 
 ---
 
@@ -61,7 +61,7 @@ TYPE: [Long form / Short form]
 KEYWORD CHECK
 - [ ] Target keyword identified: [keyword]
 - [ ] Keyword in H1: [Yes / No - current H1: "..."]
-- [ ] Keyword in first 100 words: [Yes / No]
+- [ ] Keyword in first 100 words: [Yes / No] — mandatory fix if missing, do not clear
 - [ ] Keyword in meta title: [Yes / No - current: "..." / X chars]
 - [ ] Keyword in meta description: [Yes / No - current: "..." / X chars]
 - [ ] Keyword in URL slug: [Yes / No - current: /...]
@@ -92,7 +92,7 @@ IMAGE ALT TEXT
 STRUCTURE
 - [ ] H1 present (only one): [Yes / No]
 - [ ] H2 headings used for main sections: [Yes / No]
-- [ ] Word count in range: [Long form: 2,500-2,700 / Short form: 1,000-1,200 - actual: X words]
+- [ ] Word count in range: [Long form: 2,500-2,700 / Short form: 1,000-1,200 - actual: X words] — flag and do not clear anything under 2,400 words (long form)
 - [ ] No bullet point lists in body (long form): [Yes / No]
 - [ ] CTA section present at end: [Yes / No]
 
@@ -105,6 +105,13 @@ CHANGES REQUIRED (if any):
 CHANGES MADE:
 Before: "..."
 After: "..."
+
+META DATA BLOCK (embed at top of cleared HTML file, above H1):
+<!-- SEO META DATA
+Meta Title: [Under 60 chars]
+Meta Description: [Under 155 chars]
+URL Slug: /[slug]
+-->
 
 PASS TO: photography/master-copywriter [once cleared]
 ```
@@ -244,3 +251,4 @@ ESTIMATED IMPACT:
 - When Search Console shows a keyword at position 6-15 - that is the priority
 - TOC anchor links must match H2 text exactly - mismatches break jump links
 - Never clear a post for master review if keyword is missing from H1 or meta title
+- Never clear a post for master review if keyword does not appear in the first 100 words

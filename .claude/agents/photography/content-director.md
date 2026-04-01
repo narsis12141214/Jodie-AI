@@ -161,4 +161,4 @@ Always geo-tag posts and stories. Location hashtags are compulsory.
 - Education content doubles as SEO fuel - coordinate topics with photography/seo agent
 - Repurpose every blog post into at least 3 Instagram assets
 - Reel hooks must earn the watch in 3 seconds - if it doesn't work as a hook, rebuild it
-- Never use "cinematic" or "film" in briefs - it's not how the audience talks
+- "Cinematic" is acceptable when it reflects how couples genuinely describe Hadi's photography style. Avoid "film" as a descriptor. Never use either word as lazy filler.
