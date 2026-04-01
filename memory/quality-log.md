@@ -23,6 +23,7 @@ This file is append-only. Every error caught during or after the pipeline gets l
 | 2026-04-01 | photography/blog-copywriter | No rule requiring keyword in first 100 words of opening — agent was structuring intros as pure narrative without keyword signal | Caught by Hadi during manual review | Rule added to Voice section of blog-copywriter.md | Yes — keyword-in-first-100-words rule added |
 | 2026-04-01 | photography/seo | Word count not being checked at SEO review stage — post came in at ~1,800 words against 2,500-2,700 target | Post-review quality check | St Dunstan section added to bring post into range | Yes — flag anything under 2,400 words before clearing |
 | 2026-04-01 | photography/seo + photography/blog-copywriter | Meta title and meta description not included in final HTML deliverable | Post-review quality check | SEO agent updated to embed meta data block at top of every cleared HTML file | Yes — meta data block format added to seo.md output requirements |
+| 2026-04-01 | photography/seo | Structural review triggered by 3 quality log entries in one session — flat checklist gave no hierarchy between blocking and advisory failures | Quality log pattern review | Full structural rebuild — two-tier blocking/advisory checklist, duplicate reference checklist removed, rules consolidated | Yes — rebuilt file replaces patched version |
 
 ---
 
@@ -32,7 +33,7 @@ Review this section every Monday. If the same agent appears 3+ times, it needs a
 
 | Agent | Error Count | Most Common Failure | Last Reviewed |
 |-------|-------------|---------------------|---------------|
-| photography/seo | 3 | Missing checklist items at review stage | 2026-04-01 |
+| photography/seo | 4 | Missing checklist items at review stage — structurally rebuilt 2026-04-01 | 2026-04-01 |
 | photography/blog-copywriter | 1 | Keyword placement in opening | 2026-04-01 |
 
 ---
