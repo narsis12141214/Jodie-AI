@@ -1,41 +1,67 @@
 # Current Priorities
 
-Last updated: 2026-03-31
+Last updated: 2026-04-01
 
-## TODAY (Tuesday March 31)
-- [x] SEO monthly roundup report generated
-- [x] Full agent registry built (shared, agency, photography branches — 10 agents)
-- [x] research-agency + research-photography skills deployed, CEO routing updated
-- [x] Day 1 carousel posted on @clickaiagency — 60+ views
-- [ ] current-priorities.md auto-update configured in CLAUDE.md
+## TOMORROW (Thursday 2 April — Day 2 of 60)
 
-## THIS WEEK (March 30 – April 4)
-- [ ] Finish filming @clickaiagency Reels — 5 remaining, shoot ASAP
-- [x] Post Day 1 carousel on @clickaiagency — 60+ views
-- [ ] Outreach — scale to 40-50 contacts this week minimum
-- [ ] Follow up Paris — silent since Mar 27, chase Wed April 1
-- [ ] Follow up Maria — if no reply by Friday April 4
-- [ ] Contact Walid — when back from Nowruz
-- [ ] Blog post #5 "Best Places to Elope in London" — DRAFT DONE, Hadi reviewing locations, then SEO check + publish
-- [ ] Set up tasks.md in each project folder
-- [ ] Connect Google Search Console API via N8N
+**ONE PRIORITY: N8N outreach automation — Workflow 1 (lead identification) minimum by EOD**
+
+Agency:
+- [ ] N8N Workflow 1 — lead identification (Instagram scrape → Google Sheets daily lead list) — Hadi/Jodie — EOD
+- [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — Hadi/Jodie — by Day 10 (10 April)
+- [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — Jodie — by Day 10
+- [ ] N8N Workflow 4 — CRM auto-logging — Jodie — by Day 10
+- [ ] @clickaiagency — post Day 2 content (AM carousel + PM hook post) — Jodie
+- [ ] Chase Paris (beauty clinic) — final touchpoint, Hadi sends — Hadi — EOD
+
+Photography:
+- [ ] Prepare images for best-places-to-elope-in-london post — select and edit — Hadi
+- [ ] Blog post #6 brief — target keyword: london engagement photoshoot — Jodie
+- [ ] Post once on @hadyyazdani — The Work pillar — Hadi
+
+Pipeline:
+- [ ] Maria Gautam — do not contact until Friday
+- [ ] Walid (LaModa) — check if back from Nowruz, contact if yes — Hadi
+- [ ] Paris — final chase today (Wednesday) — Hadi
+
+## THIS WEEK (April 1–4)
+- [ ] N8N automation — all 4 workflows built and tested with Zizi before 10 April
+- [ ] Finish filming @clickaiagency Reels — 5 remaining, shoot ASAP — Hadi
+- [ ] Outreach — brief Zizi, scale toward 40/day
+- [ ] Follow up Maria — if no reply by Friday 4 April
+- [ ] Blog post #5 published in WordPress — Hadi (HTML ready, paste and publish)
+- [ ] Blog post #6 brief generated — Jodie
 
 ## AGENCY PIPELINE
-- Maria: Proposal sent £300+£497/mo. Reviewing. → Friday follow up
-- Paris: No reply to follow-up sent Fri 27 Mar. → Chase this week
-- Walid: Travelling. → Contact when back
+- Maria: Proposal sent £300+£497/mo. Reviewing. → Follow up Friday 4 April if silent
+- Paris: Silent since Mar 27. → Final chase Wednesday 2 April
+- Walid: Travelling (Nowruz). → Contact when back
 - Navid: Silent. → Ball in his court
-- Hasan: No reply since Mar 15. → Consider re-engage
+- Hasan: No reply since Mar 15. → Re-engage this week
 - Restaurant Owner 2: Has agency. → Follow up needed
 
 ## ONGOING PRIORITIES
 1. Close first agency client — nothing else matters more
-2. @clickaiagency — post daily from 30-day calendar
-3. Photography SEO — one blog post per week minimum
-4. @hadyyazdani — reactivate with consistent posting
-5. EA AI system — tasks.md, Search Console API, memory fixes
+2. N8N outreach automation — built and live before Day 10 (10 April)
+3. @clickaiagency — post daily from content calendar
+4. Photography SEO — one blog post per week minimum (post #5 ready to publish)
+5. @hadyyazdani — reactivate with daily posting
 
-## COMPLETED
+## COMPLETED — 2026-04-01
+- [x] 2026-04-01: Strategy agent built and deployed (shared/strategy.md)
+- [x] 2026-04-01: goals.md rewritten — both businesses, 60-day targets, review dates
+- [x] 2026-04-01: 60-day-plan-agency.md built (phases 1-3, risk register, automation decision)
+- [x] 2026-04-01: 60-day-plan-photography.md built (SEO, Instagram, enquiry pipeline)
+- [x] 2026-04-01: Outreach automation decision confirmed — N8N build starts Day 2
+- [x] 2026-04-01: context/decisions.md created — automation decision logged
+- [x] 2026-04-01: projects/goals/ folder created — README, plans, PDF reference
+- [x] 2026-04-01: photography/seo.md structurally rebuilt — two-tier blocking/advisory checklist
+- [x] 2026-04-01: memory/quality-log.md created — 4 pipeline errors logged
+- [x] 2026-04-01: shared/admin.md updated — post-publish review + Monday quality audit added
+- [x] 2026-04-01: best-places-to-elope-in-london.html — ready to publish in WordPress
+- [x] 2026-04-01: All changes pushed to GitHub
+
+## COMPLETED — EARLIER
 - [x] 2026-03-31: Full agent registry built (10 agents across shared/agency/photography)
 - [x] 2026-03-31: research-agency + research-photography skills deployed
 - [x] 2026-03-31: SEO monthly roundup report generated
