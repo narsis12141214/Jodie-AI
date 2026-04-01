@@ -51,7 +51,7 @@ Name: ceo
 | "morning brief", "what's on today", "start of day", "where do I stand" | `shared/admin` | Active |
 | "shutdown", "end of day", "wrap up", "what did I do today" | `shared/admin` | Active |
 | "plan my day", "break this down", "decompose", "build an SOP", "follow-up on" | `shared/operator` | Active |
-| "weekly review", "stress test", "challenge my thinking", "is this the right move" | `shared/strategy` | Pending |
+| "weekly review", "stress test", "challenge my thinking", "is this the right move", "60-day plan", "build the action plan" | `shared/strategy` | Active |
 
 ---
 

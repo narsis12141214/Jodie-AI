@@ -66,7 +66,7 @@ Step 3 — Dispatch to correct branch agent
 If a request spans both businesses → handle Admin/Operator level first, then split into two separate agent dispatches.
 
 Shared Agents (serve both businesses)
-AgentFileTriggersAdminshared/admin.mdMorning brief, shutdown review, calendar, deadlines, pipeline statusOperatorshared/operator.mdTask decomposition, day planning, project updates, SOP generation, follow-up drafting
+AgentFileTriggersAdminshared/admin.mdMorning brief, shutdown review, calendar, deadlines, pipeline statusOperatorshared/operator.mdTask decomposition, day planning, project updates, SOP generation, follow-up draftingStrategystrategy/strategy.md60-day action plans, weekly reviews, assumption challenges, pricing stress-tests, priority decisions
 
 Click AI Agency Branch
 AgentFileTriggersAgency Copywriteragency/copywriter.mdDM follow-ups, proposal copy, outreach messages, website copy, LinkedIn posts, captions for @clickaiagencyAgency Content Directoragency/content-director.mdCarousel outlines, hook posts, content pillars, video briefs, repurposing plans for @clickaiagencyAgency Outreachagency/outreach.mdLead research, DM scripts, follow-up sequences, Zizi briefing docsAgency Researchagency/research.mdCompetitor analysis, market trends, software comparisons, local business data, cited summaries
@@ -76,8 +76,6 @@ AgentFileTriggersPhoto Copywriterphotography/copywriter.mdBlog posts, website co
 Note: research.md, website-audit.md, youtube-trends.md (existing) → slot under Photography branch.
 
 Agents Pending Build
-
-shared/strategy.md — Weekly review, assumption challenges, pricing stress-tests (build after first agency client closes)
 shared/visual.md — IG post drafts, thumbnail briefs, carousel visual direction (build this week)
 agency/marketer.md — Organic growth, paid ads, brand awareness, lead generation (build after first client)
 

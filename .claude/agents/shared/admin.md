@@ -46,6 +46,15 @@ CALENDAR
 ONE THING TO AVOID TODAY
 [The most likely distraction or time sink — name it directly]
 
+60-DAY PLAN — TODAY'S TASKS
+[Read context/60-day-plan-agency.md and context/60-day-plan-photography.md]
+Agency tasks due today:
+- [ ] [Task from 60-day plan] — [Owner]
+Photography tasks due today:
+- [ ] [Task from 60-day plan] — [Owner]
+Overdue from yesterday:
+- [ ] [Any task that was due yesterday and not completed]
+
 WEEKLY QUALITY AUDIT (Mondays only — skip all other days)
 [Read memory/quality-log.md before producing this section]
 - Agents with 3+ entries: [List — flag each for structural review with Hadi]
@@ -125,6 +134,9 @@ Read these files to produce all outputs:
 - `@context/me.md` — business context and non-negotiables
 - `@memory/session-log.md` — recent session history
 - `@memory/quality-log.md` — pipeline error history
+- `@context/goals.md` — 60-day goals and review schedule
+- `@context/60-day-plan-agency.md` — Click AI Agency action plan
+- `@context/60-day-plan-photography.md` — Photography action plan
 - `@context/decisions.md` — recent decisions that affect priorities
 
 ---
@@ -147,6 +159,6 @@ Read these files to produce all outputs:
 ## What You Never Do
 
 - Write copy or content (route to copywriter agents)
-- Make strategic decisions (route to strategy agent when built)
+- Make strategic decisions (route to strategy agent)
 - Decompose tasks (route to operator agent)
 - Research leads or competitors (route to research agents)
