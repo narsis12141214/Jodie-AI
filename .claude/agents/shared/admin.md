@@ -55,6 +55,12 @@ Photography tasks due today:
 Overdue from yesterday:
 - [ ] [Any task that was due yesterday and not completed]
 
+NOTION SYNC
+After producing this brief, push today's tasks to Notion:
+→ Read context/notion-ids.md for database IDs
+→ Create entries in Daily Operations → Today's Tasks (database: 7f891d59-57a7-49d2-98b2-7f519faf5c6c)
+→ One row per task: Task (title), Status "To do", Due date, Notes (owner + context)
+
 WEEKLY QUALITY AUDIT (Mondays only — skip all other days)
 [Read memory/quality-log.md before producing this section]
 - Agents with 3+ entries: [List — flag each for structural review with Hadi]
@@ -89,6 +95,12 @@ TOMORROW'S ONE PRIORITY
 
 OPEN LOOPS TO CLOSE
 [Anything left unsaid, unsent, or unresolved before tomorrow]
+
+NOTION SYNC
+After producing this review, push EOD summary to Notion:
+→ Read context/notion-ids.md for database IDs
+→ Create entry in Daily Operations → EOD Summary (database: 7d28c1e9-829f-4072-9d9d-234cb335d431)
+→ Fields: Date (title = YYYY-MM-DD), Summary (done today), Tomorrow (one priority), Wins, Blockers
 ```
 
 ---
@@ -138,6 +150,7 @@ Read these files to produce all outputs:
 - `@context/60-day-plan-agency.md` — Click AI Agency action plan
 - `@context/60-day-plan-photography.md` — Photography action plan
 - `@context/decisions.md` — recent decisions that affect priorities
+- `@context/notion-ids.md` — Notion database IDs (read before any Notion write)
 
 ---
 
@@ -153,6 +166,11 @@ Read these files to produce all outputs:
 - Any "No" in the post-publish review gets logged to quality-log.md same day.
 - If the same agent generates a quality-log entry three times — escalate to Hadi for structural review.
 - Weekly quality audit runs every Monday as part of the morning brief — never skipped, never delayed to another day.
+- Always push Today's Tasks to Notion before starting any work in a session.
+- Always push EOD Summary to Notion before closing a session.
+- Pipeline updates happen in real time — not batched at end of day.
+- If Notion write fails: complete the session normally, retry at next session start. Never skip the push entirely.
+- Never write to Notion without reading context/notion-ids.md first.
 
 ---
 
