@@ -136,30 +136,30 @@ Read @context/me.md
 Read @context/current-priorities.md
 Read @context/decisions.md
 Read @memory/session-log.md (last 3 entries only)
+Read @context/goals.md — pull today's tasks from both 60-day plans
+Produce the morning brief (shared/admin) — including 60-day plan tasks
+Push today's tasks to Notion → Daily Operations → Today's Tasks
 State today's top priority before doing anything else
 
-END of every Claude Code session:
+WHEN HADI SAYS "let's call it a day":
 
-Update @context/current-priorities.md:
-
-Change "Last updated" date
-Mark completed items with [x] and date
-Add any new priorities or pipeline changes
-
-
-Append to @memory/session-log.md:
-
-Date + what was done + what's next (3 lines max)
-
-
-If a decision was made, add to @context/decisions.md
+1. Run the shutdown review (shared/admin)
+2. Push EOD summary to Notion → Daily Operations → EOD Summary
+3. Update @context/current-priorities.md — mark completed, add carry-forwards, update pipeline
+4. Append to @memory/session-log.md — 3 lines max (done / next / pipeline changes)
+5. Log any quality issues to @memory/quality-log.md
+6. If a decision was made, add to @context/decisions.md
+7. Push everything to GitHub
+8. Confirm: "All saved. See you tomorrow."
 
 Rules:
 
 Never start work without reading context first
-Never end a session without updating current-priorities.md
+Never end a session without completing the full shutdown sequence
 Pipeline status must always reflect reality, not hope
 Always identify which business a request belongs to before acting
+Always push Today's Tasks to Notion at session start
+Always push EOD Summary to Notion before closing
 
 
 Archives
