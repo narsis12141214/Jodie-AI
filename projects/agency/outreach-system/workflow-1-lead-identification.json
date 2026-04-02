@@ -1,0 +1,224 @@
+{
+  "name": "Workflow 1 — Lead Identification (Daily)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * 1-5"
+            }
+          ]
+        }
+      },
+      "id": "node-001",
+      "name": "Daily 8am Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/apify~instagram-scraper/runs?token=YOUR_APIFY_API_KEY",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"hashtags\": [\n    \"londonrestaurant\",\n    \"londoncafe\",\n    \"londonfood\",\n    \"londonrestaurants\",\n    \"londonbeautyclinic\",\n    \"londonaesthetics\",\n    \"londonbeauty\",\n    \"londonskinclinic\"\n  ],\n  \"resultsType\": \"profiles\",\n  \"resultsLimit\": 100,\n  \"searchType\": \"hashtag\",\n  \"searchLimit\": 15\n}",
+        "options": {}
+      },
+      "id": "node-002",
+      "name": "Start Apify Instagram Scraper",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "amount": 4,
+        "unit": "minutes"
+      },
+      "id": "node-003",
+      "name": "Wait 4 Minutes",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [680, 300],
+      "webhookId": "lead-ident-wait-001"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.apify.com/v2/acts/apify~instagram-scraper/runs/last/dataset/items?token=YOUR_APIFY_API_KEY&limit=200&clean=true",
+        "options": {}
+      },
+      "id": "node-004",
+      "name": "Fetch Apify Results",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Filter profiles by follower count and map to outreach tracker columns\nconst MIN_FOLLOWERS = 200;\nconst MAX_FOLLOWERS = 10000;\n\nconst results = [];\n\nfor (const item of $input.all()) {\n  const profile = item.json;\n\n  if (!profile.username) continue;\n\n  const followers = profile.followersCount || profile.followers || 0;\n  if (followers < MIN_FOLLOWERS || followers > MAX_FOLLOWERS) continue;\n\n  // Determine type (industry)\n  const category = (profile.businessCategoryName || '').toLowerCase();\n  const bio = (profile.biography || '').toLowerCase();\n\n  let type = 'Other';\n  if (category.includes('restaurant') || category.includes('cafe') || category.includes('food') ||\n      bio.includes('restaurant') || bio.includes('cafe') || bio.includes('coffee')) {\n    type = 'Restaurant / Cafe';\n  } else if (category.includes('beauty') || category.includes('aesthetic') || category.includes('clinic') ||\n             category.includes('skin') || bio.includes('aesthetic') || bio.includes('beauty clinic') ||\n             bio.includes('skin clinic')) {\n    type = 'Beauty / Aesthetics';\n  }\n\n  // Try to extract a London location signal from bio\n  let location = 'London';\n  const locationMatch = bio.match(/([a-z\\s]+),?\\s*london/i) || bio.match(/london[,\\s]+([a-z\\s]+)/i);\n  if (locationMatch) {\n    location = locationMatch[0].trim().replace(/\\n/g, ' ').substring(0, 50);\n  }\n\n  // Last post date\n  const lastPost = profile.latestIgtvVideo?.timestamp ||\n                   profile.latestPost?.timestamp ||\n                   profile.postsTimelineList?.[0]?.timestamp || '';\n  const lastPostDate = lastPost ? new Date(lastPost).toISOString().split('T')[0] : '';\n\n  results.push({\n    json: {\n      'Business Name': profile.fullName || profile.username,\n      'Type': type,\n      'Location': location,\n      'Instagram Handle': '@' + profile.username,\n      'Followers': followers,\n      'Last Post': lastPostDate,\n      'Problem Identified': '',\n      'First Contact Date': '',\n      'Channel': 'Instagram DM',\n      'Message Sent': '',\n      'Response': '',\n      'Status': 'New Lead',\n      'Follow Up Date': '',\n      'Notes': (profile.biography || '').substring(0, 150)\n    }\n  });\n}\n\n// Deduplicate within this batch\nconst seen = new Set();\nreturn results.filter(r => {\n  const h = r.json['Instagram Handle'].toLowerCase();\n  if (seen.has(h)) return false;\n  seen.add(h);\n  return true;\n});"
+      },
+      "id": "node-005",
+      "name": "Filter & Format Leads",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "value": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "options": {}
+      },
+      "id": "node-006",
+      "name": "Get Existing Leads",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [1340, 300],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "GOOGLE_SHEETS_CREDENTIAL_ID",
+          "name": "Google Sheets Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Deduplicate against existing sheet rows using Instagram Handle\nconst newLeads = $('Filter & Format Leads').all();\nconst existingRows = $('Get Existing Leads').all();\n\nconst existingHandles = new Set(\n  existingRows.map(r => (r.json['Instagram Handle'] || '').toLowerCase())\n);\n\nconst fresh = newLeads.filter(lead => {\n  const handle = (lead.json['Instagram Handle'] || '').toLowerCase();\n  return handle && !existingHandles.has(handle);\n});\n\nconsole.log(`Fresh leads: ${fresh.length} of ${newLeads.length} total scraped`);\nreturn fresh;"
+      },
+      "id": "node-007",
+      "name": "Remove Duplicates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1560, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-001",
+              "leftValue": "={{ $input.all().length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "node-008",
+      "name": "Any New Leads?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1780, 300]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Business Name": "={{ $json['Business Name'] }}",
+            "Type": "={{ $json['Type'] }}",
+            "Location": "={{ $json['Location'] }}",
+            "Instagram Handle": "={{ $json['Instagram Handle'] }}",
+            "Followers": "={{ $json['Followers'] }}",
+            "Last Post": "={{ $json['Last Post'] }}",
+            "Problem Identified": "",
+            "First Contact Date": "",
+            "Channel": "={{ $json['Channel'] }}",
+            "Message Sent": "",
+            "Response": "",
+            "Status": "={{ $json['Status'] }}",
+            "Follow Up Date": "",
+            "Notes": "={{ $json['Notes'] }}"
+          }
+        },
+        "options": {
+          "valueInputMode": "RAW"
+        }
+      },
+      "id": "node-009",
+      "name": "Append to Lead Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [2000, 200],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "GOOGLE_SHEETS_CREDENTIAL_ID",
+          "name": "Google Sheets Account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 8am Trigger": {
+      "main": [[{"node": "Start Apify Instagram Scraper", "type": "main", "index": 0}]]
+    },
+    "Start Apify Instagram Scraper": {
+      "main": [[{"node": "Wait 4 Minutes", "type": "main", "index": 0}]]
+    },
+    "Wait 4 Minutes": {
+      "main": [[{"node": "Fetch Apify Results", "type": "main", "index": 0}]]
+    },
+    "Fetch Apify Results": {
+      "main": [[{"node": "Filter & Format Leads", "type": "main", "index": 0}]]
+    },
+    "Filter & Format Leads": {
+      "main": [[{"node": "Get Existing Leads", "type": "main", "index": 0}]]
+    },
+    "Get Existing Leads": {
+      "main": [[{"node": "Remove Duplicates", "type": "main", "index": 0}]]
+    },
+    "Remove Duplicates": {
+      "main": [[{"node": "Any New Leads?", "type": "main", "index": 0}]]
+    },
+    "Any New Leads?": {
+      "main": [
+        [{"node": "Append to Lead Sheet", "type": "main", "index": 0}],
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [{"name": "Agency"}, {"name": "Outreach"}]
+}
