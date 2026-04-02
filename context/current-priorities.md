@@ -1,28 +1,37 @@
 # Current Priorities
 
-Last updated: 2026-04-01
+Last updated: 2026-04-02
 
-## TOMORROW (Thursday 2 April — Day 2 of 60)
+## TOMORROW (Friday 3 April — Day 3 of 60)
 
-**ONE PRIORITY: N8N outreach automation — Workflow 1 (lead identification) minimum by EOD**
+**TWO PRIORITIES: Google Sheets connection in N8N + Blog post #6 brief**
 
 Agency:
-- [ ] N8N Workflow 1 — lead identification (Instagram scrape → Google Sheets daily lead list) — Hadi/Jodie — EOD
+- [ ] Connect Google Sheets in N8N — Hadi (UI task, 10 mins) — see steps below
+- [ ] Test Workflow 1 manually in N8N — verify 5 real leads land in sheet — Hadi/Jodie
 - [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — Hadi/Jodie — by Day 10 (10 April)
 - [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — Jodie — by Day 10
 - [ ] N8N Workflow 4 — CRM auto-logging — Jodie — by Day 10
-- [ ] @clickaiagency — post Day 2 content (AM carousel + PM hook post) — Jodie
-- [ ] Chase Paris (beauty clinic) — final touchpoint, Hadi sends — Hadi — EOD
+- [ ] @clickaiagency — post Day 3 content from calendar
 
 Photography:
-- [ ] Prepare images for best-places-to-elope-in-london post — select and edit — Hadi
-- [ ] Blog post #6 brief — target keyword: london engagement photoshoot — Jodie
-- [ ] Post once on @hadyyazdani — The Work pillar — Hadi
+- [ ] Blog post #6 brief — target keyword: london engagement photoshoot — Jodie (run seo agent)
+- [ ] Publish blog post #5 in WordPress — paste HTML from ready-to-post folder — Hadi
+- [ ] Prepare images for best-places-to-elope-in-london post — Hadi
 
 Pipeline:
-- [ ] Maria Gautam — do not contact until Friday
-- [ ] Walid (LaModa) — check if back from Nowruz, contact if yes — Hadi
-- [ ] Paris — final chase today (Wednesday) — Hadi
+- [ ] Maria Gautam — follow up today if no reply — Hadi (Friday deadline)
+- [ ] Somewhere Café Harrods — check for response to contact request
+- [ ] Restaurant Owner 2 — follow up needed this week
+
+### Google Sheets Connection (N8N) — Steps for Tomorrow
+1. Open N8N: n8n.srv1466538.hstgr.cloud
+2. Go to Settings → Credentials → Add Credential → Google Sheets OAuth2 API
+3. Follow OAuth flow (you'll need Google Cloud Console or use existing credentials)
+4. Once credential is saved, open Workflow 1 (Lead Identification)
+5. Click both Google Sheets nodes (Get Existing Leads + Append to Lead Sheet) and connect them to the new credential
+6. Save the workflow
+7. Run manually once → confirm leads land in the sheet with correct columns
 
 ## THIS WEEK (April 1–4)
 - [ ] N8N automation — all 4 workflows built and tested with Zizi before 10 April
@@ -34,11 +43,11 @@ Pipeline:
 
 ## AGENCY PIPELINE
 - Maria: Proposal sent £300+£497/mo. Reviewing. → Follow up Friday 4 April if silent
-- Paris: Silent since Mar 27. → Final chase Wednesday 2 April
-- Walid: Travelling (Nowruz). → Contact when back
-- Navid: Silent. → Ball in his court
-- Hasan: No reply since Mar 15. → Re-engage this week
+- Paris: Silent since Mar 27. → Final chase today 2 April
 - Restaurant Owner 2: Has agency. → Follow up needed
+- Walid: PARKED — not interested for now
+- Hasan: PARKED — not interested for now
+- Navid: PARKED — not interested for now
 
 ## ONGOING PRIORITIES
 1. Close first agency client — nothing else matters more
@@ -46,6 +55,15 @@ Pipeline:
 3. @clickaiagency — post daily from content calendar
 4. Photography SEO — one blog post per week minimum (post #5 ready to publish)
 5. @hadyyazdani — reactivate with daily posting
+
+## COMPLETED — 2026-04-02
+- [x] 2026-04-02: N8N Workflow 1 (Lead Identification) built and pushed live to N8N server (ID: xnQpX1V1vNqpOSXO)
+- [x] 2026-04-02: Blog post #5 (best-places-to-elope-in-london) published and reviewed — 3,557 words, clean
+- [x] 2026-04-02: 5 cold outreach scripts written and pushed to Notion (Outreach Scripts DB)
+- [x] 2026-04-02: Somewhere Café Harrods live lead — two response scripts drafted
+- [x] 2026-04-02: @clickaiagency AM carousel + PM hook post published (Day 2 content done)
+- [x] 2026-04-02: Paris final touchpoint sent — Hadi explained the system
+- [x] 2026-04-02: Workflow 1 JSON pushed to GitHub (Apify key replaced with placeholder)
 
 ## COMPLETED — 2026-04-01
 - [x] 2026-04-01: Strategy agent built and deployed (shared/strategy.md)

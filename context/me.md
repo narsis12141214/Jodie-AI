@@ -50,7 +50,6 @@ Target: one new blog post per week minimum.
 
 Income history: ~£8k/month at peak. Now word of mouth only.
 Recent wins: 2 inbound enquiries week of March 17.
-April 5 pre-wedding shoot booked.
 
 Key insight from 25 client reviews: Nervousness-to-ease 
 transformation in 18/25 reviews. "Cinematic/film" never 
@@ -103,16 +102,16 @@ Non-negotiable rules:
 
 ---
 
-## Active Pipeline (as of March 30, 2026)
+## Active Pipeline (as of April 2, 2026)
 
 | Lead | Details | Status | Next Action |
 |------|---------|--------|-------------|
-| Maria Gautam | Health creator 28.8K, £300+£497/mo proposal sent | Reviewing | Follow up Friday if silent |
-| Navid — Nitrafood | Wholesaler, £2,700+£350/mo proposal sent | Silent | Ball in his court |
-| Hasan — Ahla Tallah | Restaurant, website + voice agent built | No reply since Mar 15 | Consider re-engage |
-| Paris — Beauty Clinic | Former photography client | No reply to follow-up | Chase this week |
-| Walid — LaModa | Restaurant, former photography client | Travelling (Nowruz) | Contact when back |
+| Maria Gautam | Health creator 28.8K, £300+£497/mo proposal sent | Reviewing | Follow up Friday 4 April if silent |
+| Paris — Beauty Clinic | Former photography client | Silent since Mar 27 | Final chase 2 April |
 | Restaurant Owner 2 | Has agency, showed interest | Follow up needed | This week |
+| Navid — Nitrafood | Wholesaler, £2,700+£350/mo proposal sent | PARKED — not interested | — |
+| Hasan — Ahla Tallah | Restaurant, website + voice agent built | PARKED — not interested | — |
+| Walid — LaModa | Restaurant, former photography client | PARKED — not interested | — |
 
 ---
 
