@@ -2,31 +2,32 @@
 
 Last updated: 2026-04-02
 
-## TODAY (Friday 3 April — Day 3 of 60)
+## TOMORROW (Saturday 4 April — Day 4 of 60)
 
 **PRIORITY 1 (Agency): Google Sheets connection in N8N + Workflow 1 test**
-**PRIORITY 2 (Photography): SEO technical fixes — Hadi action required**
+**PRIORITY 2 (Photography): Showit technical fixes — Hadi to action**
 
 Agency:
 - [ ] Connect Google Sheets in N8N — Hadi (UI task, 10 mins) — see steps below
 - [ ] Test Workflow 1 manually in N8N — verify leads land in sheet — Hadi/Jodie
+- [ ] Activate SEO pipeline Monday schedule trigger in N8N — Hadi
+- [ ] Maria Gautau — follow up NOW (Friday deadline passed) — Hadi
 - [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — by Day 10 (10 April)
 - [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — by Day 10
 - [ ] N8N Workflow 4 — CRM auto-logging — by Day 10
-- [ ] @clickaiagency — post Day 3 content from calendar
-- [ ] Maria Gautam — follow up today (Friday deadline) — Hadi
+- [ ] @clickaiagency — post Day 4 content from calendar
 
-Photography — SEO Technical Fixes (Hadi actions, instructions in seo-recovery/technical-fixes-april-2026.md):
+Photography — SEO Technical Fixes (instructions in seo-recovery/technical-fixes-april-2026.md):
 - [ ] Paste 5 meta descriptions into Showit/WordPress SEO settings — Hadi
-- [ ] Update homepage title tag to: "London Couples, Elopement & Proposal Photographer | Hadi Photography" — Hadi
-- [ ] Identify duplicate elopement packages URLs and set 301 redirect in Showit — Hadi
+- [ ] Update homepage title tag to: "London Elopement & Wedding Photographer | Hadi Photography" — Hadi (log Search Console baseline first)
+- [ ] Identify duplicate elopement packages URLs, set 301 redirect in Showit — Hadi
 - [ ] Noindex: editorial-street-fashion, lightroom-presets, shop/cart URLs — Hadi
-- [ ] Blog post #6 brief (london engagement photoshoot) — PAUSED until technical fixes confirmed done
+- [ ] Blog post #6 brief (london engagement photoshoot) — PAUSED until above confirmed done
 
 Pipeline:
-- [ ] Maria Gautam — follow up today if no reply — Hadi
-- [ ] Somewhere Café Harrods — check for response to contact request
-- [ ] Restaurant Owner 2 — follow up needed this week
+- [ ] Maria Gautau — overdue, follow up today — Hadi
+- [ ] Somewhere Café Harrods — check for contact response
+- [ ] Restaurant Owner 2 — follow up needed
 
 ### Google Sheets Connection (N8N) — Steps
 1. Open N8N: n8n.srv1466538.hstgr.cloud
@@ -59,6 +60,17 @@ Pipeline:
 3. @clickaiagency — post daily from content calendar
 4. Photography SEO — one blog post per week minimum (post #5 ready to publish)
 5. @hadyyazdani — reactivate with daily posting
+
+## COMPLETED — 2026-04-03
+- [x] 2026-04-03: SEO agent operating protocol overhauled — cannibalisation check, Showit JS flag, hard stop, recommendation format, /blog/ rule
+- [x] 2026-04-03: N8N SEO Weekly Data Pipeline built and live — runs every Monday 7am, Sheets + GitHub + email
+- [x] 2026-04-03: Monthly roundup skill updated to use pipeline data as primary source
+- [x] 2026-04-03: Workflow 1 filters updated — floor 500, ceiling 5k, 21-day recency
+- [x] 2026-04-03: Step 2 outreach scripts (2A follow-up DM, 2B email, 2C human reply) written and pushed to Notion
+- [x] 2026-04-03: Homepage title tag recommendation finalised — London Elopement & Wedding Photographer | Hadi Photography — with monitoring protocol
+- [x] 2026-04-03: Meta descriptions for 5 service pages written and saved
+- [x] 2026-04-03: /blog/ subfolder rule logged in decisions.md
+- [x] 2026-04-03: SEO pipeline Google Sheet ID added (1Q2s49XED4TnyM4Fv9QVTjwyH-p9vXg89wCBHbL9fyy0)
 
 ## COMPLETED — 2026-04-02
 - [x] 2026-04-02: N8N Workflow 1 (Lead Identification) built and pushed live to N8N server (ID: xnQpX1V1vNqpOSXO)
