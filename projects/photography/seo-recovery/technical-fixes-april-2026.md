@@ -10,11 +10,16 @@ Priority: Complete before any new blog content. All four tasks below.
 
 **Homepage**
 Page: hadiphotographylondon.com
-Primary keyword: london elopement photographer
-Meta description (150 chars):
+Primary keywords: london wedding photographer, london elopement photographer
+Meta description (154 chars):
 ```
-Hadi is a London elopement photographer specialising in intimate couples photography. Based in London, available for elopements and weddings worldwide.
+Hadi is a London wedding and elopement photographer with 100 five-star reviews. Intimate, unhurried photography for couples who want the day to feel like theirs.
 ```
+Note: Meta description updated to match the broadened title. Both wedding and elopement are referenced. 162 chars — trim if Showit flags it:
+```
+London wedding and elopement photographer with 100 five-star reviews. Intimate photography for couples who want the day to feel like theirs.
+```
+(141 chars — safe fallback)
 
 ---
 
@@ -61,10 +66,57 @@ Everything you need to plan a surprise proposal in London, from location and tim
 ### Task 2 — Homepage Title Tag
 
 Current title tag: `London Elopement Photographer | Hadi Photography`
-New title tag: `London Couples, Elopement & Proposal Photographer | Hadi Photography`
+New title tag: `London Wedding & Elopement Photographer | Hadi Photography`
 
-Where to update: Showit > Pages > Homepage > SEO Settings > Title Tag field
-Note: This expands the keyword footprint to cover couples and proposal searches without losing the elopement ranking. Do not shorten or reorder.
+Rationale: Search Console confirms homepage impressions and clicks are driven by wedding and elopement queries. Proposal is excluded — it has a dedicated page already competing for that term, and no homepage click data justifies inclusion. Wedding is placed first (higher search volume, broader appeal). Elopement remains prominent (strongest existing ranking).
+
+Where to update: Showit > Pages > Homepage > SEO Settings > Title Tag field.
+
+Before making this change, log today's baseline in the monitoring table below. Do not change the title without a baseline recorded.
+
+---
+
+### Task 2 — Monitoring Protocol (Title Tag Change)
+
+**Step 1 — Log baseline today (before making any change)**
+
+Go to Google Search Console > Performance > Search Results.
+Set date range: last 28 days.
+Filter: Page = hadiphotographylondon.com (homepage only).
+Record the following:
+
+| Metric | Baseline (date: ___) |
+|--------|---------------------|
+| Total impressions | |
+| Total clicks | |
+| Average CTR | |
+| Average position | |
+| Top 5 queries by clicks | |
+
+Save this table. You need it to measure the change.
+
+**Step 2 — Make the title change in Showit. Record the date.**
+
+Change date: ___________
+
+**Step 3 — Weekly checks (4 weeks post-change)**
+
+Same Search Console view, same homepage filter, 28-day rolling window each time.
+
+| Week | Date checked | Impressions | Clicks | CTR | Avg position | Notes |
+|------|-------------|-------------|--------|-----|-------------|-------|
+| Baseline | | | | | | Pre-change |
+| Week 1 | | | | | | |
+| Week 2 | | | | | | |
+| Week 3 | | | | | | |
+| Week 4 | | | | | | |
+
+**Decision rules at Week 4:**
+- CTR improved and impressions stable or growing: change succeeded. Close this task.
+- CTR flat, impressions stable: monitor one more week before deciding.
+- Impressions dropped more than 10% and have not recovered by Week 3: revert to original title immediately and log in decisions.md.
+
+Log the outcome in `context/decisions.md` at the 4-week mark regardless of result.
 
 ---
 
