@@ -27,8 +27,10 @@ Read these files before starting:
 - `context/work.md`
 - `context/current-priorities.md`
 - `context/goals.md`
-- `references/analytics/` — look for the most recent analytics export (CSV or text). If none, note the gap and continue.
+- `memory/seo-current-data.md` — **primary data source**. This file is auto-generated every Monday by the N8N SEO weekly pipeline. It contains live Search Console data: top keywords by impressions, top pages by clicks, flagged movements, week-on-week changes. Use this as the analytics input for Steps 2 and 6. If `last_updated` is more than 7 days old, flag to Hadi that the pipeline may not have run before proceeding.
 - `projects/seo-monthly-roundup/README.md` — check which competitors are tracked
+
+**Do not look for a manual CSV export in `references/analytics/`.** The weekly pipeline replaces manual exports. The Google Sheet with full history is linked in `memory/seo-current-data.md` for deeper data if needed.
 
 ---
 
@@ -56,6 +58,8 @@ Flag pages that are off-brand, outdated, or should be noindexed.
 ---
 
 ## Step 3 — Competitor Research (Perplexity API via Bash)
+
+Before running competitor calls, inject the live keyword data from `memory/seo-current-data.md` into the Perplexity system prompt. This gives Perplexity context on which keywords Hadi is already ranking for and where the gaps are — making the competitor analysis sharper and directly actionable.
 
 Use `sonar-deep-research` for deep, cited competitor analysis. Run 3 Perplexity calls in sequence — one per batch of ~8-9 competitors. This is far more thorough than WebSearch alone.
 
@@ -245,7 +249,7 @@ Add the new report to the table in `projects/seo-monthly-roundup/README.md`.
 
 ## Notes
 
-- Run monthly. Best run after dropping a fresh Google Search Console export into `references/analytics/`.
+- Run monthly. Data comes from `memory/seo-current-data.md` — auto-generated every Monday by the N8N SEO weekly pipeline. No manual CSV export needed. For deeper historical data, use the Google Sheet linked in that file.
 - The 25 competitor list is in `projects/seo-monthly-roundup/README.md` — update it if competitors change.
 - `sonar-deep-research` takes 1-3 minutes per call. This is normal — do not retry. Wait for it.
 - Always use temp files for curl JSON bodies. Never embed JSON inline in curl commands.
