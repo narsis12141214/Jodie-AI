@@ -66,9 +66,9 @@ Everything you need to plan a surprise proposal in London, from location and tim
 ### Task 2 — Homepage Title Tag
 
 Current title tag: `London Elopement Photographer | Hadi Photography`
-New title tag: `London Wedding & Elopement Photographer | Hadi Photography`
+New title tag: `London Elopement & Wedding Photographer | Hadi Photography`
 
-Rationale: Search Console confirms homepage impressions and clicks are driven by wedding and elopement queries. Proposal is excluded — it has a dedicated page already competing for that term, and no homepage click data justifies inclusion. Wedding is placed first (higher search volume, broader appeal). Elopement remains prominent (strongest existing ranking).
+Rationale: Search Console confirms homepage impressions and clicks are driven by elopement and wedding queries. Proposal is excluded — dedicated page already competes for that term, no homepage click data justifies inclusion. Elopement leads — it is the brand differentiator and where authority is established. Wedding is included for query breadth, not as the primary positioning signal. "London wedding photographer" is one of the most competitive keyword clusters in the UK — leading with it would put the title in a fight it cannot win from a homepage title change alone, and would dilute the elopement authority that is already built.
 
 Where to update: Showit > Pages > Homepage > SEO Settings > Title Tag field.
 
