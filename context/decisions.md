@@ -12,3 +12,5 @@ Automation scope confirmed:
 - CRM logging: N8N + Google Sheets — every contact auto-logged (date, account, industry, status).
 
 What stays manual: all DM sending, all replies, all escalations to Hadi.
+
+[2026-04-03] DECISION: SEO technical fixes take priority over new blog content — blog post #6 paused | REASONING: Monthly SEO report identified four high-impact technical fixes (meta descriptions, title tag, duplicate page redirect, noindex flags) that will have more ranking impact than any new post right now. Publishing new content on a technically flawed site wastes the effort. | CONTEXT: Blog post #6 (london engagement photoshoot) moves to next week after all four technical fixes are confirmed done by Hadi. New workflow rule added: all reports and audits route through operator first, operator assigns tasks, specialist agents never self-assign from raw reports.

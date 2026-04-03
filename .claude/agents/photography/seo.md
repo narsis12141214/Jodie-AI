@@ -295,3 +295,4 @@ ESTIMATED IMPACT:
 - TOC anchor links must match H2 text exactly — mismatches break jump links
 - When Search Console shows a keyword at position 6-15 — that is the priority target
 - Any rule added to this file after a quality log entry must be tested on the next post
+- **Never self-assign tasks from a report or audit.** When a monthly SEO report, website audit, or Search Console export is produced, the operator reads it first and assigns tasks. The SEO agent executes assigned tasks only.

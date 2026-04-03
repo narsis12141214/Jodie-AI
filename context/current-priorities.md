@@ -2,29 +2,33 @@
 
 Last updated: 2026-04-02
 
-## TOMORROW (Friday 3 April — Day 3 of 60)
+## TODAY (Friday 3 April — Day 3 of 60)
 
-**TWO PRIORITIES: Google Sheets connection in N8N + Blog post #6 brief**
+**PRIORITY 1 (Agency): Google Sheets connection in N8N + Workflow 1 test**
+**PRIORITY 2 (Photography): SEO technical fixes — Hadi action required**
 
 Agency:
 - [ ] Connect Google Sheets in N8N — Hadi (UI task, 10 mins) — see steps below
-- [ ] Test Workflow 1 manually in N8N — verify 5 real leads land in sheet — Hadi/Jodie
-- [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — Hadi/Jodie — by Day 10 (10 April)
-- [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — Jodie — by Day 10
-- [ ] N8N Workflow 4 — CRM auto-logging — Jodie — by Day 10
+- [ ] Test Workflow 1 manually in N8N — verify leads land in sheet — Hadi/Jodie
+- [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — by Day 10 (10 April)
+- [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — by Day 10
+- [ ] N8N Workflow 4 — CRM auto-logging — by Day 10
 - [ ] @clickaiagency — post Day 3 content from calendar
+- [ ] Maria Gautam — follow up today (Friday deadline) — Hadi
 
-Photography:
-- [ ] Blog post #6 brief — target keyword: london engagement photoshoot — Jodie (run seo agent)
-- [ ] Publish blog post #5 in WordPress — paste HTML from ready-to-post folder — Hadi
-- [ ] Prepare images for best-places-to-elope-in-london post — Hadi
+Photography — SEO Technical Fixes (Hadi actions, instructions in seo-recovery/technical-fixes-april-2026.md):
+- [ ] Paste 5 meta descriptions into Showit/WordPress SEO settings — Hadi
+- [ ] Update homepage title tag to: "London Couples, Elopement & Proposal Photographer | Hadi Photography" — Hadi
+- [ ] Identify duplicate elopement packages URLs and set 301 redirect in Showit — Hadi
+- [ ] Noindex: editorial-street-fashion, lightroom-presets, shop/cart URLs — Hadi
+- [ ] Blog post #6 brief (london engagement photoshoot) — PAUSED until technical fixes confirmed done
 
 Pipeline:
-- [ ] Maria Gautam — follow up today if no reply — Hadi (Friday deadline)
+- [ ] Maria Gautam — follow up today if no reply — Hadi
 - [ ] Somewhere Café Harrods — check for response to contact request
 - [ ] Restaurant Owner 2 — follow up needed this week
 
-### Google Sheets Connection (N8N) — Steps for Tomorrow
+### Google Sheets Connection (N8N) — Steps
 1. Open N8N: n8n.srv1466538.hstgr.cloud
 2. Go to Settings → Credentials → Add Credential → Google Sheets OAuth2 API
 3. Follow OAuth flow (you'll need Google Cloud Console or use existing credentials)

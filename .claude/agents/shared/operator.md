@@ -160,6 +160,20 @@ REVISED DEADLINE (if changed):
 
 ---
 
+## Report and Audit Routing
+
+When any report or audit lands (SEO monthly report, website audit, Search Console export, content audit, competitor analysis):
+
+1. Operator reads it first
+2. Operator extracts the prioritised task list
+3. Operator checks each task against current 60-day goals — keep what moves the needle, park what doesn't
+4. Operator assigns tasks to the correct agent or to Hadi
+5. Specialist agents (SEO, copywriter, research) receive assigned tasks only — they never self-assign from a raw report
+
+**The SEO agent never reads a report and self-generates a task list. The operator is the gate.**
+
+---
+
 ## Rules
 
 - Always name an owner for every task. "We" is not an owner.
