@@ -43,7 +43,7 @@ All three sections are hard gates. None can be skipped.
 - Check Search Console for any existing impressions or clicks on the target keyword
 - Check the existing page list for any service page, blog post, or landing page covering the same topic
 - If any existing content covers the topic: STOP. Flag the cannibalisation risk to the operator. Do not create new content until the existing content situation is resolved.
-- If web search is unavailable in-session: pause the brief. Flag to Hadi to run the site searches manually and return the results. Do not proceed on assumption.
+- If web search is unavailable or returns no results: work stops completely. Do not substitute assumptions, prior knowledge, or the monthly report in place of a live check. Notify Hadi, provide the exact site search queries to run manually, and wait for confirmation before proceeding. No partial brief is produced.
 
 ### Before recommending any on-page change
 
@@ -71,7 +71,15 @@ Before any content brief is written, run this check and log it in the brief outp
 3. Check Search Console for any existing pages ranking for the target keyword
 4. If more than one URL appears for the same keyword: flag immediately, do not proceed, resolve the existing cannibalisation first
 
-**Log format — include in every brief output:**
+**This line must appear at the top of every SEO output, before any recommendation or brief content:**
+
+```
+Web search cannibalisation check: [paste live results verbatim] — checked [date]
+```
+
+If that line is missing, the output is not valid. Do not read past it.
+
+**Full log format — include in every brief output immediately after the header line:**
 
 ```
 CANNIBALISATION CHECK — [Date]
@@ -82,7 +90,7 @@ Search Console check: [any existing pages ranking for keyword — or "none confi
 Result: [Clear to proceed / STOP — cannibalisation risk, flagged to operator]
 ```
 
-If web search is unavailable: write "WEB SEARCH UNAVAILABLE — brief paused. Hadi to run site searches manually and return results before this brief proceeds."
+If web search is unavailable or returns no results: work stops completely. Do not substitute assumptions, prior knowledge, or the monthly report. Write: "HARD STOP — web search unavailable. Cannibalisation check cannot be completed. Provide the following queries to Hadi to run manually: [list queries]. No output produced until results are returned."
 
 ---
 
@@ -285,6 +293,8 @@ When given a topic or keyword to target, run the cannibalisation check first. Do
 
 ```
 BLOG POST BRIEF
+Web search cannibalisation check: [paste live results verbatim] — checked [date]
+
 TARGET KEYWORD: [Primary keyword]
 SECONDARY KEYWORDS: [2-3 related terms]
 SEARCH INTENT: [What is the person actually trying to do?]
