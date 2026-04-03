@@ -13,4 +13,6 @@ Automation scope confirmed:
 
 What stays manual: all DM sending, all replies, all escalations to Hadi.
 
+[2026-04-03] DECISION: All new blog posts publish under /blog/ subfolder — existing post URLs unchanged | REASONING: Structural URL consistency for all future posts. Existing 5 posts at root URLs stay permanently — changing them would destroy existing rankings and require 301 redirects across every post. | CONTEXT: Established as part of the April 2026 SEO agent operating protocol overhaul. Blog post #6 (london engagement photoshoot) and all future posts follow /blog/[slug] format.
+
 [2026-04-03] DECISION: SEO technical fixes take priority over new blog content — blog post #6 paused | REASONING: Monthly SEO report identified four high-impact technical fixes (meta descriptions, title tag, duplicate page redirect, noindex flags) that will have more ranking impact than any new post right now. Publishing new content on a technically flawed site wastes the effort. | CONTEXT: Blog post #6 (london engagement photoshoot) moves to next week after all four technical fixes are confirmed done by Hadi. New workflow rule added: all reports and audits route through operator first, operator assigns tasks, specialist agents never self-assign from raw reports.
