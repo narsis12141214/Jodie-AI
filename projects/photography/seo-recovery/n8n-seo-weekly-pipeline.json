@@ -1,0 +1,439 @@
+{
+  "name": "SEO Weekly Data Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 7 * * 1"
+            }
+          ]
+        }
+      },
+      "id": "node-001",
+      "name": "Monday 7am Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Set dynamic date ranges for current and previous week\n// GSC has ~3 day data delay for 'final' data — end date is 3 days ago\nconst now = new Date();\n\nconst endDate = new Date(now);\nendDate.setDate(endDate.getDate() - 3);\n\nconst startDate = new Date(endDate);\nstartDate.setDate(startDate.getDate() - 6);\n\nconst prevEndDate = new Date(startDate);\nprevEndDate.setDate(prevEndDate.getDate() - 1);\n\nconst prevStartDate = new Date(prevEndDate);\nprevStartDate.setDate(prevStartDate.getDate() - 6);\n\nconst fmt = (d) => d.toISOString().split('T')[0];\n\nreturn [{\n  json: {\n    startDate: fmt(startDate),\n    endDate: fmt(endDate),\n    prevStartDate: fmt(prevStartDate),\n    prevEndDate: fmt(prevEndDate),\n    weekEnding: fmt(endDate)\n  }\n}];"
+      },
+      "id": "node-002",
+      "name": "Set Dates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.googleapis.com/webmasters/v3/sites/https%3A%2F%2Fwww.hadiphotographylondon.com%2F/searchAnalytics/query",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"startDate\": \"{{ $json.startDate }}\",\n  \"endDate\": \"{{ $json.endDate }}\",\n  \"dimensions\": [\"query\"],\n  \"rowLimit\": 50,\n  \"dataState\": \"final\"\n}",
+        "options": {}
+      },
+      "id": "node-003",
+      "name": "Fetch Current Keywords",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [680, 300],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.googleapis.com/webmasters/v3/sites/https%3A%2F%2Fwww.hadiphotographylondon.com%2F/searchAnalytics/query",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"startDate\": \"{{ $('Set Dates').first().json.startDate }}\",\n  \"endDate\": \"{{ $('Set Dates').first().json.endDate }}\",\n  \"dimensions\": [\"page\"],\n  \"rowLimit\": 25,\n  \"dataState\": \"final\"\n}",
+        "options": {}
+      },
+      "id": "node-004",
+      "name": "Fetch Current Pages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [900, 300],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.googleapis.com/webmasters/v3/sites/https%3A%2F%2Fwww.hadiphotographylondon.com%2F/searchAnalytics/query",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"startDate\": \"{{ $('Set Dates').first().json.prevStartDate }}\",\n  \"endDate\": \"{{ $('Set Dates').first().json.prevEndDate }}\",\n  \"dimensions\": [\"query\"],\n  \"rowLimit\": 50,\n  \"dataState\": \"final\"\n}",
+        "options": {}
+      },
+      "id": "node-005",
+      "name": "Fetch Previous Keywords",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1120, 300],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pull data from all three API nodes\nconst datesData = $('Set Dates').first().json;\nconst currentKwData = $('Fetch Current Keywords').first().json;\nconst currentPgData = $('Fetch Current Pages').first().json;\nconst prevKwData = $('Fetch Previous Keywords').first().json;\n\nconst currentKeywords = currentKwData.rows || [];\nconst currentPages = currentPgData.rows || [];\nconst prevKeywords = prevKwData.rows || [];\n\n// Build previous week lookup map\nconst prevMap = {};\nfor (const row of prevKeywords) {\n  const kw = row.keys[0];\n  prevMap[kw] = { clicks: row.clicks, impressions: row.impressions, position: row.position };\n}\n\n// Process current keywords — calculate changes and apply flags\nconst flaggedRows = [];\nconst keywordRows = [];\n\nfor (const row of currentKeywords) {\n  const kw = row.keys[0];\n  const prev = prevMap[kw] || { clicks: 0, impressions: 0, position: null };\n\n  const clickChange = row.clicks - prev.clicks;\n  const impressionChange = row.impressions - prev.impressions;\n  const posChange = prev.position !== null ? parseFloat((prev.position - row.position).toFixed(1)) : null;\n\n  const flags = [];\n\n  if (posChange !== null && Math.abs(posChange) > 3) {\n    const f = posChange > 0 ? 'IMPROVED' : 'DROPPED';\n    flags.push(f);\n    flaggedRows.push([datesData.weekEnding, 'keyword', kw, f, row.position.toFixed(1), prev.position.toFixed(1)]);\n  }\n\n  if (row.impressions > 100 && row.ctr < 0.01) {\n    flags.push('LOW CTR');\n    flaggedRows.push([datesData.weekEnding, 'keyword', kw, 'LOW CTR', (row.ctr * 100).toFixed(2) + '%', '']);\n  }\n\n  if (prev.position !== null && prev.position > 10 && row.position <= 10) {\n    flags.push('PAGE 1 ENTRY');\n    flaggedRows.push([datesData.weekEnding, 'keyword', kw, 'PAGE 1 ENTRY', row.position.toFixed(1), prev.position.toFixed(1)]);\n  } else if (prev.position !== null && prev.position <= 10 && row.position > 10) {\n    flags.push('PAGE 1 EXIT');\n    flaggedRows.push([datesData.weekEnding, 'keyword', kw, 'PAGE 1 EXIT', row.position.toFixed(1), prev.position.toFixed(1)]);\n  }\n\n  keywordRows.push([\n    kw,\n    row.clicks,\n    row.impressions,\n    (row.ctr * 100).toFixed(2) + '%',\n    row.position.toFixed(1),\n    clickChange >= 0 ? '+' + clickChange : String(clickChange),\n    impressionChange >= 0 ? '+' + impressionChange : String(impressionChange),\n    posChange !== null ? (posChange >= 0 ? '+' + posChange : String(posChange)) : 'N/A',\n    flags.join(', ')\n  ]);\n}\n\n// Sort keywords by impressions descending\nkeywordRows.sort((a, b) => Number(b[2]) - Number(a[2]));\n\n// Process pages — sort by clicks descending\nconst pageRows = (currentPages).map(row => [\n  row.keys[0],\n  row.clicks,\n  row.impressions,\n  (row.ctr * 100).toFixed(2) + '%',\n  row.position.toFixed(1),\n  ''\n]);\npageRows.sort((a, b) => Number(b[1]) - Number(a[1]));\n\n// Totals for history tab\nconst totalClicks = currentKeywords.reduce((s, r) => s + r.clicks, 0);\nconst totalImpressions = currentKeywords.reduce((s, r) => s + r.impressions, 0);\nconst totalClicksPrev = prevKeywords.reduce((s, r) => s + r.clicks, 0);\nconst overallCtr = totalImpressions > 0 ? ((totalClicks / totalImpressions) * 100).toFixed(2) + '%' : '0%';\nconst avgPos = currentKeywords.length > 0\n  ? (currentKeywords.reduce((s, r) => s + r.position, 0) / currentKeywords.length).toFixed(1)\n  : 'N/A';\nconst topKeyword = keywordRows.length > 0 ? keywordRows[0][0] : '';\nconst topPage = pageRows.length > 0 ? pageRows[0][0] : '';\n\nconst historyRow = [[datesData.weekEnding, totalClicks, totalImpressions, overallCtr, avgPos, topKeyword, topPage]];\n\n// Click change percentage\nconst clickChangePct = totalClicksPrev > 0\n  ? ((totalClicks - totalClicksPrev) / totalClicksPrev * 100).toFixed(1)\n  : 'N/A';\nconst clickDir = clickChangePct !== 'N/A'\n  ? (parseFloat(clickChangePct) >= 0 ? '+' : '') + clickChangePct + '%'\n  : 'first run — no comparison data yet';\n\n// Build summary text for email\nconst top5kw = keywordRows.slice(0, 5).map(r => `  ${r[0]}: ${r[1]} clicks, pos ${r[4]}`).join('\\n');\nconst top5pg = pageRows.slice(0, 5).map(r => `  ${r[0]}: ${r[1]} clicks`).join('\\n');\nconst flagSummary = flaggedRows.length > 0\n  ? flaggedRows.map(r => `  [${r[3]}] ${r[2]}${r[5] ? ' — was pos ' + r[5] + ', now ' + r[4] : ' — ' + r[4]}`).join('\\n')\n  : '  No significant movements this week.';\n\nconst summaryText = `SEO Weekly Snapshot — week ending ${datesData.weekEnding}\\n\\nOVERVIEW\\nClicks: ${totalClicks} (${clickDir} vs last week)\\nImpressions: ${totalImpressions}\\nCTR: ${overallCtr}\\nAvg position: ${avgPos}\\n\\nTOP 5 KEYWORDS\\n${top5kw}\\n\\nTOP 5 PAGES\\n${top5pg}\\n\\nFLAGGED MOVEMENTS (${flaggedRows.length})\\n${flagSummary}\\n\\nFull data: https://docs.google.com/spreadsheets/d/YOUR_SEO_SHEET_ID`;\n\n// Build seo-current-data.md content\nconst top10kw = keywordRows.slice(0, 10).map(r =>\n  `| ${r[0]} | ${r[1]} | ${r[2]} | ${r[3]} | ${r[4]} | ${r[8] || '-'} |`\n).join('\\n');\nconst top10pg = pageRows.slice(0, 10).map(r =>\n  `| ${r[0]} | ${r[1]} | ${r[2]} | ${r[3]} | ${r[4]} |`\n).join('\\n');\nconst flagTable = flaggedRows.length > 0\n  ? flaggedRows.map(r => `| ${r[0]} | ${r[1]} | ${r[2]} | ${r[3]} | ${r[4]} | ${r[5]} |`).join('\\n')\n  : '| — | — | No flags this week | — | — | — |';\n\nconst seoContextContent = `---\\nname: SEO Current Data\\ndescription: Live weekly Search Console data — top keywords, pages, flagged movements. Auto-generated every Monday.\\ntype: reference\\nlast_updated: ${datesData.weekEnding}\\nwarning: Do not edit manually. Overwritten every Monday by N8N pipeline.\\n---\\n\\n# SEO Weekly Data — week ending ${datesData.weekEnding}\\n\\n> Operator instruction: paste this file into any SEO agent context before assigning an SEO task. If last_updated is more than 7 days old — stop. Flag to Hadi that the pipeline may not have run.\\n\\n## Overview\\n\\n| Metric | This week | vs Last week |\\n|--------|-----------|-------------|\\n| Clicks | ${totalClicks} | ${clickDir} |\\n| Impressions | ${totalImpressions} | — |\\n| CTR | ${overallCtr} | — |\\n| Avg Position | ${avgPos} | — |\\n\\n## Top 10 Keywords by Impressions\\n\\n| Keyword | Clicks | Impressions | CTR | Avg Position | Flag |\\n|---------|--------|-------------|-----|-------------|------|\\n${top10kw}\\n\\n## Top 10 Pages by Clicks\\n\\n| Page | Clicks | Impressions | CTR | Avg Position |\\n|------|--------|-------------|-----|-------------|\\n${top10pg}\\n\\n## Flagged Movements This Week\\n\\n| Date | Type | Item | Flag | Current | Previous |\\n|------|------|------|------|---------|----------|\\n${flagTable}\\n\\n## Full Data\\n[Google Sheet — Hadi Photography SEO Weekly Data](https://docs.google.com/spreadsheets/d/YOUR_SEO_SHEET_ID)\\n`;\n\n// Build Sheets API payloads (passed directly as HTTP request bodies)\nconst keywordsPayload = { values: keywordRows.length > 0 ? keywordRows : [['No data this week']] };\nconst pagesPayload = { values: pageRows.length > 0 ? pageRows : [['No data this week']] };\nconst historyPayload = { values: historyRow };\nconst flaggedPayload = flaggedRows.length > 0 ? { values: flaggedRows } : null;\n\nreturn [{\n  json: {\n    weekEnding: datesData.weekEnding,\n    keywordsPayload,\n    pagesPayload,\n    historyPayload,\n    flaggedPayload,\n    hasFlaggedItems: flaggedRows.length > 0,\n    summaryText,\n    seoContextContent\n  }\n}];"
+      },
+      "id": "node-006",
+      "name": "Process All Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://sheets.googleapis.com/v4/spreadsheets/YOUR_SEO_SHEET_ID/values/%27This%20Week%20Keywords%27%21A2%3AJ500:clear",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "options": {}
+      },
+      "id": "node-007",
+      "name": "Clear Keywords Tab",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1560, 200],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/YOUR_SEO_SHEET_ID/values/%27This%20Week%20Keywords%27%21A2?valueInputOption=RAW",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $('Process All Data').first().json.keywordsPayload }}",
+        "options": {}
+      },
+      "id": "node-008",
+      "name": "Write Keywords Tab",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1780, 200],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/YOUR_SEO_SHEET_ID/values/%27This%20Week%20Pages%27%21A2%3AI200:clear",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "options": {}
+      },
+      "id": "node-009",
+      "name": "Clear Pages Tab",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [2000, 200],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/YOUR_SEO_SHEET_ID/values/%27This%20Week%20Pages%27%21A2?valueInputOption=RAW",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $('Process All Data').first().json.pagesPayload }}",
+        "options": {}
+      },
+      "id": "node-010",
+      "name": "Write Pages Tab",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [2220, 200],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/YOUR_SEO_SHEET_ID/values/%27Weekly%20History%27%21A1%3AH1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $('Process All Data').first().json.historyPayload }}",
+        "options": {}
+      },
+      "id": "node-011",
+      "name": "Append History Row",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [2440, 200],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-001",
+              "leftValue": "={{ $('Process All Data').first().json.hasFlaggedItems }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "node-012",
+      "name": "Has Flagged Items?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2660, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/YOUR_SEO_SHEET_ID/values/%27Flagged%20Items%27%21A1%3AF1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $('Process All Data').first().json.flaggedPayload }}",
+        "options": {}
+      },
+      "id": "node-013",
+      "name": "Append Flagged Items",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [2880, 100],
+      "credentials": {
+        "oAuth2Api": {
+          "id": "GOOGLE_OAUTH2_CREDENTIAL_ID",
+          "name": "Google OAuth2 (Search Console + Sheets)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "passThrough",
+        "output": "input1"
+      },
+      "id": "node-014",
+      "name": "Merge Branches",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [3100, 200]
+    },
+    {
+      "parameters": {
+        "sendTo": "YOUR_HADI_EMAIL",
+        "subject": "=SEO Weekly Snapshot — week ending {{ $('Process All Data').first().json.weekEnding }}",
+        "emailType": "text",
+        "message": "={{ $('Process All Data').first().json.summaryText }}",
+        "options": {}
+      },
+      "id": "node-015",
+      "name": "Send Summary Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [3320, 200],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "GMAIL_CREDENTIAL_ID",
+          "name": "Gmail Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare GitHub file update payload\n// Base64 encode the seo-current-data.md content\nconst content = $('Process All Data').first().json.seoContextContent;\nconst encoded = Buffer.from(content).toString('base64');\nconst weekEnding = $('Process All Data').first().json.weekEnding;\n\nreturn [{\n  json: {\n    encodedContent: encoded,\n    commitMessage: `SEO data update — week ending ${weekEnding}`\n  }\n}];"
+      },
+      "id": "node-016",
+      "name": "Prepare GitHub Payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3540, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/narsis12141214/Jodie-AI/contents/memory/seo-current-data.md",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "token YOUR_GITHUB_TOKEN"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github.v3+json"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "node-017",
+      "name": "GET GitHub File",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [3760, 200]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/narsis12141214/Jodie-AI/contents/memory/seo-current-data.md",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "token YOUR_GITHUB_TOKEN"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github.v3+json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"message\": \"{{ $('Prepare GitHub Payload').first().json.commitMessage }}\",\n  \"content\": \"{{ $('Prepare GitHub Payload').first().json.encodedContent }}\",\n  \"sha\": \"{{ $json.sha || '' }}\"\n}",
+        "options": {}
+      },
+      "id": "node-018",
+      "name": "PUT GitHub File",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [3980, 200]
+    }
+  ],
+  "connections": {
+    "Monday 7am Trigger": {
+      "main": [[{"node": "Set Dates", "type": "main", "index": 0}]]
+    },
+    "Set Dates": {
+      "main": [[{"node": "Fetch Current Keywords", "type": "main", "index": 0}]]
+    },
+    "Fetch Current Keywords": {
+      "main": [[{"node": "Fetch Current Pages", "type": "main", "index": 0}]]
+    },
+    "Fetch Current Pages": {
+      "main": [[{"node": "Fetch Previous Keywords", "type": "main", "index": 0}]]
+    },
+    "Fetch Previous Keywords": {
+      "main": [[{"node": "Process All Data", "type": "main", "index": 0}]]
+    },
+    "Process All Data": {
+      "main": [[{"node": "Clear Keywords Tab", "type": "main", "index": 0}]]
+    },
+    "Clear Keywords Tab": {
+      "main": [[{"node": "Write Keywords Tab", "type": "main", "index": 0}]]
+    },
+    "Write Keywords Tab": {
+      "main": [[{"node": "Clear Pages Tab", "type": "main", "index": 0}]]
+    },
+    "Clear Pages Tab": {
+      "main": [[{"node": "Write Pages Tab", "type": "main", "index": 0}]]
+    },
+    "Write Pages Tab": {
+      "main": [[{"node": "Append History Row", "type": "main", "index": 0}]]
+    },
+    "Append History Row": {
+      "main": [[{"node": "Has Flagged Items?", "type": "main", "index": 0}]]
+    },
+    "Has Flagged Items?": {
+      "main": [
+        [{"node": "Append Flagged Items", "type": "main", "index": 0}],
+        [{"node": "Merge Branches", "type": "main", "index": 1}]
+      ]
+    },
+    "Append Flagged Items": {
+      "main": [[{"node": "Merge Branches", "type": "main", "index": 0}]]
+    },
+    "Merge Branches": {
+      "main": [[{"node": "Send Summary Email", "type": "main", "index": 0}]]
+    },
+    "Send Summary Email": {
+      "main": [[{"node": "Prepare GitHub Payload", "type": "main", "index": 0}]]
+    },
+    "Prepare GitHub Payload": {
+      "main": [[{"node": "GET GitHub File", "type": "main", "index": 0}]]
+    },
+    "GET GitHub File": {
+      "main": [[{"node": "PUT GitHub File", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [{"name": "Photography"}, {"name": "SEO"}]
+}
