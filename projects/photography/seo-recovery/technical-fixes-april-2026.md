@@ -4,22 +4,89 @@ Priority: Complete before any new blog content. All four tasks below.
 
 ---
 
+## SHOWIT SESSION — 4 APRIL 2026
+All copy finalised and ready to paste. Do all three in one Showit session.
+
+### 1. Homepage
+**Title tag** (Showit > Pages > Homepage > SEO Settings > Title Tag):
+```
+London Elopement & Wedding Photographer | Hadi Photography
+```
+Log Search Console baseline before changing. See monitoring protocol in Task 2 below.
+
+**Meta description** (Showit > Pages > Homepage > SEO Settings > Meta Description):
+```
+London elopement, wedding and couples photographer. Storytelling photography for romantic couples who want an intentional day in London. 100 five-star reviews.
+```
+159 chars. Approved 4 April 2026.
+
+---
+
+### 2. Elopement Service Page
+Keyword pivot: from "london elopement photographer" (research intent — blog post owns this) to "elopement photography london" (booking intent).
+
+**Title tag:**
+```
+Elopement Photography London | Hadi Photography
+```
+
+**H1** (note: Showit renders headings in JavaScript — Google may not read this from the initial HTML crawl; verify via Search Console coverage report):
+```
+Elopement Photography in London
+```
+
+**Meta description:**
+```
+Elopement photography in London from £1,800. Intimate storytelling for couples who want their day done their way. 100 five-star reviews.
+```
+136 chars.
+
+Also add this internal link CTA to the elopement blog post (The Complete Guide 2026):
+```
+Ready to book? See our elopement photography packages →
+```
+Link target: the elopement service page URL.
+
+---
+
+### 3. Proposal Service Page
+Keyword pivot: from overlap with blog post to "surprise proposal photographer london" (transactional intent).
+
+**Title tag:**
+```
+Surprise Proposal Photographer London | Hadi Photography
+```
+
+**H1** (same Showit JS flag applies):
+```
+Surprise Proposal Photographer in London
+```
+
+**Meta description:**
+```
+Surprise proposal photographer in London. Discreet, experienced, and trusted by 100+ couples. Your moment, captured exactly as it happens.
+```
+139 chars.
+
+Also add this internal link CTA to the proposal blog post (How to Plan a Surprise Proposal in London):
+```
+Need a photographer for your proposal? See how we work →
+```
+Link target: the proposal service page URL.
+
+---
+
 ## JODIE TASKS (done)
 
 ### Task 1 — Meta Descriptions (paste into Showit SEO settings for each page)
 
 **Homepage**
 Page: hadiphotographylondon.com
-Primary keywords: london wedding photographer, london elopement photographer
-Meta description (154 chars):
+Primary keywords: london elopement photographer, london wedding photographer, couples photographer london
+Meta description (finalised 4 April 2026, 159 chars):
 ```
-Hadi is a London wedding and elopement photographer with 100 five-star reviews. Intimate, unhurried photography for couples who want the day to feel like theirs.
+London elopement, wedding and couples photographer. Storytelling photography for romantic couples who want an intentional day in London. 100 five-star reviews.
 ```
-Note: Meta description updated to match the broadened title. Both wedding and elopement are referenced. 162 chars — trim if Showit flags it:
-```
-London wedding and elopement photographer with 100 five-star reviews. Intimate photography for couples who want the day to feel like theirs.
-```
-(141 chars — safe fallback)
 
 ---
 
@@ -33,13 +100,11 @@ Natural, unposed London engagement photoshoots for couples who want to remember 
 
 ---
 
-**Elopement Photographer Page**
+**Elopement Service Page**
 Page: hadiphotographylondon.com/london-elopement-photographer (or equivalent)
-Primary keyword: london elopement photographer
-Meta description (151 chars):
-```
-London elopement photographer with 100 five-star reviews. Intimate, unhurried elopement photography for couples who want the day to feel like theirs.
-```
+Primary keyword: elopement photography london (PIVOTED — 4 April 2026)
+Note: "london elopement photographer" now belongs to the blog post (The Complete Guide 2026). Service page targets booking intent.
+See SHOWIT SESSION section above for full title tag, H1, and meta description.
 
 ---
 
@@ -165,9 +230,9 @@ Confirm once done and I will flag for Search Console removal.
 
 ## STATUS
 
-- [ ] Task 1 — Meta descriptions — Hadi to paste into Showit/WordPress
-- [ ] Task 2 — Homepage title tag — Hadi to update in Showit
-- [ ] Task 3 — Duplicate redirect — Hadi to action in Showit + Search Console
-- [ ] Task 4 — Noindex flags — Hadi to action in Showit/Yoast
+- [x] Task 1 — Meta descriptions — done 4 April 2026
+- [x] Task 2 — Homepage title tag — done 4 April 2026 (log baseline in Search Console monitoring table)
+- [x] Task 3 — Duplicate redirect — done 4 April 2026
+- [x] Task 4 — Noindex flags — done 4 April 2026. lightroom-presets + cart/checkout/shop noindexed. editorial-street-fashion left indexed intentionally for now.
 
 Blog post #6 (london engagement photoshoot) is paused until all four tasks above are confirmed done.

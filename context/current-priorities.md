@@ -1,31 +1,29 @@
 # Current Priorities
 
-Last updated: 2026-04-02
+Last updated: 2026-04-05
 
-## TOMORROW (Saturday 4 April — Day 4 of 60)
+## TOMORROW (Sunday 5 April — Day 5 of 60)
 
 **PRIORITY 1 (Agency): Google Sheets connection in N8N + Workflow 1 test**
-**PRIORITY 2 (Photography): Showit technical fixes — Hadi to action**
+**PRIORITY 2 (Photography): Blog post #6 input questions — Hadi to answer 5 questions**
 
 Agency:
 - [ ] Connect Google Sheets in N8N — Hadi (UI task, 10 mins) — see steps below
 - [ ] Test Workflow 1 manually in N8N — verify leads land in sheet — Hadi/Jodie
 - [ ] Activate SEO pipeline Monday schedule trigger in N8N — Hadi
-- [ ] Maria Gautau — follow up NOW (Friday deadline passed) — Hadi
+- [ ] Maria Gautau — follow up Monday — Hadi
 - [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — by Day 10 (10 April)
 - [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — by Day 10
 - [ ] N8N Workflow 4 — CRM auto-logging — by Day 10
-- [ ] @clickaiagency — post Day 4 content from calendar
+- [ ] @clickaiagency — post Day 5 content from calendar
 
-Photography — SEO Technical Fixes (instructions in seo-recovery/technical-fixes-april-2026.md):
-- [ ] Paste 5 meta descriptions into Showit/WordPress SEO settings — Hadi
-- [ ] Update homepage title tag to: "London Elopement & Wedding Photographer | Hadi Photography" — Hadi (log Search Console baseline first)
-- [ ] Identify duplicate elopement packages URLs, set 301 redirect in Showit — Hadi
-- [ ] Noindex: editorial-street-fashion, lightroom-presets, shop/cart URLs — Hadi
-- [ ] Blog post #6 brief (london engagement photoshoot) — PAUSED until above confirmed done
+Photography:
+- [ ] Answer 5 input questions for blog post #6 (pre-wedding photoshoot london) — Hadi
+- [ ] Blog post #6 brief — Jodie (after Hadi answers input questions)
+- [ ] Log Search Console baseline for homepage title tag change (28-day window in GSC, homepage filter)
 
 Pipeline:
-- [ ] Maria Gautau — overdue, follow up today — Hadi
+- [ ] Maria Gautau — follow up Monday (overdue since Friday) — Hadi
 - [ ] Somewhere Café Harrods — check for contact response
 - [ ] Restaurant Owner 2 — follow up needed
 
@@ -44,7 +42,7 @@ Pipeline:
 - [ ] Outreach — brief Zizi, scale toward 40/day
 - [ ] Follow up Maria — if no reply by Friday 4 April
 - [ ] Blog post #5 published in WordPress — Hadi (HTML ready, paste and publish)
-- [ ] Blog post #6 brief generated — Jodie
+- [ ] Blog post #6 brief generated — Jodie (topic: pre-wedding photoshoot london, not engagement)
 
 ## AGENCY PIPELINE
 - Maria: Proposal sent £300+£497/mo. Reviewing. → Follow up Friday 4 April if silent
@@ -60,6 +58,18 @@ Pipeline:
 3. @clickaiagency — post daily from content calendar
 4. Photography SEO — one blog post per week minimum (post #5 ready to publish)
 5. @hadyyazdani — reactivate with daily posting
+
+## COMPLETED — 2026-04-04
+- [x] 2026-04-04: Homepage meta description finalised (159 chars) and pasted into Showit
+- [x] 2026-04-04: Homepage title tag updated — "London Elopement & Wedding Photographer | Hadi Photography"
+- [x] 2026-04-04: Elopement service page pivoted — new title tag, H1, meta description targeting "elopement photography london" (booking intent)
+- [x] 2026-04-04: Proposal service page pivoted — new title tag, H1, meta description targeting "surprise proposal photographer london" (transactional)
+- [x] 2026-04-04: Internal links added to 3 blog posts (best-places-to-elope, elopement complete guide, proposal guide)
+- [x] 2026-04-04: 301 redirects completed
+- [x] 2026-04-04: Noindex flags done — lightroom-presets, cart/checkout/shop (editorial-street-fashion left indexed intentionally)
+- [x] 2026-04-04: Blog post #6 topic corrected to pre-wedding photoshoot london (13/15) — engagement post dropped (not in top-scored list, cannibalisation risk)
+- [x] 2026-04-04: Operator rule added — blog post topic must be cross-checked against monthly report scored table before assignment
+- [x] 2026-04-04: 5 input questions written for pre-wedding photoshoot blog post — Hadi to answer
 
 ## COMPLETED — 2026-04-03
 - [x] 2026-04-03: SEO agent operating protocol overhauled — cannibalisation check, Showit JS flag, hard stop, recommendation format, /blog/ rule

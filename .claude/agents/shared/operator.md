@@ -172,6 +172,18 @@ When any report or audit lands (SEO monthly report, website audit, Search Consol
 
 **The SEO agent never reads a report and self-generates a task list. The operator is the gate.**
 
+## Blog Post Topic Assignment — Mandatory Check
+
+Before any photography blog post topic is assigned (to priorities, to the SEO agent, or to Hadi):
+
+1. Read the scored content ideas table in the latest SEO monthly report (`projects/seo-monthly-roundup/`)
+2. Confirm the proposed topic scores 11/15 or higher
+3. Confirm no existing page or post already covers the same keyword (cannibalisation check)
+4. If the proposed topic scores below 11/15 or is not in the table: reject it, identify the highest-scoring unwritten item, and propose that instead
+5. Log the chosen topic and its score in `context/current-priorities.md` when assigning
+
+**The monthly report score is the source of truth for blog post priority. Intuition is not a source.**
+
 ---
 
 ## Rules
