@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-05
+Done: Workflow 1 fully live — Google Sheets connected, 3 bugs fixed (resultsType, fetch URL, wait time), email confirmation node added. @hadyyazdani 30-day content strategy scoped — competitor research first, then repurposing map, then calendar build. Photography voice agent scoped, deferred to next week.
+Next: Workflow 2 (Claude API openers). Competitor Instagram research for @hadyyazdani. Hadi to confirm available shoots (~5) and answer 5 pre-wedding photoshoot questions. Maria follow-up.
+Pipeline: No moves today. Maria overdue (follow up Monday), Somewhere Café Harrods and Restaurant Owner 2 still open.
+
 ## 2026-04-04
 Done: All 4 Showit technical fixes completed — meta descriptions, homepage title tag, elopement + proposal service page keyword pivots, 301 redirects, noindex flags. Internal links added to 3 blog posts. Blog post #6 topic corrected to pre-wedding photoshoot (13/15) — engagement dropped. Operator rule added to enforce monthly report cross-check before any blog topic is assigned.
 Next: Google Sheets connection in N8N + Workflow 1 test. Maria follow-up Monday. Hadi to answer 5 input questions for pre-wedding photoshoot brief. Log Search Console baseline for homepage title change.

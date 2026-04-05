@@ -4,12 +4,12 @@ Last updated: 2026-04-05
 
 ## TOMORROW (Sunday 5 April — Day 5 of 60)
 
-**PRIORITY 1 (Agency): Google Sheets connection in N8N + Workflow 1 test**
+**PRIORITY 1 (Agency): N8N Workflow 2 — Claude API opener generation**
 **PRIORITY 2 (Photography): Blog post #6 input questions — Hadi to answer 5 questions**
 
 Agency:
-- [ ] Connect Google Sheets in N8N — Hadi (UI task, 10 mins) — see steps below
-- [ ] Test Workflow 1 manually in N8N — verify leads land in sheet — Hadi/Jodie
+- [x] Connect Google Sheets in N8N — done 5 April 2026
+- [x] Test Workflow 1 manually in N8N — done 5 April 2026 (fixed: resultsType details, run-specific fetch URL, 8min wait)
 - [ ] Activate SEO pipeline Monday schedule trigger in N8N — Hadi
 - [ ] Maria Gautau — follow up Monday — Hadi
 - [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — by Day 10 (10 April)
@@ -58,6 +58,15 @@ Pipeline:
 3. @clickaiagency — post daily from content calendar
 4. Photography SEO — one blog post per week minimum (post #5 ready to publish)
 5. @hadyyazdani — reactivate with daily posting
+
+## NEXT WEEK (Days 8–14)
+- [ ] Photography voice agent / receptionist — Vapi build for @hadiphotographylondon inbound calls — Hadi/Jodie
+
+## COMPLETED — 2026-04-05
+- [x] 2026-04-05: Google Sheets credential created and connected in N8N
+- [x] 2026-04-05: Workflow 1 (Lead Identification) tested and running — 3 bugs fixed: resultsType profiles→details, fetch URL now uses run-specific ID, wait increased to 8 minutes
+- [x] 2026-04-05: Email notification node added to Workflow 1 (run confirmation)
+- [x] 2026-04-05: Photography voice agent scoped and deferred to next week
 
 ## COMPLETED — 2026-04-04
 - [x] 2026-04-04: Homepage meta description finalised (159 chars) and pasted into Showit

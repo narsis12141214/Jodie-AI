@@ -24,7 +24,7 @@
         "url": "https://api.apify.com/v2/acts/apify~instagram-scraper/runs?token=YOUR_APIFY_API_KEY",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "{\n  \"hashtags\": [\n    \"londonrestaurant\",\n    \"londoncafe\",\n    \"londonfood\",\n    \"londonrestaurants\",\n    \"londonbeautyclinic\",\n    \"londonaesthetics\",\n    \"londonbeauty\",\n    \"londonskinclinic\"\n  ],\n  \"resultsType\": \"profiles\",\n  \"resultsLimit\": 100,\n  \"searchType\": \"hashtag\",\n  \"searchLimit\": 15\n}",
+        "jsonBody": "{\n  \"hashtags\": [\n    \"londonrestaurant\",\n    \"londoncafe\",\n    \"londonfood\",\n    \"londonrestaurants\",\n    \"londonbeautyclinic\",\n    \"londonaesthetics\",\n    \"londonbeauty\",\n    \"londonskinclinic\"\n  ],\n  \"resultsType\": \"details\",\n  \"resultsLimit\": 100,\n  \"searchType\": \"hashtag\",\n  \"searchLimit\": 15\n}",
         "options": {}
       },
       "id": "node-002",
@@ -35,7 +35,7 @@
     },
     {
       "parameters": {
-        "amount": 4,
+        "amount": 8,
         "unit": "minutes"
       },
       "id": "node-003",
@@ -47,7 +47,7 @@
     },
     {
       "parameters": {
-        "url": "=https://api.apify.com/v2/acts/apify~instagram-scraper/runs/last/dataset/items?token=YOUR_APIFY_API_KEY&limit=200&clean=true",
+        "url": "=https://api.apify.com/v2/acts/apify~instagram-scraper/runs/{{$('Start Apify Instagram Scraper').item.json.data.id}}/dataset/items?token=YOUR_APIFY_API_KEY&limit=200&clean=true",
         "options": {}
       },
       "id": "node-004",
