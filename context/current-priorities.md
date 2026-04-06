@@ -1,21 +1,22 @@
 # Current Priorities
 
-Last updated: 2026-04-05
+Last updated: 2026-04-06
 
-## TOMORROW (Sunday 5 April — Day 5 of 60)
+## TOMORROW (Tuesday 7 April — Day 7 of 60)
 
-**PRIORITY 1 (Agency): N8N Workflow 2 — Claude API opener generation**
-**PRIORITY 2 (Photography): Blog post #6 input questions — Hadi to answer 5 questions**
+**PRIORITY 1 (Agency): Import Workflow 2 to N8N, add Anthropic key, test**
+**PRIORITY 2 (Agency): Zizi briefing — review opener sheet, brief her on Day 1 sends**
 
 Agency:
-- [x] Connect Google Sheets in N8N — done 5 April 2026
-- [x] Test Workflow 1 manually in N8N — done 5 April 2026 (fixed: resultsType details, run-specific fetch URL, 8min wait)
-- [ ] Activate SEO pipeline Monday schedule trigger in N8N — Hadi
-- [ ] Maria Gautau — follow up Monday — Hadi
-- [ ] N8N Workflow 2 — Step 1 opener generation (Claude API) — by Day 10 (10 April)
-- [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — by Day 10
+- [ ] Import workflow-2-opener-generation.json to N8N — Hadi
+- [ ] Add Anthropic API key to Workflow 2 "Generate Opener via Claude" code node — Hadi
+- [ ] Test Workflow 2 manually — confirm opener written to sheet + email received — Hadi
+- [ ] Activate Workflow 2 schedule trigger — Hadi
+- [ ] Brief Zizi — share opener sheet, explain "Opener Ready" status, Day 1 outreach — Hadi
+- [ ] Humble Grape — Closer follow-up (Step 2 sent 3 Apr, 4 days silence) — Hadi
+- [ ] Maria — follow up Wednesday if no reply — Hadi
+- [ ] N8N Workflow 3 — follow-up reminder (3-day trigger) — by Day 10 (10 April)
 - [ ] N8N Workflow 4 — CRM auto-logging — by Day 10
-- [ ] @clickaiagency — post Day 5 content from calendar
 
 Photography:
 - [ ] Answer 5 input questions for blog post #6 (pre-wedding photoshoot london) — Hadi
@@ -23,7 +24,8 @@ Photography:
 - [ ] Log Search Console baseline for homepage title tag change (28-day window in GSC, homepage filter)
 
 Pipeline:
-- [ ] Maria Gautau — follow up Monday (overdue since Friday) — Hadi
+- [ ] Maria — DM sent 7 April. Follow up Wednesday 8 April if silent.
+- [ ] Humble Grape — Closer follow-up Tuesday
 - [ ] Somewhere Café Harrods — check for contact response
 - [ ] Restaurant Owner 2 — follow up needed
 
@@ -61,6 +63,14 @@ Pipeline:
 
 ## NEXT WEEK (Days 8–14)
 - [ ] Photography voice agent / receptionist — Vapi build for @hadiphotographylondon inbound calls — Hadi/Jodie
+
+## COMPLETED — 2026-04-06
+- [x] 2026-04-06: Workflow 2 (opener generation) built — Claude Haiku generates personalised Step 1 openers from lead sheet, writes back to "Message Sent", emails daily summary
+- [x] 2026-04-06: closer.md deployed — warm lead follow-up and closing messages for both businesses
+- [x] 2026-04-06: strategist.md deployed — positioning, messaging angles, campaign planning, pipeline review
+- [x] 2026-04-06: campaign-builder.md deployed — multi-step outreach and nurture sequence design
+- [x] 2026-04-06: CLAUDE.md registry updated — marketing hierarchy, routing rules, forbidden phrases, agency/marketer (DEFERRED) removed
+- [x] 2026-04-06: Maria follow-up message sent (7 April)
 
 ## COMPLETED — 2026-04-05
 - [x] 2026-04-05: Google Sheets credential created and connected in N8N
