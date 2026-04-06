@@ -359,13 +359,23 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"message\": \"{{ $('Prepare GitHub Payload').first().json.commitMessage }}\",\n  \"content\": \"{{ $('Prepare GitHub Payload').first().json.encodedContent }}\",\n  \"sha\": \"{{ $json.sha || '' }}\"\n}",
+        "jsonBody": "={{ $json.body }}",
         "options": {}
       },
       "id": "node-018",
       "name": "PUT GitHub File",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.1,
+      "position": [4200, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Resolve SHA for GitHub PUT\n// If the file exists, GitHub GET returns { sha: '...' }\n// If the file does not exist (404 with neverError), sha is undefined\n// GitHub requires SHA when updating an existing file\n// GitHub requires NO sha field (or omit it) when creating a new file\nconst getResponse = $input.first().json;\nconst sha = getResponse.sha || null;\n\nconst payload = $('Prepare GitHub Payload').first().json;\n\nconst body = {\n  message: payload.commitMessage,\n  content: payload.encodedContent\n};\n\nif (sha) {\n  body.sha = sha;\n}\n\nreturn [{ json: { body: JSON.stringify(body) } }];"
+      },
+      "id": "node-019",
+      "name": "Resolve SHA",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
       "position": [3980, 200]
     }
   ],
@@ -422,6 +432,9 @@
       "main": [[{"node": "GET GitHub File", "type": "main", "index": 0}]]
     },
     "GET GitHub File": {
+      "main": [[{"node": "Resolve SHA", "type": "main", "index": 0}]]
+    },
+    "Resolve SHA": {
       "main": [[{"node": "PUT GitHub File", "type": "main", "index": 0}]]
     }
   },
