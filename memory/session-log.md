@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-06
+Done: Workflow 2 (Claude API opener generation) built — reads New Leads from sheet, generates personalised Step 1 opener per lead via Claude Haiku, writes back to sheet, emails Hadi daily summary. Three new agents deployed: closer.md, strategist.md, campaign-builder.md. CLAUDE.md registry updated — marketing hierarchy, routing rules, forbidden phrases, campaign-builder rules. agency/marketer (DEFERRED) removed — superseded.
+Next: Workflow 3 (follow-up reminders). Hadi to import Workflow 2 to N8N, add Anthropic key, test. Hadi to answer 5 pre-wedding photoshoot questions (unlocks blog post #6 brief). Zizi briefing Tuesday.
+Pipeline: Maria message sent (7 Apr). Humble Grape needs follow-up today. Somewhere Café Harrods and Restaurant Owner 2 still open.
+
 ## 2026-04-05
 Done: Workflow 1 fully live — Google Sheets connected, 3 bugs fixed (resultsType, fetch URL, wait time), email confirmation node added. @hadyyazdani 30-day content strategy scoped — competitor research first, then repurposing map, then calendar build. Photography voice agent scoped, deferred to next week.
 Next: Workflow 2 (Claude API openers). Competitor Instagram research for @hadyyazdani. Hadi to confirm available shoots (~5) and answer 5 pre-wedding photoshoot questions. Maria follow-up.

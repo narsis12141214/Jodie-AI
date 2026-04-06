@@ -61,23 +61,53 @@ Jodie dispatches to specialist agents based on business context and task type.
 All agents live in .claude/agents/.
 Routing Logic
 Step 1 — Identify business: Agency or Photography?
-Step 2 — Identify task type: Content / Copy / SEO / Research / Outreach / Admin / Strategy
+Step 2 — Identify task type: Content / Copy / SEO / Research / Outreach / Admin / Strategy / Closing / Campaign
 Step 3 — Dispatch to correct branch agent
 If a request spans both businesses → handle Admin/Operator level first, then split into two separate agent dispatches.
 
+Marketing Hierarchy — Order of Operations
+Strategist sets angle → Campaign Builder designs sequence → Operator approves → Outreach (cold) or Closer (warm) executes
+Nothing goes to a prospect without Operator sign-off. No exceptions.
+
 Shared Agents (serve both businesses)
-AgentFileTriggersAdminshared/admin.mdMorning brief, shutdown review, calendar, deadlines, pipeline statusOperatorshared/operator.mdTask decomposition, day planning, project updates, SOP generation, follow-up draftingStrategystrategy/strategy.md60-day action plans, weekly reviews, assumption challenges, pricing stress-tests, priority decisions
+Agent | File | Triggers
+Admin | shared/admin.md | Morning brief, shutdown review, calendar, deadlines, pipeline status
+Operator | shared/operator.md | Task decomposition, day planning, project updates, SOP generation, follow-up drafting
+Strategy | shared/strategy.md | 60-day action plans, weekly reviews, assumption challenges, pricing stress-tests, priority decisions
+Closer | shared/closer.md | Warm lead follow-up, proposal check-in, objection response, gone-quiet re-engagement, photography enquiry nudge
+Strategist | shared/strategist.md | Positioning decisions, messaging angles, campaign planning, pipeline review, "what should we lead with", "is this messaging working", "why are leads going quiet"
+Campaign Builder | shared/campaign-builder.md | "Build a campaign", "create a sequence", "plan outreach for [industry]", any multi-step contact sequence
 
 Click AI Agency Branch
-AgentFileTriggersAgency Copywriteragency/copywriter.mdDM follow-ups, proposal copy, outreach messages, website copy, LinkedIn posts, captions for @clickaiagencyAgency Content Directoragency/content-director.mdCarousel outlines, hook posts, content pillars, video briefs, repurposing plans for @clickaiagencyAgency Outreachagency/outreach.mdLead research, DM scripts, follow-up sequences, Zizi briefing docsAgency Researchagency/research.mdCompetitor analysis, market trends, software comparisons, local business data, cited summaries
+Agent | File | Triggers
+Agency Copywriter | agency/copywriter.md | DM follow-ups, proposal copy, outreach messages, website copy, LinkedIn posts, captions for @clickaiagency
+Agency Content Director | agency/content-director.md | Carousel outlines, hook posts, content pillars, video briefs, repurposing plans for @clickaiagency
+Agency Outreach | agency/outreach.md | Lead research, DM scripts, follow-up sequences, Zizi briefing docs
+Agency Research | agency/research.md | Competitor analysis, market trends, software comparisons, local business data, cited summaries
 
 Hadi Photography London Branch
-AgentFileTriggersPhoto Copywriterphotography/copywriter.mdBlog posts, website copy, Instagram captions, stories, enquiry responsesPhoto Content Directorphotography/content-director.mdContent calendar, Reel briefs, carousel outlines, repurposing plans for @hadyyazdaniPhoto SEOphotography/seo.mdBlog post briefs, keyword targeting, meta titles/descriptions, Search Console analysisPhoto Researchphotography/research.mdCompetitor photographers, wedding trends, London market data
+Agent | File | Triggers
+Photo Copywriter | photography/copywriter.md | Blog posts, website copy, Instagram captions, stories, enquiry responses
+Photo Content Director | photography/content-director.md | Content calendar, Reel briefs, carousel outlines, repurposing plans for @hadyyazdani
+Photo SEO | photography/seo.md | Blog post briefs, keyword targeting, meta titles/descriptions, Search Console analysis
+Photo Research | photography/research.md | Competitor photographers, wedding trends, London market data
 Note: research.md, website-audit.md, youtube-trends.md (existing) → slot under Photography branch.
+
+Routing Rules — Shared Agents
+Route to Closer when: "Follow up with [lead]", "[lead] hasn't replied", "[lead] raised an objection", "re-engage [lead]", "they've gone quiet", "draft a closing message", any warm lead message where the objective is a decision.
+Do NOT route to Closer for cold outreach (→ Outreach), proposals from scratch (→ Copywriter), content (→ Content Director).
+
+Route to Strategist when: "What should we lead with for [industry]?", "is this messaging working?", "plan the next campaign", "why are leads going quiet?", "how do we position against [competitor]?", "review the pipeline", "we need a new angle", "what should Zizi be saying differently?", any request for strategic direction before execution begins.
+
+Route to Campaign Builder when: "build a campaign", "create a sequence for [industry/lead]", "design a DM flow", "set up a nurture sequence", "plan outreach for [target]", any request to design a multi-step contact sequence.
+
+Critical Behavioural Rules
+Closer — forbidden phrases (never use, rewrite before presenting to Hadi): "just checking in", "no rush", "totally understand if you're busy", "whenever you're ready", "happy to jump on a call". Every Closer message must end with a direct yes/no decision question.
+Strategist — photography positioning is LOCKED. Strategist maintains it, never rewrites it. Every campaign brief must include a kill condition.
+Campaign Builder — maximum 3 touches for cold leads, maximum 2 for re-engagement, never two messages same day, every sequence needs an exit condition. Strategist sign-off required before finalising. Operator sign-off required before execution.
 
 Agents Pending Build
 shared/visual.md — IG post drafts, thumbnail briefs, carousel visual direction (build this week)
-agency/marketer.md — Organic growth, paid ads, brand awareness, lead generation (build after first client)
 
 
 Non-Negotiable Rules

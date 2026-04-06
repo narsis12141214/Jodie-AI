@@ -1,0 +1,168 @@
+{
+  "name": "Workflow 2 — Opener Generation (Daily)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * 1-5"
+            }
+          ]
+        }
+      },
+      "id": "node-001",
+      "name": "Daily 9am Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "value": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "options": {}
+      },
+      "id": "node-002",
+      "name": "Read Lead Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [460, 300],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "name": "Google Sheets Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Filter rows where Status = 'New Lead' and Message Sent is empty\nconst allRows = $input.all();\nconst newLeads = allRows.filter(row => {\n  const status = (row.json['Status'] || '').trim();\n  const messageSent = (row.json['Message Sent'] || '').trim();\n  return status === 'New Lead' && messageSent === '';\n});\n\nconsole.log(`New leads to process: ${newLeads.length} of ${allRows.length} total rows`);\nreturn newLeads;",
+        "mode": "runOnceForAllItems"
+      },
+      "id": "node-003",
+      "name": "Filter New Leads",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate opener for this lead via Claude API\nconst lead = $input.first().json;\n\nconst bio = (lead['Notes'] || '').trim();\nconst businessName = (lead['Business Name'] || lead['Instagram Handle'] || 'there').trim();\nconst industry = (lead['Type'] || 'business').trim();\nconst location = (lead['Location'] || 'London').trim();\nconst followers = lead['Followers'] || 'unknown';\n\nconst prompt = `You are writing a cold Instagram DM opener for a sales outreach campaign.\n\nLead details:\n- Business Name: ${businessName}\n- Industry: ${industry}\n- Location: ${location}\n- Bio: ${bio || 'No bio available'}\n- Followers: ${followers}\n\nWrite ONE short opener DM using this exact formula:\n\"Hey [Business Name] - saw [something specific from their bio or profile]. [One genuine observation about it]. Would this be the best place to ask you a quick question?\"\n\nRules you must follow exactly:\n- Reference something REAL and SPECIFIC from the bio above - not generic\n- The observation must be genuine - find one thing worth saying\n- Under 3 lines total\n- NEVER mention AI, automation, agencies, or technology\n- NEVER use generic compliments (no \"Love what you're doing\", \"Amazing content\", \"Great work\", etc)\n- End with ONE question only\n- If the bio contains no useful specific information to reference, output exactly this text: REVIEW NEEDED - add profile detail before sending\n\nOutput the DM text only. No explanation. No surrounding quotes.`;\n\nconst response = await this.helpers.httpRequest({\n  method: 'POST',\n  url: 'https://api.anthropic.com/v1/messages',\n  headers: {\n    'x-api-key': 'YOUR_ANTHROPIC_API_KEY',\n    'anthropic-version': '2023-06-01',\n    'content-type': 'application/json'\n  },\n  body: {\n    model: 'claude-haiku-4-5-20251001',\n    max_tokens: 150,\n    messages: [{ role: 'user', content: prompt }]\n  },\n  json: true\n});\n\nconst opener = response.content[0].text.trim();\n\nreturn [{\n  json: {\n    ...lead,\n    opener: opener,\n    generated_at: new Date().toISOString().split('T')[0]\n  }\n}];"
+      },
+      "id": "node-004",
+      "name": "Generate Opener via Claude",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Instagram Handle": "={{ $json['Instagram Handle'] }}",
+            "Message Sent": "={{ $json.opener }}",
+            "Status": "Opener Ready"
+          },
+          "matchingColumns": ["Instagram Handle"]
+        },
+        "options": {}
+      },
+      "id": "node-005",
+      "name": "Update Lead Row",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [1120, 300],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "name": "Google Sheets Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Collect all processed leads and build one email summary\nconst items = $input.all();\n\nconst openerLines = items.map((item, i) => {\n  const handle = item.json['Instagram Handle'] || 'unknown';\n  const name = (item.json['Business Name'] || handle).trim();\n  const type = item.json['Type'] || '';\n  const opener = item.json.opener || '';\n  const needsReview = opener.startsWith('REVIEW NEEDED');\n  const flag = needsReview ? ' [NEEDS REVIEW]' : '';\n  return `${i + 1}. ${name} (${handle}) — ${type}${flag}\\n   ${opener}`;\n});\n\nconst reviewCount = items.filter(i => (i.json.opener || '').startsWith('REVIEW NEEDED')).length;\nconst readyCount = items.length - reviewCount;\nconst date = new Date().toISOString().split('T')[0];\n\nconst subject = `Zizi — ${items.length} opener${items.length !== 1 ? 's' : ''} ready (${date})`;\n\nconst body = `Workflow 2 — Opener Generation Complete\n\nDate: ${date}\nTotal processed: ${items.length}\nReady to send: ${readyCount}\nNeeds manual review: ${reviewCount}\n\n---\n\n${openerLines.join('\\n\\n')}\n\n---\n\nAll openers written to Google Sheet under \"Message Sent\" column.\nStatus updated to \"Opener Ready\".\n\nZizi: review each opener, personalise if needed, then send from the lead's profile.\nFlag anything that looks wrong before sending.`;\n\nreturn [{\n  json: {\n    subject: subject,\n    body: body,\n    count: items.length,\n    ready: readyCount,\n    review: reviewCount\n  }\n}];",
+        "mode": "runOnceForAllItems"
+      },
+      "id": "node-006",
+      "name": "Build Email Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "sendTo": "hadiphotographylondon@gmail.com",
+        "subject": "={{ $json.subject }}",
+        "emailType": "text",
+        "message": "={{ $json.body }}",
+        "options": {}
+      },
+      "id": "node-007",
+      "name": "Send Email to Hadi",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [1560, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "GMAIL_CREDENTIAL_ID",
+          "name": "Gmail Account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 9am Trigger": {
+      "main": [[{"node": "Read Lead Sheet", "type": "main", "index": 0}]]
+    },
+    "Read Lead Sheet": {
+      "main": [[{"node": "Filter New Leads", "type": "main", "index": 0}]]
+    },
+    "Filter New Leads": {
+      "main": [[{"node": "Generate Opener via Claude", "type": "main", "index": 0}]]
+    },
+    "Generate Opener via Claude": {
+      "main": [[{"node": "Update Lead Row", "type": "main", "index": 0}]]
+    },
+    "Update Lead Row": {
+      "main": [[{"node": "Build Email Summary", "type": "main", "index": 0}]]
+    },
+    "Build Email Summary": {
+      "main": [[{"node": "Send Email to Hadi", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [{"name": "Agency"}, {"name": "Outreach"}]
+}
