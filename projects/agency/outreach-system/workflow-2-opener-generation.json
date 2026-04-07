@@ -31,7 +31,10 @@
           "value": "Sheet1",
           "mode": "name"
         },
-        "options": {}
+        "options": {
+          "range": "A3:R",
+          "executeOnce": true
+        }
       },
       "id": "node-002",
       "name": "Read Lead Sheet",
@@ -43,28 +46,32 @@
           "id": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
           "name": "Google Sheets Account"
         }
-      }
+      },
+      "notes": "Range restricted to A3:R to avoid unnamed extra columns beyond R. Unnamed columns get internally named 'json' by N8N causing a conflict downstream. Execute Once ON."
     },
     {
       "parameters": {
-        "jsCode": "// Filter rows where Status = 'New Lead' and Message Sent is empty\nconst allRows = $input.all();\nconst newLeads = allRows.filter(row => {\n  const status = (row.json['Status'] || '').trim();\n  const messageSent = (row.json['Message Sent'] || '').trim();\n  return status === 'New Lead' && messageSent === '';\n});\n\nconsole.log(`New leads to process: ${newLeads.length} of ${allRows.length} total rows`);\nreturn newLeads;",
+        "jsCode": "// Filter rows where Status = 'New Lead' and Message Sent is empty\n// Also strips rogue 'json' field that appears when sheet has unnamed columns\nconst allRows = $input.all();\nconst cleanLeads = [];\n\nfor (const row of allRows) {\n  const status = (row.json['Status'] || '').trim();\n  const messageSent = (row.json['Message Sent'] || '').trim();\n\n  if (status !== 'New Lead' || messageSent !== '') continue;\n\n  // Strip any rogue 'json' key — unnamed sheet columns get this name internally in N8N\n  // Spreading these items later causes: A 'json' property isn't an object\n  const cleaned = {};\n  for (const key of Object.keys(row.json)) {\n    if (key === 'json') continue;\n    cleaned[key] = row.json[key];\n  }\n\n  cleanLeads.push({ json: cleaned });\n}\n\nconsole.log('New leads to process: ' + cleanLeads.length + ' of ' + allRows.length + ' total rows');\nreturn cleanLeads;",
         "mode": "runOnceForAllItems"
       },
       "id": "node-003",
       "name": "Filter New Leads",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [680, 300]
+      "position": [680, 300],
+      "notes": "Must return cleanLeads (not newLeads). Strips rogue 'json' field from all items before returning. Without this, the Generate Opener node errors: A 'json' property isn't an object."
     },
     {
       "parameters": {
-        "jsCode": "// Generate opener for this lead via Claude API\nconst lead = $input.first().json;\n\nconst bio = (lead['Notes'] || '').trim();\nconst businessName = (lead['Business Name'] || lead['Instagram Handle'] || 'there').trim();\nconst industry = (lead['Type'] || 'business').trim();\nconst location = (lead['Location'] || 'London').trim();\nconst followers = lead['Followers'] || 'unknown';\n\nconst prompt = `You are writing a cold Instagram DM opener for a sales outreach campaign.\n\nLead details:\n- Business Name: ${businessName}\n- Industry: ${industry}\n- Location: ${location}\n- Bio: ${bio || 'No bio available'}\n- Followers: ${followers}\n\nWrite ONE short opener DM using this exact formula:\n\"Hey [Business Name] - saw [something specific from their bio or profile]. [One genuine observation about it]. Would this be the best place to ask you a quick question?\"\n\nRules you must follow exactly:\n- Reference something REAL and SPECIFIC from the bio above - not generic\n- The observation must be genuine - find one thing worth saying\n- Under 3 lines total\n- NEVER mention AI, automation, agencies, or technology\n- NEVER use generic compliments (no \"Love what you're doing\", \"Amazing content\", \"Great work\", etc)\n- End with ONE question only\n- If the bio contains no useful specific information to reference, output exactly this text: REVIEW NEEDED - add profile detail before sending\n\nOutput the DM text only. No explanation. No surrounding quotes.`;\n\nconst response = await this.helpers.httpRequest({\n  method: 'POST',\n  url: 'https://api.anthropic.com/v1/messages',\n  headers: {\n    'x-api-key': 'YOUR_ANTHROPIC_API_KEY',\n    'anthropic-version': '2023-06-01',\n    'content-type': 'application/json'\n  },\n  body: {\n    model: 'claude-haiku-4-5-20251001',\n    max_tokens: 150,\n    messages: [{ role: 'user', content: prompt }]\n  },\n  json: true\n});\n\nconst opener = response.content[0].text.trim();\n\nreturn [{\n  json: {\n    ...lead,\n    opener: opener,\n    generated_at: new Date().toISOString().split('T')[0]\n  }\n}];"
+        "jsCode": "// Generate opener for each lead via Claude API — loops internally, one call per lead\n// Mode: Run Once for All Items — uses $input.all() and returns an array\nconst items = $input.all();\nconst results = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const lead = items[i].json;\n\n  // Explicitly pick named fields — never spread sheet data\n  const bio = String(lead['Notes'] || '').trim();\n  const businessName = String(lead['Business Name'] || lead['Instagram Handle'] || 'there').trim();\n  const industry = String(lead['Type'] || 'business').trim();\n  const location = String(lead['Location'] || 'London').trim();\n  const followers = lead['Followers'] || 'unknown';\n  const rowNumber = lead['row_number'] || (i + 2); // row_number from sheet, fallback to index\n  const handle = String(lead['Instagram Handle'] || '').trim();\n\n  const prompt = 'You are writing a cold Instagram DM opener for a sales outreach campaign.\\n\\n'\n    + 'Lead details:\\n'\n    + '- Business Name: ' + businessName + '\\n'\n    + '- Industry: ' + industry + '\\n'\n    + '- Location: ' + location + '\\n'\n    + '- Bio: ' + (bio || 'No bio available') + '\\n'\n    + '- Followers: ' + followers + '\\n\\n'\n    + 'Write ONE short opener DM using this exact formula:\\n'\n    + '\"Hey [Business Name] - saw [something specific from their bio or profile]. [One genuine observation about it]. Would this be the best place to ask you a quick question?\"\\n\\n'\n    + 'Rules you must follow exactly:\\n'\n    + '- Reference something REAL and SPECIFIC from the bio above - not generic\\n'\n    + '- The observation must be genuine - find one thing worth saying\\n'\n    + '- Under 3 lines total\\n'\n    + '- NEVER mention AI, automation, agencies, or technology\\n'\n    + '- NEVER use generic compliments (no \"Love what you\\'re doing\", \"Amazing content\", \"Great work\", etc)\\n'\n    + '- End with ONE question only\\n'\n    + '- If the bio contains no useful specific information to reference, output exactly this text: REVIEW NEEDED - add profile detail before sending\\n\\n'\n    + 'Output the DM text only. No explanation. No surrounding quotes.';\n\n  const response = await this.helpers.httpRequest({\n    method: 'POST',\n    url: 'https://api.anthropic.com/v1/messages',\n    headers: {\n      'x-api-key': 'YOUR_ANTHROPIC_API_KEY',\n      'anthropic-version': '2023-06-01',\n      'content-type': 'application/json'\n    },\n    body: {\n      model: 'claude-haiku-4-5',\n      max_tokens: 150,\n      messages: [{ role: 'user', content: prompt }]\n    },\n    json: true\n  });\n\n  const opener = response.content[0].text.trim();\n\n  results.push({\n    json: {\n      row_number: rowNumber,\n      business_name: businessName,\n      instagram_handle: handle,\n      industry: industry,\n      status: 'Opener Ready',\n      opener: opener,\n      generated_at: new Date().toISOString().split('T')[0]\n    }\n  });\n}\n\nreturn results;",
+        "mode": "runOnceForAllItems"
       },
       "id": "node-004",
       "name": "Generate Opener via Claude",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [900, 300]
+      "position": [900, 300],
+      "notes": "Mode: Run Once for All Items. Loops internally — one Claude API call per lead. Uses string concatenation not template literals to avoid N8N parsing issues. Never spreads sheet data. Output fields: row_number, business_name, instagram_handle, industry, status, opener, generated_at."
     },
     {
       "parameters": {
@@ -82,11 +89,10 @@
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "Instagram Handle": "={{ $json['Instagram Handle'] }}",
             "Message Sent": "={{ $json.opener }}",
-            "Status": "Opener Ready"
+            "Status": "={{ $json.status }}"
           },
-          "matchingColumns": ["Instagram Handle"]
+          "matchingColumns": ["row_number"]
         },
         "options": {}
       },
@@ -100,18 +106,20 @@
           "id": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
           "name": "Google Sheets Account"
         }
-      }
+      },
+      "notes": "Column to match on: row_number. Without this set, N8N returns: Could not find column for key 'undefined'."
     },
     {
       "parameters": {
-        "jsCode": "// Collect all processed leads and build one email summary\nconst items = $input.all();\n\nconst openerLines = items.map((item, i) => {\n  const handle = item.json['Instagram Handle'] || 'unknown';\n  const name = (item.json['Business Name'] || handle).trim();\n  const type = item.json['Type'] || '';\n  const opener = item.json.opener || '';\n  const needsReview = opener.startsWith('REVIEW NEEDED');\n  const flag = needsReview ? ' [NEEDS REVIEW]' : '';\n  return `${i + 1}. ${name} (${handle}) — ${type}${flag}\\n   ${opener}`;\n});\n\nconst reviewCount = items.filter(i => (i.json.opener || '').startsWith('REVIEW NEEDED')).length;\nconst readyCount = items.length - reviewCount;\nconst date = new Date().toISOString().split('T')[0];\n\nconst subject = `Zizi — ${items.length} opener${items.length !== 1 ? 's' : ''} ready (${date})`;\n\nconst body = `Workflow 2 — Opener Generation Complete\n\nDate: ${date}\nTotal processed: ${items.length}\nReady to send: ${readyCount}\nNeeds manual review: ${reviewCount}\n\n---\n\n${openerLines.join('\\n\\n')}\n\n---\n\nAll openers written to Google Sheet under \"Message Sent\" column.\nStatus updated to \"Opener Ready\".\n\nZizi: review each opener, personalise if needed, then send from the lead's profile.\nFlag anything that looks wrong before sending.`;\n\nreturn [{\n  json: {\n    subject: subject,\n    body: body,\n    count: items.length,\n    ready: readyCount,\n    review: reviewCount\n  }\n}];",
+        "jsCode": "// Build email summary — string concatenation only, no template literals\n// Template literals with backticks cause N8N parsing issues in Code nodes\nconst items = $input.all();\n\nvar openerLines = '';\nvar reviewCount = 0;\nvar readyCount = 0;\n\nfor (var i = 0; i < items.length; i++) {\n  var handle = items[i].json.instagram_handle || 'unknown';\n  var name = items[i].json.business_name || handle;\n  var type = items[i].json.industry || '';\n  var opener = items[i].json.opener || '';\n  var needsReview = opener.indexOf('REVIEW NEEDED') === 0;\n\n  if (needsReview) {\n    reviewCount++;\n    openerLines += (i + 1) + '. ' + name + ' (' + handle + ') — ' + type + ' [NEEDS REVIEW]\\n   ' + opener + '\\n\\n';\n  } else {\n    readyCount++;\n    openerLines += (i + 1) + '. ' + name + ' (' + handle + ') — ' + type + '\\n   ' + opener + '\\n\\n';\n  }\n}\n\nvar date = new Date().toISOString().split('T')[0];\nvar total = items.length;\n\nvar subject = 'Zizi — ' + total + (total !== 1 ? ' openers' : ' opener') + ' ready (' + date + ')';\n\nvar body = 'Workflow 2 — Opener Generation Complete\\n\\n'\n  + 'Date: ' + date + '\\n'\n  + 'Total processed: ' + total + '\\n'\n  + 'Ready to send: ' + readyCount + '\\n'\n  + 'Needs manual review: ' + reviewCount + '\\n\\n'\n  + '---\\n\\n'\n  + openerLines\n  + '---\\n\\n'\n  + 'All openers written to Google Sheet under \"Message Sent\" column.\\n'\n  + 'Status updated to \"Opener Ready\".\\n\\n'\n  + 'Zizi: review each opener, personalise if needed, then send from the lead\\'s profile.\\n'\n  + 'Flag anything that looks wrong before sending.';\n\nreturn [{\n  json: {\n    subject: subject,\n    body: body,\n    count: total,\n    ready: readyCount,\n    review: reviewCount\n  }\n}];",
         "mode": "runOnceForAllItems"
       },
       "id": "node-006",
       "name": "Build Email Summary",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [1340, 300]
+      "position": [1340, 300],
+      "notes": "Uses string concatenation — not template literals. Template literals with backticks cause N8N parsing issues. Field names must match Generate Opener output exactly: instagram_handle, business_name, industry, opener."
     },
     {
       "parameters": {
@@ -162,7 +170,15 @@
   },
   "staticData": null,
   "meta": {
-    "templateCredsSetupCompleted": false
+    "templateCredsSetupCompleted": false,
+    "lastUpdated": "2026-04-07",
+    "changelog": [
+      "2026-04-07: Read Lead Sheet range restricted to A3:R — cuts off unnamed columns that create rogue 'json' field",
+      "2026-04-07: Filter New Leads now strips rogue 'json' field from all items, returns cleanLeads",
+      "2026-04-07: Generate Opener — mode Run Once for All Items, loops internally per lead, string concat not template literals, never spreads sheet data",
+      "2026-04-07: Update Lead Row — match column set to row_number (was undefined, causing 'Could not find column' error)",
+      "2026-04-07: Build Email Summary — full rewrite using string concatenation, field names aligned to Generate Opener output"
+    ]
   },
   "tags": [{"name": "Agency"}, {"name": "Outreach"}]
 }

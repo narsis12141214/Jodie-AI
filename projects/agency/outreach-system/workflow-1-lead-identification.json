@@ -58,13 +58,68 @@
     },
     {
       "parameters": {
-        "jsCode": "// Filter profiles by follower count and recency, then map to outreach tracker columns\nconst MIN_FOLLOWERS = 500;\nconst MAX_FOLLOWERS = 5000;\nconst MAX_DAYS_SINCE_LAST_POST = 21;\n\nconst results = [];\nconst now = new Date();\n\nfor (const item of $input.all()) {\n  const profile = item.json;\n\n  if (!profile.username) continue;\n\n  const followers = profile.followersCount || profile.followers || 0;\n  if (followers < MIN_FOLLOWERS || followers > MAX_FOLLOWERS) continue;\n\n  // Recency filter — skip accounts with no post in the last 21 days\n  const lastPostRaw = profile.latestIgtvVideo?.timestamp ||\n                      profile.latestPost?.timestamp ||\n                      profile.postsTimelineList?.[0]?.timestamp || '';\n  if (lastPostRaw) {\n    const daysSincePost = (now - new Date(lastPostRaw)) / (1000 * 60 * 60 * 24);\n    if (daysSincePost > MAX_DAYS_SINCE_LAST_POST) continue;\n  } else {\n    // No post date available — skip to be safe\n    continue;\n  }\n\n  const lastPostDate = new Date(lastPostRaw).toISOString().split('T')[0];\n\n  // Determine type (industry)\n  const category = (profile.businessCategoryName || '').toLowerCase();\n  const bio = (profile.biography || '').toLowerCase();\n\n  let type = 'Other';\n  if (category.includes('restaurant') || category.includes('cafe') || category.includes('food') ||\n      bio.includes('restaurant') || bio.includes('cafe') || bio.includes('coffee')) {\n    type = 'Restaurant / Cafe';\n  } else if (category.includes('beauty') || category.includes('aesthetic') || category.includes('clinic') ||\n             category.includes('skin') || bio.includes('aesthetic') || bio.includes('beauty clinic') ||\n             bio.includes('skin clinic')) {\n    type = 'Beauty / Aesthetics';\n  }\n\n  // Try to extract a London location signal from bio\n  let location = 'London';\n  const locationMatch = bio.match(/([a-z\\s]+),?\\s*london/i) || bio.match(/london[,\\s]+([a-z\\s]+)/i);\n  if (locationMatch) {\n    location = locationMatch[0].trim().replace(/\\n/g, ' ').substring(0, 50);\n  }\n\n  results.push({\n    json: {\n      'Business Name': profile.fullName || profile.username,\n      'Type': type,\n      'Location': location,\n      'Instagram Handle': '@' + profile.username,\n      'Followers': followers,\n      'Last Post': lastPostDate,\n      'Problem Identified': '',\n      'First Contact Date': '',\n      'Channel': 'Instagram DM',\n      'Message Sent': '',\n      'Response': '',\n      'Status': 'New Lead',\n      'Follow Up Date': '',\n      'Notes': (profile.biography || '').substring(0, 150)\n    }\n  });\n}\n\n// Deduplicate within this batch\nconst seen = new Set();\nreturn results.filter(r => {\n  const h = r.json['Instagram Handle'].toLowerCase();\n  if (seen.has(h)) return false;\n  seen.add(h);\n  return true;\n});"
+        "jsCode": "// Filter profiles by follower count and recency, then map to outreach tracker columns\nconst MIN_FOLLOWERS = 500;\nconst MAX_FOLLOWERS = 5000;\nconst MAX_DAYS_SINCE_LAST_POST = 21;\n\nconst results = [];\nconst now = new Date();\n\nfor (const item of $input.all()) {\n  const profile = item.json;\n\n  if (!profile.username) continue;\n\n  const followers = profile.followersCount || profile.followers || 0;\n  if (followers < MIN_FOLLOWERS || followers > MAX_FOLLOWERS) continue;\n\n  // Recency filter — skip accounts with no post in the last 21 days\n  const lastPostRaw = profile.latestIgtvVideo?.timestamp ||\n                      profile.latestPost?.timestamp ||\n                      profile.postsTimelineList?.[0]?.timestamp || '';\n  if (lastPostRaw) {\n    const daysSincePost = (now - new Date(lastPostRaw)) / (1000 * 60 * 60 * 24);\n    if (daysSincePost > MAX_DAYS_SINCE_LAST_POST) continue;\n  } else {\n    continue;\n  }\n\n  const lastPostDate = new Date(lastPostRaw).toISOString().split('T')[0];\n\n  const category = (profile.businessCategoryName || '').toLowerCase();\n  const bio = (profile.biography || '').toLowerCase();\n\n  let type = 'Other';\n  if (category.includes('restaurant') || category.includes('cafe') || category.includes('food') ||\n      bio.includes('restaurant') || bio.includes('cafe') || bio.includes('coffee')) {\n    type = 'Restaurant / Cafe';\n  } else if (category.includes('beauty') || category.includes('aesthetic') || category.includes('clinic') ||\n             category.includes('skin') || bio.includes('aesthetic') || bio.includes('beauty clinic') ||\n             bio.includes('skin clinic')) {\n    type = 'Beauty / Aesthetics';\n  }\n\n  let location = 'London';\n  const locationMatch = bio.match(/([a-z\\s]+),?\\s*london/i) || bio.match(/london[,\\s]+([a-z\\s]+)/i);\n  if (locationMatch) {\n    location = locationMatch[0].trim().replace(/\\n/g, ' ').substring(0, 50);\n  }\n\n  results.push({\n    json: {\n      'Business Name': profile.fullName || profile.username,\n      'Type': type,\n      'Location': location,\n      'Instagram Handle': '@' + profile.username,\n      'Followers': followers,\n      'Last Post': lastPostDate,\n      'Problem Identified': '',\n      'First Contact Date': '',\n      'Channel': 'Instagram DM',\n      'Message Sent': '',\n      'Response': '',\n      'Status': 'New Lead',\n      'Follow Up Date': '',\n      'Notes': (profile.biography || '').substring(0, 150)\n    }\n  });\n}\n\nconst seen = new Set();\nreturn results.filter(r => {\n  const h = r.json['Instagram Handle'].toLowerCase();\n  if (seen.has(h)) return false;\n  seen.add(h);\n  return true;\n});"
       },
       "id": "node-005",
       "name": "Filter & Format Leads",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/apify~instagram-profile-scraper/runs?token=YOUR_APIFY_API_KEY",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ usernames: $input.all().slice(0, 20).map(i => i.json['Instagram Handle'].replace('@', '')) }) }}",
+        "options": {
+          "executeOnce": true
+        }
+      },
+      "id": "node-010",
+      "name": "Start Profile Scraper",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1340, 300],
+      "notes": "Execute Once must be ON. Apify actor: apify~instagram-profile-scraper. Limited to 20 usernames — free tier memory limit (8192MB). Body must be JSON array of usernames, not comma-separated."
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "minutes"
+      },
+      "id": "node-011",
+      "name": "Wait 3 Minutes",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1560, 300],
+      "webhookId": "lead-ident-wait-002",
+      "notes": "Profile scraper takes ~40 seconds for 20 profiles. 2 minutes is safe minimum."
+    },
+    {
+      "parameters": {
+        "url": "=https://api.apify.com/v2/actor-runs/{{$('Start Profile Scraper').item.json.data.id}}/dataset/items?token=YOUR_APIFY_API_KEY&clean=true",
+        "options": {}
+      },
+      "id": "node-012",
+      "name": "Fetch Profile Results",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1780, 300],
+      "notes": "URL must be in expression mode (fx toggle) — not a literal string. Uses run ID from Start Profile Scraper."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge real profile bios and follower counts into the filtered lead list\n// Falls back to post caption if no bio found\nconst filteredLeads = $('Filter & Format Leads').all();\nconst profileResults = $input.all();\n\n// Build a map of username -> profile data for O(1) lookup\nconst profileMap = {};\nfor (const item of profileResults) {\n  const p = item.json;\n  const username = (p.username || p.inputUrl || '').toLowerCase().replace('@', '');\n  if (username) {\n    profileMap[username] = {\n      bio: p.biography || p.description || '',\n      followers: p.followersCount || p.followers || null\n    };\n  }\n}\n\nconst merged = filteredLeads.map(lead => {\n  const handle = (lead.json['Instagram Handle'] || '').replace('@', '').toLowerCase();\n  const profile = profileMap[handle];\n\n  let notes = lead.json['Notes'] || '';\n  let followers = lead.json['Followers'];\n\n  if (profile) {\n    if (profile.bio && profile.bio.trim()) {\n      notes = profile.bio.substring(0, 150);\n    } else if (!notes) {\n      notes = 'Check manually — no bio returned';\n    }\n    if (profile.followers !== null) {\n      followers = profile.followers;\n    }\n  } else {\n    notes = notes || 'Check manually — profile not found in scrape';\n  }\n\n  return {\n    json: {\n      ...lead.json,\n      'Notes': notes,\n      'Followers': followers\n    }\n  };\n});\n\nreturn merged;",
+        "mode": "runOnceForAllItems"
+      },
+      "id": "node-013",
+      "name": "Merge Profile Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2000, 300],
+      "notes": "Pulls biography and followersCount from profile scraper results. Falls back to post caption. Remove Duplicates must reference this node — not Filter & Format Leads."
     },
     {
       "parameters": {
@@ -79,29 +134,34 @@
           "value": "Sheet1",
           "mode": "name"
         },
-        "options": {}
+        "options": {
+          "executeOnce": true
+        }
       },
       "id": "node-006",
       "name": "Get Existing Leads",
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.4,
-      "position": [1340, 300],
+      "position": [2220, 300],
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "GOOGLE_SHEETS_CREDENTIAL_ID",
           "name": "Google Sheets Account"
         }
-      }
+      },
+      "notes": "Execute Once must be ON."
     },
     {
       "parameters": {
-        "jsCode": "// Deduplicate against existing sheet rows using Instagram Handle\nconst newLeads = $('Filter & Format Leads').all();\nconst existingRows = $('Get Existing Leads').all();\n\nconst existingHandles = new Set(\n  existingRows.map(r => (r.json['Instagram Handle'] || '').toLowerCase())\n);\n\nconst fresh = newLeads.filter(lead => {\n  const handle = (lead.json['Instagram Handle'] || '').toLowerCase();\n  return handle && !existingHandles.has(handle);\n});\n\nconsole.log(`Fresh leads: ${fresh.length} of ${newLeads.length} total scraped`);\nreturn fresh;"
+        "jsCode": "// Deduplicate against existing sheet rows using Instagram Handle\n// Must reference Merge Profile Data — not Filter & Format Leads\nconst newLeads = $('Merge Profile Data').all();\nconst existingRows = $('Get Existing Leads').all();\n\nconst existingHandles = new Set(\n  existingRows.map(r => (r.json['Instagram Handle'] || '').toLowerCase())\n);\n\nconst fresh = newLeads.filter(lead => {\n  const handle = (lead.json['Instagram Handle'] || '').toLowerCase();\n  return handle && !existingHandles.has(handle);\n});\n\nconsole.log('Fresh leads: ' + fresh.length + ' of ' + newLeads.length + ' total scraped');\nreturn fresh;",
+        "mode": "runOnceForAllItems"
       },
       "id": "node-007",
       "name": "Remove Duplicates",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [1560, 300]
+      "position": [2440, 300],
+      "notes": "References Merge Profile Data — not Filter & Format Leads. Using wrong source bypasses all merged bio data."
     },
     {
       "parameters": {
@@ -130,7 +190,7 @@
       "name": "Any New Leads?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
-      "position": [1780, 300]
+      "position": [2660, 300]
     },
     {
       "parameters": {
@@ -146,23 +206,7 @@
           "mode": "name"
         },
         "columns": {
-          "mappingMode": "defineBelow",
-          "value": {
-            "Business Name": "={{ $json['Business Name'] }}",
-            "Type": "={{ $json['Type'] }}",
-            "Location": "={{ $json['Location'] }}",
-            "Instagram Handle": "={{ $json['Instagram Handle'] }}",
-            "Followers": "={{ $json['Followers'] }}",
-            "Last Post": "={{ $json['Last Post'] }}",
-            "Problem Identified": "",
-            "First Contact Date": "",
-            "Channel": "={{ $json['Channel'] }}",
-            "Message Sent": "",
-            "Response": "",
-            "Status": "={{ $json['Status'] }}",
-            "Follow Up Date": "",
-            "Notes": "={{ $json['Notes'] }}"
-          }
+          "mappingMode": "autoMapInputData"
         },
         "options": {
           "valueInputMode": "RAW"
@@ -172,13 +216,14 @@
       "name": "Append to Lead Sheet",
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.4,
-      "position": [2000, 200],
+      "position": [2880, 200],
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "GOOGLE_SHEETS_CREDENTIAL_ID",
           "name": "Google Sheets Account"
         }
-      }
+      },
+      "notes": "Mapping mode: Map Automatically (autoMapInputData). Do not use defineBelow — hardcoded schemas go stale when columns are added to the sheet after the workflow was built."
     }
   ],
   "connections": {
@@ -195,6 +240,18 @@
       "main": [[{"node": "Filter & Format Leads", "type": "main", "index": 0}]]
     },
     "Filter & Format Leads": {
+      "main": [[{"node": "Start Profile Scraper", "type": "main", "index": 0}]]
+    },
+    "Start Profile Scraper": {
+      "main": [[{"node": "Wait 3 Minutes", "type": "main", "index": 0}]]
+    },
+    "Wait 3 Minutes": {
+      "main": [[{"node": "Fetch Profile Results", "type": "main", "index": 0}]]
+    },
+    "Fetch Profile Results": {
+      "main": [[{"node": "Merge Profile Data", "type": "main", "index": 0}]]
+    },
+    "Merge Profile Data": {
       "main": [[{"node": "Get Existing Leads", "type": "main", "index": 0}]]
     },
     "Get Existing Leads": {
@@ -218,7 +275,15 @@
   },
   "staticData": null,
   "meta": {
-    "templateCredsSetupCompleted": false
+    "templateCredsSetupCompleted": false,
+    "lastUpdated": "2026-04-07",
+    "changelog": [
+      "2026-04-07: Added two-stage profile scrape — Start Profile Scraper, Wait 3 Minutes, Fetch Profile Results, Merge Profile Data inserted between Filter & Format Leads and Get Existing Leads",
+      "2026-04-07: Remove Duplicates updated to reference Merge Profile Data (not Filter & Format Leads)",
+      "2026-04-07: Append to Lead Sheet switched to Map Automatically — hardcoded schema was going stale",
+      "2026-04-07: Execute Once enabled on Get Existing Leads and Start Profile Scraper",
+      "2026-04-07: Profile scraper limited to 20 usernames — free tier 8192MB memory limit"
+    ]
   },
   "tags": [{"name": "Agency"}, {"name": "Outreach"}]
 }

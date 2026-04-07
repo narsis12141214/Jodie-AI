@@ -64,6 +64,10 @@ Pipeline:
 ## NEXT WEEK (Days 8–14)
 - [ ] Photography voice agent / receptionist — Vapi build for @hadiphotographylondon inbound calls — Hadi/Jodie
 
+## COMPLETED — 2026-04-07
+- [x] 2026-04-07: Workflow 1 upgraded — two-stage scrape added (Start Profile Scraper, Wait, Fetch Profile Results, Merge Profile Data). Remove Duplicates fixed to reference Merge Profile Data. Append to Lead Sheet switched to Map Automatically.
+- [x] 2026-04-07: Workflow 2 built and fixed — Filter New Leads strips rogue 'json' field, Read Lead Sheet restricted to A3:R, Generate Opener loops internally (Run Once for All Items), Update Lead Row matches on row_number, Build Email Summary uses string concatenation.
+
 ## COMPLETED — 2026-04-06
 - [x] 2026-04-06: Workflow 2 (opener generation) built — Claude Haiku generates personalised Step 1 openers from lead sheet, writes back to "Message Sent", emails daily summary
 - [x] 2026-04-06: closer.md deployed — warm lead follow-up and closing messages for both businesses
