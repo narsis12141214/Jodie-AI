@@ -64,6 +64,31 @@ Pipeline:
 ## NEXT WEEK (Days 8–14)
 - [ ] Photography voice agent / receptionist — Vapi build for @hadiphotographylondon inbound calls — Hadi/Jodie
 
+## TOMORROW (Wednesday 8 April — Day 8 of 60)
+
+**PRIORITY 1 (Agency): Brief Zizi — opener sheet, Step 1 instructions, daily target 8-10 DMs**
+**PRIORITY 2 (Photography): Answer 5 blog post #6 questions (pre-wedding photoshoot london)**
+
+Agency:
+- [ ] Brief Zizi — share opener sheet, explain Opener Ready status, Step 1 formula, daily target — Hadi
+- [ ] Maria — follow up if no reply (message sent 7 Apr, chase Wednesday) — Hadi
+- [ ] Build Workflow 3 — follow-up reminder, 3-day trigger — Jodie + Hadi — by Day 10 (Thu 10 Apr)
+- [ ] Build Workflow 4 — CRM auto-logging — Jodie + Hadi — by Day 10 (Thu 10 Apr)
+
+Photography:
+- [ ] Answer 5 blog post #6 input questions — Hadi — Wednesday morning
+- [ ] Blog post #6 brief — Jodie (after answers received)
+- [ ] @hadyyazdani — confirm Post 1 photo (St Dunstan proposal) for Monday 13 April launch — Hadi
+
+Weekend (11-12 April):
+- [ ] Film 2 @hadyyazdani Reels — Post 2 script (permission to elope) + Post 7 script (never feel awkward) — Hadi
+- [ ] Film 5 @clickaiagency Reels — scripts in agency 30-day calendar — Hadi
+- [ ] Drop @hadyyazdani Week 1 photos in Drive folder (Post 1–5) — Hadi
+
+Pipeline:
+- [ ] Maria — follow up Wednesday if silent
+- [ ] Humble Grape — await reply (message sent today, 48hr window — decision Thursday)
+
 ## COMPLETED — 2026-04-07
 - [x] 2026-04-07: Workflow 1 upgraded — two-stage scrape added (Start Profile Scraper, Wait, Fetch Profile Results, Merge Profile Data). Remove Duplicates fixed to reference Merge Profile Data. Append to Lead Sheet switched to Map Automatically.
 - [x] 2026-04-07: Workflow 2 built and fixed — Filter New Leads strips rogue 'json' field, Read Lead Sheet restricted to A3:R, Generate Opener loops internally (Run Once for All Items), Update Lead Row matches on row_number, Build Email Summary uses string concatenation.
