@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@hadyyazdani — 30-Day Instagram Calendar</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #f7f5f2;
+    color: #1a1a1a;
+    line-height: 1.7;
+  }
+
+  .cover {
+    background: #1a1a1a;
+    color: #f7f5f2;
+    padding: 80px 60px;
+    text-align: center;
+  }
+  .cover h1 { font-size: 2.8rem; font-weight: normal; letter-spacing: 0.05em; margin-bottom: 12px; }
+  .cover p { font-size: 1rem; opacity: 0.6; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .legend {
+    background: #fff;
+    padding: 40px 60px;
+    border-bottom: 1px solid #e8e4df;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .legend-section h3 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: #888; margin-bottom: 16px; }
+  .legend-item { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 0.85rem; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
+
+  .badge-single { background: #dce8f5; color: #1a4a7a; }
+  .badge-carousel { background: #fde8cc; color: #7a3d00; }
+  .badge-reel { background: #e0f5e0; color: #1a6b1a; }
+  .badge-text { background: #ede8f5; color: #4a1a7a; }
+
+  .badge-work { background: #1a1a1a; color: #fff; }
+  .badge-experience { background: #5a4a3a; color: #fff; }
+  .badge-education { background: #3a5a4a; color: #fff; }
+  .badge-story { background: #4a3a5a; color: #fff; }
+  .badge-social { background: #5a3a3a; color: #fff; }
+
+  .badge-a { background: #f5e8e8; color: #7a1a1a; border: 1px solid #e8cccc; }
+  .badge-b { background: #e8f0f5; color: #1a3a5a; border: 1px solid #ccdde8; }
+
+  .week-header {
+    background: #1a1a1a;
+    color: #f7f5f2;
+    padding: 20px 60px;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .posts-grid {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 30px;
+  }
+
+  .post-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e8e4df;
+  }
+
+  .post-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid #f0ece8;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .post-number {
+    font-size: 0.7rem;
+    color: #aaa;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .post-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  .post-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .post-body { padding: 20px 24px; }
+
+  .section-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #bbb;
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+  .section-label:first-child { margin-top: 0; }
+
+  .hook-text {
+    font-size: 0.85rem;
+    color: #5a3a3a;
+    background: #fdf5f5;
+    border-left: 3px solid #e8cccc;
+    padding: 8px 12px;
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+
+  .visual-text {
+    font-size: 0.85rem;
+    color: #666;
+    background: #f9f7f5;
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+
+  .caption-block {
+    margin-top: 4px;
+  }
+
+  .caption-a {
+    background: #fdf5f5;
+    border-left: 3px solid #c0392b;
+    padding: 12px 14px;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+    margin-bottom: 8px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .caption-b {
+    background: #f0f5fb;
+    border-left: 3px solid #2980b9;
+    padding: 12px 14px;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+    margin-bottom: 8px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .caption-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .caption-label.a { color: #c0392b; }
+  .caption-label.b { color: #2980b9; }
+
+  .slides-list {
+    list-style: none;
+    counter-reset: slides;
+  }
+  .slides-list li {
+    counter-increment: slides;
+    padding: 6px 0 6px 28px;
+    position: relative;
+    font-size: 0.85rem;
+    color: #444;
+    border-bottom: 1px solid #f5f2ee;
+  }
+  .slides-list li:last-child { border-bottom: none; }
+  .slides-list li::before {
+    content: counter(slides);
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    background: #f0ece8;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+  }
+
+  .reel-script {
+    font-size: 0.82rem;
+    color: #444;
+    background: #f2f9f2;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .reel-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    border-bottom: 1px solid #e8f2e8;
+  }
+  .reel-row:last-child { border-bottom: none; }
+  .reel-time {
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 0.72rem;
+    color: #2a7a2a;
+    background: #e8f2e8;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+  }
+  .reel-line { padding: 8px 12px; line-height: 1.5; }
+
+  .hashtags {
+    font-size: 0.78rem;
+    color: #2980b9;
+    background: #f0f5fb;
+    padding: 8px 12px;
+    border-radius: 3px;
+    line-height: 1.8;
+  }
+
+  .source-chip {
+    display: inline-block;
+    background: #f0ece8;
+    color: #666;
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-top: 4px;
+  }
+
+  .summary-section {
+    padding: 60px;
+    background: #fff;
+    border-top: 1px solid #e8e4df;
+    margin-top: 20px;
+  }
+  .summary-section h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #888;
+    margin-bottom: 30px;
+  }
+
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .summary-table th {
+    text-align: left;
+    padding: 10px 14px;
+    background: #f7f5f2;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    border-bottom: 2px solid #e8e4df;
+  }
+  .summary-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0ece8;
+    vertical-align: middle;
+  }
+  .summary-table tr:last-child td { border-bottom: none; }
+  .summary-table tr:hover td { background: #fdf9f5; }
+
+  .reels-section {
+    padding: 40px 60px;
+    background: #f2f9f2;
+    border-top: 1px solid #d8ecd8;
+  }
+  .reels-section h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #2a7a2a;
+    margin-bottom: 20px;
+  }
+  .reel-item {
+    background: #fff;
+    border: 1px solid #d8ecd8;
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    font-size: 0.88rem;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .reel-num {
+    width: 28px;
+    height: 28px;
+    background: #2a7a2a;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  .reel-duration {
+    color: #2a7a2a;
+    font-size: 0.78rem;
+    margin-left: auto;
+    font-weight: bold;
+  }
+
+  .measure-section {
+    padding: 40px 60px;
+    background: #1a1a1a;
+    color: #f7f5f2;
+  }
+  .measure-section h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  .measure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .measure-card {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .measure-card.a { background: #2c1a1a; border: 1px solid #5a2a2a; }
+  .measure-card.b { background: #1a1a2c; border: 1px solid #2a2a5a; }
+  .measure-card h3 { font-size: 0.8rem; margin-bottom: 10px; }
+  .measure-card.a h3 { color: #e88; }
+  .measure-card.b h3 { color: #88e; }
+  .measure-card p { font-size: 0.85rem; color: #aaa; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>@hadyyazdani</h1>
+  <p>30-Day Instagram Calendar &nbsp;·&nbsp; 7 April – 6 May 2026</p>
+</div>
+
+<div class="legend">
+  <div class="legend-section">
+    <h3>Format</h3>
+    <div class="legend-item"><span class="badge badge-single">Single Image</span></div>
+    <div class="legend-item"><span class="badge badge-carousel">Carousel</span></div>
+    <div class="legend-item"><span class="badge badge-reel">Reel</span></div>
+    <div class="legend-item"><span class="badge badge-text">Text / BTS</span></div>
+  </div>
+  <div class="legend-section">
+    <h3>Pillar</h3>
+    <div class="legend-item"><span class="badge badge-work">The Work</span></div>
+    <div class="legend-item"><span class="badge badge-experience">Experience</span></div>
+    <div class="legend-item"><span class="badge badge-education">Education</span></div>
+    <div class="legend-item"><span class="badge badge-story">Story</span></div>
+    <div class="legend-item"><span class="badge badge-social">Social Proof</span></div>
+  </div>
+  <div class="legend-section">
+    <h3>Caption Style</h3>
+    <div class="legend-item"><span class="badge badge-a">A — Natural Voice</span> @henrysdiary style, emotional, no CTA</div>
+    <div class="legend-item"><span class="badge badge-b">B — Short + CTA</span> @marinawphoto style, 1-2 lines, action</div>
+  </div>
+</div>
+
+<!-- WEEK 1 -->
+<div class="week-header">Week 1 &nbsp;·&nbsp; 7–13 April</div>
+<div class="posts-grid">
+
+  <!-- POST 1 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 01</div>
+        <div class="post-date">Monday 7 April</div>
+        <span class="source-chip">St Dunstan in the East — Proposal</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Best frame from the proposal — the moment, the ivy, the ruins. Couple-focused, not wide.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">There is a hidden garden in the City of London that most people walk past without knowing it exists. Between the glass towers, behind St Dunstan's Hill. The people who find it tend to stand still for a moment. He did. Then he got down on one knee.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">Surprise proposal photographer London | London proposal photographer | St Dunstan in the East<br>#londonproposal #surpriseproposallondon #londonelopement #londonphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 2 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 02</div>
+        <div class="post-date">Tuesday 8 April</div>
+        <span class="source-chip">Original — no images needed</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-reel">Reel</span>
+        <span class="badge badge-story">Story</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">Nobody is going to give you permission, so I will.</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Hadi to camera, natural setting — outside or neutral indoor background. 30 seconds.</div>
+      <div class="section-label">Reel Script</div>
+      <div class="reel-script">
+        <div class="reel-row"><div class="reel-time">0:00–0:03</div><div class="reel-line">Text overlay + spoken: "Nobody is going to give you permission to skip the big wedding. So I will."</div></div>
+        <div class="reel-row"><div class="reel-time">0:03–0:20</div><div class="reel-line">"You don't owe anyone a 200-person reception. You don't have to perform your love for an audience. Eloping is not running away. It's choosing each other, deliberately, with no noise around it."</div></div>
+        <div class="reel-row"><div class="reel-time">0:20–0:30</div><div class="reel-line">"If that's what you want, I would love to help you plan it. DM me."</div></div>
+      </div>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">Nobody is going to give you permission to skip the big wedding. So I will. DM me if you're thinking about it.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London elopement photographer | elope in London | intimate wedding London<br>#londoneloper #elopementuk #londonweddingphotographer #intimatewedding</div>
+    </div>
+  </div>
+
+  <!-- POST 3 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 03</div>
+        <div class="post-date">Wednesday 9 April</div>
+        <span class="source-chip">Blog repurpose — Surprise Proposal Guide</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-carousel">Carousel</span>
+        <span class="badge badge-education">Education</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">Here's the truth about planning a surprise proposal in London:</div>
+      <div class="section-label">Slides (7)</div>
+      <ul class="slides-list">
+        <li>Here's the truth about planning a surprise proposal in London:</li>
+        <li>Most people overthink the location. The best spots are the ones that mean something to you both — not the ones that photograph well in general.</li>
+        <li>Timing matters more than the ring. Golden hour is 30-90 minutes before sunset. Plan the proposal around the light, not the other way round.</li>
+        <li>Your photographer needs to be invisible. I arrive early, blend in, and stay out of sight until the moment. She will not notice me.</li>
+        <li>The reaction is everything. The best images are always in the 10 seconds after the question — not the question itself.</li>
+        <li>You don't need to be in London to book me. I work with couples planning from abroad all the time.</li>
+        <li>Planning a proposal? DM me. I'll help you think through the details.</li>
+      </ul>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">The question I get asked most about proposal photography is not about timing or location. It is about whether she will notice me. She won't. That is the job.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">Surprise proposal photographer London | London proposal photographer | how to plan a proposal London<br>#londonproposal #surpriseproposal #proposalphotographer #londonphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 4 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 04</div>
+        <div class="post-date">Friday 11 April</div>
+        <span class="source-chip">Tower Bridge — Elopement</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Strong Tower Bridge frame — couple against the bridge, riverside, morning light.</div>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">Tower Bridge. 7am. Just the two of them. This is what an elopement in London actually looks like. 2026 dates open — DM me.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London elopement photographer | Tower Bridge elopement | elope in London<br>#towerbridgeelopement #londonelopement #londonweddingphotographer #elopementphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 5 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 05</div>
+        <div class="post-date">Sunday 13 April</div>
+        <span class="source-chip">Review — any quiet image</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-social">Social Proof</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">A quiet, close frame — hands, detail, or soft portrait. The image supports the text, doesn't compete with it.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">A message I received after a shoot last year: "I have never felt comfortable in front of a camera in my life. I genuinely forgot you were there." That is the thing I am proudest of in this work.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London couples photographer | London wedding photographer | couples photography London<br>#londonphotographer #couplesphotography #londonweddingphotographer #testimonial</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- WEEK 2 -->
+<div class="week-header">Week 2 &nbsp;·&nbsp; 14–20 April</div>
+<div class="posts-grid">
+
+  <!-- POST 6 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 06</div>
+        <div class="post-date">Monday 14 April</div>
+        <span class="source-chip">Richmond Park — Engagement</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Best Richmond Park frame — natural, wide, the park present in the image.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">Richmond Park in April. The deer move through the long grass like they own it, because they do. She laughed at that. It was the first real moment of the session, and it was the one I had been waiting for.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London engagement photographer | couples photoshoot London | Richmond Park photographer<br>#richmondpark #londonengagementphotographer #couplesphotoshootlondon #londoncouples</div>
+    </div>
+  </div>
+
+  <!-- POST 7 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 07</div>
+        <div class="post-date">Tuesday 15 April</div>
+        <span class="source-chip">Original — no images needed</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-reel">Reel</span>
+        <span class="badge badge-experience">Experience</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">This is why you will never, ever feel awkward in front of my camera.</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Hadi to camera. 30 seconds. Natural, direct.</div>
+      <div class="section-label">Reel Script</div>
+      <div class="reel-script">
+        <div class="reel-row"><div class="reel-time">0:00–0:03</div><div class="reel-line">"This is why you will never, ever feel awkward in front of my camera."</div></div>
+        <div class="reel-row"><div class="reel-time">0:03–0:20</div><div class="reel-line">"I don't pose couples. I give them things to do. Walk here. Look at each other. Tell them something the other person doesn't know about you. By the time they've done that, they've forgotten I exist. That's when I take the picture."</div></div>
+        <div class="reel-row"><div class="reel-time">0:20–0:30</div><div class="reel-line">"If you've spent your life avoiding being photographed — that's exactly the kind of couple I photograph best. DM me."</div></div>
+      </div>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">This is why you will never, ever feel awkward in front of my camera. DM me if you're a 'we hate photos' couple. Those are my favourite sessions.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London couples photographer | couples photoshoot London | London engagement photographer<br>#londonphotographer #coupleswhohatephotos #londoncouples #engagementphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 8 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 08</div>
+        <div class="post-date">Wednesday 16 April</div>
+        <span class="source-chip">Blog repurpose — Best Places to Elope in London</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-carousel">Carousel</span>
+        <span class="badge badge-education">Education</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Slides (7)</div>
+      <ul class="slides-list">
+        <li>The honest guide to eloping in London — from someone who has photographed it everywhere.</li>
+        <li>Old Marylebone Town Hall — the most iconic register office in the UK. The steps, the light, the confetti. Always.</li>
+        <li>Greenwich Park and Old Royal Naval College — grand architecture right on the Thames. Enough space to breathe.</li>
+        <li>St Dunstan in the East — a hidden medieval garden in the City. Nobody walks past it twice without stopping.</li>
+        <li>Hampstead Heath — wild, open, genuinely beautiful at golden hour. Further from the centre than it feels.</li>
+        <li>The Southbank — for couples who want London in every frame.</li>
+        <li>The location matters less than the feeling. I will help you choose. DM me.</li>
+      </ul>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">The honest guide to eloping in London. Swipe through — and DM me when you know which one is yours.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London elopement locations | where to elope in London | London elopement photographer<br>#londonelopement #elopementlocations #wheretoelopelondon #londonweddingphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 9 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 09</div>
+        <div class="post-date">Friday 18 April</div>
+        <span class="source-chip">Old Marylebone Town Hall — Elopement</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Best Marylebone frame — the steps, the neoclassical facade, or a close moment.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">Old Marylebone Town Hall has seen more first kisses than anywhere else in London. There is something about the steps, the light at midday, the sound of confetti on stone. It never becomes ordinary, no matter how many times I stand there.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">Old Marylebone Town Hall elopement | London elopement photographer | intimate wedding London<br>#maryleboneregisteroffice #londonelopement #intimatewedding #londonweddingphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 10 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 10</div>
+        <div class="post-date">Sunday 20 April</div>
+        <span class="source-chip">Personal — no images needed</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-text">Text / Reel</span>
+        <span class="badge badge-story">Story</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">If I had to start over —</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Text post — clean background, single colour, Hadi's words. Or Reel — Hadi to camera, quiet and direct. Hadi's choice.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">If I had to start over, I would have photographed my first elopement sooner. The first time a couple told me they had kept their wedding day entirely to themselves — just the two of them, one witness, a garden in the city — I understood something about what this work could be. I have been photographing elopements ever since.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London elopement photographer | elopement photography London | intimate wedding photographer<br>#elopementphotographer #londonelopement #intimatewedding #londonphotographer</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- WEEK 3 -->
+<div class="week-header">Week 3 &nbsp;·&nbsp; 21–27 April &nbsp;·&nbsp; 2-week check after Post 10</div>
+<div class="posts-grid">
+
+  <!-- POST 11 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 11</div>
+        <div class="post-date">Monday 21 April</div>
+        <span class="source-chip">Old Royal Naval College — Couples</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Best ORNC frame — the colonnades, the symmetry, couple walking or still.</div>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">Old Royal Naval College, Greenwich. The colonnades, the river light, and two people who just needed to walk for a while. DM me about your London session.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">Couples photoshoot London | London couples photographer | Greenwich photographer<br>#oldroyalnavalcollege #greenwichphotographer #londoncouplesphotographer #couplesphotoshoot</div>
+    </div>
+  </div>
+
+  <!-- POST 12 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 12</div>
+        <div class="post-date">Tuesday 22 April</div>
+        <span class="source-chip">BTS — any session</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-reel">Reel</span>
+        <span class="badge badge-experience">Experience</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">No one talks about this.</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Hadi to camera or BTS clip — arriving at a location, setting up. 30 seconds.</div>
+      <div class="section-label">Reel Script</div>
+      <div class="reel-script">
+        <div class="reel-row"><div class="reel-time">0:00–0:03</div><div class="reel-line">"No one talks about this part of a couples shoot."</div></div>
+        <div class="reel-row"><div class="reel-time">0:03–0:20</div><div class="reel-line">"The first 10 minutes are always the same. People arrive nervous, standing slightly apart, not quite knowing where to look. I don't pick up the camera yet. We just walk and talk. By the time I do, they've stopped thinking about it."</div></div>
+        <div class="reel-row"><div class="reel-time">0:20–0:30</div><div class="reel-line">"The best photos are never taken in the first 10 minutes."</div></div>
+      </div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">No one talks about this part. The first 10 minutes of every session where nobody is quite themselves yet. I never photograph those minutes. I wait.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London couples photographer | couples photoshoot London | London engagement photographer<br>#behindthelens #londonphotographer #couplesphotography #londonengagementphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 13 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 13</div>
+        <div class="post-date">Wednesday 23 April</div>
+        <span class="source-chip">Blog repurpose — Elopement Complete Guide</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-carousel">Carousel</span>
+        <span class="badge badge-education">Education</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Slides (7)</div>
+      <ul class="slides-list">
+        <li>Everything you actually need to know about eloping in London:</li>
+        <li>Legal: give notice at a register office at least 29 days before. International couples — start 3 months ahead.</li>
+        <li>You can have a symbolic ceremony anywhere. No legal requirement for location outside the register office.</li>
+        <li>Sunrise and early morning are the best times. Central London before 8am is a different city.</li>
+        <li>Rain is not a problem. London in drizzle has a mood that sunshine cannot replicate.</li>
+        <li>You don't need guests. You don't need a reception. You need each other and a date.</li>
+        <li>I have photographed elopements at every major London location. DM me and I will help you plan yours.</li>
+      </ul>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">Everything you actually need to know about eloping in London. No fluff. Swipe through.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">How to elope in London | London elopement guide | elopement photography London<br>#howtoelopeinlondon #londonelopementguide #elopementphotographer #londonweddingphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 14 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 14</div>
+        <div class="post-date">Friday 25 April</div>
+        <span class="source-chip">St Dunstan in the East — second frame</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Wider shot — the architecture, the window frames, the ivy. Atmosphere over emotion this time.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">St Dunstan in the East is one of the few places in the City of London where you can stand still and hear nothing. No traffic, no voices. Just the ivy and the light coming through the window frames where glass used to be. We stayed longer than we planned.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London elopement locations | London photographer | surprise proposal London<br>#stdunsanintheeast #londonhiddengems #londonelopement #londonphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 15 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 15</div>
+        <div class="post-date">Sunday 27 April</div>
+        <span class="source-chip">Review — any warm image</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-social">Social Proof</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Warm, close image — a quiet moment from any session.</div>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">"We don't like being photographed. We booked you anyway. We are so glad we did." That review means more to me than any other. DM me if that sounds like you.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London couples photographer | London engagement photographer | couples photoshoot London<br>#londonphotographer #couplesphotography #clientreview #londoncouples</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- WEEK 4 -->
+<div class="week-header">Week 4 &nbsp;·&nbsp; 28 April – 4 May</div>
+<div class="posts-grid">
+
+  <!-- POST 16 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 16</div>
+        <div class="post-date">Monday 28 April</div>
+        <span class="source-chip">Richmond Park — full session recap</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-carousel">Carousel</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">6-8 best frames from Richmond Park in sequence. Let the story unfold slide by slide — arrival, first moments, deer, connection, close portrait.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice — Storytelling</div>
+      <div class="caption-a">Richmond Park. April. The deer were out. She laughed at something he said before I had even picked up the camera, and that was the moment the session started. Everything after that was just catching up. Swipe through.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London engagement photographer | couples photoshoot London | Richmond Park couples shoot<br>#richmondpark #londonengagement #couplesphotoshoot #londonphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 17 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 17</div>
+        <div class="post-date">Tuesday 29 April</div>
+        <span class="source-chip">Original — no images needed</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-reel">Reel</span>
+        <span class="badge badge-education">Education</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">Here's the truth about golden hour shoots in London:</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Hadi to camera, outside or location-relevant background. 30-45 seconds.</div>
+      <div class="section-label">Reel Script</div>
+      <div class="reel-script">
+        <div class="reel-row"><div class="reel-time">0:00–0:03</div><div class="reel-line">"Here's the truth about golden hour shoots in London:"</div></div>
+        <div class="reel-row"><div class="reel-time">0:03–0:30</div><div class="reel-line">"Everyone wants it. Almost nobody books for it properly. Golden hour in London in spring starts around 7:30pm. That means finishing work, travelling across the city, arriving calm. Most couples arrive stressed. The light is beautiful. The session rarely is. My recommendation: book for 9am. The city is empty. The light is softer than you think. And nobody is watching."</div></div>
+        <div class="reel-row"><div class="reel-time">0:30–0:45</div><div class="reel-line">"The 9am shoots are always my favourites. That might be controversial. I stand by it."</div></div>
+      </div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">Here's the truth about golden hour shoots in London. Everyone wants it. I rarely recommend it. The 9am shoots are always better.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London couples photographer | couples photoshoot London | London engagement photographer<br>#goldenhour #londonphotographer #morningshoot #couplesphotography</div>
+    </div>
+  </div>
+
+  <!-- POST 18 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 18</div>
+        <div class="post-date">Wednesday 30 April</div>
+        <span class="source-chip">Blog repurpose — London Wedding Photographer Guide</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-carousel">Carousel</span>
+        <span class="badge badge-education">Education</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Slides (7)</div>
+      <ul class="slides-list">
+        <li>How to choose the right wedding photographer in London — from a photographer:</li>
+        <li>Look at their full galleries, not just their highlights. Every photographer has 10 great shots. You need to know what the rest looks like.</li>
+        <li>Meet them before you book. If the conversation feels awkward, the shoot will too.</li>
+        <li>Check how they handle low light and rain. London will give you both.</li>
+        <li>Ask about their approach to nervous couples. The answer tells you everything.</li>
+        <li>Price is not the metric. Ask to see a full wedding day gallery at whatever price point you're considering.</li>
+        <li>The right photographer is the one you forget is there. That is what you are looking for.</li>
+      </ul>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">How to choose the right wedding photographer in London. From a photographer. Swipe through.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London wedding photographer | how to choose a wedding photographer | London elopement photographer<br>#londonweddingphotographer #weddingphotographertips #chooseyourphotographer #londonwedding</div>
+    </div>
+  </div>
+
+  <!-- POST 19 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 19</div>
+        <div class="post-date">Friday 1 May</div>
+        <span class="source-chip">Tower Bridge — second frame</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-single">Single Image</span>
+        <span class="badge badge-work">The Work</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Different Tower Bridge frame — detail shot, or the riverside early morning, different angle to Post 4.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">There is a version of Tower Bridge that tourists never see. East side, early morning, the light coming off the Thames. It lasts about 20 minutes. We were there for all of it.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London elopement photographer | Tower Bridge elopement | elopement photography London<br>#towerbridge #londonelopement #earlymorningleondon #londonweddingphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 20 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 20</div>
+        <div class="post-date">Sunday 3 May</div>
+        <span class="source-chip">Personal — no images needed</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-text">Text / Reel</span>
+        <span class="badge badge-story">Story</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">I learned this way too late —</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Text — single colour background, Hadi's words only. Or Reel — Hadi to camera, quiet and personal.</div>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">I learned this way too late: the couples who say they hate being photographed are always the easiest to photograph. The resistance is not about cameras. It is about not knowing how to be seen. Once you understand that, the whole job changes.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">London couples photographer | London engagement photographer | couples photoshoot London<br>#londonphotographer #nervouscouple #couplesphotography #behindthelens</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- WEEK 5 -->
+<div class="week-header">Week 5 &nbsp;·&nbsp; 5–6 May</div>
+<div class="posts-grid">
+
+  <!-- POST 21 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 21</div>
+        <div class="post-date">Tuesday 5 May</div>
+        <span class="source-chip">Original — no images needed</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-reel">Reel</span>
+        <span class="badge badge-experience">Experience</span>
+        <span class="badge badge-b">B</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Hook</div>
+      <div class="hook-text">This will change how you think about proposal photography.</div>
+      <div class="section-label">Visual Direction</div>
+      <div class="visual-text">Hadi to camera. 30 seconds. Direct and still.</div>
+      <div class="section-label">Reel Script</div>
+      <div class="reel-script">
+        <div class="reel-row"><div class="reel-time">0:00–0:03</div><div class="reel-line">"This will change how you think about proposal photography."</div></div>
+        <div class="reel-row"><div class="reel-time">0:03–0:20</div><div class="reel-line">"Most people think the job is capturing the moment she says yes. It isn't. The job is capturing the 10 seconds before he asks. The way he looks at her when she doesn't know what's coming. That is the image you will keep for the rest of your life."</div></div>
+        <div class="reel-row"><div class="reel-time">0:20–0:30</div><div class="reel-line">"That is what I show up for. DM me if you're planning something."</div></div>
+      </div>
+      <div class="section-label">Caption B</div>
+      <div class="caption-label b">Short + CTA</div>
+      <div class="caption-b">This will change how you think about proposal photography. The image that matters is never the yes. It is the 10 seconds before the question. DM me if you're planning something.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">Surprise proposal photographer London | London proposal photographer | proposal photography London<br>#proposalphotographer #londonproposal #surpriseproposal #londonphotographer</div>
+    </div>
+  </div>
+
+  <!-- POST 22 -->
+  <div class="post-card">
+    <div class="post-header">
+      <div>
+        <div class="post-number">Post 22</div>
+        <div class="post-date">Wednesday 6 May</div>
+        <span class="source-chip">Blog repurpose — London Couples Photography Guide</span>
+      </div>
+      <div class="post-badges">
+        <span class="badge badge-carousel">Carousel</span>
+        <span class="badge badge-education">Education</span>
+        <span class="badge badge-a">A</span>
+      </div>
+    </div>
+    <div class="post-body">
+      <div class="section-label">Slides (7)</div>
+      <ul class="slides-list">
+        <li>What makes a couples session in London actually work:</li>
+        <li>Location second, connection first. The best images come from couples who are present with each other, not performing for a camera.</li>
+        <li>Wear what you would wear on a good date. Not what you think looks good in photos.</li>
+        <li>Book for a weekday morning. Fewer people, better light, lower pressure.</li>
+        <li>Give it 20 minutes before you judge how it is going. The first 20 minutes are always the hardest.</li>
+        <li>The images you love most will be the ones where you had forgotten I was there.</li>
+        <li>DM me if you want to book a couples session in London.</li>
+      </ul>
+      <div class="section-label">Caption A</div>
+      <div class="caption-label a">Natural Voice</div>
+      <div class="caption-a">What makes a couples session actually work: not the location, not the outfits. The 20 minutes it takes to forget there is a camera there at all.</div>
+      <div class="section-label">First Comment — Keywords + Hashtags</div>
+      <div class="hashtags">Couples photoshoot London | London couples photographer | London engagement photographer<br>#couplesphotoshootlondon #londoncouplesphotographer #londoncouples #couplesphotography</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- REELS TO FILM -->
+<div class="reels-section">
+  <h2>Reels to Film — 5 total. Batch in one session.</h2>
+  <div class="reel-item">
+    <div class="reel-num">1</div>
+    <div>Post 2 — "Nobody is going to give you permission to skip the big wedding."</div>
+    <div class="reel-duration">30 sec</div>
+  </div>
+  <div class="reel-item">
+    <div class="reel-num">2</div>
+    <div>Post 7 — "This is why you will never, ever feel awkward in front of my camera."</div>
+    <div class="reel-duration">30 sec</div>
+  </div>
+  <div class="reel-item">
+    <div class="reel-num">3</div>
+    <div>Post 12 — "No one talks about this part of a couples shoot." (can use BTS footage)</div>
+    <div class="reel-duration">30 sec</div>
+  </div>
+  <div class="reel-item">
+    <div class="reel-num">4</div>
+    <div>Post 17 — "Here's the truth about golden hour shoots in London."</div>
+    <div class="reel-duration">45 sec</div>
+  </div>
+  <div class="reel-item">
+    <div class="reel-num">5</div>
+    <div>Post 21 — "This will change how you think about proposal photography."</div>
+    <div class="reel-duration">30 sec</div>
+  </div>
+</div>
+
+<!-- SUMMARY TABLE -->
+<div class="summary-section">
+  <h2>Full Calendar Summary</h2>
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>Format</th>
+        <th>Pillar</th>
+        <th>Caption</th>
+        <th>Hook</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Mon 7 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>2</td><td>Tue 8 Apr</td><td><span class="badge badge-reel">Reel</span></td><td><span class="badge badge-story">Story</span></td><td><span class="badge badge-b">B</span></td><td>Nobody is going to give you permission</td></tr>
+      <tr><td>3</td><td>Wed 9 Apr</td><td><span class="badge badge-carousel">Carousel</span></td><td><span class="badge badge-education">Education</span></td><td><span class="badge badge-a">A</span></td><td>Here's the truth about</td></tr>
+      <tr><td>4</td><td>Fri 11 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-b">B</span></td><td>—</td></tr>
+      <tr><td>5</td><td>Sun 13 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-social">Social Proof</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>6</td><td>Mon 14 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>7</td><td>Tue 15 Apr</td><td><span class="badge badge-reel">Reel</span></td><td><span class="badge badge-experience">Experience</span></td><td><span class="badge badge-b">B</span></td><td>This is why you will never, ever</td></tr>
+      <tr><td>8</td><td>Wed 16 Apr</td><td><span class="badge badge-carousel">Carousel</span></td><td><span class="badge badge-education">Education</span></td><td><span class="badge badge-b">B</span></td><td>—</td></tr>
+      <tr><td>9</td><td>Fri 18 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>10</td><td>Sun 20 Apr</td><td><span class="badge badge-text">Text / Reel</span></td><td><span class="badge badge-story">Story</span></td><td><span class="badge badge-a">A</span></td><td>If I had to start over</td></tr>
+      <tr><td>11</td><td>Mon 21 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-b">B</span></td><td>—</td></tr>
+      <tr><td>12</td><td>Tue 22 Apr</td><td><span class="badge badge-reel">Reel</span></td><td><span class="badge badge-experience">Experience</span></td><td><span class="badge badge-a">A</span></td><td>No one talks about this</td></tr>
+      <tr><td>13</td><td>Wed 23 Apr</td><td><span class="badge badge-carousel">Carousel</span></td><td><span class="badge badge-education">Education</span></td><td><span class="badge badge-b">B</span></td><td>—</td></tr>
+      <tr><td>14</td><td>Fri 25 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>15</td><td>Sun 27 Apr</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-social">Social Proof</span></td><td><span class="badge badge-b">B</span></td><td>—</td></tr>
+      <tr><td>16</td><td>Mon 28 Apr</td><td><span class="badge badge-carousel">Carousel</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>17</td><td>Tue 29 Apr</td><td><span class="badge badge-reel">Reel</span></td><td><span class="badge badge-education">Education</span></td><td><span class="badge badge-a">A</span></td><td>Here's the truth about</td></tr>
+      <tr><td>18</td><td>Wed 30 Apr</td><td><span class="badge badge-carousel">Carousel</span></td><td><span class="badge badge-education">Education</span></td><td><span class="badge badge-b">B</span></td><td>—</td></tr>
+      <tr><td>19</td><td>Fri 1 May</td><td><span class="badge badge-single">Single Image</span></td><td><span class="badge badge-work">The Work</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+      <tr><td>20</td><td>Sun 3 May</td><td><span class="badge badge-text">Text / Reel</span></td><td><span class="badge badge-story">Story</span></td><td><span class="badge badge-a">A</span></td><td>I learned this way too late</td></tr>
+      <tr><td>21</td><td>Tue 5 May</td><td><span class="badge badge-reel">Reel</span></td><td><span class="badge badge-experience">Experience</span></td><td><span class="badge badge-b">B</span></td><td>This will change how you think about</td></tr>
+      <tr><td>22</td><td>Wed 6 May</td><td><span class="badge badge-carousel">Carousel</span></td><td><span class="badge badge-education">Education</span></td><td><span class="badge badge-a">A</span></td><td>—</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- MEASUREMENT -->
+<div class="measure-section">
+  <h2>2-Week Check — After Post 10 (20 April)</h2>
+  <div class="measure-grid">
+    <div class="measure-card a">
+      <h3>Caption A — Natural Voice</h3>
+      <p>Measure: saves and comments<br>Tracks emotional connection and content quality signal</p>
+    </div>
+    <div class="measure-card b">
+      <h3>Caption B — Short + CTA</h3>
+      <p>Measure: DMs and profile visits<br>Tracks conversion intent and booking behaviour</p>
+    </div>
+  </div>
+  <p style="color:#666; font-size:0.85rem; margin-top:20px;">If one format is clearly winning after Post 10: shift to 70/30 in favour of the winner for month 2.</p>
+</div>
+
+</body>
+</html>

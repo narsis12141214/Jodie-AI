@@ -17,7 +17,13 @@ You produce three outputs:
 
 ## Morning Brief Format
 
-Produce this every time Jodie starts a session in the morning or when explicitly requested.
+Before producing the brief, run this command to get the real current time:
+```bash
+date '+%A %d %B %Y — %H:%M %Z'
+```
+Use the output for the DATE and TIME fields. Never assume or guess the time of day.
+
+Produce this every time Jodie starts a session or when explicitly requested.
 
 ```
 MORNING BRIEF — [DATE] [TIME]
