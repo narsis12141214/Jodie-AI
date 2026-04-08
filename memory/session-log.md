@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-08
+Done: Blog post #6 written and SEO cleared (pre-wedding-photoshoot-london, 2,804 words). carousel-builder (LinkedIn) + carousel-ig-facebook (Instagram/Facebook) skills deployed with generators, SKILL.md, briefings. JetBrains Mono fonts committed. Workflow 2 no-compliment prompt rule added. Step 2 sent to Lumière Aesthetics + Cocorico Italian. All pushed to GitHub.
+Next: Publish blog post #6 in WordPress. Workflow 3 (follow-up reminder). Chase Maria + Humble Grape Thursday if silent. Weekend filming (both accounts).
+Pipeline: Maria silent (chase Thu). Humble Grape silent — decision window passed (chase Thu). Cocorico awaiting Step 2 reply. Lumière awaiting Step 2 reply.
+
 ## 2026-04-07
 Done: Workflow 1 + 2 JSONs updated to match live N8N builds. operator.md (Thinking Partner Mode) + closer.md (forbidden phrases, gone-quiet formula) deployed. 60-day plan reviewed and revised — goals reset to realistic, two-week schedule built. @hadyyazdani posting plan confirmed: start Monday 13 April, Post 1 = St Dunstan image, weekend filming for Reels. Humble Grape Closer message sent.
 Next: Zizi briefing Wednesday. Blog post #6 answers from Hadi Wednesday morning. Maria follow-up Wednesday. Workflows 3+4 by Thursday. Weekend filming (both accounts).
