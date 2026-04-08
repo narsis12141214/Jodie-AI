@@ -126,8 +126,8 @@ Size: 1080 x 1350px PNG (4:5 ratio — works on Instagram feed, Facebook, and Li
 ### Instagram / Facebook
 - Logo + headshot: `brand-assets/Click AI Logos/click-logo-white.png`
 - Headline font: `brand-assets/fonts/inter-bold.ttf`
-- Body font: `brand-assets/fonts/JetBrainsMono-Regular.ttf`
-- Bold mono: `brand-assets/fonts/JetBrainsMono-Bold.ttf`
+- Body font: `brand-assets/fonts/JetBrains Mono Regular.ttf`
+- Bold mono: `brand-assets/fonts/JetBrains Mono Bold.ttf`
 
 ### LinkedIn
 - Logo: `/Users/hadi/Library/Mobile Documents/com~apple~CloudDocs/EA AI/brand-assets/Click AI Logos/click-logo.png`

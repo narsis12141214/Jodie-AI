@@ -25,8 +25,8 @@ BRAND_INSTAGRAM = {
     "subtext_color": "#8A8F9E",
     "accent_color": "#6C63FF",
     "font_headline": f"{FONT_BASE}/inter-bold.ttf",
-    "font_mono": f"{FONT_BASE}/JetBrainsMono-Regular.ttf",
-    "font_mono_bold": f"{FONT_BASE}/JetBrainsMono-Bold.ttf",
+    "font_mono": f"{FONT_BASE}/JetBrains Mono Regular.ttf",
+    "font_mono_bold": f"{FONT_BASE}/JetBrains Mono Bold.ttf",
     "logo_path": "brand-assets/Click AI Logos/click-logo-white.png",
 }
 
