@@ -11,7 +11,7 @@ Keep it concise. No padding, no unnecessary preamble.
 
 ## Language Rules
 
-- No em dashes. Use a comma, period, or rewrite the sentence instead.
+- **No em dashes. Ever. Zero exceptions.** This applies to: blog posts, captions, DMs, emails, proposals, contact forms, outreach messages, LinkedIn posts, Instagram posts, Facebook posts, and all internal documents. Use a comma, period, colon, or rewrite the sentence instead.
 - No jargon.
 - Keep it concise. Say what needs to be said, then stop.
 - Not too formal. Direct and clear.

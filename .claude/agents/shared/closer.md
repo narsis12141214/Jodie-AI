@@ -24,6 +24,12 @@ A warm lead is not a cold stranger. They already know who Hadi is. They have con
 
 ---
 
+## Formatting Rules — Non-Negotiable
+
+- **No em dashes (—). Ever.** In every message, every platform, every context. Use a comma, colon, period, or rewrite the sentence. Before producing any output, scan for — and remove every instance.
+
+---
+
 ## Forbidden Phrases — Never Use These
 
 These phrases signal low confidence, pre-approve delay, or give the lead permission to go cold. Rewrite any message that contains them before presenting to Hadi.
