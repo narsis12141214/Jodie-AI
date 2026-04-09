@@ -2,37 +2,44 @@
 
 Last updated: 2026-04-08
 
-## TOMORROW (Thursday 9 April — Day 9 of 60)
+## TOMORROW (Friday 10 April — Day 10 of 60)
 
-**PRIORITY 1 (Agency): Build Workflow 3 — follow-up reminder, 3-day trigger**
-**PRIORITY 2 (Photography): Publish blog post #6 in WordPress**
+**PRIORITY 1 (Agency): Build Workflow 3 + 4**
+**PRIORITY 2 (Agency): Email opener template — answer 3 questions first**
 
 Agency:
-- [ ] Build Workflow 3 — follow-up reminder (3-day trigger) — Jodie + Hadi — due Day 10 (Thu 10 Apr)
-- [ ] Build Workflow 4 — CRM auto-logging — Jodie + Hadi — due Day 10
-- [ ] Paste updated no-compliment prompt rule into N8N Generate Opener node — Hadi
-- [ ] Await Cocorico reply — respond when it arrives — Hadi
-- [ ] Await Lumière Aesthetics reply — Zizi monitoring — Hadi
-- [ ] Maria — no reply yet. Chase if silent by end of Thursday — Hadi
-- [ ] Humble Grape — no reply yet. Decision window passed. Chase or close — Hadi
+- [ ] Answer 3 email opener questions (sender email, subject line approach, Crockers Tring now or template first) — Hadi — first thing
+- [ ] Build email cold opener template — Jodie (after answers)
+- [ ] Build Workflow 3 — follow-up reminder, 3-day trigger — Jodie + Hadi
+- [ ] Build Workflow 4 — CRM auto-logging — Jodie + Hadi
+- [ ] Share zizi-outreach-rules.md with Zizi — Hadi
+- [ ] Await Cocorico reply — Zizi monitoring
+- [ ] Await Lumière Aesthetics reply — Zizi monitoring
+- [ ] Maria — chased Thursday, await reply
+- [ ] Humble Grape — chased Thursday, await reply
 
 Photography:
-- [ ] Publish blog post #6 (pre-wedding-photoshoot-london.html) in WordPress — Hadi
+- [ ] Review blog post #6 tonight — Hadi
+- [ ] Publish blog post #6 in WordPress tomorrow — Hadi
   - URL slug: /blog/pre-wedding-photoshoot-london
   - Meta title: Pre-Wedding Photoshoot London | Hadi Photography
   - Meta description: Everything you need to know about booking a pre-wedding photoshoot in London: best locations, what to expect, and how to prepare.
-- [ ] Log Search Console baseline for homepage title tag change — Hadi
 
 Weekend (11-12 April):
-- [ ] Film 2 @hadyyazdani Reels — Post 2 script (permission to elope) + Post 7 script (never feel awkward) — Hadi
+- [ ] Film 2 @hadyyazdani Reels — Post 2 (permission to elope) + Post 7 (never feel awkward) — Hadi
 - [ ] Film 5 @clickaiagency Reels — scripts in agency 30-day calendar — Hadi
 - [ ] Drop @hadyyazdani Week 1 photos in Drive folder (Post 1-5) — Hadi
 
 Pipeline:
-- [ ] Maria — chase Thursday if no reply
-- [ ] Humble Grape — chase Thursday (decision window passed)
-- [ ] Cocorico Italian — awaiting reply to Step 2
-- [ ] Lumière Aesthetics — Zizi sent Step 2, awaiting reply
+- [ ] Maria — chased Thu 9 Apr, await reply
+- [ ] Humble Grape — chased Thu 9 Apr, await reply
+- [ ] Cocorico Italian — awaiting Step 2 reply
+- [ ] Lumière Aesthetics — awaiting Step 2 reply
+- [ ] Randeszvous — Step 2 sent, awaiting reply
+- [ ] Rwayda — redirect sent, awaiting reply
+- [ ] The Bank — screen recording offer sent, awaiting reply
+- [ ] Dr Noura — Step 2 sent, awaiting reply
+- [ ] Pavilion — Step 2 sent, awaiting reply
 
 Photography:
 - [ ] Answer 5 input questions for blog post #6 (pre-wedding photoshoot london) — Hadi
@@ -104,6 +111,16 @@ Weekend (11-12 April):
 Pipeline:
 - [ ] Maria — follow up Wednesday if silent
 - [ ] Humble Grape — await reply (message sent today, 48hr window — decision Thursday)
+
+## COMPLETED — 2026-04-09
+- [x] 2026-04-09: Homepage title tag 28-day baseline logged — Clicks 40, Impressions 6,310, CTR 0.6%, Avg Position 16.6. Review 7 May.
+- [x] 2026-04-09: Workflow 1 major upgrade — duplicate fix, dental industry added, 28 hashtags, 70-100 leads/day expected
+- [x] 2026-04-09: Zizi outreach rules doc written and pushed — zizi-outreach-rules.md
+- [x] 2026-04-09: No-em-dash rule reinforced — closer.md + communication-style.md + memory updated
+- [x] 2026-04-09: Closer messages sent — Maria + Humble Grape chased
+- [x] 2026-04-09: Step 2 sent to Dr Noura, Pavilion, Randeszvous, Rwayda redirect sent, The Bank screen recording offer sent
+- [x] 2026-04-09: Quality log updated — Workflow 1 duplicate bug + Zizi manual script violations logged
+- [x] 2026-04-09: All changes pushed to GitHub
 
 ## COMPLETED — 2026-04-08
 - [x] 2026-04-08: Blog post #6 (pre-wedding-photoshoot-london) written, SEO reviewed, cleared — 2,804 words

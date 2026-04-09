@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-09
+Done: Workflow 1 major upgrade logged (70-100 leads/day, dental added, duplicate bug fixed). Homepage GSC baseline captured (CTR 0.6%, review 7 May). Zizi outreach rules doc written. No-em-dash rule reinforced across closer.md + communication-style.md. Step 2 sent to 5 leads. Maria + Humble Grape chased. Email opener template scoped — 3 questions for morning.
+Next: Answer email opener questions (sender, subject approach, Crockers Tring). Build Workflows 3 + 4. Publish blog post #6. Share Zizi rules doc.
+Pipeline: 7 active threads awaiting replies. Maria + Humble Grape chased Thursday.
+
 ## 2026-04-08
 Done: Blog post #6 written and SEO cleared (pre-wedding-photoshoot-london, 2,804 words). carousel-builder (LinkedIn) + carousel-ig-facebook (Instagram/Facebook) skills deployed with generators, SKILL.md, briefings. JetBrains Mono fonts committed. Workflow 2 no-compliment prompt rule added. Step 2 sent to Lumière Aesthetics + Cocorico Italian. All pushed to GitHub.
 Next: Publish blog post #6 in WordPress. Workflow 3 (follow-up reminder). Chase Maria + Humble Grape Thursday if silent. Weekend filming (both accounts).
