@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-10
+Done: Email stack decided + PDF setup guide built (Instantly.ai + Apify + ZeroBounce). getclick.uk registered. DMARC added to clickaiagency.com. Blog post #6 fixed + moved to ready-to-post. Workflow 3 built (follow-up reminder). Zizi briefed (Step 2 DM + email templates + off-script protocol). Reel scripts written (2 photography + 5 agency). Crockers Tring email sent. DD-MM-YY folder convention established.
+Next: Import Workflow 3 to N8N + activate. Google Workspace setup on getclick.uk (Hadi tonight). Publish blog post #6. LinkedIn first post Monday. Weekend filming (7 reels total). Workflow 4 next week.
+Pipeline: 10 active threads. Crockers Tring added. All others awaiting replies.
+
 ## 2026-04-09
 Done: Workflow 1 major upgrade logged (70-100 leads/day, dental added, duplicate bug fixed). Homepage GSC baseline captured (CTR 0.6%, review 7 May). Zizi outreach rules doc written. No-em-dash rule reinforced across closer.md + communication-style.md. Step 2 sent to 5 leads. Maria + Humble Grape chased. Email opener template scoped — 3 questions for morning.
 Next: Answer email opener questions (sender, subject approach, Crockers Tring). Build Workflows 3 + 4. Publish blog post #6. Share Zizi rules doc.

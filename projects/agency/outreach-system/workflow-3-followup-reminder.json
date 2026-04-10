@@ -1,0 +1,135 @@
+{
+  "name": "Workflow 3 — Follow-Up Reminder (Daily)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * 1-5"
+            }
+          ]
+        }
+      },
+      "id": "a1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Daily 9am Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1pGeA4YzPMmyVTPlIBqrmLLClEZSM6wSmZfZpZKfiRqU",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Outreach Tracker",
+          "mode": "name"
+        },
+        "filtersUI": {
+          "values": []
+        },
+        "options": {
+          "dataLocationOnSheet": {
+            "values": {
+              "rangeDefinition": "specifyRangeA1",
+              "range": "A3:R"
+            }
+          }
+        }
+      },
+      "id": "a1b2c3d4-0002-4000-8000-000000000002",
+      "name": "Read Lead Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [224, 0],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "4DkURUdX5Xh0Qeyj",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const allRows = $input.all();\nconst today = new Date();\ntoday.setHours(0, 0, 0, 0);\n\nconst THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;\n\nconst leadsToFollowUp = allRows.filter(function(row) {\n  const status = (row.json['status'] || '').trim();\n  const response = (row.json['Response'] || '').trim();\n  const firstContactRaw = (row.json['First Contact Date'] || '').trim();\n\n  // Only process leads that have been contacted but not replied\n  if (status !== 'Step 1 Sent') return false;\n\n  // Skip if they have already responded\n  if (response !== '') return false;\n\n  // Skip if no contact date logged\n  if (!firstContactRaw) return false;\n\n  // Parse the contact date — expects DD/MM/YYYY or YYYY-MM-DD\n  let contactDate;\n  if (firstContactRaw.includes('/')) {\n    const parts = firstContactRaw.split('/');\n    if (parts.length === 3) {\n      // DD/MM/YYYY\n      contactDate = new Date(parts[2], parts[1] - 1, parts[0]);\n    }\n  } else {\n    contactDate = new Date(firstContactRaw);\n  }\n\n  if (!contactDate || isNaN(contactDate.getTime())) return false;\n\n  contactDate.setHours(0, 0, 0, 0);\n  const daysSinceContact = (today - contactDate) / (24 * 60 * 60 * 1000);\n\n  // Flag if 3 or more days have passed\n  return daysSinceContact >= 3;\n});\n\nconsole.log('Leads needing follow-up: ' + leadsToFollowUp.length + ' of ' + allRows.length + ' total rows');\n\nreturn leadsToFollowUp.map(function(item) {\n  const today = new Date();\n  today.setHours(0, 0, 0, 0);\n  const firstContactRaw = (item.json['First Contact Date'] || '').trim();\n  let contactDate;\n  if (firstContactRaw.includes('/')) {\n    const parts = firstContactRaw.split('/');\n    contactDate = new Date(parts[2], parts[1] - 1, parts[0]);\n  } else {\n    contactDate = new Date(firstContactRaw);\n  }\n  contactDate.setHours(0, 0, 0, 0);\n  const daysSince = Math.floor((today - contactDate) / (24 * 60 * 60 * 1000));\n\n  return {\n    json: {\n      row_number: item.json['row_number'],\n      business_name: (item.json['Business Name'] || item.json['Instagram Handle'] || 'Unknown').trim(),\n      instagram_handle: (item.json['Instagram Handle'] || '').trim(),\n      industry: (item.json['Type'] || '').trim(),\n      days_since_contact: daysSince,\n      first_contact_date: firstContactRaw,\n      step: (item.json['Step'] || '1').trim(),\n      notes: (item.json['Notes'] || '').trim(),\n      channel: (item.json['Channel'] || 'Instagram DM').trim()\n    }\n  };\n});"
+      },
+      "id": "a1b2c3d4-0003-4000-8000-000000000003",
+      "name": "Filter Leads Needing Follow-Up",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [448, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst date = new Date().toISOString().split('T')[0];\n\nif (items.length === 0) {\n  return [{\n    json: {\n      subject: 'Zizi - Follow-up check (' + date + ') — no action needed',\n      body: 'Workflow 3 - Follow-Up Reminder\\nDate: ' + date + '\\n\\nNo leads are overdue for follow-up today. All contacts are either within 3 days or have already responded.\\n\\nNext check: tomorrow 9am.'\n    }\n  }];\n}\n\nconst lines = items.map(function(item, i) {\n  const lead = item.json;\n  const dayLabel = lead.days_since_contact === 1 ? 'day' : 'days';\n  const notesLine = lead.notes ? '\\n   Notes: ' + lead.notes : '';\n  return (\n    (i + 1) + '. ' + lead.business_name +\n    (lead.instagram_handle ? ' (@' + lead.instagram_handle + ')' : '') +\n    '\\n   Industry: ' + (lead.industry || 'unknown') +\n    '\\n   Channel: ' + lead.channel +\n    '\\n   Step sent: ' + lead.step +\n    '\\n   First contacted: ' + lead.first_contact_date + ' (' + lead.days_since_contact + ' ' + dayLabel + ' ago)' +\n    notesLine\n  );\n});\n\nconst subject = 'Zizi - ' + items.length + ' lead' + (items.length !== 1 ? 's' : '') + ' need follow-up (' + date + ')';\nconst body = [\n  'Workflow 3 - Follow-Up Reminder',\n  'Date: ' + date,\n  'Leads overdue (3+ days, no reply): ' + items.length,\n  '',\n  '---',\n  '',\n  lines.join('\\n\\n'),\n  '',\n  '---',\n  '',\n  'ACTION FOR ZIZI:',\n  'Each lead above has not replied in 3 or more days. Send a Step 2 follow-up message for each one.',\n  'Use the Step 2 formula from your briefing doc.',\n  'If a lead has already replied or been closed, update the status in the sheet so it stops appearing here.',\n  '',\n  'If you are unsure about any lead, send it to Hadi before messaging.'\n].join('\\n');\n\nreturn [{ json: { subject: subject, body: body, count: items.length } }];"
+      },
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Build Follow-Up Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [672, 0]
+    },
+    {
+      "parameters": {
+        "sendTo": "hadiphotographylondon@gmail.com",
+        "subject": "={{ $json.subject }}",
+        "emailType": "text",
+        "message": "={{ $json.body }}",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0005-4000-8000-000000000005",
+      "name": "Send Email to Hadi",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [896, 0],
+      "webhookId": "a1b2c3d4-0005-4000-8000-000000000099",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "xWk2aUg55zZdSPSw",
+          "name": "Gmail account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Daily 9am Trigger": {
+      "main": [[{"node": "Read Lead Sheet", "type": "main", "index": 0}]]
+    },
+    "Read Lead Sheet": {
+      "main": [[{"node": "Filter Leads Needing Follow-Up", "type": "main", "index": 0}]]
+    },
+    "Filter Leads Needing Follow-Up": {
+      "main": [[{"node": "Build Follow-Up Summary", "type": "main", "index": 0}]]
+    },
+    "Build Follow-Up Summary": {
+      "main": [[{"node": "Send Email to Hadi", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "workflow-3-v1-2026-04-10",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1417e0b59edc3afb3d5838cbf6a079bdbac13828695e425b5a8adce64da3515b",
+    "lastUpdated": "2026-04-10",
+    "note": "Activate after importing. Uses same Google Sheets + Gmail credentials as Workflow 2.",
+    "logic": "Reads Outreach Tracker daily at 9am. Finds all leads where status = 'Step 1 Sent', Response is empty, and First Contact Date was 3+ days ago. Sends Hadi an email listing each overdue lead with days since contact. Sends a 'no action needed' email if no leads are overdue.",
+    "changelog": [
+      "2026-04-10: Initial build"
+    ]
+  },
+  "tags": [
+    {"updatedAt": "2026-04-10T09:00:00.000Z", "createdAt": "2026-04-10T09:00:00.000Z", "id": "O4h8xcWZSCJKn5gN", "name": "Outreach"},
+    {"updatedAt": "2026-04-10T09:00:00.000Z", "createdAt": "2026-04-10T09:00:00.000Z", "id": "gk8k2V9gg0Obsqfc", "name": "Agency"}
+  ]
+}
