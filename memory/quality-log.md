@@ -29,6 +29,8 @@ This file is append-only. Every error caught during or after the pipeline gets l
 | 2026-04-08 | agency/workflow-2-opener-generation | Claude generated "Love that you're keeping the seasonal momentum going" — soft compliment disguised as observation, violating no-generic-compliments rule | Caught by Hadi during live outreach (Cocorico Italian restaurant reply) | Prompt updated — added explicit ban: no "love that", "great that", "impressive that", "rare to see", "good to see". State what you noticed, not how you feel about it | Yes — JSON updated; Hadi to paste updated prompt into N8N live workflow |
 | 2026-04-09 | agency/outreach workflow-1 | Get Existing Leads node using default header row 1 instead of row 3 — caused duplicate leads appearing 3-4 times in tracker | Caught by Hadi during live run review | Header row corrected to 3 in N8N. Wait node re-enabled. Append to Lead Sheet switched to Map Automatically. Filter by Follower Count node added. | Yes — workflow-1 session log updated |
 | 2026-04-09 | agency/outreach — Zizi manual scripts | Crockers Tring opener broke three rules: "genuinely impressive" (compliment), "No pressure" (forbidden phrase), "Free 7 day trial" (forbidden word "free") | Caught by Jodie during reply review | Flagged to Hadi. Changes did not apply as message sent before 8 April fixes. | Reminder issued — Zizi manual scripts must follow same rules as generated openers |
+| 2026-04-13 | shared/operator | Em dashes used in LinkedIn founder intro post despite zero-exception rule. Two instances in the draft shown to Hadi. | Caught by Hadi during review | Post corrected. Dashes replaced with commas. | Rule already exists in communication-style.md, closer.md, memory. Failure was execution, not documentation. |
+| 2026-04-13 | photography/seo + shared/operator | Blog post #6 went live with only 2 internal links (needed minimum 3). No link to elopement page, pricing page, or proposal page despite natural fits in the content. Nervousness-to-ease transformation underplayed in intro. | Caught by Hadi post-publish | 3 internal links added (proposal, elopement/homepage, pricing). Intro rewritten to lead with transformation and move Alex/Juliet anecdote to paragraph 2. | Yes — blog-pre-publish-checklist.md created as mandatory gate. Effective immediately. No post goes live without completed checklist + Operator sign-off. |
 
 ---
 
@@ -38,9 +40,9 @@ Review this section every Monday. If the same agent appears 3+ times, it needs a
 
 | Agent | Error Count | Most Common Failure | Last Reviewed |
 |-------|-------------|---------------------|---------------|
-| photography/seo | 4 | Missing checklist items at review stage — structurally rebuilt 2026-04-01 | 2026-04-01 |
+| photography/seo | 5 | Internal links insufficient at review stage — checklist gate added 2026-04-13 | 2026-04-13 |
 | photography/blog-copywriter | 1 | Keyword placement in opening | 2026-04-01 |
-| shared/operator | 1 | Blog post topic assigned without checking monthly report scored table | 2026-04-05 |
+| shared/operator | 2 | Post approved without full internal link check; blog topic assigned without monthly report check | 2026-04-13 |
 
 ---
 

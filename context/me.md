@@ -37,11 +37,14 @@ couple. Never "cinematic/film" language.
 Three-layer model: Elevation (lead) → Guidance (method) → 
 Relief (proof)
 
-Pricing:
-- London couples: from £680
-- London weddings: from £1,400
-- UK weddings: from £3,200
-- Destination: from £4,200
+Brand mechanism: The Presence Method
+Commissions (not "packages" in premium-facing copy):
+- The Vow: £1,400 (2hrs, ceremony)
+- The Bloom: £2,300 (4hrs, half day)
+- The Glow: £3,500 (7hrs, full day, most requested)
+- The Odyssey: £5,100 (10hrs, destination/multi-day)
+- Pre-wedding shoot: £680 standalone, included in Glow + Odyssey
+- Full pricing structure: shared/presence-method-packages.md
 
 SEO Status: Rankings broken since Nov 2024 rebrand.
 Recovery underway. 4 blog posts live and indexed.
@@ -76,10 +79,13 @@ Target clients: Restaurants, beauty clinics, estate agents,
 tradespeople, wholesalers, barber shops.
 Any service business relying on calls, bookings, content.
 
-Pricing (GBP for UK / USD for UAE):
-- Starter: £297/mo + £297 setup
-- Growth: £597/mo + £597 setup
-- Business: £997/mo + £997 setup
+Gear Shift Packages (voice + WhatsApp + social + content + automation):
+- Core: £497/mo + £500 setup (500 mins)
+- Drive: £797/mo + £750 setup (1,000 mins)
+- Turbo: £1,297/mo + £1,000 setup (2,500 mins, most popular)
+- Nitro: £1,997/mo + £1,500 setup (5,000 mins)
+- Full pricing structure: shared/click-ai-agency-packages.md
+- OLD PRICING IS DEAD: Never reference £297/£597/£997 tiers
 
 Assets built and ready:
 - N8N Weekly Content Engine (VPS: n8n.srv1466538.hstgr.cloud)
