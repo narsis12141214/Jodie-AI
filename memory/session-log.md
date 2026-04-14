@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-14
+Done: Story bank created (projects/photography/story-bank.md) with 5 pillars + template + 25 seed questions + Alex/Juliet seeded. 5-pillar framework received from Hadi (My Story / The Belief / Results / Education / The Human). 10 content format ideas brainstormed — Hadi picked #2 (30 London Locations), #4 (Things I say), #5 (Photos almost not taken), #10 (What I saw today). Research agent returned weak — plan switched to manual Instagram research. Date/time rule strengthened (always run command).
+Next: Hadi answers 9 priority seed questions tomorrow morning. Jodie does manual UK/EU elopement photographer research (30 mins). Then build first content format in full.
+Pipeline: 9 active threads, all awaiting replies. Workflow 3 first day live.
+
 ## 2026-04-13
 Done: Blog #6 updated (intro rewrite + 3 internal links). Blog pre-publish checklist created. ICAs saved for both businesses. New pricing structures saved (Presence Method + Gear Shift). LinkedIn launched (headline + about + first post). Workflow 3 imported + activated (status filter fixed to "Messaged"). SEO pipeline activated. Maria chased (one slot framing). Humble Grape closed. Session hook fixed (UTC to BST). Reel script concepts developed.
 Next: Rewrite all 7 reel scripts (priority 1 tomorrow). Drop Week 1 photos in Drive. Continue @hadyyazdani daily posting. DNS records for getclick.uk + Instantly.ai warmup.

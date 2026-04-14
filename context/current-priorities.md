@@ -1,76 +1,72 @@
 # Current Priorities
 
-Last updated: 2026-04-13
+Last updated: 2026-04-14
 
-## TUESDAY (14 April — Day 14 of 60)
+## WEDNESDAY (15 April — Day 15 of 60)
 
-**PRIORITY 1 (Both): Rewrite all 7 reel scripts using new content framework + ICAs**
-**PRIORITY 2 (Photography): Drop Week 1 photos in Drive folder (Posts 1-5)**
-**PRIORITY 3 (Photography): Post 6 live on @hadyyazdani (Monday 14 April)**
-
-Agency:
-- [ ] Rewrite 5 @clickaiagency reel scripts — grounded in agency ICA, "Your Monday morning" concept — Jodie + Hadi
-- [ ] Await Maria reply (proposal review over the weekend, one setup slot left)
-- [ ] Await Cocorico reply — Zizi monitoring
-- [ ] Await Lumiere Aesthetics reply — Zizi monitoring
-- [ ] Workflow 3 live — first automated follow-up email arrives 9am Tuesday
+**PRIORITY 1 (Photography): Hadi answers 9 priority seed questions in story bank**
+**PRIORITY 2 (Photography): Jodie does manual Instagram research — UK/EU elopement photographers**
+**PRIORITY 3 (Photography): Build first content format from picks (#2, #4, #5, #10)**
 
 Photography:
-- [ ] Rewrite 2 @hadyyazdani reel scripts — grounded in photography ICA, "What it actually looks like" concept — Jodie + Hadi
-- [ ] Drop Week 1 photos in Drive folder (Posts 1-5) — Hadi
-- [ ] Post 6 live on @hadyyazdani — Hadi
+- [ ] Hadi answers 9 priority seed questions in story bank — Q11, Q12, Q13, Q14, Q16, Q19, Q2, Q4, Q24
+  - File: projects/photography/story-bank.md
+  - Format: any (bullets, voice notes, half-sentences). Raw beats polished.
+- [ ] Jodie scans Instagram Explore — 30 mins, UK and EU elopement photographer handles, real observations
+- [ ] Jodie structures Hadi's seed answers into proper story bank entries
+- [ ] Build first format in full: pick from #2 (30 London Locations), #4 (Things I say that make couples cry), #5 (Photos couples almost didn't take), #10 (What I saw today)
+- [ ] Drop Week 1 photos in Drive folder (Posts 1-5) — Hadi (carried over)
 
-## PIPELINE
+Agency:
+- [ ] Apply 5-pillar framework to agency content (after photography is established)
+- [ ] DNS records for getclick.uk in Cloudflare (MX, SPF, DKIM, DMARC)
+- [ ] Connect email accounts to Instantly.ai + enable warmup
+- [ ] Workflow 3 — second day live, monitor first follow-up email at 9am
 
-- [ ] Maria — chased 13 Apr, reviewing proposal over weekend, one setup slot framing
-- [ ] Cocorico Italian — awaiting Step 2 reply
-- [ ] Lumiere Aesthetics — awaiting Step 2 reply
-- [ ] Randeszvous — Step 2 sent, awaiting reply
-- [ ] Rwayda — redirect sent, awaiting reply
-- [ ] The Bank — screen recording offer sent, awaiting reply
-- [ ] Dr Noura — Step 2 sent, awaiting reply
-- [ ] Pavilion — Step 2 sent, awaiting reply
-- [ ] Crockers Tring — email sent 10 Apr, awaiting reply
-- [ ] Humble Grape — CLOSED (not interested, silent)
+Pipeline (no action, awaiting replies):
+- [ ] Maria — proposal under review, "one setup slot left" framing live
+- [ ] Cocorico, Lumiere, Randeszvous, Rwayda, The Bank, Dr Noura, Pavilion, Crockers Tring
+
+## CONTENT FORMATS APPROVED (PHOTOGRAPHY)
+
+Hadi picked from the 10 ideas brainstormed today. Build these into the calendar:
+1. **30 London Locations in 30 Days** — daily reel, 15-20s each, location authority play
+2. **Things I say on a shoot that make couples cry** — series, one prompt per reel, method in action
+3. **Photos couples almost didn't take** — series, tension/payoff format
+4. **What I saw today** — POV, walking through London, how Hadi sees differently
 
 ## EMAIL OUTREACH (IN PROGRESS)
-
-- [x] Google Workspace setup on getclick.uk — done
-- [ ] Add DNS records in Cloudflare for getclick.uk (MX, SPF, DKIM, DMARC)
+- [x] Google Workspace setup on getclick.uk
+- [ ] DNS records (MX, SPF, DKIM, DMARC) in Cloudflare
 - [ ] Connect both email accounts to Instantly.ai
 - [ ] Enable warmup on both accounts
 - [ ] Build lead list from Apify Google Maps Scraper
 - [ ] Verify leads with ZeroBounce
-- [ ] Import email templates to Instantly.ai (in setup guide PDF)
+- [ ] Import email templates to Instantly.ai
 - Setup guide: projects/agency/outreach-system/email-outreach-setup-guide.pdf
 
 ## ONGOING PRIORITIES
 1. Close first agency client — nothing else matters more
-2. @clickaiagency — post daily from content calendar
+2. @clickaiagency — daily posts continuing
 3. Photography SEO — blog post #6 live, blog post #7 brief next week
-4. @hadyyazdani — launched Monday 13 April, daily posting active
-5. Email outreach channel — Google Workspace done, warmup next
-6. LinkedIn — first post live, post 2-3x per week
+4. @hadyyazdani — daily posting active, content rebuild via 5 pillars + story bank
+5. Email outreach — warmup setup pending
+6. LinkedIn — first post live, 2-3x per week
 
 ## FUTURE / PARKED
-- Autodream (memory cleanup sub-agent) — build when memory grows large enough to need it
+- Autodream (memory cleanup sub-agent) — build when memory grows large enough
 - Workflow 4 (CRM auto-logging) — deferred, test Workflow 3 first
+- Reel script full rewrite — paused, resume once story bank seeded + research back
+- 5-pillar framework for agency — separate session after photography is in motion
+
+## COMPLETED — 2026-04-14
+- [x] 2026-04-14: Session hook date issue diagnosed deeper — guessing time also flagged. Memory rule strengthened: always run date/time command, never guess.
+- [x] 2026-04-14: 5-pillar content framework received from Hadi for photography (My Story, The Belief, Results, Education, The Human)
+- [x] 2026-04-14: Story bank created — projects/photography/story-bank.md — with template, Alex/Juliet seeded, 25 seed questions across 5 pillars
+- [x] 2026-04-14: Research agent run on photographer content formats — returned weak (no UK elopement specifics, generic findings). Plan: manual research instead.
+- [x] 2026-04-14: 10 content format ideas brainstormed for photography. Hadi picked #2, #4, #5, #10.
+- [x] 2026-04-14: Reel rewrite paused — waiting on story bank seed answers + manual research
+- [x] 2026-04-14: Workflow 3 first day live in N8N
 
 ## COMPLETED — 2026-04-13
-- [x] 2026-04-13: Blog post #6 updated in WordPress — intro rewritten (nervousness-to-ease transformation leads), 3 internal links added (proposal page, elopement/homepage, pricing page)
-- [x] 2026-04-13: Blog pre-publish checklist created — mandatory gate, shared/blog-pre-publish-checklist.md
-- [x] 2026-04-13: ICAs saved — shared/ica-hadi-photography-london.md + shared/ica-click-ai-agency.md
-- [x] 2026-04-13: New pricing structures saved — shared/presence-method-packages.md + shared/click-ai-agency-packages.md
-- [x] 2026-04-13: context/me.md updated — old pricing replaced with new structures for both businesses
-- [x] 2026-04-13: LinkedIn profile updated — headline, about section, first post live
-- [x] 2026-04-13: Workflow 3 imported to N8N + activated — status filter corrected to "Messaged"
-- [x] 2026-04-13: SEO pipeline activated in N8N — was inactive since build, now runs every Monday 7am
-- [x] 2026-04-13: SEO data pulled — week ending 10 April. "couple photoshoot london" page 1 entry. "wedding photographers in london" dropped to 27 (monitor)
-- [x] 2026-04-13: Maria chased — "one setup slot left this month" framing, awaiting reply
-- [x] 2026-04-13: Humble Grape closed — not interested, silent
-- [x] 2026-04-13: Session hook fixed — date command updated from UTC to local BST
-- [x] 2026-04-13: Quality log updated — em dash violation + blog #6 internal links logged
-- [x] 2026-04-13: Reel script concept developed — "What it actually looks like" (photography) + "Your Monday morning" (agency) — full rewrite tomorrow priority 1
-
-## COMPLETED — 2026-04-10
 - [x] See session log for full history
