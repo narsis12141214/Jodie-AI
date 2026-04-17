@@ -1,43 +1,64 @@
 # Current Priorities
 
-Last updated: 2026-04-14
+Last updated: 2026-04-17
 
-## WEDNESDAY (15 April — Day 15 of 60)
+## SATURDAY (18 April — Day 18 of 60)
 
-**PRIORITY 1 (Photography): Hadi answers 9 priority seed questions in story bank**
-**PRIORITY 2 (Photography): Jodie does manual Instagram research — UK/EU elopement photographers**
-**PRIORITY 3 (Photography): Build first content format from picks (#2, #4, #5, #10)**
-
-Photography:
-- [ ] Hadi answers 9 priority seed questions in story bank — Q11, Q12, Q13, Q14, Q16, Q19, Q2, Q4, Q24
-  - File: projects/photography/story-bank.md
-  - Format: any (bullets, voice notes, half-sentences). Raw beats polished.
-- [ ] Jodie scans Instagram Explore — 30 mins, UK and EU elopement photographer handles, real observations
-- [ ] Jodie structures Hadi's seed answers into proper story bank entries
-- [ ] Build first format in full: pick from #2 (30 London Locations), #4 (Things I say that make couples cry), #5 (Photos couples almost didn't take), #10 (What I saw today)
-- [ ] Drop Week 1 photos in Drive folder (Posts 1-5) — Hadi (carried over)
+**PRIORITY 1 (Agency): Build first 2 industry landing pages (restaurants + dental)**
+**PRIORITY 2 (Agency): Create LinkedIn posts for next week (Monday + Thursday)**
+**PRIORITY 3 (Photography): Hadi finishes seed question answers in story bank**
 
 Agency:
-- [ ] Apply 5-pillar framework to agency content (after photography is established)
-- [ ] DNS records for getclick.uk in Cloudflare (MX, SPF, DKIM, DMARC)
-- [ ] Connect email accounts to Instantly.ai + enable warmup
-- [ ] Workflow 3 — second day live, monitor first follow-up email at 9am
+- [ ] Build /restaurants landing page — industry pain, solution, CTA, Click Pro recommendation — Jodie + Hadi
+- [ ] Build /dental landing page — same structure, dental-specific pain — Jodie + Hadi
+- [ ] Create LinkedIn post #2 (Monday) — industry insight with specific number — Jodie
+- [ ] Create LinkedIn post #3 (Thursday) — behind-the-scenes win or build — Jodie
+- [ ] Connect email accounts to Instantly.ai + enable warmup — Hadi
+- [ ] Discuss Workflow 3 changes — Hadi flagged issues to review
 
-Pipeline (no action, awaiting replies):
-- [ ] Maria — proposal under review, "one setup slot left" framing live
-- [ ] Cocorico, Lumiere, Randeszvous, Rwayda, The Bank, Dr Noura, Pavilion, Crockers Tring
+Photography:
+- [ ] Hadi finishes 9 priority seed question answers in story bank
+- [ ] Hadi provides micro wedding blog post #7 input answers (5 questions)
+- [ ] Jodie does manual Instagram research — UK/EU elopement photographers (30 mins)
+- [ ] Drop Week 1 photos in Drive folder once first content formats are ready
 
-## CONTENT FORMATS APPROVED (PHOTOGRAPHY)
+## NEXT WEEK (19-25 April)
 
-Hadi picked from the 10 ideas brainstormed today. Build these into the calendar:
-1. **30 London Locations in 30 Days** — daily reel, 15-20s each, location authority play
-2. **Things I say on a shoot that make couples cry** — series, one prompt per reel, method in action
-3. **Photos couples almost didn't take** — series, tension/payoff format
-4. **What I saw today** — POV, walking through London, how Hadi sees differently
+Agency:
+- [ ] Build /beauty + /fitness landing pages (complete the 4)
+- [ ] Start accountant/consultant referral partnership outreach (50 targets)
+- [ ] Publish first case study (Randeszvous or demo-based)
+- [ ] Directory listings (G2, Capterra, Futurepedia, Yell.com, FreeIndex)
+- [ ] LinkedIn posts continue 2x per week
+
+Photography:
+- [ ] Build first content format from approved picks (#2, #4, #5, #10)
+- [ ] Blog post #7 brief (Micro Wedding Photographer London)
+- [ ] Rewrite all 7 reel scripts once story bank is seeded
+
+## DAY 20 CHECKPOINT — Monday 20 April
+
+Full Phase 1 review of both businesses:
+- Agency: clients closed vs target, outreach volume, pipeline status, @clickaiagency growth
+- Photography: SEO rankings, enquiry volume, @hadyyazdani posting cadence, content rebuild progress
+- Pull fresh SEO data from GitHub (pipeline runs Monday 7am)
+- Adjust next 40 days based on real numbers
+
+## PIPELINE
+
+Agency:
+- [ ] Randeszvous — in-person meeting done, follow-up meeting next week to close
+- [ ] Maria — proposal under review, "one setup slot left" framing
+- [ ] Cocorico, Lumiere, Rwayda, The Bank, Dr Noura, Pavilion — awaiting replies
+- [ ] Crockers Tring — email sent 10 Apr, awaiting reply
+- [ ] 70+ cold emails sent manually — monitoring replies
+
+Photography:
+- [ ] No active leads — content rebuild and SEO recovery in progress
 
 ## EMAIL OUTREACH (IN PROGRESS)
 - [x] Google Workspace setup on getclick.uk
-- [ ] DNS records (MX, SPF, DKIM, DMARC) in Cloudflare
+- [x] DNS records (MX, SPF, DKIM, DMARC) in Cloudflare — done
 - [ ] Connect both email accounts to Instantly.ai
 - [ ] Enable warmup on both accounts
 - [ ] Build lead list from Apify Google Maps Scraper
@@ -45,28 +66,42 @@ Hadi picked from the 10 ideas brainstormed today. Build these into the calendar:
 - [ ] Import email templates to Instantly.ai
 - Setup guide: projects/agency/outreach-system/email-outreach-setup-guide.pdf
 
+## CONTENT FORMATS APPROVED (PHOTOGRAPHY)
+1. **30 London Locations in 30 Days** — daily reel, 15-20s each
+2. **Things I say on a shoot that make couples cry** — series, one prompt per reel
+3. **Photos couples almost didn't take** — series, tension/payoff format
+4. **What I saw today** — POV, walking through London
+
 ## ONGOING PRIORITIES
-1. Close first agency client — nothing else matters more
-2. @clickaiagency — daily posts continuing
-3. Photography SEO — blog post #6 live, blog post #7 brief next week
-4. @hadyyazdani — daily posting active, content rebuild via 5 pillars + story bank
-5. Email outreach — warmup setup pending
-6. LinkedIn — first post live, 2-3x per week
+1. Close first agency client — Randeszvous follow-up meeting is the closest shot
+2. @clickaiagency — daily posts + LinkedIn 2x per week
+3. Industry landing pages — build all 4 this week
+4. Photography SEO — blog post #7 brief (micro wedding) next week
+5. @hadyyazdani — content rebuild via 5 pillars + story bank
+6. Email outreach — Instantly.ai warmup setup pending
 
 ## FUTURE / PARKED
 - Autodream (memory cleanup sub-agent) — build when memory grows large enough
-- Workflow 4 (CRM auto-logging) — deferred, test Workflow 3 first
-- Reel script full rewrite — paused, resume once story bank seeded + research back
-- 5-pillar framework for agency — separate session after photography is in motion
+- Workflow 4 (CRM auto-logging) — deferred
+- Reel script full rewrite — paused, resume once story bank seeded
+- 5-pillar framework for agency — after photography is established
+- Google Ads — after 5 clients closed
+- SEO blog posts for agency — after 3 clients closed
+- Sitemap fix (missing Showit pages) — Monday task
 
-## COMPLETED — 2026-04-14
-- [x] 2026-04-14: Session hook date issue diagnosed deeper — guessing time also flagged. Memory rule strengthened: always run date/time command, never guess.
-- [x] 2026-04-14: 5-pillar content framework received from Hadi for photography (My Story, The Belief, Results, Education, The Human)
-- [x] 2026-04-14: Story bank created — projects/photography/story-bank.md — with template, Alex/Juliet seeded, 25 seed questions across 5 pillars
-- [x] 2026-04-14: Research agent run on photographer content formats — returned weak (no UK elopement specifics, generic findings). Plan: manual research instead.
-- [x] 2026-04-14: 10 content format ideas brainstormed for photography. Hadi picked #2, #4, #5, #10.
-- [x] 2026-04-14: Reel rewrite paused — waiting on story bank seed answers + manual research
-- [x] 2026-04-14: Workflow 3 first day live in N8N
+## COMPLETED — 2026-04-17
+- [x] 2026-04-17: Agency packages updated — Click, Click+, Click Pro, Click Elite. Old names (Core/Drive/Turbo/Nitro) retired.
+- [x] 2026-04-17: Objection handling docs saved — 6 photography + 7 agency objections — shared/objections.md
+- [x] 2026-04-17: Full site crawl of hadiphotographylondon.com — 10 blog posts, 8 service pages identified
+- [x] 2026-04-17: Sitemap gap identified — 5 Showit pages missing from XML sitemap (indexed via Search Console but not in sitemap)
+- [x] 2026-04-17: SEO rule reinforced — always crawl site before making content recommendations. Memory saved.
+- [x] 2026-04-17: Blog #7 topic confirmed — Micro Wedding Photographer London (14/15). Input questions sent to Hadi.
+- [x] 2026-04-17: Agency traffic growth research completed — strategy doc saved, execution plan approved
+- [x] 2026-04-17: Randeszvous pipeline update — in-person meeting done from cold DM, follow-up next week
+- [x] 2026-04-17: Companies House registration done
+- [x] 2026-04-17: @clickaiagency Meta verified (blue badge)
+- [x] 2026-04-17: 70+ cold emails sent manually
+- [x] 2026-04-17: DNS for getclick.uk fully configured
 
-## COMPLETED — 2026-04-13
+## COMPLETED — EARLIER
 - [x] See session log for full history

@@ -19,7 +19,7 @@ Bundled tiers with included minutes. Every package includes voice AI receptionis
 
 ## The four packages
 
-### Core — £497/mo (£500 setup)
+### Click — £497/mo (£500 setup)
 
 **Base tier — the foundation**
 
@@ -49,14 +49,14 @@ An AI receptionist that answers calls and WhatsApp messages 24/7, books appointm
 
 ---
 
-### Drive — £797/mo (£750 setup)
+### Click+ — £797/mo (£750 setup)
 
 **Growth tier — the growth engine**
 
-Everything in Core, plus double the minutes, original content creation, full social media management, and review management to build reputation while the AI handles the phones.
+Everything in Click, plus double the minutes, original content creation, full social media management, and review management to build reputation while the AI handles the phones.
 
 **Voice + WhatsApp:**
-- Everything in Core
+- Everything in Click
 - 1,000 minutes/month included (voice + WhatsApp combined)
 - Custom voice personality and script tailored to the business
 - FAQ training — AI trained on business-specific questions and menu/services
@@ -70,7 +70,7 @@ Everything in Core, plus double the minutes, original content creation, full soc
 - Google review management (review response + review request automation)
 
 **Automation:**
-- Everything in Core
+- Everything in Click
 - Review request automation (post-appointment trigger)
 - Birthday/anniversary automated messages
 - No-show follow-up sequence
@@ -82,14 +82,14 @@ Everything in Core, plus double the minutes, original content creation, full soc
 
 ---
 
-### Turbo — £1,297/mo (£1,000 setup)
+### Click Pro — £1,297/mo (£1,000 setup)
 
 **Sweet spot — the full system | Most popular**
 
 The full system. High-volume AI coverage, multi-platform content across all channels, advanced automation workflows that nurture leads and win back lapsed clients, plus a monthly strategy call to steer growth.
 
 **Voice + WhatsApp:**
-- Everything in Drive
+- Everything in Click+
 - 2,500 minutes/month included (voice + WhatsApp combined)
 - Multi-language support (if needed)
 - Outbound AI calls — appointment reminders, follow-ups, win-back campaigns
@@ -103,7 +103,7 @@ The full system. High-volume AI coverage, multi-platform content across all chan
 - Competitor monitoring and trend integration
 
 **Automation:**
-- Everything in Drive
+- Everything in Click+
 - Lapsed client win-back sequences (automated after X days of no visit)
 - Referral programme automation
 - Multi-step lead nurture workflows
@@ -116,14 +116,14 @@ The full system. High-volume AI coverage, multi-platform content across all chan
 
 ---
 
-### Nitro — £1,997/mo (£1,500 setup)
+### Click Elite — £1,997/mo (£1,500 setup)
 
 **Enterprise — full-spectrum AI-powered growth**
 
 The highest volume, deepest customisation, and a dedicated account manager. Custom automation workflows built for the business, weekly strategy sessions, multi-location support, and priority everything.
 
 **Voice + WhatsApp:**
-- Everything in Turbo
+- Everything in Click Pro
 - 5,000 minutes/month included (voice + WhatsApp combined)
 - Custom AI workflows — bespoke call flows for complex business logic
 - Multi-location routing (calls directed to correct branch/team)
@@ -138,7 +138,7 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 - Brand guidelines enforcement across all channels
 
 **Automation:**
-- Everything in Turbo
+- Everything in Click Pro
 - Custom AI workflow builds (up to 3 new workflows per quarter)
 - CRM integration (HubSpot, GoHighLevel, or equivalent)
 - Multi-location reporting with cross-branch comparisons
@@ -155,10 +155,10 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 | Package | Monthly | Setup | Minutes | Social posts/wk | Value stack |
 |---|---|---|---|---|---|
-| Core | £497 | £500 | 500 | 4 (templates) | £900+ |
-| Drive | £797 | £750 | 1,000 | 8 (original) | £1,800+ |
-| Turbo | £1,297 | £1,000 | 2,500 | 12 (multi-platform) | £3,200+ |
-| Nitro | £1,997 | £1,500 | 5,000 | 15+ (custom) | £5,500+ |
+| Click | £497 | £500 | 500 | 4 (templates) | £900+ |
+| Click+ | £797 | £750 | 1,000 | 8 (original) | £1,800+ |
+| Click Pro | £1,297 | £1,000 | 2,500 | 12 (multi-platform) | £3,200+ |
+| Click Elite | £1,997 | £1,500 | 5,000 | 15+ (custom) | £5,500+ |
 
 ---
 
@@ -171,7 +171,7 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 | Additional phone number | £10/mo | Per number, any country |
 | Additional social platform | £150/mo | Per platform added to any tier |
 | Additional automation workflow | £200 one-time | Custom build beyond tier allowance |
-| Ad-hoc strategy call (30 min) | £75 | Beyond included calls in Turbo/Nitro |
+| Ad-hoc strategy call (30 min) | £75 | Beyond included calls in Click Pro/Click Elite |
 
 ---
 
@@ -181,7 +181,7 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 | Add-on | Price | Notes |
 |---|---|---|
-| Outbound AI calling campaigns | £300/mo | Included in Turbo+ |
+| Outbound AI calling campaigns | £300/mo | Included in Click Pro+ |
 | Multi-language AI voice | £150/mo | Per additional language |
 | Custom voice cloning | £500 one-time | Branded AI voice |
 | IVR / call routing setup | £250 one-time | Multi-department or multi-location |
@@ -191,7 +191,7 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 | Add-on | Price | Notes |
 |---|---|---|
 | Video content production | £400/mo | 4 short-form videos/month |
-| Influencer outreach pack | £250/mo | Included in Nitro |
+| Influencer outreach pack | £250/mo | Included in Click Elite |
 | Paid social ad management | £300/mo | Client funds ad spend separately |
 | Google Business Profile optimisation | £150 one-time | Full audit + keyword optimisation |
 
@@ -199,7 +199,7 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 | Add-on | Price | Notes |
 |---|---|---|
-| CRM integration (HubSpot/GHL) | £400 one-time | Included in Nitro |
+| CRM integration (HubSpot/GHL) | £400 one-time | Included in Click Elite |
 | Custom N8N workflow build | £200/workflow | Bespoke automation |
 | Email marketing automation | £200/mo | Sequences, templates, triggers |
 | Website chatbot | £150/mo | AI chatbot with lead capture |
@@ -208,17 +208,17 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 ## Copy and positioning notes for Jodie
 
-- Package names: Core, Drive, Turbo, Nitro — use consistently. Never use "basic" or "premium."
+- Package names: Click, Click+, Click Pro, Click Elite — use consistently. Never use "basic" or "premium." Never use the old names: Core, Drive, Turbo, Nitro.
 - Lead with the outcome, not the technology. "Never miss a call again" beats "AI voice agent with NLP."
 - The unified bundle is the differentiator. Every competitor sells voice OR social. We sell the full engine.
 - Minutes are included, not sold. Frame as "your AI handles up to 500 calls and messages a month" not "500 minutes."
 - Setup fees cover onboarding, training the AI on the business, and building the automation workflows. Frame as investment, not cost.
 - Overage should feel fair, not punitive. "If your business grows beyond the plan, extra minutes are just £0.20 each."
-- Turbo is the sweet spot — always present it as the recommended tier in proposals.
+- Click Pro is the sweet spot — always present it as the recommended tier in proposals.
 - Never lead with price. Lead with the problem (missed calls, inconsistent social, manual follow-ups) then present the solution.
 - Social media content is AI-generated but human-reviewed. Never claim it's 100% hands-off.
 - For restaurants: lead with reservations and reviews. For clinics: lead with appointment bookings and patient follow-up. For beauty: lead with DMs and rebooking.
-- The free audit remains the top-of-funnel offer. It's the entry point into a Core conversation.
+- The free audit remains the top-of-funnel offer. It's the entry point into a Click conversation.
 - Payment plans: offer quarterly (5% discount) or annual (15% discount) to reduce churn.
 
 ---

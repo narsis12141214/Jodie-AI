@@ -80,12 +80,12 @@ tradespeople, wholesalers, barber shops.
 Any service business relying on calls, bookings, content.
 
 Gear Shift Packages (voice + WhatsApp + social + content + automation):
-- Core: £497/mo + £500 setup (500 mins)
-- Drive: £797/mo + £750 setup (1,000 mins)
-- Turbo: £1,297/mo + £1,000 setup (2,500 mins, most popular)
-- Nitro: £1,997/mo + £1,500 setup (5,000 mins)
+- Click: £497/mo + £500 setup (500 mins)
+- Click+: £797/mo + £750 setup (1,000 mins)
+- Click Pro: £1,297/mo + £1,000 setup (2,500 mins, most popular)
+- Click Elite: £1,997/mo + £1,500 setup (5,000 mins)
 - Full pricing structure: shared/click-ai-agency-packages.md
-- OLD PRICING IS DEAD: Never reference £297/£597/£997 tiers
+- OLD NAMES ARE DEAD: Never reference Core/Drive/Turbo/Nitro or £297/£597/£997 tiers
 
 Assets built and ready:
 - N8N Weekly Content Engine (VPS: n8n.srv1466538.hstgr.cloud)
