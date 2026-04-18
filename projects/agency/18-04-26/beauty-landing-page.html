@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Receptionist for Beauty and Aesthetics Clinics UK | Click AI Agency</title>
+<meta name="description" content="UK beauty and aesthetics clinics lose thousands every month to missed DMs, no-shows, and clients who never rebook. Click AI builds AI systems that handle bookings, follow-up, and social media while you focus on your clients.">
+<meta name="keywords" content="AI receptionist for beauty clinics, aesthetics clinic automation UK, beauty salon booking system, reduce salon no-shows, AI for aesthetics clinics">
+<link rel="canonical" href="https://clickaiagency.com/beauty">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #0D0D0D;
+  --white: #FAFAFA;
+  --accent: #6C63FF;
+  --accent-light: #8B83FF;
+  --accent-glow: rgba(108, 99, 255, 0.12);
+  --accent-glow-strong: rgba(108, 99, 255, 0.25);
+  --grey-50: #F7F7F8;
+  --grey-100: #EFEFEF;
+  --grey-200: #DCDCDC;
+  --grey-400: #999;
+  --grey-600: #666;
+  --grey-800: #333;
+  --red: #E53E3E;
+  --red-light: rgba(229, 62, 62, 0.08);
+  --green: #38A169;
+  --green-light: rgba(56, 161, 105, 0.08);
+  --amber: #D69E2E;
+  --amber-light: rgba(214, 158, 46, 0.08);
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --max-w: 1140px;
+  --section-pad: clamp(60px, 10vw, 120px);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250, 250, 250, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--grey-100);
+  transition: all 0.3s ease;
+}
+.nav-inner {
+  max-width: var(--max-w); margin: 0 auto; padding: 16px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+  font-family: var(--sans); font-weight: 700; font-size: 18px;
+  color: var(--black); text-decoration: none; letter-spacing: -0.3px;
+}
+.nav-logo span { color: var(--accent); }
+.nav-cta {
+  font-family: var(--sans); font-size: 14px; font-weight: 600;
+  background: var(--accent); color: white; border: none;
+  padding: 10px 24px; border-radius: 8px; cursor: pointer;
+  text-decoration: none; transition: all 0.2s ease;
+}
+.nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); }
+
+.hero {
+  padding: calc(var(--section-pad) + 60px) 0 var(--section-pad);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent-glow); color: var(--accent);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+  padding: 8px 16px; border-radius: 100px;
+  margin-bottom: 24px; text-transform: uppercase;
+}
+.hero-badge::before {
+  content: ''; width: 8px; height: 8px;
+  background: var(--accent); border-radius: 50%;
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
+}
+.hero h1 {
+  font-family: var(--serif); font-size: clamp(36px, 5.5vw, 64px);
+  line-height: 1.1; letter-spacing: -1px; color: var(--black);
+  max-width: 720px; margin-bottom: 24px;
+}
+.hero h1 .highlight { color: var(--accent); }
+.hero-sub {
+  font-size: clamp(17px, 2vw, 20px); line-height: 1.7;
+  color: var(--grey-600); max-width: 580px; margin-bottom: 20px;
+}
+.hero-sub-2 {
+  font-size: clamp(15px, 1.6vw, 17px); line-height: 1.7;
+  color: var(--grey-600); max-width: 580px; margin-bottom: 40px;
+}
+.hero-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--grey-200);
+  border-radius: 16px; overflow: hidden;
+  max-width: 560px;
+}
+.hero-stat { background: var(--white); padding: 24px; text-align: center; }
+.hero-stat-number {
+  font-family: var(--serif); font-size: 32px;
+  color: var(--accent); margin-bottom: 4px;
+}
+.hero-stat-label {
+  font-size: 12px; color: var(--grey-400);
+  text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;
+}
+
+.section-label {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 2px;
+  font-weight: 700; color: var(--accent); margin-bottom: 16px;
+}
+
+.problem {
+  padding: var(--section-pad) 0;
+  background: var(--black); color: var(--white);
+  position: relative;
+}
+.problem::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='1' cy='1' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.problem h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 20px; max-width: 640px;
+}
+.problem-intro {
+  color: var(--grey-400); font-size: 17px; max-width: 580px;
+  margin-bottom: 56px; line-height: 1.8;
+}
+.pain-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.pain-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px; padding: 32px;
+  transition: all 0.3s ease;
+}
+.pain-card:hover {
+  border-color: rgba(108, 99, 255, 0.3);
+  background: rgba(108, 99, 255, 0.06);
+  transform: translateY(-2px);
+}
+.pain-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; margin-bottom: 20px;
+}
+.pain-icon.red { background: var(--red-light); }
+.pain-icon.amber { background: var(--amber-light); }
+.pain-card h3 {
+  font-family: var(--sans); font-size: 18px; font-weight: 700;
+  margin-bottom: 12px; color: var(--white);
+}
+.pain-card p { color: var(--grey-400); font-size: 15px; line-height: 1.7; }
+.pain-stat {
+  display: inline-block; margin-top: 16px; padding: 6px 14px;
+  font-size: 13px; font-weight: 700; border-radius: 100px;
+}
+.pain-stat.red-stat { background: var(--red-light); color: var(--red); }
+.pain-stat.amber-stat { background: var(--amber-light); color: var(--amber); }
+
+.cost-viz { padding: var(--section-pad) 0; background: var(--grey-50); }
+.cost-viz h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px; text-align: center;
+}
+.cost-viz-sub {
+  text-align: center; color: var(--grey-600); font-size: 17px;
+  max-width: 520px; margin: 0 auto 56px;
+}
+.chart-container {
+  max-width: 700px; margin: 0 auto;
+  background: var(--white); border-radius: 20px;
+  border: 1px solid var(--grey-100); padding: 40px;
+  box-shadow: 0 4px 40px rgba(0,0,0,0.04);
+}
+.chart-title { font-weight: 700; font-size: 15px; margin-bottom: 32px; color: var(--grey-800); }
+.chart-bars { display: flex; flex-direction: column; gap: 20px; }
+.chart-bar-row {
+  display: grid; grid-template-columns: 160px 1fr 80px;
+  align-items: center; gap: 16px;
+}
+.chart-bar-label { font-size: 14px; font-weight: 600; color: var(--grey-800); }
+.chart-bar-track {
+  height: 36px; background: var(--grey-50); border-radius: 8px; overflow: hidden;
+}
+.chart-bar-fill {
+  height: 100%; border-radius: 8px;
+  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1); width: 0;
+}
+.chart-bar-fill.red { background: linear-gradient(135deg, var(--red), #C53030); }
+.chart-bar-fill.amber { background: linear-gradient(135deg, var(--amber), #B7791F); }
+.chart-bar-value {
+  font-family: var(--serif); font-size: 20px; color: var(--black); text-align: right;
+}
+.chart-total {
+  margin-top: 24px; padding-top: 24px; border-top: 2px solid var(--black);
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+.chart-total-label { font-weight: 700; font-size: 15px; }
+.chart-total-value { font-family: var(--serif); font-size: 36px; color: var(--red); }
+.chart-note { text-align: center; margin-top: 24px; font-size: 13px; color: var(--grey-400); }
+
+.how { padding: var(--section-pad) 0; }
+.how h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px;
+}
+.how-sub { color: var(--grey-600); font-size: 17px; max-width: 520px; margin-bottom: 56px; }
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+.step {
+  padding: 32px; background: var(--white);
+  border: 1px solid var(--grey-100); border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.step:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 40px var(--accent-glow);
+  transform: translateY(-3px);
+}
+.step-number {
+  font-family: var(--serif); font-size: 48px;
+  color: var(--accent-glow-strong); line-height: 1; margin-bottom: 16px;
+}
+.step h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+.step p { font-size: 15px; color: var(--grey-600); line-height: 1.7; }
+
+.scenarios { padding: var(--section-pad) 0; background: var(--grey-50); }
+.scenarios h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px; text-align: center;
+}
+.scenarios-sub {
+  text-align: center; color: var(--grey-600); font-size: 17px;
+  max-width: 520px; margin: 0 auto 56px;
+}
+.scenario-list { display: flex; flex-direction: column; gap: 24px; max-width: 800px; margin: 0 auto; }
+.scenario {
+  background: var(--white); border-radius: 16px;
+  border: 1px solid var(--grey-100); overflow: hidden;
+  transition: all 0.3s ease;
+}
+.scenario:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.06); transform: translateY(-2px); }
+.scenario-header { display: grid; grid-template-columns: 1fr 1fr; }
+.scenario-before, .scenario-after { padding: 24px 28px; }
+.scenario-before { background: var(--red-light); border-right: 1px solid var(--grey-100); }
+.scenario-after { background: var(--green-light); }
+.scenario-tag {
+  font-size: 10px; text-transform: uppercase;
+  letter-spacing: 1.5px; font-weight: 700; margin-bottom: 8px;
+}
+.scenario-before .scenario-tag { color: var(--red); }
+.scenario-after .scenario-tag { color: var(--green); }
+.scenario-text { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--grey-800); }
+
+.social-section {
+  padding: var(--section-pad) 0;
+  background: var(--black); color: var(--white);
+}
+
+.results { padding: var(--section-pad) 0; }
+.results h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px; text-align: center;
+}
+.results-sub {
+  text-align: center; color: var(--grey-600); font-size: 17px;
+  max-width: 500px; margin: 0 auto 56px;
+}
+.results-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px; max-width: 900px; margin: 0 auto;
+}
+.result-card {
+  text-align: center; padding: 40px 24px;
+  background: var(--white); border: 1px solid var(--grey-100);
+  border-radius: 16px; transition: all 0.3s ease;
+}
+.result-card:hover { border-color: var(--accent); box-shadow: 0 8px 40px var(--accent-glow); }
+.result-number {
+  font-family: var(--serif); font-size: 48px;
+  color: var(--accent); line-height: 1; margin-bottom: 8px;
+}
+.result-label { font-size: 14px; font-weight: 600; color: var(--grey-800); margin-bottom: 6px; }
+.result-detail { font-size: 13px; color: var(--grey-400); }
+
+.features { padding: var(--section-pad) 0; background: var(--grey-50); }
+.features h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px;
+}
+.features-sub { color: var(--grey-600); font-size: 17px; max-width: 520px; margin-bottom: 56px; }
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.feature {
+  padding: 28px; background: var(--white);
+  border: 1px solid var(--grey-100); border-radius: 14px;
+  transition: all 0.3s ease;
+}
+.feature:hover { border-color: var(--accent); box-shadow: 0 8px 40px var(--accent-glow); }
+.feature-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+.feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.feature p { font-size: 14px; color: var(--grey-600); line-height: 1.7; }
+
+.pricing { padding: var(--section-pad) 0; text-align: center; }
+.pricing h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px;
+}
+.pricing-sub {
+  color: var(--grey-600); font-size: 17px;
+  max-width: 480px; margin: 0 auto 48px;
+}
+.pricing-card {
+  max-width: 440px; margin: 0 auto;
+  background: var(--white); border: 2px solid var(--accent);
+  border-radius: 20px; padding: 48px 40px;
+  position: relative; box-shadow: 0 8px 60px var(--accent-glow);
+}
+.pricing-badge {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--accent); color: white;
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 6px 20px; border-radius: 100px;
+}
+.pricing-name { font-family: var(--serif); font-size: 28px; margin-bottom: 4px; margin-top: 8px; }
+.pricing-tagline { color: var(--grey-400); font-size: 14px; margin-bottom: 24px; }
+.pricing-price { font-family: var(--serif); font-size: 52px; color: var(--black); line-height: 1; }
+.pricing-price span { font-size: 18px; color: var(--grey-400); font-family: var(--sans); }
+.pricing-setup { font-size: 13px; color: var(--grey-400); margin-top: 8px; margin-bottom: 32px; }
+.pricing-features {
+  list-style: none; text-align: left;
+  display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;
+}
+.pricing-features li {
+  font-size: 14px; color: var(--grey-800);
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.pricing-features li::before {
+  content: ''; flex-shrink: 0;
+  width: 20px; height: 20px; margin-top: 2px;
+  background: var(--green-light); border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.5 13.5l-3-3 1-1 2 2 5-5 1 1-6 6z' fill='%2338A169'/%3E%3C/svg%3E");
+  background-size: contain;
+}
+.pricing-note { font-size: 13px; color: var(--grey-400); margin-top: 16px; }
+
+.cta-section {
+  padding: var(--section-pad) 0; background: var(--grey-50);
+  text-align: center; position: relative; overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 400px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-section h2 {
+  font-family: var(--serif); font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2; margin-bottom: 16px; position: relative;
+}
+.cta-section p {
+  color: var(--grey-600); font-size: 17px; max-width: 480px;
+  margin: 0 auto 40px; position: relative;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: white;
+  font-family: var(--sans); font-size: 16px; font-weight: 700;
+  padding: 16px 40px; border-radius: 12px; border: none;
+  cursor: pointer; text-decoration: none;
+  transition: all 0.3s ease; position: relative;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+}
+.btn-primary:hover {
+  background: var(--accent-light); transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.4);
+}
+.btn-sub { display: block; margin-top: 16px; font-size: 13px; color: var(--grey-400); position: relative; }
+
+.footer {
+  padding: 40px 0; border-top: 1px solid var(--grey-100);
+  text-align: center; font-size: 13px; color: var(--grey-400);
+}
+.footer a { color: var(--accent); text-decoration: none; }
+
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+@media (max-width: 768px) {
+  .hero-stats { grid-template-columns: 1fr; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .chart-bar-row { grid-template-columns: 1fr; gap: 4px; }
+  .chart-bar-value { text-align: left; font-size: 16px; }
+  .scenario-header { grid-template-columns: 1fr; }
+  .scenario-before { border-right: none; border-bottom: 1px solid var(--grey-100); }
+  .steps { grid-template-columns: 1fr; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .results-grid { grid-template-columns: 1fr 1fr; }
+  .pricing-card { padding: 40px 28px; }
+}
+@media (max-width: 480px) { .results-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="https://clickaiagency.com" class="nav-logo">click<span>ai</span></a>
+    <a href="#audit" class="nav-cta">Free Clinic Audit</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge reveal">AI Receptionist for UK Beauty and Aesthetics Clinics</div>
+    <h1 class="reveal reveal-delay-1">An AI receptionist that <span class="highlight">fills your appointment book</span> while you focus on your clients</h1>
+    <p class="hero-sub reveal reveal-delay-2">Imagine finishing a treatment and checking your phone to find three new bookings confirmed, two rebookings handled, and every DM answered. No receptionist chasing. No admin between clients. Just a full diary and a calm schedule.</p>
+    <p class="hero-sub-2 reveal reveal-delay-2">That is what an AI receptionist does for a beauty and aesthetics clinic. It answers calls and DMs around the clock. It knows your treatments, availability, and pricing. It sends aftercare reminders that bring clients back. It handles the parts of running a clinic that pull you away from the treatment room, so you can stay where you belong.</p>
+    <div class="hero-stats reveal reveal-delay-3">
+      <div class="hero-stat">
+        <div class="hero-stat-number">24/7</div>
+        <div class="hero-stat-label">Every enquiry answered</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">2x</div>
+        <div class="hero-stat-label">More rebookings</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">0</div>
+        <div class="hero-stat-label">Missed DMs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="container">
+    <div class="section-label reveal">The Problem</div>
+    <h2 class="reveal reveal-delay-1">Four things silently costing your clinic money every week</h2>
+    <p class="problem-intro reveal reveal-delay-2">You are not losing clients because your treatments are not good enough. You are losing them because the admin around the treatments is not keeping up. Here is where it happens.</p>
+    <div class="pain-grid">
+      <div class="pain-card reveal reveal-delay-1">
+        <div class="pain-icon red">💬</div>
+        <h3>DMs and enquiries that go unanswered</h3>
+        <p>A potential client sends a DM at 8pm asking about lip filler pricing. You are with a client. By the time you reply the next morning, they have already booked with the clinic that responded in 10 minutes. Most beauty enquiries happen outside working hours. If nobody is answering, someone else is.</p>
+        <span class="pain-stat red-stat">68% of beauty enquiries come via DM</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-2">
+        <div class="pain-icon red">🪑</div>
+        <h3>No-shows and last-minute cancellations</h3>
+        <p>A client booked a facial three weeks ago. No reminder was sent. They forgot. Your therapist had a 90-minute gap in the middle of the day. The slot could have been filled from your waitlist if anyone had known in time.</p>
+        <span class="pain-stat red-stat">Average: £300-600/month in empty slots</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-3">
+        <div class="pain-icon amber">🔄</div>
+        <h3>Clients who never rebook</h3>
+        <p>A client had an amazing experience. Loved the results. Told you they would be back. Then nothing. No follow-up message. No rebooking reminder. Three months later they see another clinic on Instagram and book there instead. Not because you did anything wrong. Because nobody followed up.</p>
+        <span class="pain-stat amber-stat">40% of clients never return without follow-up</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-4">
+        <div class="pain-icon amber">📱</div>
+        <h3>Social media that stops and starts</h3>
+        <p>You post transformation photos for a week, then nothing for three weeks. The algorithm stops showing your content. New clients searching for treatments in your area never find you. Your competitors who post consistently appear in Explore and get the enquiries.</p>
+        <span class="pain-stat amber-stat">76% of clients find clinics via social media</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COST VISUALIZER -->
+<section class="cost-viz">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">The Numbers</div>
+    <h2 class="reveal reveal-delay-1">What this costs a typical UK aesthetics clinic every month</h2>
+    <p class="cost-viz-sub reveal reveal-delay-2">Based on a clinic running 40 to 100 appointments per week with 1 to 3 therapists.</p>
+    <div class="chart-container reveal reveal-delay-3">
+      <div class="chart-title">Monthly revenue lost to preventable problems</div>
+      <div class="chart-bars">
+        <div class="chart-bar-row">
+          <div class="chart-bar-label">Unanswered enquiries</div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill red" data-width="60%" data-label="£1,800"></div>
+          </div>
+          <div class="chart-bar-value">£1,800</div>
+        </div>
+        <div class="chart-bar-row">
+          <div class="chart-bar-label">No-shows</div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill red" data-width="35%" data-label="£600"></div>
+          </div>
+          <div class="chart-bar-value">£600</div>
+        </div>
+        <div class="chart-bar-row">
+          <div class="chart-bar-label">Lost rebookings</div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill amber" data-width="75%" data-label="£2,200"></div>
+          </div>
+          <div class="chart-bar-value">£2,200</div>
+        </div>
+        <div class="chart-bar-row">
+          <div class="chart-bar-label">Invisible social presence</div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill amber" data-width="30%" data-label="£500"></div>
+          </div>
+          <div class="chart-bar-value">£500</div>
+        </div>
+      </div>
+      <div class="chart-total">
+        <div class="chart-total-label">Estimated total per month</div>
+        <div class="chart-total-value">£5,100</div>
+      </div>
+      <div class="chart-note">Based on average treatment values of £80 to £350 for aesthetics and beauty treatments</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="container">
+    <div class="section-label reveal">How It Works</div>
+    <h2 class="reveal reveal-delay-1">We build a system that runs while you treat clients</h2>
+    <p class="how-sub reveal reveal-delay-2">No new software to learn. The system connects to your existing booking platform and handles everything that currently falls through the cracks.</p>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-number">01</div>
+        <h3>We audit your clinic</h3>
+        <p>15 minutes. We look at your enquiry flow, booking setup, no-show rate, rebooking patterns, and social presence. You get a clear picture of where clients are being lost and what the fix looks like.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-number">02</div>
+        <h3>We build your system</h3>
+        <p>An AI receptionist trained on your treatments, pricing, and availability. Automated reminders that cut no-shows. Rebooking sequences that bring clients back. Social content that keeps you visible. Connects to Fresha, Timely, TreatWell, or whatever you already use.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-number">03</div>
+        <h3>You focus on your clients</h3>
+        <p>The system handles enquiries, bookings, reminders, rebooking, social media, and reviews automatically. You get a monthly report. You stay in the treatment room where you belong.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="scenarios">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">Before and After</div>
+    <h2 class="reveal reveal-delay-1">What changes when the system is running</h2>
+    <p class="scenarios-sub reveal reveal-delay-2">Real scenarios from beauty and aesthetics clinic operations.</p>
+    <div class="scenario-list">
+      <div class="scenario reveal">
+        <div class="scenario-header">
+          <div class="scenario-before">
+            <div class="scenario-tag">Without Click AI</div>
+            <div class="scenario-text">Saturday 9pm. A potential client DMs asking about Botox pricing and availability. You are at home. You reply Sunday afternoon. By then they have already booked with the clinic that replied within 5 minutes.</div>
+          </div>
+          <div class="scenario-after">
+            <div class="scenario-tag">With Click AI</div>
+            <div class="scenario-text">Saturday 9pm. AI responds to the DM in under 60 seconds with treatment details and available slots. Client books a consultation for Tuesday. You wake up to a confirmed appointment.</div>
+          </div>
+        </div>
+      </div>
+      <div class="scenario reveal reveal-delay-1">
+        <div class="scenario-header">
+          <div class="scenario-before">
+            <div class="scenario-tag">Without Click AI</div>
+            <div class="scenario-text">A client booked a chemical peel two weeks ago. No reminder was sent. They forgot. Your therapist had a 90-minute gap. The waitlist was never checked.</div>
+          </div>
+          <div class="scenario-after">
+            <div class="scenario-tag">With Click AI</div>
+            <div class="scenario-text">48 hours before: automated reminder with pre-treatment instructions. 24 hours before: confirmation requested. Client rescheduled. Waitlist client offered the original slot. No gap in the diary.</div>
+          </div>
+        </div>
+      </div>
+      <div class="scenario reveal reveal-delay-2">
+        <div class="scenario-header">
+          <div class="scenario-before">
+            <div class="scenario-tag">Without Click AI</div>
+            <div class="scenario-text">A client loved her facial. Said she would rebook. Six weeks pass. No message from you. She sees a competitor offering a spring offer on Instagram. Books there instead. You lost a client worth £1,200+ per year.</div>
+          </div>
+          <div class="scenario-after">
+            <div class="scenario-tag">With Click AI</div>
+            <div class="scenario-text">3 days after treatment: aftercare follow-up message. 4 weeks later: rebooking reminder with her preferred treatment and therapist pre-selected. Client rebooks in two taps. Retention runs itself.</div>
+          </div>
+        </div>
+      </div>
+      <div class="scenario reveal reveal-delay-3">
+        <div class="scenario-header">
+          <div class="scenario-before">
+            <div class="scenario-tag">Without Click AI</div>
+            <div class="scenario-text">A client calls during a treatment. Phone goes to voicemail. She does not leave a message. She calls the next clinic on Google. You lose a new client and never know it happened.</div>
+          </div>
+          <div class="scenario-after">
+            <div class="scenario-tag">With Click AI</div>
+            <div class="scenario-text">AI answers the call immediately. Knows your treatment menu, pricing, and availability. Books the appointment. Sends a confirmation text. You finish your current client without interruption.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section class="social-section">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">Why Social Media Matters for Clinics</div>
+    <h2 class="reveal reveal-delay-1" style="font-family:var(--serif);font-size:clamp(28px,4vw,44px);line-height:1.2;margin-bottom:16px;text-align:center;">Your next client is scrolling Instagram right now</h2>
+    <p class="reveal reveal-delay-2" style="text-align:center;color:var(--grey-400);font-size:17px;max-width:540px;margin:0 auto 48px;">Beauty and aesthetics is one of the most visual industries in the world. If your clinic is not showing up consistently on Instagram, you are invisible to the clients who are actively looking for exactly what you offer.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto 48px;">
+      <div class="reveal reveal-delay-1" style="text-align:center;padding:32px 20px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.15);border-radius:16px;">
+        <div style="font-family:var(--serif);font-size:44px;color:var(--accent);line-height:1;margin-bottom:8px;">76%</div>
+        <div style="font-size:13px;color:var(--grey-400);line-height:1.5;">of beauty clients find new clinics through Instagram or Facebook</div>
+      </div>
+      <div class="reveal reveal-delay-2" style="text-align:center;padding:32px 20px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.15);border-radius:16px;">
+        <div style="font-family:var(--serif);font-size:44px;color:var(--accent);line-height:1;margin-bottom:8px;">89%</div>
+        <div style="font-size:13px;color:var(--grey-400);line-height:1.5;">check a clinic's Instagram before booking a treatment</div>
+      </div>
+      <div class="reveal reveal-delay-3" style="text-align:center;padding:32px 20px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.15);border-radius:16px;">
+        <div style="font-family:var(--serif);font-size:44px;color:var(--accent);line-height:1;margin-bottom:8px;">3x</div>
+        <div style="font-size:13px;color:var(--grey-400);line-height:1.5;">per week minimum to stay visible in Instagram's algorithm</div>
+      </div>
+      <div class="reveal reveal-delay-4" style="text-align:center;padding:32px 20px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.15);border-radius:16px;">
+        <div style="font-family:var(--serif);font-size:44px;color:var(--accent);line-height:1;margin-bottom:8px;">5x</div>
+        <div style="font-size:13px;color:var(--grey-400);line-height:1.5;">more enquiries for clinics that post transformation photos weekly</div>
+      </div>
+    </div>
+
+    <div class="reveal" style="max-width:700px;margin:0 auto;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;">
+      <h3 style="font-size:17px;font-weight:700;margin-bottom:16px;">Your Instagram is your shopfront</h3>
+      <p style="color:var(--grey-400);font-size:15px;line-height:1.8;margin-bottom:16px;">For a beauty or aesthetics clinic, Instagram is not optional. It is where clients decide whether they trust you before they ever pick up the phone. They look at your work, your results, your reviews, and how active you are. A clinic that has not posted in three weeks feels closed. A clinic that posts every few days feels alive, busy, and in demand.</p>
+      <p style="color:var(--grey-400);font-size:15px;line-height:1.8;margin-bottom:16px;">Transformation photos, before and after shots, treatment explainers, client testimonials, and behind-the-scenes content are the five types of posts that drive the most bookings in aesthetics. Most clinic owners know this. Most do not have time to plan, create, and post consistently while running a busy clinic.</p>
+      <p style="color:var(--grey-400);font-size:15px;line-height:1.8;">With Click AI, your clinic posts 8 pieces of branded content every week across Instagram and Facebook. Planned monthly, approved by you, published automatically. Treatment highlights, results, education, and social proof, all handled. Your feed never goes dark. Your clients never forget you exist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">What Clinics See</div>
+    <h2 class="reveal reveal-delay-1">The numbers after 90 days</h2>
+    <p class="results-sub reveal reveal-delay-2">Benchmarks beauty and aesthetics clinics typically reach within the first three months.</p>
+    <div class="results-grid">
+      <div class="result-card reveal reveal-delay-1">
+        <div class="result-number">100%</div>
+        <div class="result-label">Enquiries answered</div>
+        <div class="result-detail">Calls, DMs, and WhatsApp, 24/7 including evenings and weekends</div>
+      </div>
+      <div class="result-card reveal reveal-delay-2">
+        <div class="result-number">60%</div>
+        <div class="result-label">Fewer no-shows</div>
+        <div class="result-detail">Automated reminders with pre-treatment instructions</div>
+      </div>
+      <div class="result-card reveal reveal-delay-3">
+        <div class="result-number">2x</div>
+        <div class="result-label">More rebookings</div>
+        <div class="result-detail">Automated follow-up and rebooking sequences</div>
+      </div>
+      <div class="result-card reveal reveal-delay-4">
+        <div class="result-number">8x</div>
+        <div class="result-label">More social posts</div>
+        <div class="result-detail">From inconsistent to 8 per week, branded and approved</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="section-label reveal">What You Get</div>
+    <h2 class="reveal reveal-delay-1">Everything a beauty clinic needs to grow without more admin</h2>
+    <p class="features-sub reveal reveal-delay-2">Every feature is built specifically for beauty and aesthetics clinics. Not a generic tool adapted for your industry.</p>
+    <div class="feature-grid">
+      <div class="feature reveal reveal-delay-1">
+        <span class="feature-icon">📞</span>
+        <h3>AI receptionist</h3>
+        <p>Answers every call and DM 24/7. Trained on your treatment menu, pricing, and availability. Books consultations, answers questions, captures leads. Never puts a client on hold.</p>
+      </div>
+      <div class="feature reveal reveal-delay-2">
+        <span class="feature-icon">💬</span>
+        <h3>WhatsApp and DM management</h3>
+        <p>Every Instagram DM and WhatsApp message gets a response within 60 seconds. Booking confirmations, aftercare instructions, and treatment information, all automated and personalised.</p>
+      </div>
+      <div class="feature reveal reveal-delay-3">
+        <span class="feature-icon">🔔</span>
+        <h3>No-show prevention</h3>
+        <p>Automated reminders at 48 hours and 24 hours with pre-treatment instructions. Clients confirm or reschedule. Cancelled slots released to the waitlist. No more empty chairs.</p>
+      </div>
+      <div class="feature reveal reveal-delay-4">
+        <span class="feature-icon">🔄</span>
+        <h3>Rebooking automation</h3>
+        <p>Follow-up messages after every treatment. Rebooking reminders timed to the treatment cycle. Preferred therapist and treatment pre-selected. Clients rebook in two taps.</p>
+      </div>
+      <div class="feature reveal reveal-delay-1">
+        <span class="feature-icon">📸</span>
+        <h3>Social media management</h3>
+        <p>8 branded posts per week across Instagram and Facebook. Transformation photos, treatment education, client testimonials, and behind-the-scenes content. Planned monthly, approved by you.</p>
+      </div>
+      <div class="feature reveal reveal-delay-2">
+        <span class="feature-icon">⭐</span>
+        <h3>Review management</h3>
+        <p>Automatic review requests after every appointment. Responses drafted for Google and Facebook reviews. Your online reputation builds consistently without you managing it manually.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="container">
+    <div class="section-label reveal">Investment</div>
+    <h2 class="reveal reveal-delay-1">Built for clinics that want to grow without more admin</h2>
+    <p class="pricing-sub reveal reveal-delay-2">Most clinics recover the cost within the first month from rebookings and enquiries that would otherwise have been lost.</p>
+    <div class="pricing-card reveal reveal-delay-3">
+      <div class="pricing-badge">Most Popular for Beauty Clinics</div>
+      <div class="pricing-name">Click Pro</div>
+      <div class="pricing-tagline">The full system. Voice, DMs, social, automation.</div>
+      <div class="pricing-price">£1,297<span>/month</span></div>
+      <div class="pricing-setup">£1,000 one-time setup (covers AI training on your clinic, system build, and integration)</div>
+      <ul class="pricing-features">
+        <li>AI receptionist answering every call and DM, 24/7</li>
+        <li>2,500 minutes per month (voice + WhatsApp + DM)</li>
+        <li>Trained on your treatments, pricing, and availability</li>
+        <li>Automated no-show prevention (48h + 24h reminders)</li>
+        <li>Rebooking sequences timed to treatment cycles</li>
+        <li>12 social media posts per week across 3 platforms</li>
+        <li>Google review management and automated requests</li>
+        <li>Monthly reporting dashboard</li>
+        <li>Monthly strategy call (30 min)</li>
+      </ul>
+      <a href="#audit" class="btn-primary" style="width:100%;justify-content:center;">Book Your Free Clinic Audit</a>
+      <div class="pricing-note">Smaller clinics can start with Click (£497/mo). We will recommend the right fit during the audit.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="audit">
+  <div class="container">
+    <div class="section-label reveal">Get Started</div>
+    <h2 class="reveal reveal-delay-1">Find out exactly what your clinic is losing</h2>
+    <p class="reveal reveal-delay-2">A 15-minute audit. No cost. No obligation. We look at your enquiry flow, no-show rate, rebooking patterns, and social presence. You get a clear picture of where clients are slipping away and how to fix it.</p>
+    <a href="https://clickaiagency.com/contact" class="btn-primary reveal reveal-delay-3">
+      Book Your Free Clinic Audit
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <span class="btn-sub reveal reveal-delay-4">Takes 15 minutes. You will know exactly where the clients are going.</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 <a href="https://clickaiagency.com">Click AI Agency</a>. Built for beauty and aesthetics clinics that want to grow.</p>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const chartObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.chart-bar-fill').forEach(bar => { bar.style.width = bar.dataset.width; });
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.chart-container').forEach(el => chartObserver.observe(el));
+
+window.addEventListener('scroll', () => {
+  document.querySelector('.nav').style.borderBottomColor = window.scrollY > 100 ? 'rgba(0,0,0,0.06)' : 'transparent';
+});
+</script>
+
+</body>
+</html>
