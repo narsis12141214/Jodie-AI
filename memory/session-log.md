@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-20
+Done: Day 20 checkpoint reviewed (0 closed, Randeszvous at contract stage, SEO showing 3 new page 1 entries). Fresh SEO data pulled (week ending 17 April). LinkedIn carousel generated (8 slides, dental missed calls). Agency service agreement contract drafted as PDF. No-website dental clinic outreach briefing saved for Campaign Builder. Story bank expanded from 1 to 14 entries (origin story, photojournalism transfer, pre-wedding mechanism, 10th anniversary couple, proposal rescue, 17 client reviews catalogued, camera-shy husband, thank-you booking, night-before advice, reading habits). Hadi now called JD saved to memory.
+Next: Randeszvous contract to be filled in before Saturday 25 April meeting. LinkedIn post #2 goes live today/tomorrow. Instantly.ai warmup setup. Finish remaining seed questions. Blog #7 micro wedding input. Campaign Builder executes no-website clinic sequence.
+Pipeline: Randeszvous at contract stage (meeting Saturday 25 April). Maria reviewing. 70+ cold emails out (1 reply). All DM threads awaiting.
+
 ## 2026-04-18
 Done: 3 industry landing pages built + published on Lovable (restaurants, dental, beauty). All heroes use vision-first approach. Meta titles, descriptions, canonicals set. Agency packages updated (Click/Click+/Click Pro/Click Elite). Objections doc saved (13 total). Traffic growth strategy approved. Agency Content Director updated: LinkedIn added to scope + hook writing rules embedded (gap test, 6 mechanics, 7 rules). 2 LinkedIn posts approved (Monday: dental missed calls curiosity gap, Thursday: restaurant missed calls personal story). Hadi now calls me JD.
 Next: Day 20 checkpoint Monday. Pull fresh SEO data. Hadi finishes story bank seed answers + micro wedding blog input. Instantly.ai warmup setup. Workflow 3 discussion. Restaurant hero update on live Lovable site. Begin accountant/consultant referral partnership outreach.

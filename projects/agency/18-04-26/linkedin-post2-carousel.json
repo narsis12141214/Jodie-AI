@@ -1,0 +1,44 @@
+{
+  "topic": "Nobody tracks this number, but it is costing dental practices more than rent.",
+  "slides": [
+    {
+      "type": "intro",
+      "title": "Nobody tracks this number, but it is costing dental practices more than rent."
+    },
+    {
+      "type": "content",
+      "title": "It is not what you think.",
+      "body": "It is not marketing spend. It is not equipment. It is not even staff wages. It is the patients who call and nobody picks up."
+    },
+    {
+      "type": "content",
+      "title": "15 to 30 missed calls a week.",
+      "body": "Not because the team is lazy. Because the receptionist is already on a call, or with a patient at the desk, or on lunch."
+    },
+    {
+      "type": "content",
+      "title": "Each missed call: £150 to £400.",
+      "body": "The phone rings. Nobody answers. The patient calls the next practice on Google. You will never see the invoice for that appointment."
+    },
+    {
+      "type": "content",
+      "title": "Multiply that by 20 calls a week.",
+      "body": "The number gets uncomfortable fast. And most practice owners have never counted it."
+    },
+    {
+      "type": "content",
+      "title": "We built a system that fixes this.",
+      "body": "An AI receptionist for a London clinic that answers every call automatically. Knows the treatments. Books the appointment. Sends the confirmation."
+    },
+    {
+      "type": "content",
+      "title": "No-shows dropped by more than half.",
+      "body": "In the first month. Not because of a new marketing strategy. Because patients were actually getting through."
+    },
+    {
+      "type": "outro",
+      "title": "DM me if this sounds familiar.",
+      "body": "I will show you what the system looks like for your practice."
+    }
+  ]
+}
