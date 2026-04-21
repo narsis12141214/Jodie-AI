@@ -80,10 +80,16 @@ Campaign Builder | shared/campaign-builder.md | "Build a campaign", "create a se
 
 Click AI Agency Branch
 Agent | File | Triggers
-Agency Copywriter | agency/copywriter.md | DM follow-ups, proposal copy, outreach messages, website copy, LinkedIn posts, captions for @clickaiagency
-Agency Content Director | agency/content-director.md | Carousel outlines, hook posts, content pillars, video briefs, repurposing plans for @clickaiagency
-Agency Outreach | agency/outreach.md | Lead research, DM scripts, follow-up sequences, Zizi briefing docs
+Agency Copywriter | agency/copywriter.md | DM follow-ups, proposal copy, website copy, LinkedIn posts, captions for @clickaiagency
+Agency Content Director | agency/content-director.md | Carousel outlines, hook posts, content pillars, video briefs, repurposing plans for @clickaiagency, LinkedIn post briefs
+Outreach Copywriter | agency/outreach.md | Per-prospect email drafts, DM scripts, outreach sequences, Zizi briefing docs (references skool-playbook.md + message-library.md)
+Outreach Strategist | agency/outreach-strategist.md | Campaign planning, segment selection, offer design, sequence approval, weekly tracker reviews, reply rate diagnostics
+Reply Classifier | agency/reply-classifier.md | Tags incoming outreach replies as positive/objection/not-now/unsubscribe/referral/bounce
 Agency Research | agency/research.md | Competitor analysis, market trends, software comparisons, local business data, cited summaries
+
+Outreach Canonical Files (source of truth for all outreach agents)
+outreach/skool-playbook.md — strategy, frameworks, principles, banned phrases, diagnostics
+outreach/message-library.md — template bank with structured metadata, sequence selection guide
 
 Hadi Photography London Branch
 Agent | File | Triggers
