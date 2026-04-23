@@ -1,0 +1,44 @@
+{
+  "topic": "The most expensive thing in this restaurant is not on the menu.",
+  "slides": [
+    {
+      "type": "intro",
+      "title": "This restaurant's biggest cost is not on the menu."
+    },
+    {
+      "type": "content",
+      "title": "It is the phone calls that go unanswered during service.",
+      "body": "Your team is on the floor. Serving tables. Running food. Nobody can pick up. The callers don't leave voicemails. They book somewhere else."
+    },
+    {
+      "type": "content",
+      "title": "One Friday night. 12 missed calls.",
+      "body": "A restaurant owner I work with had no idea it was happening. Nobody tracks missed calls."
+    },
+    {
+      "type": "content",
+      "title": "At £40 a head for a table of four, that is nearly £2,000 in one evening.",
+      "body": "Not lost to bad food or bad service. Lost to a phone that rang and nobody answered."
+    },
+    {
+      "type": "content",
+      "title": "I did not build him a marketing campaign.",
+      "body": "I built him an AI voice agent in 3 days. It answers every call, takes the reservation, and sends a WhatsApp confirmation. Configured for his menu, his hours, his booking rules."
+    },
+    {
+      "type": "content",
+      "title": "He listened for 10 minutes. Then he said: \"When can we start?\"",
+      "body": "We are meeting next week to finalise everything."
+    },
+    {
+      "type": "content",
+      "title": "Most small businesses do not need more marketing.",
+      "body": "They need to stop losing the customers who are already trying to reach them."
+    },
+    {
+      "type": "outro",
+      "title": "If you have never counted your missed calls, that is the most expensive number in your business.",
+      "body": "Send me a message and I will show you what the fix looks like."
+    }
+  ]
+}

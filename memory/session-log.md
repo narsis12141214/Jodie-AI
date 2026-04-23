@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-23
+Done: Instantly infrastructure briefing saved (outreach/instantly-infrastructure.md). Memory updated with new outreach domain (getclickagency.com). LinkedIn carousel #3 generated (restaurant "biggest cost" post, 8 slides). First photography inbound lead in weeks: Charlotte Adams, Marylebone Town Hall, 8 August 2026, 20 guests, found via Google. Reply drafted with The Vow pricing + reels add-on + videographer recommendation. Instantly setup completed by Hadi on 22 April (warmup day 2 of 16).
+Next: Charlotte reply to send. Randeszvous contract fill-in (meeting Saturday 25 April). LinkedIn post #3 to publish today. Blog #7 micro wedding input. Finish remaining story bank questions. Instantly plan decision before 6 May.
+Pipeline: Charlotte Adams (NEW, photography, Marylebone). Randeszvous at contract stage (Saturday). Maria silent 12 days. Warmup running until 8 May.
+
 ## 2026-04-21
 Done: Full outreach system rebuild. Skool playbook + message library saved as canonical files. 3 agents created/updated (Outreach Strategist, Reply Classifier, Outreach Copywriter). Campaign Builder + Closer updated with playbook references. CLAUDE.md registry updated. Story bank expanded to 14 entries (Pillar 1: origin story, uncle, photojournalism transfer. Pillar 2: staged shoots, what you pay for. Pillar 3: proposal rescue, camera-shy husband, thank-you booking, 17 reviews catalogued. Pillar 4: pre-wedding mechanism, night-before advice. Pillar 5: reading habits). No-website dental clinic outreach briefing saved. LinkedIn carousel posted (Monday).
 Next: Instantly account setup + warmup. Randeszvous contract fill-in before Saturday 25 April. Thursday LinkedIn post. Finish remaining story bank questions. Blog #7 micro wedding input. Campaign Builder executes no-website clinic sequence.
