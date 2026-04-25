@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-25
+Done: Full outstanding tasks list compiled (20 items). Maria Khan photography lead drafted and sent (The Shard, 4 July 2026, found via Google). Click Desk AI memory saved. Two more in-person meetings this week (details pending from Hadi). Notion project tracking flagged for Monday setup.
+Next: Close Randeszvous today. Monday: review full 20-item task list, set up Notion project tracking, write next week's LinkedIn posts, wire Arman to Supabase. Hadi to share meeting details for the two new in-person meetings.
+Pipeline: Randeszvous (meeting today). Charlotte Adams (reply sent, awaiting). Maria Khan (NEW, reply sent, awaiting). 2 more in-person meetings TBC. Warmup day 4.
+
 ## 2026-04-24
 Done: Click Desk AI launched (multi-tenant SaaS dashboard, live at clickdesk-ai.vercel.app). Memory saved with full stack/architecture details. Charlotte reply sent, awaiting response. LinkedIn #3 posted. Maria marked as dead lead. Randeszvous contract ready, awaiting client details for fill-in. Meeting tomorrow.
 Next: Randeszvous meeting Saturday 25 April. Full outstanding tasks review tomorrow morning. Wire Arman n8n to Supabase. Custom domain for Click Desk. Weekend task planning.
