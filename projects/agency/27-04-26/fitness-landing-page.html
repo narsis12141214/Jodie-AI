@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Receptionist for Gyms and Fitness Studios UK | Click AI Agency</title>
+<meta name="description" content="UK gyms and fitness studios lose members to missed calls, forgotten class bookings, and no follow-up. Click AI builds AI systems that handle bookings, retain members, and keep your schedule full.">
+<meta name="keywords" content="AI receptionist for gyms, fitness studio automation UK, gym booking system, reduce gym member churn, AI for fitness studios">
+<link rel="canonical" href="https://clickaiagency.com/fitness">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --black: #0D0D0D; --white: #FAFAFA; --accent: #6C63FF; --accent-light: #8B83FF;
+  --accent-glow: rgba(108, 99, 255, 0.12); --accent-glow-strong: rgba(108, 99, 255, 0.25);
+  --grey-50: #F7F7F8; --grey-100: #EFEFEF; --grey-200: #DCDCDC; --grey-400: #999;
+  --grey-600: #666; --grey-800: #333; --red: #E53E3E; --red-light: rgba(229, 62, 62, 0.08);
+  --green: #38A169; --green-light: rgba(56, 161, 105, 0.08);
+  --amber: #D69E2E; --amber-light: rgba(214, 158, 46, 0.08);
+  --serif: 'DM Serif Display', Georgia, serif; --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --max-w: 1140px; --section-pad: clamp(60px, 10vw, 120px);
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); color: var(--black); background: var(--white); line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,250,250,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--grey-100); }
+.nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-family: var(--sans); font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; }
+.nav-logo span { color: var(--accent); }
+.nav-cta { font-family: var(--sans); font-size: 14px; font-weight: 600; background: var(--accent); color: white; border: none; padding: 10px 24px; border-radius: 8px; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
+.nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); }
+.hero { padding: calc(var(--section-pad) + 60px) 0 var(--section-pad); position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); pointer-events: none; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-glow); color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.5px; padding: 8px 16px; border-radius: 100px; margin-bottom: 24px; text-transform: uppercase; }
+.hero-badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; animation: pulse-dot 2s infinite; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.hero h1 { font-family: var(--serif); font-size: clamp(36px, 5.5vw, 64px); line-height: 1.1; letter-spacing: -1px; color: var(--black); max-width: 720px; margin-bottom: 24px; }
+.hero h1 .highlight { color: var(--accent); }
+.hero-sub { font-size: clamp(17px, 2vw, 20px); line-height: 1.7; color: var(--grey-600); max-width: 580px; margin-bottom: 20px; }
+.hero-sub-2 { font-size: clamp(15px, 1.6vw, 17px); line-height: 1.7; color: var(--grey-600); max-width: 580px; margin-bottom: 40px; }
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--grey-200); border-radius: 16px; overflow: hidden; max-width: 560px; }
+.hero-stat { background: var(--white); padding: 24px; text-align: center; }
+.hero-stat-number { font-family: var(--serif); font-size: 32px; color: var(--accent); margin-bottom: 4px; }
+.hero-stat-label { font-size: 12px; color: var(--grey-400); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+.section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--accent); margin-bottom: 16px; }
+.problem { padding: var(--section-pad) 0; background: var(--black); color: var(--white); position: relative; }
+.problem::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='1' cy='1' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events: none; }
+.problem h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 20px; max-width: 640px; }
+.problem-intro { color: var(--grey-400); font-size: 17px; max-width: 580px; margin-bottom: 56px; line-height: 1.8; }
+.pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.pain-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; transition: all 0.3s ease; }
+.pain-card:hover { border-color: rgba(108, 99, 255, 0.3); background: rgba(108, 99, 255, 0.06); transform: translateY(-2px); }
+.pain-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; }
+.pain-icon.red { background: var(--red-light); }
+.pain-icon.amber { background: var(--amber-light); }
+.pain-card h3 { font-family: var(--sans); font-size: 18px; font-weight: 700; margin-bottom: 12px; color: var(--white); }
+.pain-card p { color: var(--grey-400); font-size: 15px; line-height: 1.7; }
+.pain-stat { display: inline-block; margin-top: 16px; padding: 6px 14px; font-size: 13px; font-weight: 700; border-radius: 100px; }
+.pain-stat.red-stat { background: var(--red-light); color: var(--red); }
+.pain-stat.amber-stat { background: var(--amber-light); color: var(--amber); }
+.cost-viz { padding: var(--section-pad) 0; background: var(--grey-50); }
+.cost-viz h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; text-align: center; }
+.cost-viz-sub { text-align: center; color: var(--grey-600); font-size: 17px; max-width: 520px; margin: 0 auto 56px; }
+.chart-container { max-width: 700px; margin: 0 auto; background: var(--white); border-radius: 20px; border: 1px solid var(--grey-100); padding: 40px; box-shadow: 0 4px 40px rgba(0,0,0,0.04); }
+.chart-title { font-weight: 700; font-size: 15px; margin-bottom: 32px; color: var(--grey-800); }
+.chart-bars { display: flex; flex-direction: column; gap: 20px; }
+.chart-bar-row { display: grid; grid-template-columns: 160px 1fr 80px; align-items: center; gap: 16px; }
+.chart-bar-label { font-size: 14px; font-weight: 600; color: var(--grey-800); }
+.chart-bar-track { height: 36px; background: var(--grey-50); border-radius: 8px; overflow: hidden; }
+.chart-bar-fill { height: 100%; border-radius: 8px; transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1); width: 0; }
+.chart-bar-fill.red { background: linear-gradient(135deg, var(--red), #C53030); }
+.chart-bar-fill.amber { background: linear-gradient(135deg, var(--amber), #B7791F); }
+.chart-bar-value { font-family: var(--serif); font-size: 20px; color: var(--black); text-align: right; }
+.chart-total { margin-top: 24px; padding-top: 24px; border-top: 2px solid var(--black); display: flex; justify-content: space-between; align-items: baseline; }
+.chart-total-label { font-weight: 700; font-size: 15px; }
+.chart-total-value { font-family: var(--serif); font-size: 36px; color: var(--red); }
+.chart-note { text-align: center; margin-top: 24px; font-size: 13px; color: var(--grey-400); }
+.how { padding: var(--section-pad) 0; }
+.how h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; }
+.how-sub { color: var(--grey-600); font-size: 17px; max-width: 520px; margin-bottom: 56px; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
+.step { padding: 32px; background: var(--white); border: 1px solid var(--grey-100); border-radius: 16px; transition: all 0.3s ease; }
+.step:hover { border-color: var(--accent); box-shadow: 0 8px 40px var(--accent-glow); transform: translateY(-3px); }
+.step-number { font-family: var(--serif); font-size: 48px; color: var(--accent-glow-strong); line-height: 1; margin-bottom: 16px; }
+.step h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+.step p { font-size: 15px; color: var(--grey-600); line-height: 1.7; }
+.scenarios { padding: var(--section-pad) 0; background: var(--grey-50); }
+.scenarios h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; text-align: center; }
+.scenarios-sub { text-align: center; color: var(--grey-600); font-size: 17px; max-width: 520px; margin: 0 auto 56px; }
+.scenario-list { display: flex; flex-direction: column; gap: 24px; max-width: 800px; margin: 0 auto; }
+.scenario { background: var(--white); border-radius: 16px; border: 1px solid var(--grey-100); overflow: hidden; transition: all 0.3s ease; }
+.scenario:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.06); transform: translateY(-2px); }
+.scenario-header { display: grid; grid-template-columns: 1fr 1fr; }
+.scenario-before, .scenario-after { padding: 24px 28px; }
+.scenario-before { background: var(--red-light); border-right: 1px solid var(--grey-100); }
+.scenario-after { background: var(--green-light); }
+.scenario-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 8px; }
+.scenario-before .scenario-tag { color: var(--red); }
+.scenario-after .scenario-tag { color: var(--green); }
+.scenario-text { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--grey-800); }
+.results { padding: var(--section-pad) 0; }
+.results h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; text-align: center; }
+.results-sub { text-align: center; color: var(--grey-600); font-size: 17px; max-width: 500px; margin: 0 auto 56px; }
+.results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+.result-card { text-align: center; padding: 40px 24px; background: var(--white); border: 1px solid var(--grey-100); border-radius: 16px; transition: all 0.3s ease; }
+.result-card:hover { border-color: var(--accent); box-shadow: 0 8px 40px var(--accent-glow); }
+.result-number { font-family: var(--serif); font-size: 48px; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+.result-label { font-size: 14px; font-weight: 600; color: var(--grey-800); margin-bottom: 6px; }
+.result-detail { font-size: 13px; color: var(--grey-400); }
+.features { padding: var(--section-pad) 0; background: var(--grey-50); }
+.features h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; }
+.features-sub { color: var(--grey-600); font-size: 17px; max-width: 520px; margin-bottom: 56px; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.feature { padding: 28px; background: var(--white); border: 1px solid var(--grey-100); border-radius: 14px; transition: all 0.3s ease; }
+.feature:hover { border-color: var(--accent); box-shadow: 0 8px 40px var(--accent-glow); }
+.feature-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+.feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.feature p { font-size: 14px; color: var(--grey-600); line-height: 1.7; }
+.pricing { padding: var(--section-pad) 0; text-align: center; }
+.pricing h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; }
+.pricing-sub { color: var(--grey-600); font-size: 17px; max-width: 480px; margin: 0 auto 48px; }
+.pricing-card { max-width: 440px; margin: 0 auto; background: var(--white); border: 2px solid var(--accent); border-radius: 20px; padding: 48px 40px; position: relative; box-shadow: 0 8px 60px var(--accent-glow); }
+.pricing-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 6px 20px; border-radius: 100px; }
+.pricing-name { font-family: var(--serif); font-size: 28px; margin-bottom: 4px; margin-top: 8px; }
+.pricing-tagline { color: var(--grey-400); font-size: 14px; margin-bottom: 24px; }
+.pricing-price { font-family: var(--serif); font-size: 52px; color: var(--black); line-height: 1; }
+.pricing-price span { font-size: 18px; color: var(--grey-400); font-family: var(--sans); }
+.pricing-setup { font-size: 13px; color: var(--grey-400); margin-top: 8px; margin-bottom: 32px; }
+.pricing-features { list-style: none; text-align: left; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+.pricing-features li { font-size: 14px; color: var(--grey-800); display: flex; align-items: flex-start; gap: 10px; }
+.pricing-features li::before { content: ''; flex-shrink: 0; width: 20px; height: 20px; margin-top: 2px; background: var(--green-light); border-radius: 50%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.5 13.5l-3-3 1-1 2 2 5-5 1 1-6 6z' fill='%2338A169'/%3E%3C/svg%3E"); background-size: contain; }
+.pricing-note { font-size: 13px; color: var(--grey-400); margin-top: 16px; }
+.cta-section { padding: var(--section-pad) 0; background: var(--grey-50); text-align: center; position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); pointer-events: none; }
+.cta-section h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin-bottom: 16px; position: relative; }
+.cta-section p { color: var(--grey-600); font-size: 17px; max-width: 480px; margin: 0 auto 40px; position: relative; }
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: white; font-family: var(--sans); font-size: 16px; font-weight: 700; padding: 16px 40px; border-radius: 12px; border: none; cursor: pointer; text-decoration: none; transition: all 0.3s ease; position: relative; box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3); }
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(108, 99, 255, 0.4); }
+.btn-sub { display: block; margin-top: 16px; font-size: 13px; color: var(--grey-400); position: relative; }
+.footer { padding: 40px 0; border-top: 1px solid var(--grey-100); text-align: center; font-size: 13px; color: var(--grey-400); }
+.footer a { color: var(--accent); text-decoration: none; }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; } .reveal-delay-2 { transition-delay: 0.2s; } .reveal-delay-3 { transition-delay: 0.3s; } .reveal-delay-4 { transition-delay: 0.4s; }
+@media (max-width: 768px) { .hero-stats { grid-template-columns: 1fr; } .pain-grid { grid-template-columns: 1fr; } .chart-bar-row { grid-template-columns: 1fr; gap: 4px; } .chart-bar-value { text-align: left; font-size: 16px; } .scenario-header { grid-template-columns: 1fr; } .scenario-before { border-right: none; border-bottom: 1px solid var(--grey-100); } .steps { grid-template-columns: 1fr; } .feature-grid { grid-template-columns: 1fr; } .results-grid { grid-template-columns: 1fr 1fr; } .pricing-card { padding: 40px 28px; } }
+@media (max-width: 480px) { .results-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner"><a href="https://clickaiagency.com" class="nav-logo">click<span>ai</span></a><a href="#audit" class="nav-cta">Free Gym Audit</a></div></nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge reveal">AI Receptionist for UK Gyms and Fitness Studios</div>
+    <h1 class="reveal reveal-delay-1">An AI receptionist that <span class="highlight">keeps your classes full</span> and your members coming back</h1>
+    <p class="hero-sub reveal reveal-delay-2">Imagine opening your studio on a Monday morning and every weekend enquiry is already answered. Every class booking is confirmed. Every member who missed a session has been re-engaged. Your front desk is calm because the admin is already handled.</p>
+    <p class="hero-sub-2 reveal reveal-delay-2">That is what an AI receptionist does for a gym or fitness studio. It answers every call and message around the clock. It knows your class schedule, your membership options, and your cancellation policy. It sends reminders that prevent no-shows. It follows up with members who have gone quiet. Everything that keeps the studio running between sessions, handled automatically.</p>
+    <div class="hero-stats reveal reveal-delay-3">
+      <div class="hero-stat"><div class="hero-stat-number">24/7</div><div class="hero-stat-label">Every enquiry answered</div></div>
+      <div class="hero-stat"><div class="hero-stat-number">40%</div><div class="hero-stat-label">Better retention</div></div>
+      <div class="hero-stat"><div class="hero-stat-number">0</div><div class="hero-stat-label">Empty class slots</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="container">
+    <div class="section-label reveal">The Problem</div>
+    <h2 class="reveal reveal-delay-1">Four things costing your gym members and revenue every week</h2>
+    <p class="problem-intro reveal reveal-delay-2">You are not losing members because your training is bad. You are losing them because the experience outside the session is not keeping up. Here is where it happens.</p>
+    <div class="pain-grid">
+      <div class="pain-card reveal reveal-delay-1">
+        <div class="pain-icon red">📞</div>
+        <h3>Enquiries that go unanswered</h3>
+        <p>Someone finds your gym on Google at 9pm. They call or message asking about membership options. Nobody answers because the studio closed at 8. By morning they have joined the gym that replied at 9:05pm.</p>
+        <span class="pain-stat red-stat">67% of gym enquiries happen outside business hours</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-2">
+        <div class="pain-icon red">🪑</div>
+        <h3>Class no-shows that waste your capacity</h3>
+        <p>A member booked a class last week. No reminder was sent. They forgot. The spot sat empty while your waitlist had three people on it. Each no-show is a missed opportunity to serve someone who actually wanted to be there.</p>
+        <span class="pain-stat red-stat">Average: 15-25% class no-show rate</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-3">
+        <div class="pain-icon amber">🚪</div>
+        <h3>Members who quietly disappear</h3>
+        <p>A member came three times a week for two months. Then twice. Then once. Then not at all. Nobody noticed until the direct debit cancelled. No check-in message. No re-engagement offer. They are now at the gym down the road.</p>
+        <span class="pain-stat amber-stat">50% of members who leave were recoverable</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-4">
+        <div class="pain-icon amber">📱</div>
+        <h3>Social media that goes dark between launches</h3>
+        <p>You post when a new programme launches. Then nothing for three weeks. New members searching for gyms in your area find the one that posts transformation stories every day, not the one that posted last month.</p>
+        <span class="pain-stat amber-stat">Consistency beats quality on social</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COST VISUALIZER -->
+<section class="cost-viz">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">The Numbers</div>
+    <h2 class="reveal reveal-delay-1">What this costs a typical UK gym every month</h2>
+    <p class="cost-viz-sub reveal reveal-delay-2">Based on an independent gym or fitness studio with 150 to 400 active members.</p>
+    <div class="chart-container reveal reveal-delay-3">
+      <div class="chart-title">Monthly revenue lost to preventable problems</div>
+      <div class="chart-bars">
+        <div class="chart-bar-row"><div class="chart-bar-label">Missed enquiries</div><div class="chart-bar-track"><div class="chart-bar-fill red" data-width="55%"></div></div><div class="chart-bar-value">£1,500</div></div>
+        <div class="chart-bar-row"><div class="chart-bar-label">Class no-shows</div><div class="chart-bar-track"><div class="chart-bar-fill red" data-width="35%"></div></div><div class="chart-bar-value">£900</div></div>
+        <div class="chart-bar-row"><div class="chart-bar-label">Lost members (churn)</div><div class="chart-bar-track"><div class="chart-bar-fill amber" data-width="80%"></div></div><div class="chart-bar-value">£2,400</div></div>
+        <div class="chart-bar-row"><div class="chart-bar-label">Invisible social presence</div><div class="chart-bar-track"><div class="chart-bar-fill amber" data-width="25%"></div></div><div class="chart-bar-value">£600</div></div>
+      </div>
+      <div class="chart-total"><div class="chart-total-label">Estimated total per month</div><div class="chart-total-value">£5,400</div></div>
+      <div class="chart-note">Based on average membership values of £40 to £80 per month</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="container">
+    <div class="section-label reveal">How It Works</div>
+    <h2 class="reveal reveal-delay-1">We build a system that runs between sessions</h2>
+    <p class="how-sub reveal reveal-delay-2">No new software to learn. The system connects to your booking platform and handles everything that currently falls through when your team is coaching.</p>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1"><div class="step-number">01</div><h3>We audit your gym</h3><p>15 minutes. We look at your enquiry flow, class booking setup, no-show rate, member retention patterns, and social presence. You get a clear picture of where members are being lost and what the fix looks like.</p></div>
+      <div class="step reveal reveal-delay-2"><div class="step-number">02</div><h3>We build your system</h3><p>An AI receptionist trained on your class schedule, membership options, and policies. Automated reminders that cut no-shows. Re-engagement sequences for members going quiet. Social content that keeps you visible. Connects to whatever booking system you already use.</p></div>
+      <div class="step reveal reveal-delay-3"><div class="step-number">03</div><h3>You focus on coaching</h3><p>The system handles enquiries, bookings, reminders, member retention, social media, and reviews automatically. You get a monthly report. You stay on the floor where you belong.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="scenarios">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">Before and After</div>
+    <h2 class="reveal reveal-delay-1">What changes when the system is running</h2>
+    <p class="scenarios-sub reveal reveal-delay-2">Real scenarios from gym and fitness studio operations.</p>
+    <div class="scenario-list">
+      <div class="scenario reveal">
+        <div class="scenario-header">
+          <div class="scenario-before"><div class="scenario-tag">Without Click AI</div><div class="scenario-text">Sunday 8pm. Someone searches "gym near me" and calls your studio. Nobody answers. They join the 24-hour gym that picked up on the first ring. You never know the call happened.</div></div>
+          <div class="scenario-after"><div class="scenario-tag">With Click AI</div><div class="scenario-text">Sunday 8pm. AI answers in under 2 seconds. Explains membership options, class schedule, and trial offers. Books a tour for Monday morning. Sends a confirmation text. You arrive to a new prospect waiting.</div></div>
+        </div>
+      </div>
+      <div class="scenario reveal reveal-delay-1">
+        <div class="scenario-header">
+          <div class="scenario-before"><div class="scenario-tag">Without Click AI</div><div class="scenario-text">A member booked the 6am HIIT class on Wednesday. No reminder sent. They slept through the alarm. The spot sat empty. Three people on the waitlist never got offered it.</div></div>
+          <div class="scenario-after"><div class="scenario-tag">With Click AI</div><div class="scenario-text">Evening before: automated reminder with class details. 2 hours before: confirmation requested. Member cancelled. Waitlist member offered the spot instantly. Class stays full.</div></div>
+        </div>
+      </div>
+      <div class="scenario reveal reveal-delay-2">
+        <div class="scenario-header">
+          <div class="scenario-before"><div class="scenario-tag">Without Click AI</div><div class="scenario-text">A member's attendance dropped from 4 sessions a week to 1 over the past month. Nobody noticed. Next month they cancel their membership. A £600/year member gone without a conversation.</div></div>
+          <div class="scenario-after"><div class="scenario-tag">With Click AI</div><div class="scenario-text">Week 2 of declining attendance: automated check-in message. Week 3: personalised offer (free PT session, class recommendation). Member re-engages before the thought of leaving even forms.</div></div>
+        </div>
+      </div>
+      <div class="scenario reveal reveal-delay-3">
+        <div class="scenario-header">
+          <div class="scenario-before"><div class="scenario-tag">Without Click AI</div><div class="scenario-text">Your last Instagram post was a New Year promotion. It is now April. New members searching for gyms in your area scroll past your page because it looks inactive.</div></div>
+          <div class="scenario-after"><div class="scenario-tag">With Click AI</div><div class="scenario-text">8 branded posts per week. Transformation stories, class highlights, member wins, trainer spotlights. Your feed looks alive, busy, and like a gym people want to join.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">What Gyms See</div>
+    <h2 class="reveal reveal-delay-1">The numbers after 90 days</h2>
+    <p class="results-sub reveal reveal-delay-2">Benchmarks gyms and fitness studios typically reach within the first three months.</p>
+    <div class="results-grid">
+      <div class="result-card reveal reveal-delay-1"><div class="result-number">100%</div><div class="result-label">Enquiries answered</div><div class="result-detail">Calls, DMs, and WhatsApp, 24/7 including nights and weekends</div></div>
+      <div class="result-card reveal reveal-delay-2"><div class="result-number">60%</div><div class="result-label">Fewer class no-shows</div><div class="result-detail">Automated reminders with waitlist backfill</div></div>
+      <div class="result-card reveal reveal-delay-3"><div class="result-number">40%</div><div class="result-label">Better member retention</div><div class="result-detail">Early churn detection and re-engagement sequences</div></div>
+      <div class="result-card reveal reveal-delay-4"><div class="result-number">8x</div><div class="result-label">More social posts</div><div class="result-detail">From inconsistent to 8 per week, branded and approved</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="section-label reveal">What You Get</div>
+    <h2 class="reveal reveal-delay-1">Everything a gym needs to grow without more admin staff</h2>
+    <p class="features-sub reveal reveal-delay-2">Every feature is built specifically for gyms and fitness studios. Not a generic tool adapted for your industry.</p>
+    <div class="feature-grid">
+      <div class="feature reveal reveal-delay-1"><span class="feature-icon">📞</span><h3>AI receptionist</h3><p>Answers every call and message 24/7. Trained on your class schedule, membership options, pricing, and policies. Books tours, answers questions, captures leads. Never puts a prospect on hold.</p></div>
+      <div class="feature reveal reveal-delay-2"><span class="feature-icon">💬</span><h3>WhatsApp and DM management</h3><p>Every Instagram DM and WhatsApp message gets a response within 60 seconds. Class confirmations, schedule changes, membership questions, all automated and personalised.</p></div>
+      <div class="feature reveal reveal-delay-3"><span class="feature-icon">🔔</span><h3>Class reminder and waitlist</h3><p>Automated reminders before every booked class. Members confirm or cancel. Cancelled spots go to the waitlist automatically. No more empty mats.</p></div>
+      <div class="feature reveal reveal-delay-4"><span class="feature-icon">🔄</span><h3>Member retention system</h3><p>Tracks attendance patterns. Detects declining engagement early. Sends personalised check-ins and re-engagement offers before members think about leaving.</p></div>
+      <div class="feature reveal reveal-delay-1"><span class="feature-icon">📸</span><h3>Social media management</h3><p>8 branded posts per week across Instagram and Facebook. Transformation stories, class highlights, member wins, community content. Planned monthly, approved by you.</p></div>
+      <div class="feature reveal reveal-delay-2"><span class="feature-icon">⭐</span><h3>Review management</h3><p>Automatic review requests after milestone sessions (10th class, 3-month mark). Responses drafted for Google reviews. Your online reputation grows consistently.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="container">
+    <div class="section-label reveal">Investment</div>
+    <h2 class="reveal reveal-delay-1">Built for gyms that want to grow without more overhead</h2>
+    <p class="pricing-sub reveal reveal-delay-2">Most gyms recover the cost within the first month from retained members and filled class slots alone.</p>
+    <div class="pricing-card reveal reveal-delay-3">
+      <div class="pricing-badge">Most Popular for Fitness</div>
+      <div class="pricing-name">Click Pro</div>
+      <div class="pricing-tagline">The full system. Voice, retention, social, automation.</div>
+      <div class="pricing-price">£1,297<span>/month</span></div>
+      <div class="pricing-setup">£490 one-time setup (covers AI training on your gym, system build, and integration)</div>
+      <ul class="pricing-features">
+        <li>AI receptionist answering every call and message, 24/7</li>
+        <li>2,500 minutes per month (voice + WhatsApp)</li>
+        <li>Trained on your classes, memberships, and policies</li>
+        <li>Class reminder and waitlist automation</li>
+        <li>Member retention and churn detection system</li>
+        <li>12 social media posts per week across 3 platforms</li>
+        <li>Google review management and automated requests</li>
+        <li>Monthly reporting dashboard</li>
+        <li>Monthly strategy call (30 min)</li>
+      </ul>
+      <a href="#audit" class="btn-primary" style="width:100%;justify-content:center;">Book Your Free Gym Audit</a>
+      <div class="pricing-note">Smaller studios can start with Click (£497/mo). We will recommend the right fit during the audit.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="audit">
+  <div class="container">
+    <div class="section-label reveal">Get Started</div>
+    <h2 class="reveal reveal-delay-1">Find out exactly what your gym is losing</h2>
+    <p class="reveal reveal-delay-2">A 15-minute audit. No cost. No obligation. We look at your enquiry flow, class no-show rate, member retention, and social presence. You get a clear picture of where members are slipping away and how to fix it.</p>
+    <a href="https://clickaiagency.com/contact" class="btn-primary reveal reveal-delay-3">Book Your Free Gym Audit <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <span class="btn-sub reveal reveal-delay-4">Takes 15 minutes. You will know exactly where the members are going.</span>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><p>&copy; 2026 <a href="https://clickaiagency.com">Click AI Agency</a>. Built for gyms and fitness studios that want to grow.</p></div></footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+const chartObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.querySelectorAll('.chart-bar-fill').forEach(bar => { bar.style.width = bar.dataset.width; }); } }); }, { threshold: 0.3 });
+document.querySelectorAll('.chart-container').forEach(el => chartObserver.observe(el));
+window.addEventListener('scroll', () => { document.querySelector('.nav').style.borderBottomColor = window.scrollY > 100 ? 'rgba(0,0,0,0.06)' : 'transparent'; });
+</script>
+</body>
+</html>

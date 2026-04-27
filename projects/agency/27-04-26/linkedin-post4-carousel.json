@@ -1,0 +1,44 @@
+{
+  "topic": "A beauty clinic owner told me her biggest problem was not getting clients. It was keeping them.",
+  "slides": [
+    {
+      "type": "intro",
+      "title": "Getting clients was easy. Keeping them was not."
+    },
+    {
+      "type": "content",
+      "title": "Her treatments were excellent. Her reviews were strong.",
+      "body": "Clients left happy. But 40% of them never came back."
+    },
+    {
+      "type": "content",
+      "title": "Not because they had a bad experience.",
+      "body": "Because nobody followed up. No rebooking reminder. No aftercare message. No nudge. Nothing."
+    },
+    {
+      "type": "content",
+      "title": "They got busy and forgot.",
+      "body": "Three months later they saw another clinic on Instagram and booked there instead."
+    },
+    {
+      "type": "content",
+      "title": "We built a system that fixes this.",
+      "body": "A follow-up message 3 days after every treatment. Then a rebooking reminder timed to the treatment cycle. Preferred therapist and treatment pre-selected."
+    },
+    {
+      "type": "content",
+      "title": "They rebook in two taps.",
+      "body": "Her repeat booking rate doubled in the first 60 days."
+    },
+    {
+      "type": "content",
+      "title": "The clients were never lost.",
+      "body": "They were just never asked to come back."
+    },
+    {
+      "type": "outro",
+      "title": "If your rebooking rate is lower than it should be, send me a message.",
+      "body": "I will show you what the fix looks like."
+    }
+  ]
+}

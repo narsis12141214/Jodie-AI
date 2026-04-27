@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-27
+Done: Randeszvous contract updated (waived setup, case study exchange, discount structure, free website, hosting terms, content approval clause). Contract PDF generated. Randeszvous email drafted for contract signing. Fresh SEO data pulled (clicks +33%, CTR 3.54%, "engagement photographer london" at 1.8). Follow-up emails drafted for Charlotte Adams + Maria Khan. LinkedIn posts #4 (beauty rebooking) + #5 (founder story) written and carousels generated. Fitness landing page built (4th and final). Gaurav Kumar pre-wedding enquiry reply drafted and sent (2-day London shoot, travel company, premium). Future setup fee structure confirmed (£290 Click/Click+, £490 Pro, £790 Elite).
+Next: Tomorrow: finish story bank questions, micro wedding blog input, reel rewrites, Instagram research, content formats. Publish fitness page on Lovable. Send Randeszvous contract. Follow up Charlotte + Maria. Instantly plan decision by Friday.
+Pipeline: Randeszvous (contract ready to send). Charlotte Adams (follow-up sent). Maria Khan (follow-up sent). Gaurav Kumar (NEW, premium 2-day pre-wedding, reply sent). Warmup day 6.
+
 ## 2026-04-25
 Done: Full outstanding tasks list compiled (20 items). Maria Khan photography lead drafted and sent (The Shard, 4 July 2026, found via Google). Click Desk AI memory saved. Two more in-person meetings this week (details pending from Hadi). Notion project tracking flagged for Monday setup.
 Next: Close Randeszvous today. Monday: review full 20-item task list, set up Notion project tracking, write next week's LinkedIn posts, wire Arman to Supabase. Hadi to share meeting details for the two new in-person meetings.

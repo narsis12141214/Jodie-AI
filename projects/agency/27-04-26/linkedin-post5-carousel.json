@@ -1,0 +1,44 @@
+{
+  "topic": "Six months ago I was a photographer. Today I run an AI agency.",
+  "slides": [
+    {
+      "type": "intro",
+      "title": "Photographer to AI agency founder in six months."
+    },
+    {
+      "type": "content",
+      "title": "That sounds like a pivot. It was not.",
+      "body": "For 10 years I ran a photography business in London. Every part of it: the shoots, the editing, the bookings, the follow-ups, the social media, the emails, the invoices. All of it, by myself."
+    },
+    {
+      "type": "content",
+      "title": "I built systems to survive.",
+      "body": "Automations that sent reminders, followed up with leads, kept my calendar full without me sitting at a screen all day."
+    },
+    {
+      "type": "content",
+      "title": "Then I realised something.",
+      "body": "Every small business owner I knew had the same problem. Restaurants missing calls during service. Clinics losing patients to forgotten appointments. Salons with incredible work and empty Instagram feeds."
+    },
+    {
+      "type": "content",
+      "title": "They did not need more marketing.",
+      "body": "They needed the invisible work handled."
+    },
+    {
+      "type": "content",
+      "title": "So I started building it for them.",
+      "body": "Voice agents that answer every call. Follow-up systems that bring customers back. Content engines that keep the feed alive."
+    },
+    {
+      "type": "content",
+      "title": "The photography taught me what small businesses actually need.",
+      "body": "Not another tool. Someone who has lived it and built the fix themselves."
+    },
+    {
+      "type": "outro",
+      "title": "If the admin is eating your time, send me a message.",
+      "body": "I will show you what we build."
+    }
+  ]
+}
