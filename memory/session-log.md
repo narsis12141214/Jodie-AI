@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-28
+Done: Haleh Cake (cake shop) nearly closed, second agency client. Contract generated with logo (Click+, voice + WhatsApp + social media for Instagram/Facebook/TikTok, no website/SEO). Setup waived for case study. Discount: 50% M1, 20% M2-3, 10% M4+. Click Desk AI development continued for both Randeszvous and Haleh Cake.
+Next: Send Haleh Cake contract tonight. Update tomorrow with details. Send Randeszvous contract. Publish fitness landing page. Thursday LinkedIn post #5. Instantly plan decision (trial expires 6 May). Outstanding photography tasks still pending.
+Pipeline: Randeszvous (contract ready). Haleh Cake (NEW, contract ready, sending tonight). Charlotte Adams (follow-up sent). Maria Khan (follow-up sent). Gaurav Kumar (reply sent, awaiting). Warmup day 7.
+
 ## 2026-04-27
 Done: Randeszvous contract updated (waived setup, case study exchange, discount structure, free website, hosting terms, content approval clause). Contract PDF generated. Randeszvous email drafted for contract signing. Fresh SEO data pulled (clicks +33%, CTR 3.54%, "engagement photographer london" at 1.8). Follow-up emails drafted for Charlotte Adams + Maria Khan. LinkedIn posts #4 (beauty rebooking) + #5 (founder story) written and carousels generated. Fitness landing page built (4th and final). Gaurav Kumar pre-wedding enquiry reply drafted and sent (2-day London shoot, travel company, premium). Future setup fee structure confirmed (£290 Click/Click+, £490 Pro, £790 Elite).
 Next: Tomorrow: finish story bank questions, micro wedding blog input, reel rewrites, Instagram research, content formats. Publish fitness page on Lovable. Send Randeszvous contract. Follow up Charlotte + Maria. Instantly plan decision by Friday.
