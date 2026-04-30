@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-04-30
+Done: Randeszvous contract amended (7 changes: online deposit, SEO report details, 3-day approval, £100 cap, sensitive info clause, billing Day 8 with 2-day payment, termination for cause both parties, logo added). Click Desk AI full technical briefing received and saved (Arman 4 workflows working, 6 bugs fixed, WhatsApp next priority). Gaurav Kumar quotation drafted (£5,800, 2-day pre-wedding, 7 London locations including Windsor Castle). Charlotte Adams and Maria Khan closed as dead leads. 1-page agreement template agreed (Option 2: simple summary with package selection). Contract signing friction identified as a closing bottleneck.
+Next: Tomorrow: build 1-page agreement template. Full outstanding task list. Gaurav Kumar quote to send tonight. LinkedIn post #5. WhatsApp integration (Meta Business Account application). Haleh Cake closing this weekend. Instantly plan decision by weekend.
+Pipeline: Haleh Cake (contract sent, likely closing weekend). Randeszvous (contract amended, ready to resend). Gaurav Kumar (quotation drafted at £5,800). Charlotte/Maria closed. Warmup day 9.
+
 ## 2026-04-28
 Done: Haleh Cake (cake shop) nearly closed, second agency client. Contract generated with logo (Click+, voice + WhatsApp + social media for Instagram/Facebook/TikTok, no website/SEO). Setup waived for case study. Discount: 50% M1, 20% M2-3, 10% M4+. Click Desk AI development continued for both Randeszvous and Haleh Cake.
 Next: Send Haleh Cake contract tonight. Update tomorrow with details. Send Randeszvous contract. Publish fitness landing page. Thursday LinkedIn post #5. Instantly plan decision (trial expires 6 May). Outstanding photography tasks still pending.

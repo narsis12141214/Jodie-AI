@@ -3,8 +3,9 @@ from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable, PageBreak
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable, PageBreak, Image
 )
+import os
 
 OUTPUT = "/Users/hadi/Library/Mobile Documents/com~apple~CloudDocs/EA AI/projects/agency/25-04-26/rendeszvous-service-agreement.pdf"
 
@@ -41,7 +42,16 @@ body_small = s("BodySmall", fontName="Helvetica", fontSize=9, textColor=GREY, le
 def rule():
     return HRFlowable(width="100%", thickness=0.5, color=BORDER, spaceAfter=8, spaceBefore=8)
 
+LOGO = "/Users/hadi/Library/Mobile Documents/com~apple~CloudDocs/EA AI/brand-assets/Click AI Logos/click-logo.png"
+
 story = []
+
+# LOGO HEADER
+if os.path.exists(LOGO):
+    logo = Image(LOGO, width=40*mm, height=40*mm)
+    logo.hAlign = 'LEFT'
+    story.append(logo)
+    story.append(Spacer(1, 4*mm))
 
 # HEADER
 story.append(Paragraph("SERVICE AGREEMENT", title_style))
@@ -99,6 +109,7 @@ story.append(Paragraph("c) Core pages: Home, About, Menu/Services, Contact, Book
 story.append(Paragraph("d) Integration with the AI voice receptionist and booking system", body_indent))
 story.append(Paragraph("e) Basic on-page SEO setup (meta titles, descriptions, heading structure)", body_indent))
 story.append(Paragraph("f) SSL certificate and domain configuration", body_indent))
+story.append(Paragraph("g) Online deposit and payment functionality integrated into the website, to be delivered between months 6 and 8 of this Agreement", body_indent))
 story.append(Spacer(1, 1*mm))
 story.append(Paragraph("<b>Scope of complimentary build:</b> The complimentary website covers the initial design and build only. Any additional work beyond the initial launch, including but not limited to new pages, content creation, design changes, feature additions, and ongoing SEO updates, is not included in the complimentary build and will be charged at the rates specified in Section 2.3 and Schedule A.", body_small))
 story.append(Spacer(1, 1*mm))
@@ -127,8 +138,10 @@ story.append(Paragraph("Ongoing SEO services to improve the Client's visibility 
 story.append(Paragraph("a) Keyword research and targeting relevant to the Client's industry and location", body_indent))
 story.append(Paragraph("b) On-page optimisation (meta data, heading structure, internal linking)", body_indent))
 story.append(Paragraph("c) Google Business Profile optimisation and management", body_indent))
-story.append(Paragraph("d) Monthly SEO performance reporting (rankings, impressions, clicks)", body_indent))
+story.append(Paragraph("d) Monthly SEO performance reporting", body_indent))
 story.append(Paragraph("e) Content recommendations to support organic visibility", body_indent))
+story.append(Spacer(1, 1*mm))
+story.append(Paragraph("<b>Monthly SEO report includes:</b> keyword ranking positions and movements, total impressions and clicks from Google Search Console, click-through rate (CTR) trends, top-performing pages, flagged ranking changes (improvements and drops), competitor visibility comparison, and recommended actions for the following month.", body_small))
 story.append(Spacer(1, 1*mm))
 story.append(Paragraph("<b>SEO Disclaimer:</b> The Service Provider does not guarantee specific search engine rankings or positions. SEO results depend on multiple factors outside the Service Provider's control, including search engine algorithm changes, competitor activity, and market conditions. The Service Provider commits to applying industry best practices and reporting transparently on progress.", body_small))
 story.append(Spacer(1, 2*mm))
@@ -149,7 +162,9 @@ story.append(Paragraph("b) Social media posts, captions, and scheduled content",
 story.append(Paragraph("c) SEO changes to page titles, descriptions, or content structure", body_indent))
 story.append(Paragraph("d) Any visual or design modifications to the website", body_indent))
 story.append(Spacer(1, 1*mm))
-story.append(Paragraph("The Service Provider will provide content for review via email or an agreed approval workflow. The Client agrees to respond to approval requests within 5 business days. Content not approved or rejected within this period may be deferred to the next scheduled update cycle.", body_small))
+story.append(Paragraph("The Service Provider will provide content for review via email or an agreed approval workflow. The Client agrees to respond to approval requests within 3 business days. Content not approved or rejected within this period may be deferred to the next scheduled update cycle.", body_small))
+story.append(Spacer(1, 1*mm))
+story.append(Paragraph("<b>Additional charges:</b> Any additional work or expense exceeding 100 must be approved by the Client in writing before the Service Provider proceeds. The Service Provider will not incur any cost on behalf of the Client above this threshold without prior authorisation.", body_small))
 story.append(Spacer(1, 2*mm))
 
 story.append(Paragraph("<b>2.8 Case Study Permission</b>", h2))
@@ -158,7 +173,7 @@ story.append(Paragraph("a) Use the Client's business name, logo, and a descripti
 story.append(Paragraph("b) Reference the Client's business in proposals, presentations, and sales conversations with prospective clients", body_indent))
 story.append(Paragraph("c) Share anonymised performance metrics (e.g., calls answered, no-shows prevented) as part of the case study", body_indent))
 story.append(Spacer(1, 1*mm))
-story.append(Paragraph("The Service Provider will share the case study content with the Client for approval before publishing. The Client may request removal of the case study at any time by providing written notice.", body_small))
+story.append(Paragraph("The Service Provider will share the case study content with the Client for approval before publishing. The Client may request removal of the case study at any time by providing written notice. No sensitive business information, financial data, customer personal data, or proprietary operational details will be published under any circumstances.", body_small))
 
 story.append(PageBreak())
 
@@ -199,7 +214,7 @@ story.append(Paragraph("b) After 24 months, the monthly fee will be reviewed. Th
 story.append(Paragraph("c) The monthly fee includes up to 1,000 minutes of AI voice and WhatsApp usage per month", body_indent))
 story.append(Paragraph("d) Usage exceeding the included minutes will be charged at the overage rates specified in Schedule A", body_indent))
 story.append(Paragraph("e) Monthly billing begins after the 7-day trial period (see Section 4)", body_indent))
-story.append(Paragraph("f) Payment is due within 7 days of invoice date", body_indent))
+story.append(Paragraph("f) Payment is due within 2 days of invoice date (see Section 4.2 for full billing schedule)", body_indent))
 story.append(Paragraph("g) All prices are exclusive of VAT where applicable", body_indent))
 story.append(Spacer(1, 2*mm))
 
@@ -229,13 +244,20 @@ story.append(Paragraph("<b>3.4 Payment Method</b>", h2))
 story.append(Paragraph("Payments may be made by bank transfer, direct debit, or any other method agreed in writing between the parties.", body))
 
 # TRIAL
-story.append(Paragraph("4. TRIAL PERIOD", h1))
-story.append(Paragraph("The Client is entitled to a 7-day trial period beginning on the go-live date of the system. During this period:", body))
+story.append(Paragraph("4. TRIAL PERIOD AND BILLING", h1))
+story.append(Paragraph("The Client is entitled to a 7-day trial period beginning on the go-live date of the system (Day 1).", body))
+story.append(Spacer(1, 2*mm))
+story.append(Paragraph("<b>4.1 Trial Period (Days 1 to 7)</b>", h2))
 story.append(Paragraph("a) The Client may use all services as described in Section 2", body_indent))
 story.append(Paragraph("b) No monthly fee is charged during the trial period", body_indent))
 story.append(Paragraph("c) If the Client wishes to cancel during the trial period, they must notify the Service Provider in writing before the trial expires", body_indent))
 story.append(Paragraph("d) If the Client cancels during the trial period, no monthly fees will be charged", body_indent))
-story.append(Paragraph("e) If the Client does not cancel during the trial period, monthly billing begins automatically on the day following the trial expiry", body_indent))
+story.append(Spacer(1, 2*mm))
+story.append(Paragraph("<b>4.2 Billing Commencement (Day 8 onwards)</b>", h2))
+story.append(Paragraph("a) If the Client does not cancel during the trial period, the first billing period begins automatically on Day 8", body_indent))
+story.append(Paragraph("b) The first invoice is issued on Day 8 and is payable within 2 days (by Day 10)", body_indent))
+story.append(Paragraph("c) Subsequent invoices are issued monthly from the billing start date and are payable within 2 days of the invoice date", body_indent))
+story.append(Paragraph("d) If payment is not received by the due date, the Service Provider will issue a reminder. If payment remains outstanding 4 days after the due date following 2 reminders (each sent within 2 days), the Service Provider may exercise its rights under Section 5.3.", body_indent))
 
 # TERM
 story.append(Paragraph("5. TERM AND TERMINATION", h1))
@@ -254,9 +276,17 @@ story.append(Paragraph("e) Hosting transfer to the Client's own provider is the 
 story.append(Spacer(1, 2*mm))
 
 story.append(Paragraph("<b>5.3 Termination by Service Provider</b>", h2))
-story.append(Paragraph("The Service Provider may terminate this Agreement with 30 days written notice, or immediately if:", body))
-story.append(Paragraph("a) The Client fails to make payment within 14 days of the due date after a written reminder", body_indent))
-story.append(Paragraph("b) The Client breaches any material term of this Agreement and fails to remedy the breach within 14 days of written notice", body_indent))
+story.append(Paragraph("The Service Provider may terminate this Agreement with 30 days written notice, or immediately without prior notice if:", body))
+story.append(Paragraph("a) The Client fails to make payment after 2 written reminders, each sent within 2 days of the previous notice. If payment remains outstanding after the second reminder, the Service Provider may terminate this Agreement immediately and suspend all services.", body_indent))
+story.append(Paragraph("b) The Client breaches any material term of this Agreement and fails to remedy the breach within 7 days of written notice", body_indent))
+story.append(Spacer(1, 2*mm))
+
+story.append(Paragraph("<b>5.4 Termination by Client for Cause</b>", h2))
+story.append(Paragraph("The Client may terminate this Agreement immediately without prior notice if:", body))
+story.append(Paragraph("a) The Service Provider fails to deliver the services described in this Agreement for a period exceeding 14 consecutive days without reasonable explanation", body_indent))
+story.append(Paragraph("b) The Service Provider breaches any material term of this Agreement and fails to remedy the breach within 7 days of written notice from the Client", body_indent))
+story.append(Spacer(1, 1*mm))
+story.append(Paragraph("In all cases of termination for cause by either party, the terminating party must provide written communication clearly stating the reason for termination and the specific obligation that has not been met.", body_small))
 
 story.append(PageBreak())
 
