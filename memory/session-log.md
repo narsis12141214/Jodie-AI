@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-05-01
+Done: 1-page agreement template built (projects/agency/01-05-26/). Full outstanding task list reviewed (25 items). Randeszvous contract sent. Arman n8n fully wired to Supabase. Instantly Hypergrowth plan confirmed. LinkedIn #5 published. WhatsApp Business API setup complete (WABA created, 3 templates approved same day, Meta Business Verification done). Multi-tenant n8n refactor planned (6 workflows, Send Booking Emails first). Display name change ticket open with Twilio. Click Desk AI memory fully updated.
+Next: Multi-tenant n8n refactor (Send Booking Emails first, then WhatsApp branch). Haleh Cake contract signature (weekend). Custom domain. Next week LinkedIn posts. Photography tasks still pending (story bank, blog #7, reels). Gaurav Kumar awaiting reply.
+Pipeline: Randeszvous (contract sent, awaiting signature). Haleh Cake (contract sent, likely weekend). Gaurav Kumar (£5,800 quote sent, awaiting). Warmup day 10 of 16. First real sends 8 May.
+
 ## 2026-04-30
 Done: Randeszvous contract amended (7 changes: online deposit, SEO report details, 3-day approval, £100 cap, sensitive info clause, billing Day 8 with 2-day payment, termination for cause both parties, logo added). Click Desk AI full technical briefing received and saved (Arman 4 workflows working, 6 bugs fixed, WhatsApp next priority). Gaurav Kumar quotation drafted (£5,800, 2-day pre-wedding, 7 London locations including Windsor Castle). Charlotte Adams and Maria Khan closed as dead leads. 1-page agreement template agreed (Option 2: simple summary with package selection). Contract signing friction identified as a closing bottleneck.
 Next: Tomorrow: build 1-page agreement template. Full outstanding task list. Gaurav Kumar quote to send tonight. LinkedIn post #5. WhatsApp integration (Meta Business Account application). Haleh Cake closing this weekend. Instantly plan decision by weekend.
