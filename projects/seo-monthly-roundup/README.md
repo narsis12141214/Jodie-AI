@@ -20,6 +20,7 @@ A recurring research project that runs each month to surface:
 |---|---|---|
 | 2026-03-29 | [seo-roundup-2026-03-29.html](seo-roundup-2026-03-29.html) | First full roundup. All 25 direct competitors researched via live web data. Full site audit. SWOT, keyword gap table, scored content ideas, audience signal. |
 | 2026-03-30 | [seo-roundup-2026-03-30.html](seo-roundup-2026-03-30.html) | Run #2. Fresh Perplexity sonar-deep-research (streaming fix). Live Search Console analytics. Updated SWOT, keyword gap table, scored content ideas, YouTube ideas, LLM visibility section, full next steps. |
+| 2026-05-05 | [seo-roundup-2026-05-05.html](seo-roundup-2026-05-05.html) | Run #3. April 2026 monthly audit. 5 weeks of pipeline data. CTR +58%. 2 Google enquiries confirmed. Keyword volatility in "couple" cluster. 8 competitor deep-dives. Micro wedding (14/15) confirmed as top content gap. |
 
 ## Tracked Competitors
 
