@@ -419,6 +419,33 @@ Pillar 5 content. Shows the human behind the camera. A photographer who invests 
 
 ---
 
+### Josh and Catherine — "The photographer cancelled one day before their wedding"
+- Date: [Hadi to confirm year]
+- Clients: Josh (US, worked at Google London) and Catherine (London)
+- Location: London (venue to confirm)
+- Pillar(s): 1, 3, 5
+- Emotional tone: urgent, stressful, then deeply warm, lasting friendship
+- Usable for: reel (flagship micro wedding story), blog #7, caption, proposal copy, about page
+- Permission: check with Hadi (they are still friends, likely public)
+
+**The moment:**
+Josh was from the US, Catherine from London. They met when Josh came to London to work for Google. They started dating, moved back to the US together, but chose London for their wedding because it was where they met and the city Josh loved.
+
+They planned a small intimate wedding. One day before the wedding, their photographer cancelled. Catherine was crying on the phone to Hadi's assistant while Hadi was in the middle of a surprise proposal shoot. His phone wouldn't stop ringing.
+
+After finishing work, Hadi invited them to a cafe in Central London to meet in person and make sure he was the right fit. They talked, he put them at ease. The problem: Hadi was already booked for another shoot that day. He called his other couple, explained the situation, and they agreed to move their session to another day.
+
+Despite the short notice, the pressure, and the last-minute planning, everything went perfectly. It was one of the most relaxing and beautiful wedding experiences Hadi has had. They became close friends, still in contact. Josh and Catherine now have twins and have invited Hadi to visit them in the US. The next shoot may be a family session in America.
+
+**The outcome:**
+A last-minute rescue that became one of the best client relationships of Hadi's career. Proves: the experience matters more than the circumstances. Short notice, stress, and pressure can still produce the best work when the photographer genuinely cares.
+
+**Quote / exact language:**
+"They were down-to-earth, and it was one of the best couples I've ever had the chance to photograph."
+"London had a special place in their heart. It was where they met."
+
+---
+
 *Add new stories below this line. Every session, every memory, every message that landed. Keep going.*
 
 ---

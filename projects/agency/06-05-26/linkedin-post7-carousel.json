@@ -1,0 +1,39 @@
+{
+  "topic": "A restaurant owner called me on a Friday afternoon. His receptionist had just quit.",
+  "slides": [
+    {
+      "type": "intro",
+      "title": "Friday afternoon. Receptionist just quit."
+    },
+    {
+      "type": "content",
+      "title": "No notice. No replacement.",
+      "body": "A restaurant owner called me on a Friday afternoon. Weekend bookings coming in and nobody to answer the phone."
+    },
+    {
+      "type": "content",
+      "title": "By Monday morning his restaurant had an AI receptionist.",
+      "body": "Answering every call. Knew the menu. Knew the hours. Knew the booking rules. Sent WhatsApp confirmations to every guest automatically."
+    },
+    {
+      "type": "content",
+      "title": "Over 200 calls handled. Zero missed bookings.",
+      "body": "That was three weeks ago. Not a single booking lost since."
+    },
+    {
+      "type": "content",
+      "title": "The interesting part:",
+      "body": "He originally called me about social media. The phone problem came up in conversation. It took 72 hours to solve a problem he had been living with for years."
+    },
+    {
+      "type": "content",
+      "title": "Most small businesses do not need a 6-month transformation.",
+      "body": "They need someone who listens to the actual problem and builds the fix in days."
+    },
+    {
+      "type": "outro",
+      "title": "If your business runs on calls and bookings, send me a message.",
+      "body": "I will show you what we would build for yours."
+    }
+  ]
+}

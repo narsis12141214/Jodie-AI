@@ -1,0 +1,39 @@
+{
+  "topic": "Nobody counts this number. But it decides whether your business grows or stays stuck.",
+  "slides": [
+    {
+      "type": "intro",
+      "title": "Nobody counts this number. But it decides everything."
+    },
+    {
+      "type": "content",
+      "title": "It is the calls that come in when your team is busy.",
+      "body": "During lunch service. During a treatment. During the school run. The phone rings and nobody picks up."
+    },
+    {
+      "type": "content",
+      "title": "The caller does not leave a voicemail.",
+      "body": "They Google the next option and book there instead. You will never know that call happened."
+    },
+    {
+      "type": "content",
+      "title": "5 to 15 missed calls a week.",
+      "body": "At £40 to £400 per booking, the maths gets uncomfortable fast."
+    },
+    {
+      "type": "content",
+      "title": "We build AI receptionists that answer every call.",
+      "body": "24 hours a day. They know your menu, your services, your hours, and your booking rules. They book the appointment and send a WhatsApp confirmation."
+    },
+    {
+      "type": "content",
+      "title": "From 12 missed calls on a Friday night to zero.",
+      "body": "Every call answered. Every booking captured. Built in 3 days."
+    },
+    {
+      "type": "outro",
+      "title": "If you have never counted your missed calls, send me a message.",
+      "body": "I will show you what it looks like for your business."
+    }
+  ]
+}
