@@ -10,6 +10,11 @@ Done: Randeszvous contract amended (7 changes: online deposit, SEO report detail
 Next: Tomorrow: build 1-page agreement template. Full outstanding task list. Gaurav Kumar quote to send tonight. LinkedIn post #5. WhatsApp integration (Meta Business Account application). Haleh Cake closing this weekend. Instantly plan decision by weekend.
 Pipeline: Haleh Cake (contract sent, likely closing weekend). Randeszvous (contract amended, ready to resend). Gaurav Kumar (quotation drafted at £5,800). Charlotte/Maria closed. Warmup day 9.
 
+## 2026-05-07
+Done: Story bank completed (21 entries, all seed questions answered: Q8 venue nonsense, Q9 presence over perfection, Q17 emotional skill, Q20 specialise deeply, Q24 anticipation/street photography, Q25 emotionally expensive). Blog #7 Rank Math fixes applied (keyword density, H2, meta desc). Blog pre-publish checklist updated with 3 new SEO checks. Quality log updated. LinkedIn #6 posted. Gaurav Kumar follow-up drafted. 30 London Locations Instagram series written (30 scripts, batching strategy, full plan). Engagement page 5 changes confirmed applied by Hadi.
+Next: Tomorrow: first real cold sends authorised (warmup complete). Post LinkedIn #7. Publish blog #7. Internal linking sprint (44 links, Saturday). International couples content. Hadi reviews 30 London Locations scripts. Start filming Batch 1 this weekend.
+Pipeline: Haleh Cake (awaiting signature). Randeszvous (awaiting signature). Gaurav Kumar (follow-up sent). Warmup day 16 (final day).
+
 ## 2026-05-06
 Done: Blog #7 (micro wedding photographer london) drafted (2,800 words, checklist passed, 6 internal links). Josh and Catherine story added to story bank (entry #15). LinkedIn #6 and #7 carousels generated. Engagement photographer page diagnosed (1,734 impressions, position 59, 5 targeted changes documented). Internal linking map created (44 links across 12 pages). 5 meta descriptions applied and submitted to Google.
 Next: Tomorrow: Hadi reviews blog #7. Apply engagement page changes. Apply internal links. Post LinkedIn #6. International couples content. Blog: US elopement post.

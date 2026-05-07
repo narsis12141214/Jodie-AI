@@ -21,6 +21,9 @@
 - [ ] H1 matches or closely reflects the target keyword
 - [ ] URL slug is clean, lowercase, hyphenated, and keyword-rich (no auto-generated gibberish)
 - [ ] Target keyword appears in the first 100 words of the post
+- [ ] Target keyword (or close variation) appears in at least one H2 subheading
+- [ ] Keyword density between 0.5% and 1.5% — target keyword appears 4-8 times in a 2,500-word post (naturally, not forced)
+- [ ] No keyword stuffing — every instance reads naturally in context
 
 ## 4. IMAGES
 - [ ] Every image has descriptive alt text (not filename, not blank)
