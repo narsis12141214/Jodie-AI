@@ -10,6 +10,11 @@ Done: Randeszvous contract amended (7 changes: online deposit, SEO report detail
 Next: Tomorrow: build 1-page agreement template. Full outstanding task list. Gaurav Kumar quote to send tonight. LinkedIn post #5. WhatsApp integration (Meta Business Account application). Haleh Cake closing this weekend. Instantly plan decision by weekend.
 Pipeline: Haleh Cake (contract sent, likely closing weekend). Randeszvous (contract amended, ready to resend). Gaurav Kumar (quotation drafted at £5,800). Charlotte/Maria closed. Warmup day 9.
 
+## 2026-05-09
+Done: Kish Restaurant contract generated (Click+, 1,400 mins with 400 bonus, 12 posts/month + 2 reels, 24-month price lock + 3.5% cap, setup waived for case study). Ace Hair and Beauty contract already sent by Hadi (Click+, same terms). Rendeszvous final follow-up sent with weekend deadline. International couples content ready (3 pages). US elopement blog ready. LinkedIn #8 and #9 drafted.
+Next: Monday: 2 meetings (10am + 4:30pm, 4-venue wedding owner). Haleh Cake, Kish, Ace contracts signing. Publish blog #7. Internal linking sprint. Medical diagnostics clinic meeting next week. Rendeszvous deadline expires.
+Pipeline: Haleh Cake (contract today). Kish Restaurant (contract sent). Ace Hair and Beauty (contract sent, weekend signing). Randeszvous (final deadline, weekend). 2 restaurants (meeting today). Monday 10am meeting. Monday 4:30pm (4 wedding venues). Medical diagnostics (meeting next week). Gaurav Kumar (follow-up sent).
+
 ## 2026-05-07
 Done: Story bank completed (21 entries, all seed questions answered: Q8 venue nonsense, Q9 presence over perfection, Q17 emotional skill, Q20 specialise deeply, Q24 anticipation/street photography, Q25 emotionally expensive). Blog #7 Rank Math fixes applied (keyword density, H2, meta desc). Blog pre-publish checklist updated with 3 new SEO checks. Quality log updated. LinkedIn #6 posted. Gaurav Kumar follow-up drafted. 30 London Locations Instagram series written (30 scripts, batching strategy, full plan). Engagement page 5 changes confirmed applied by Hadi.
 Next: Tomorrow: first real cold sends authorised (warmup complete). Post LinkedIn #7. Publish blog #7. Internal linking sprint (44 links, Saturday). International couples content. Hadi reviews 30 London Locations scripts. Start filming Batch 1 this weekend.
