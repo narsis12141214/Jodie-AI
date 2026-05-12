@@ -1,6 +1,41 @@
 # Current Priorities
 
-Last updated: 2026-04-17
+Last updated: 2026-05-13
+Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
+
+## WEDNESDAY 13 MAY — Day 43 of 60
+
+**PRIORITY 1 (Agency): Read unbundling research + Strategist session this afternoon**
+**PRIORITY 2 (Agency): Send Hanna follow-up email (after placeholder fill-in)**
+**PRIORITY 3 (Agency): Decide Ace next move (silent past 48hr after voice note + Phorest text)**
+
+Agency:
+- [ ] Read projects/agency/13-05-26/unbundling-research.md (morning) — Hadi
+- [ ] Send Hanna follow-up email after filling [HANNA EMAIL] and [RESTAURANT NAME] placeholders — Hadi
+- [ ] Strategist session (afternoon) — operationalise voice-only tier, pipeline review, next 14 days plan
+- [ ] Decide Ace move: in-person salon walk-in OR accept loss
+- [ ] Monitor Kish (silent until 19 May review, expected)
+
+## RECENT PIPELINE STATE (13 May)
+
+| Lead | Status | Next Action |
+|------|--------|-------------|
+| Haleh Cake | CLOSED 11 May | Multi-tenant n8n refactor before go-live. Brief Arman. WABA templates. |
+| Hanna ([RESTAURANT NAME]) | Interested, 3hr meeting 12 May, reads on his own | Follow-up email going out today |
+| Kish Restaurant | Stalled, "wait for now" | Silent until 19 May review per step-back protocol |
+| Ace Hair & Beauty | Silent past 48hr after Phorest answer | Decision point: in-person walk-in or accept loss |
+| Randeszvous | Deadline expired weekend 9-10 May | Wait until 26 May, then re-engage with new social proof |
+| Maria Gautam | Reviewing for 6+ weeks | Kill this week, send final close-loop message |
+
+## KEY DECISIONS THIS WEEK
+
+- 11 May: First agency client signed (Haleh Cake) — see decisions.md
+- 12 May: Contract signing protocol adopted (sign-in-the-room) — see decisions.md
+- 12 May: 3 contract clauses to be revised for new contracts — see decisions.md
+- 13 May: Partial unbundle approved as direction (voice-only entry tier £290-£390) — see decisions.md
+
+## STALE BELOW THIS LINE — NEEDS FULL REWRITE
+---
 
 ## SATURDAY (18 April — Day 18 of 60)
 

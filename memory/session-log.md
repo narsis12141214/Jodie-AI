@@ -1,5 +1,20 @@
 # Session Log
 
+## 2026-05-13
+Done: Hanna meeting feedback processed (£800/month objection, "AI is free" perception, competitor SaaS pricing, recommended unbundling). Hanna follow-up email drafted (projects/agency/13-05-26/hanna-followup-email.md). Unbundling research dispatched + completed (came back in 5 mins, not 48 hrs). Recommendation: partial unbundle, voice-only tier at £290-£390/month restricted to restaurants/trades/barbers/single-location salons. Click+/Pro/Elite untouched. Saved to projects/agency/13-05-26/unbundling-research.md. Strategist session moved to Wed 13 May afternoon (today).
+Next: Hadi reads unbundling report in morning. Sends Hanna email after placeholder fill-in. Strategist session Wed afternoon to operationalise voice-only tier. Decide Ace next move (silent past 48hr — in-person walk-in vs accept loss).
+Pipeline: Haleh Cake CLOSED (first agency client, signed 11 May). Kish silent (per step-back protocol, expected). Ace silent past 48hr (decision point). Randeszvous deadline expired. Hanna interested, email going out tomorrow. Maria stale, kill this week.
+
+## 2026-05-12
+Done: 4-deal closing pattern diagnosed (Randeszvous, Maria, Kish, Ace all softened after verbal yes). Strategist diagnostic produced (projects/agency/12-05-26/strategist-closing-pattern-diagnostic.md). Identified single biggest leak: time gap between verbal yes and signature. Contract signing protocol drafted (sign-in-the-room on iPad, drop Adobe e-sign for in-room). Contract clause revisions drafted for 3 clauses (24-month language, case-study clause, 7-day trial wording). Ace voice note + Phorest follow-up text drafted and sent. Kish step-back message drafted and sent (19 May check-in).
+Next: Hanna 3-hour meeting outcomes (12 May evening) triggered unbundling research dispatch on 13 May.
+Pipeline: Haleh signed. Ace + Kish silent after messages sent. Randeszvous still expired.
+
+## 2026-05-11
+Done: HALEH CAKE SIGNED — first agency client closed. Setup waived (case study terms). Click+ tier. Day 41 of 60. Three onboarding artefacts produced (projects/agency/11-05-26/): welcome email + kickoff call ask, onboarding pack (10 sections), Click Desk AI tenant provisioning checklist (7 phases, 4 risks flagged). SEO weekly report pulled — file modified today but data still "week ending 2026-05-02", stale by 9 days (pipeline freshness issue). Multiple position drops in photography keywords this week (alternative wedding photographer london 1.0→27.7, couple photography 2.5→16.7) likely from on-page changes Google re-evaluating.
+Next: Multi-tenant n8n refactor before Haleh go-live. Brief Arman. WABA template approval. Kickoff call scheduling.
+Pipeline: Haleh CLOSED. Kish/Ace/Randeszvous contracts sent, awaiting signature. Hanna meeting Mon evening (4:30pm wedding venue owner separately).
+
 ## 2026-05-01
 Done: 1-page agreement template built (projects/agency/01-05-26/). Full outstanding task list reviewed (25 items). Randeszvous contract sent. Arman n8n fully wired to Supabase. Instantly Hypergrowth plan confirmed. LinkedIn #5 published. WhatsApp Business API setup complete (WABA created, 3 templates approved same day, Meta Business Verification done). Multi-tenant n8n refactor planned (6 workflows, Send Booking Emails first). Display name change ticket open with Twilio. Click Desk AI memory fully updated.
 Next: Multi-tenant n8n refactor (Send Booking Emails first, then WhatsApp branch). Haleh Cake contract signature (weekend). Custom domain. Next week LinkedIn posts. Photography tasks still pending (story bank, blog #7, reels). Gaurav Kumar awaiting reply.
