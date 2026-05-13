@@ -44,29 +44,28 @@ Every customer who came in this week gets a polite WhatsApp asking for a Google 
 
 ### The pricing, in plain numbers
 
-Click+ is £797 per month, plus a one-time setup of £750 for the build. For the first five clients we sign, we waive the setup fee in exchange for permission to feature them as a case study. You are within that window. Setup is included.
+Click+ is £797 per month. The one-time setup fee is normally £750 for the build.
 
-The monthly fee schedule looks like this:
+For the first five clients we sign, we waive the setup fee in exchange for permission to feature them as a case study. You are within that window. **Setup is included.**
 
-| Period | Discount | Monthly fee |
-|---|---|---|
-| Month 1 | 50% off | £398.50 |
-| Months 2 and 3 | 20% off | £637.60 |
-| Month 4 onwards (24-month loyalty) | 10% off | £717.30 |
+Beyond the setup waiver, two additional services are included in your monthly fee at no extra cost:
 
-Total cost in your first year, including the case-study discount: roughly £8,200. After year one, the standard fee resets per the loyalty discount.
+- **A new website for [RESTAURANT NAME]**, designed, built, and maintained throughout the agreement
+- **SEO setup**, including on-page optimisation for the new website and your Google Business Profile, so customers searching for Persian restaurants in West Hampstead find you first
 
-You also get a 7-day trial before any invoice. The trial begins the day we activate everything, not the day you sign. If it does not feel right inside those 7 days, you walk away with nothing owed.
+The combined value of the setup waiver, the website, and the SEO setup exceeds £2,000 in standalone costs before the agreement even starts.
+
+You also get a 7-day trial before any invoice. The trial begins the day we activate the system, not the day you sign. If anything feels wrong inside those 7 days, you walk away with nothing owed. The first invoice goes out on trial day 8.
 
 ### The cost question, answered honestly
 
 You said £800 feels high for a restaurant owner, even one running a profitable restaurant. I want to address that directly rather than dodge it.
 
-**The £800 number is the wrong frame.** The right frame is roughly £180 per week after the loyalty discount kicks in. The question is whether £180 per week generates more than £180 per week in your business. For [RESTAURANT NAME] specifically, here is the math:
+**The £797 number is the wrong frame.** The right frame is roughly £185 per week. The question is whether £185 per week generates more than £185 per week in your business. For [RESTAURANT NAME] specifically, here is the math:
 
-Average Persian restaurant booking in West Hampstead: 3 covers at around £35 per cover, so £105 per booking. To break even on the monthly fee at £717.30, you need 7 saved bookings per month, which is fewer than 2 per week. That is the bar set entirely by the voice agent. The WhatsApp automation, the social content, the reviews, the reels are all upside.
+Average Persian restaurant booking in West Hampstead: 3 covers at around £35 per cover, so £105 per booking. To break even on the monthly fee, you need 8 saved bookings per month, which is fewer than 2 per week. That is the bar set entirely by the voice agent. The WhatsApp automation, the new website, the SEO, the social content, the reviews, and the reels are all upside.
 
-If the voice agent recovers 2 bookings per week, you break even. If it recovers 4 per week, you double your money. If it recovers 6 per week, which is realistic for a restaurant your size in West Hampstead, you are in 3x territory. Those numbers do not include the reviews compounding over time, the social media generating walk-ins, or the WhatsApp reducing no-shows.
+If the voice agent recovers 2 bookings per week, you break even. If it recovers 4 per week, you double your money. If it recovers 6 per week, which is realistic for a restaurant your size in West Hampstead, you are in 3x territory. Those numbers do not include the new website driving direct online bookings, the SEO bringing in customers searching for Persian food in West Hampstead, the reviews compounding over time, the social media generating walk-ins, or the WhatsApp reducing no-shows.
 
 ### "AI is free, ChatGPT is free"
 
@@ -109,7 +108,7 @@ Nothing today. Take the time you need. You are exactly the kind of buyer who mak
 
 When you have read this and processed it, reply to this email with whatever questions are still open. We talk through them on a call or in person, whichever you prefer. When you are ready to move forward, we sign and start.
 
-There is one thing I want to be transparent about: the case-study slots are limited to five. One is signed (Haleh Cake). One is under final review with another restaurant. That leaves three. If those fill before you decide, the standard pricing applies: £797 per month, £750 setup, no discount tier. I am not using this to pressure you. I am telling you so you can make an informed decision on your own timeline.
+There is one thing I want to be transparent about: the case-study slots are limited. The first is signed (Haleh Cake) and a small number remain. If they fill before you decide, the standard pricing applies: £797 per month, £750 setup, no included website, no included SEO setup. I am not using this to pressure you. I am telling you so you can make an informed decision on your own timeline.
 
 Whatever you decide, thank you again for the three hours and the honest conversation. I learned things on Monday that will make this offer sharper for every restaurant owner I speak to from now on. That alone was worth my evening.
 
@@ -134,11 +133,24 @@ hello@clickaiagency.com
 ## Before sending
 
 - [ ] Fill in [HANNA EMAIL] and [RESTAURANT NAME] placeholders
-- [ ] Confirm the case-study slot count (we said "3 left" — is that accurate? Haleh = 1 signed, Hanna would be 2, Kish/Ace/Randeszvous still in pipeline, so 3 left if we count only fully closed)
 - [ ] Confirm spelling of his name (Hanna vs Hana vs Hannah)
 - [ ] Confirm restaurant name spelling
 - [ ] Read it aloud once before sending. Adjust any phrasing that does not sound like you.
 - [ ] Send before midday so it lands in his morning inbox
+
+## Important — discount strategy
+
+This email contains NO monthly discount. Per Hadi's clarification on 13 May, the offer to Hanna is:
+- Setup fee waived (case-study exchange)
+- Website creation included
+- SEO setup included
+- Standard £797/month with no introductory discount
+
+The 50%/20%/10% discount structure used for other clients was NOT offered to Hanna and must NOT be promised in this email. If Hanna replies asking for a price discount, that is when we deploy the discount as a closing lever, not before.
+
+## SEO scope clarification needed (low priority)
+
+The email describes SEO as "on-page optimisation for the new website and your Google Business Profile". Confirm with Hadi after sending whether this matches what he promised verbally, or whether the SEO scope is broader or narrower than this. The email language can be tightened in any future conversation if needed.
 
 ## Notes for the next 7 days
 

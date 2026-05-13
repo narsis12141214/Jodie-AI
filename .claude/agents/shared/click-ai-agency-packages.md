@@ -3,21 +3,79 @@
 **Business:** Click AI Agency
 **Website:** clickaiagency.com
 **Instagram:** @clickaiagency
-**Last updated:** April 2026
+**Last updated:** 13 May 2026 — Click Voice tier added (voice-only, restaurants v1)
 
 ---
 
 ## Pricing model
 
-Bundled tiers with included minutes. Every package includes voice AI receptionist + WhatsApp agent + social media management + content creation + automation. Tiers differ by volume, channels, strategy depth, and customisation.
+Two product lines:
 
-- **Overage:** £0.20/min voice, £0.05/msg WhatsApp
-- **Setup fees:** £500-£1,500 one-time (per tier)
+**1. Click Voice (v1, May 2026)** — voice-only entry tier for restaurants. Designed as a land product: lower price point, fast yes, upgrade to bundle within 60-90 days.
+
+**2. Click / Click+ / Click Pro / Click Elite** — bundled tiers. Every package includes voice AI receptionist + WhatsApp agent + social media management + content creation + automation. Tiers differ by volume, channels, strategy depth, and customisation.
+
+- **Overage (Click Voice):** £0.30/min voice + transactional confirmations
+- **Overage (bundled tiers):** £0.20/min voice, £0.05/msg WhatsApp
+- **Setup fees:** £100-£1,500 one-time (per tier, launch pricing applies to Click Voice)
 - **Payment options:** Monthly, quarterly (5% discount), annual (15% discount)
 
 ---
 
-## The four packages
+## The five packages
+
+### Click Voice — £290/mo (£100 launch setup / £350 standard)
+
+**Entry tier — voice-only for restaurants. v1: launched 13 May 2026.**
+
+A custom AI voice receptionist that answers calls and books reservations 24/7. Built specifically for the restaurant. Comes with a dashboard so the owner can manage bookings in two taps and pause the agent when needed. Designed as the land product for restaurants who want to test done-for-you AI operations before committing to the full bundle.
+
+**Voice + transactional confirmations:**
+- AI voice receptionist — custom-built per restaurant, trained on menu, opening hours, booking policy
+- 1,000 minutes/month included (voice + transactional messaging combined)
+- Transactional confirmations and reminders via WhatsApp, SMS, or email (channel of client's choice)
+- Custom voice personality and tone tailored to the restaurant
+- FAQ training — agent trained on restaurant-specific questions
+- 24/7 call answering, even when the team is on the floor
+
+**Client dashboard (Click Desk AI):**
+- View confirmed bookings at a glance
+- Pause the agent in two taps (closing early, private event, holiday)
+- Call history and basic analytics
+- Booking management interface
+- No spreadsheets to manage
+
+**Setup essentials:**
+- Phone number provisioning (or porting existing)
+- Voice agent build (custom-trained on the restaurant's menu, policies, tone)
+- Basic Google Business Profile setup and optimisation
+
+**NOT included (available via upgrade to Click+):**
+- Social media management
+- Original content production (carousels, reels)
+- Website build or maintenance
+- SEO optimisation beyond Google Business Profile
+- Full WhatsApp automation flows (broadcast campaigns, no-show recovery sequences)
+- Deep CRM/booking system integrations beyond Google Calendar
+
+**Trial:** 14-day trial begins on go-live date. No monthly fee charged during trial. £100 setup paid at signing.
+
+**Upgrade path:** Day 60 soft pitch to Click+. 50% off Click+ first month if upgrading within 90 days of signing Click Voice.
+
+**Ideal client:** Independent restaurants who lose bookings during service hours, want to test AI before committing to a full marketing engine, or use existing platforms (OpenTable, Resy) and need only the voice piece.
+
+**Positioning:** "Done-for-you AI voice operations for your restaurant." Compete against doing nothing OR generic platform AI features. NOT against SaaS voice tools.
+
+**Cannibalisation fences** (preventing Click+ prospects downgrading to Click Voice):
+- Segment-restricted to restaurants only in v1 (Click+ targets multiple segments)
+- No social media, content production, website, or SEO included
+- No deep CRM integrations
+- Same dashboard but restricted feature set (no advanced analytics)
+- The Click+ upgrade pitch begins at Day 60 — not a future option, a planned conversation
+
+**Standalone value if purchased separately:** £600+/mo
+
+---
 
 ### Click — £497/mo (£500 setup)
 
@@ -153,12 +211,13 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 ## Pricing summary
 
-| Package | Monthly | Setup | Minutes | Social posts/wk | Value stack |
-|---|---|---|---|---|---|
-| Click | £497 | £500 | 500 | 4 (templates) | £900+ |
-| Click+ | £797 | £750 | 1,000 | 8 (original) | £1,800+ |
-| Click Pro | £1,297 | £1,000 | 2,500 | 12 (multi-platform) | £3,200+ |
-| Click Elite | £1,997 | £1,500 | 5,000 | 15+ (custom) | £5,500+ |
+| Package | Monthly | Setup (launch) | Setup (standard) | Minutes | Social posts/wk | Value stack |
+|---|---|---|---|---|---|---|
+| Click Voice | £290 | £100 | £350 | 1,000 | None | £600+ |
+| Click | £497 | — | £500 | 500 | 4 (templates) | £900+ |
+| Click+ | £797 | — | £750 | 1,000 | 8 (original) | £1,800+ |
+| Click Pro | £1,297 | — | £1,000 | 2,500 | 12 (multi-platform) | £3,200+ |
+| Click Elite | £1,997 | — | £1,500 | 5,000 | 15+ (custom) | £5,500+ |
 
 ---
 

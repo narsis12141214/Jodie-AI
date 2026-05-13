@@ -3,18 +3,56 @@
 Last updated: 2026-05-13
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## WEDNESDAY 13 MAY — Day 43 of 60
+## THURSDAY 14 MAY — Day 44 of 60
 
-**PRIORITY 1 (Agency): Read unbundling research + Strategist session this afternoon**
-**PRIORITY 2 (Agency): Send Hanna follow-up email (after placeholder fill-in)**
-**PRIORITY 3 (Agency): Decide Ace next move (silent past 48hr after voice note + Phorest text)**
+**PRIORITY 1 (Agency): Landing pages rebuild (Click Voice + restaurants + dental) — must be live before next prospect meeting**
+**PRIORITY 2 (Agency): Investigate clickaiagency.com/dental 404 on Lovable**
+**PRIORITY 3 (Agency): Send Hanna's amended email (carry-over) + Ace 48hr decision**
 
-Agency:
-- [ ] Read projects/agency/13-05-26/unbundling-research.md (morning) — Hadi
-- [ ] Send Hanna follow-up email after filling [HANNA EMAIL] and [RESTAURANT NAME] placeholders — Hadi
-- [ ] Strategist session (afternoon) — operationalise voice-only tier, pipeline review, next 14 days plan
-- [ ] Decide Ace move: in-person salon walk-in OR accept loss
-- [ ] Monitor Kish (silent until 19 May review, expected)
+Agency — Landing pages (Priority 1):
+- [ ] Investigate /dental 404 on Lovable. Restore or rebuild — Hadi
+- [ ] Draft new Click Voice landing page copy (H1 + body per keyword research) — Jodie
+- [ ] Draft updated restaurants landing page (Click Voice entry + Click+ bundle on same page) — Jodie
+- [ ] Draft updated dental landing page once Lovable status confirmed — Jodie
+- [ ] Light refresh on beauty + fitness landing pages — Jodie
+- [ ] Hadi approves all copy, builds on Lovable, publishes
+
+Agency — Outreach & scripts:
+- [ ] Rewrite Zizi Step 1 + Step 2 templates with new positioning + Click Voice option — Jodie
+- [ ] Brief Zizi on updated scripts before next outreach batch — Hadi
+
+Agency — Click Voice contract:
+- [ ] Generate Click Voice Python contract generator (separate from Click+/Haleh template) — Jodie
+- [ ] Apply 3 clause revisions from 12 May to Click Voice template from launch — Jodie
+- [ ] Hadi reviews and approves template
+
+Agency — Active deals:
+- [ ] Send Hanna's amended follow-up email (carry-over from 13 May) — Hadi
+- [ ] Ace 48hr decision after 7pm. Voice note: "When are you next in London? Happy to walk through Phorest in person." — Hadi
+- [ ] Brief Arman on Click Voice tenant provisioning differences (no social, no website, no SEO automation) — Hadi
+
+Agency — Memory & agent updates:
+- [ ] Update agent files (closer, copywriter, outreach) with new positioning language — Jodie
+- [ ] Update memory rules with Click Voice spec, new positioning principle, 14-day trial — Jodie
+
+## WEDNESDAY 13 MAY — Day 43 of 60 — COMPLETED
+
+Strategist session ran today. 4 topics locked:
+1. Click Voice tier finalised (£290/mo, £100 launch setup, 14-day trial, restaurants only v1)
+2. Positioning shift to "Done-for-you AI Operations Partner" with SEO-led H1 split
+3. 14-day pipeline action plan defined (window to 27 May)
+4. Kill conditions set for Click Voice, positioning, signing protocol, 60-day window
+
+Full decisions log: projects/agency/13-05-26/strategist-session-decisions.md
+Decisions appended to context/decisions.md
+
+Pipeline state at end of 13 May:
+- Haleh Cake: closed, in onboarding
+- Hanna: amended email ready to send tomorrow
+- Kish: silent until 19 May review
+- Ace: 48hr window expires tomorrow PM
+- Randeszvous: hold until 26 May
+- Maria: parked
 
 ## RECENT PIPELINE STATE (13 May)
 
