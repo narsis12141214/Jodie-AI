@@ -3,6 +3,45 @@
 Last updated: 2026-05-13
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
+## FRIDAY 15 MAY — Day 45 of 60
+
+**PRIORITY 1 (Agency): Build all 5 landing pages on Lovable + configure 301 redirects + update sitemap**
+**PRIORITY 2 (Agency): Investigate /dental 404 on Lovable + brief Arman on Click Voice provisioning**
+**PRIORITY 3 (Agency): Ace 48hr decision (Coventry voice note if still silent)**
+
+Agency — Lovable builds (Priority 1):
+- [ ] Investigate /dental 404 on Lovable (15 min). Restore or rebuild fresh? — Hadi
+- [ ] Build homepage on Lovable using projects/agency/14-05-26/homepage.html + lovable-prompt-homepage.md
+- [ ] Build restaurants/cafes page using landing-page-restaurants-cafes.html + lovable-prompt
+- [ ] Build dental page using landing-page-dental-practices.html + lovable-prompt (after 404 check)
+- [ ] Build aesthetic clinics page using landing-page-aesthetic-clinics.html + lovable-prompt
+- [ ] Build fitness/gyms page using landing-page-fitness-gyms.html + lovable-prompt
+- [ ] Configure 3x 301 redirects per sitemap-and-redirects-update.md
+- [ ] Test all redirects in incognito browser
+- [ ] Update sitemap.xml on Lovable (add about/contact/privacy URLs Hadi knows about)
+- [ ] Submit new sitemap to Google Search Console
+- [ ] Request indexing on each of the 5 new URLs
+- [ ] Audit internal links across the live site (nav, footer, blog, signatures)
+
+Agency — Active deals:
+- [ ] Hanna email reply monitoring (sent Wed 13 May afternoon)
+- [ ] Ace 48hr voice note today PM if still silent: "When are you next in London? Happy to walk through Phorest with you in person." — Hadi
+- [ ] Brief Arman on Click Voice tenant provisioning (no social, no website, no SEO automation) — Hadi
+
+Agency — Pending Jodie work (Hadi to greenlight):
+- [ ] Outreach script rewrite (Zizi) — 24 templates planned across 4 segments × 2 channels × 3 steps. Plan documented in last message of 14 May session.
+- [ ] Workflow 2 prompt update (n8n + Claude API opener generator) — bake in new positioning
+- [ ] Click Voice Python contract template — separate from Click+ template
+- [ ] Apply 3 contract clause revisions (12 May) to all new templates
+- [ ] Update agent files (closer, copywriter, outreach) with new positioning language
+- [ ] operator.md structural review (3+ entries in quality log)
+
+## THURSDAY 14 MAY — Day 44 of 60 — COMPLETED
+
+All 5 landing pages drafted (homepage + restaurants/cafes + dental + aesthetic clinics + fitness/gyms). Each has markdown brief + clean HTML + Lovable prompt. Sitemap.xml + 301 redirect map + execution guide produced. Aesthetics keyword research dispatched + completed. Homepage research dispatched + completed. Quality log entries added (homepage rotating animation misread by Jodie, corrected). Decisions logged: URL=H1 principle, no standalone Click Voice page, "service businesses" audience descriptor, Click Pro recommended for aesthetics, Randeszvous archived as dead.
+
+Full file index: projects/agency/14-05-26/sitemap-and-redirects-update.md
+
 ## THURSDAY 14 MAY — Day 44 of 60
 
 **PRIORITY 1 (Agency): Landing pages rebuild (Click Voice + restaurants + dental) — must be live before next prospect meeting**
@@ -27,9 +66,10 @@ Agency — Click Voice contract:
 - [ ] Hadi reviews and approves template
 
 Agency — Active deals:
-- [ ] Send Hanna's amended follow-up email (carry-over from 13 May) — Hadi
-- [ ] Ace 48hr decision after 7pm. Voice note: "When are you next in London? Happy to walk through Phorest in person." — Hadi
+- [x] Hanna's amended follow-up email SENT 13 May afternoon. Awaiting reply.
+- [ ] Ace 48hr decision today PM. Voice note: "When are you next in London? Happy to walk through Phorest in person." — Hadi
 - [ ] Brief Arman on Click Voice tenant provisioning differences (no social, no website, no SEO automation) — Hadi
+- DEAD — Randeszvous archived. Will not offer services even if they reach out. Owner classified as a problem maker (Hadi's call). Remove from all future pipeline tracking.
 
 Agency — Memory & agent updates:
 - [ ] Update agent files (closer, copywriter, outreach) with new positioning language — Jodie
