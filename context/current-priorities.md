@@ -5,23 +5,23 @@ Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 
 
 ## FRIDAY 15 MAY — Day 45 of 60
 
-**PRIORITY 1 (Agency): Build all 5 landing pages on Lovable + configure 301 redirects + update sitemap**
-**PRIORITY 2 (Agency): Investigate /dental 404 on Lovable + brief Arman on Click Voice provisioning**
-**PRIORITY 3 (Agency): Ace 48hr decision (Coventry voice note if still silent)**
+**PRIORITY 1 (Agency): Outreach script rewrite (Zizi) — now the bottleneck. 5 landing pages live with new positioning, but cold pitches still using old language.**
+**PRIORITY 2 (Agency): Internal link audit across live site (nav, footer, email signatures, outreach scripts) + monitor GSC indexing**
+**PRIORITY 3 (Agency): Ace 48hr decision (Coventry voice note if still silent) + Brief Arman on Click Voice provisioning**
 
-Agency — Lovable builds (Priority 1):
-- [ ] Investigate /dental 404 on Lovable (15 min). Restore or rebuild fresh? — Hadi
-- [ ] Build homepage on Lovable using projects/agency/14-05-26/homepage.html + lovable-prompt-homepage.md
-- [ ] Build restaurants/cafes page using landing-page-restaurants-cafes.html + lovable-prompt
-- [ ] Build dental page using landing-page-dental-practices.html + lovable-prompt (after 404 check)
-- [ ] Build aesthetic clinics page using landing-page-aesthetic-clinics.html + lovable-prompt
-- [ ] Build fitness/gyms page using landing-page-fitness-gyms.html + lovable-prompt
-- [ ] Configure 3x 301 redirects per sitemap-and-redirects-update.md
-- [ ] Test all redirects in incognito browser
-- [ ] Update sitemap.xml on Lovable (add about/contact/privacy URLs Hadi knows about)
-- [ ] Submit new sitemap to Google Search Console
-- [ ] Request indexing on each of the 5 new URLs
-- [ ] Audit internal links across the live site (nav, footer, blog, signatures)
+Agency — Lovable builds (PRIORITY 1 yesterday): COMPLETED Thursday 14 May evening
+- [x] All 5 landing pages built on Lovable (homepage + restaurants/cafes + dental + aesthetic clinics + fitness/gyms)
+- [x] 3 × 301 redirects configured (restaurants old → new, dental old → new, aesthetics old → new)
+- [x] Sitemap.xml updated with new canonical URLs
+- [x] All new URLs submitted to Google Search Console for indexing
+- [ ] Monitor GSC indexing status (3-21 days typical) — Hadi to check weekly
+- [ ] Test all 3 redirects in incognito browser to verify 301 (not 302, not 404)
+- [ ] Internal link audit (nav, footer, blog, email signatures) — Hadi 30-min sweep
+
+Agency — Outreach scripts (PRIORITY 1 today):
+- [ ] Greenlight outreach script rewrite scope (24 templates, 4 segments × 2 channels × 3 steps) — Hadi
+- [ ] Draft all 24 templates + reply handler library + Workflow 2 prompt update — Jodie (when greenlit)
+- [ ] Brief Zizi on new scripts before next outreach batch — Hadi
 
 Agency — Active deals:
 - [ ] Hanna email reply monitoring (sent Wed 13 May afternoon)
