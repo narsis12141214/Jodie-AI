@@ -33,6 +33,8 @@ Append-only. One entry per decision. Format: [YYYY-MM-DD] DECISION: ... | REASON
 
 [2026-05-14] DECISION: Homepage hero retains the existing rotating-word brand animation ("Branding that makes you more Growth / Sales / Clicks") as an eyebrow above the new SEO H1. | REASONING: Hadi confirmed this is intentional brand element, not broken copy. Jodie initially misread and called it broken. The rotating element is decorative brand work and stays. New H1 sits below it for SEO. | CONTEXT: Lesson logged to quality-log.md — Jodie must NOT classify existing brand elements as broken without confirming intent with Hadi first.
 
+[2026-05-15] DECISION: Click Voice tier (£290/mo voice-only) extended from "restaurants only v1" to ALL service business segments — restaurants, cafes, dental practices, aesthetic clinics, beauty salons, fitness studios. Supersedes the 13 May Strategist session decision that locked Click Voice as restaurants-only. | REASONING: Hadi's call during outreach script design: not all service businesses need the full bundle. Dental clinics, aesthetic clinics, and gyms have segments that want voice-only at a lower entry point. Offering the same tier across all segments is operationally cleaner and produces higher cold-email reply rates (lower entry price). | CONTEXT: Trade-offs accepted — increased cannibalisation risk vs Click+, harder volume math (17-30 voice-only clients vs 7-10 Click+ to hit £5K MRR). Upgrade path (50% off Click+ first month if upgrading within 90 days) remains the conversion lever. KNOCK-ON IMPACT: dental, aesthetic, fitness landing pages have "Click Voice not available for [segment]" language that is now obsolete and needs removing in next Lovable update. Outreach scripts updated for dental Step 2 onwards.
+
 
 
 

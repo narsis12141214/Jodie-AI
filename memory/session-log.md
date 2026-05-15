@@ -1,5 +1,16 @@
 # Session Log
 
+## 2026-05-15
+Done: HUGE day. Three major workstreams completed.
+(1) Pricing restructure: Click+/Pro/Elite refined with new monthly fees (£790/£1,290/£1,990), launch setup fees (£150/£250/£350 — 70% off £500/£850/£1,200 standard), removed full WhatsApp automation + community management + Click+ review management (moved to Pro+ tier), added CRM integration + influencer outreach + multi-language to Elite, replaced "unlimited mins" with "Up to 10,000 + fair-use", retired Click tier entirely. Canonical packages file updated.
+(2) Site-wide Lovable pricing update: prompt produced, applied across homepage + 4 segment landing pages. Setup fee now displays under price (not in feature list). All retired tier names gone from live site.
+(3) Cold email rebuild: dispatched data-backed research (Lemlist, Instantly 2026 benchmark, Puzzle Inbox CTA study, Saleshandy 100M-email study), then rebuilt ALL 4 segments × 3 steps = 12 templates approved step-by-step by Hadi. Restaurants/Dental/Aesthetic/Fitness. New cadence rule restaurant-specific (Mon-Thu only, never Fri/Sat/Sun) replacing generic +4 rule. Stat-led architecture (NOT personalisation-led — avoids 2026 AI fingerprint per Google's Feb 2026 spam filter). Soft value-offer asks (60-sec clip) per Puzzle Inbox 4.2% vs 1.4% CTA reply data. Source anonymised ("a recent study") per Hadi's no-competitor-name rule. "AI phone answering" for restaurants, "AI receptionist" for dental/aesthetic/fitness. "Click Desk" dashboard branded mention.
+STRATEGIC DECISION: Click Voice (£290 voice-only) extended from "restaurants only v1" to ALL service segments. Supersedes 13 May Strategist session decision. Increases cannibalisation risk vs Click+ but lowers cold-email entry friction. Logged in decisions.md with trade-offs.
+Ace voice call attempt today (20 sec, "busy, will call back" brush-off). 7:30pm WhatsApp text scheduled to set Mon-morning callback.
+Quality log: shared/closer + Jodie misread Hadi's intentional rotating animation as "broken H1" earlier in week — corrected.
+Next: Monday — record 60-sec clips for aesthetic (Botox enquiry) + fitness (new-member enquiry) before sends start. Build n8n + Instantly automation per Section 7 of email scripts file (4-6 hours). Brief Zizi on DM scripts (Section 1 + 6 of dm file). Update dental/aesthetic/fitness landing pages to remove "Click Voice not available for [segment]" lines + fix "AI receptionist" → "AI phone answering" on restaurants landing page.
+Pipeline: Haleh closed (in onboarding). Hanna email sent Wed 13 May, no reply yet (he's a slow reader per his own admission). Kish silent until 19 May review (4 days away). Ace 20-sec call today + 7:30pm text. Randeszvous archived dead. Maria parked.
+
 ## 2026-05-14 (LATE EVENING UPDATE — Hadi pulled tomorrow's work forward)
 Late evening: After shutdown, Hadi built ALL 5 landing pages on Lovable, configured all 3 × 301 redirects, updated sitemap.xml, and submitted all new URLs to Google Search Console for indexing — same day as drafting. Entire site infrastructure now LIVE with new positioning + URLs + package structure. Outreach script rewrite (Zizi) becomes the next bottleneck since cold pitches still use old positioning while live site is current.
 

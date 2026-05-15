@@ -1,9 +1,9 @@
-# Click AI Agency — Gear Shift Packages
+# Click AI Agency — Click Packages
 
 **Business:** Click AI Agency
 **Website:** clickaiagency.com
 **Instagram:** @clickaiagency
-**Last updated:** 13 May 2026 — Click Voice tier added (voice-only, restaurants v1)
+**Last updated:** 15 May 2026 — Click+/Pro/Elite restructured. Click tier retired. Setup fees standardised at 70% off founding cohort across all tiers. Full WhatsApp automation, community management, and custom AI workflows moved to bespoke add-on (no longer in any standard tier).
 
 ---
 
@@ -11,24 +11,27 @@
 
 Two product lines:
 
-**1. Click Voice (v1, May 2026)** — voice-only entry tier for restaurants. Designed as a land product: lower price point, fast yes, upgrade to bundle within 60-90 days.
+**1. Click Voice (v1, May 2026)** — voice-only entry tier for restaurants and cafes. Designed as a land product: lower price point, fast yes, upgrade to bundle within 60-90 days.
 
-**2. Click / Click+ / Click Pro / Click Elite** — bundled tiers. Every package includes voice AI receptionist + WhatsApp agent + social media management + content creation + automation. Tiers differ by volume, channels, strategy depth, and customisation.
+**2. Click+ / Click Pro / Click Elite** — bundled tiers. Each includes voice AI receptionist + transactional WhatsApp/SMS/email + social media + content production. Tiers differ by volume, channels, depth, and bundled marketing services.
 
+- **Founding cohort launch pricing:** 70% off standard setup fee across all tiers (limited time)
 - **Overage (Click Voice):** £0.30/min voice + transactional confirmations
 - **Overage (bundled tiers):** £0.20/min voice, £0.05/msg WhatsApp
-- **Setup fees:** £100-£1,500 one-time (per tier, launch pricing applies to Click Voice)
 - **Payment options:** Monthly, quarterly (5% discount), annual (15% discount)
+- **Retired:** Click (£497) tier removed 15 May 2026. Existing Click contracts honoured to their natural end.
 
 ---
 
-## The five packages
+## The four packages
 
 ### Click Voice — £290/mo (£100 launch setup / £350 standard)
 
-**Entry tier — voice-only for restaurants. v1: launched 13 May 2026.**
+**Entry tier — voice-only across service business segments. v1 launched 13 May 2026 (restaurants only). Expanded to all service segments 15 May 2026.**
 
-A custom AI voice receptionist that answers calls and books reservations 24/7. Built specifically for the restaurant. Comes with a dashboard so the owner can manage bookings in two taps and pause the agent when needed. Designed as the land product for restaurants who want to test done-for-you AI operations before committing to the full bundle.
+A custom AI voice agent that answers calls and books appointments / reservations 24/7. Built specifically for the business it's deployed in. Comes with the Click Desk dashboard so the owner can manage bookings in two taps and pause the agent when needed. Designed as the land product for service businesses that want to fix missed calls before committing to the full bundle.
+
+**Available to:** restaurants, cafes, dental practices, aesthetic clinics, beauty salons, fitness studios. Decision recorded 15 May 2026 — supersedes the 13 May "restaurants-only v1" scope.
 
 **Voice + transactional confirmations:**
 - AI voice receptionist — custom-built per restaurant, trained on menu, opening hours, booking policy
@@ -62,7 +65,7 @@ A custom AI voice receptionist that answers calls and books reservations 24/7. B
 
 **Upgrade path:** Day 60 soft pitch to Click+. 50% off Click+ first month if upgrading within 90 days of signing Click Voice.
 
-**Ideal client:** Independent restaurants who lose bookings during service hours, want to test AI before committing to a full marketing engine, or use existing platforms (OpenTable, Resy) and need only the voice piece.
+**Ideal client:** Service businesses (restaurants, dental practices, aesthetic clinics, beauty salons, fitness studios) that lose bookings during service hours, want to test AI before committing to the full bundle, or use existing platforms (booking systems, practice management software) and need only the voice piece.
 
 **Positioning:** "Done-for-you AI voice operations for your restaurant." Compete against doing nothing OR generic platform AI features. NOT against SaaS voice tools.
 
@@ -77,133 +80,81 @@ A custom AI voice receptionist that answers calls and books reservations 24/7. B
 
 ---
 
-### Click — £497/mo (£500 setup)
+### Click+ — £790/mo
+**Setup: £150 launch (founding cohort) / £500 standard**
 
-**Base tier — the foundation**
+*The growth tier. Voice, WhatsApp, content, all run by our team.*
 
-An AI receptionist that answers calls and WhatsApp messages 24/7, books appointments automatically, and keeps the business visible on social media with consistent template-based content.
+- Custom AI voice agent trained on your business
+- 1,500 minutes/month calls
+- WhatsApp, SMS, or email confirmations and reminders (transactional)
+- Integration with your existing booking system
+- 4 original social posts per week (Instagram + Facebook) — quality-focused, strategic content, not posts for the sake of posts
+- Reels, carousels, and stories produced for you
+- Click Desk AI dashboard
+- Basic Google Business Profile setup
+- Multi-language support
+- 14-day trial from go-live, no monthly fee during trial
 
-**Voice + WhatsApp:**
-- AI voice receptionist — answers inbound calls, qualifies enquiries, books appointments
-- 500 minutes/month included (voice + WhatsApp combined)
-- WhatsApp AI agent — handles enquiries, sends confirmations, answers FAQs
-- Business hours + after-hours coverage (24/7 available)
-- Call/chat transcripts and lead capture to CRM or spreadsheet
-
-**Social media + content:**
-- 4 social media posts per week (template-based, branded)
-- 1 platform (Instagram or Facebook)
-- Content calendar planning (monthly)
-- Hashtag research and basic captions
-
-**Automation:**
-- Appointment booking automation (Google Calendar / booking system integration)
-- New lead notification (email or WhatsApp alert to owner)
-- Missed call follow-up (automatic WhatsApp message within 60 seconds)
-
-**Ideal client:** Solo businesses, small restaurants, single-location clinics, beauty salons. Getting started with AI without overwhelm.
-
-**Standalone value if purchased separately:** £900+/mo
-
----
-
-### Click+ — £797/mo (£750 setup)
-
-**Growth tier — the growth engine**
-
-Everything in Click, plus double the minutes, original content creation, full social media management, and review management to build reputation while the AI handles the phones.
-
-**Voice + WhatsApp:**
-- Everything in Click
-- 1,000 minutes/month included (voice + WhatsApp combined)
-- Custom voice personality and script tailored to the business
-- FAQ training — AI trained on business-specific questions and menu/services
-- Monthly call analytics report
-
-**Social media + content:**
-- 8 original posts per week (custom graphics + copy)
-- 2 platforms (Instagram + Facebook, or Instagram + Google Business)
-- Original content creation (carousels, reels scripts, static posts)
-- Community management (replies to comments and DMs)
-- Google review management (review response + review request automation)
-
-**Automation:**
-- Everything in Click
-- Review request automation (post-appointment trigger)
-- Birthday/anniversary automated messages
-- No-show follow-up sequence
-- Lead tracking spreadsheet with status updates
-
-**Ideal client:** Growing restaurants, multi-service clinics, beauty businesses ready to build their brand and automate client communication.
+**Ideal client:** Growing service businesses ready to fix calls AND consistent social presence in one team.
 
 **Standalone value if purchased separately:** £1,800+/mo
 
 ---
 
-### Click Pro — £1,297/mo (£1,000 setup)
+### Click Pro — £1,290/mo
+**Setup: £250 launch (founding cohort) / £850 standard**
 
-**Sweet spot — the full system | Most popular**
+*The multi-platform tier. Full content engine + advanced automation + strategy.*
 
-The full system. High-volume AI coverage, multi-platform content across all channels, advanced automation workflows that nurture leads and win back lapsed clients, plus a monthly strategy call to steer growth.
+- Custom AI voice agent trained on your business
+- 3,000 minutes/month calls
+- WhatsApp, SMS, or email confirmations and reminders (transactional)
+- Integration with your existing booking system
+- 8-10 original social posts per week across 3 platforms (Instagram + Facebook + TikTok) — 3-4 per platform
+- Reels, carousels, and stories produced for you
+- Click Desk AI dashboard
+- Basic Google Business Profile setup
+- Review request automation and response management
+- Lapsed client win-back sequences
+- Multi-language support
+- Monthly strategy call (30 min)
+- 14-day trial from go-live, no monthly fee during trial
 
-**Voice + WhatsApp:**
-- Everything in Click+
-- 2,500 minutes/month included (voice + WhatsApp combined)
-- Multi-language support (if needed)
-- Outbound AI calls — appointment reminders, follow-ups, win-back campaigns
-- Call sentiment analysis and quality scoring
-
-**Social media + content:**
-- 12 posts per week across 3 platforms (Instagram + Facebook + TikTok or LinkedIn)
-- Original content creation (carousels, reels, stories, static posts)
-- Content strategy aligned to business goals
-- Monthly content calendar with approval workflow
-- Competitor monitoring and trend integration
-
-**Automation:**
-- Everything in Click+
-- Lapsed client win-back sequences (automated after X days of no visit)
-- Referral programme automation
-- Multi-step lead nurture workflows
-- Monthly reporting dashboard (calls, bookings, social metrics, revenue attribution)
-- Monthly strategy call (30 min) with recommendations
-
-**Ideal client:** Established businesses with steady footfall who want to scale. Multi-service clinics, restaurant groups, premium beauty and aesthetics.
+**Ideal client:** Established service businesses with steady demand. Multi-service clinics, restaurant groups, premium aesthetics, fitness studios.
 
 **Standalone value if purchased separately:** £3,200+/mo
 
 ---
 
-### Click Elite — £1,997/mo (£1,500 setup)
+### Click Elite — £1,990/mo
+**Setup: £350 launch (founding cohort) / £1,200 standard**
 
-**Enterprise — full-spectrum AI-powered growth**
+*The full system. Calls, content, marketing, website, SEO. Dedicated account manager.*
 
-The highest volume, deepest customisation, and a dedicated account manager. Custom automation workflows built for the business, weekly strategy sessions, multi-location support, and priority everything.
+- Custom AI voice agent trained on your business
+- Up to 10,000 minutes/month + fair-use clause beyond
+- WhatsApp, SMS, or email confirmations and reminders (transactional)
+- Integration with your existing booking system
+- 10-12 original social posts per week across 3 platforms (Instagram + Facebook + TikTok)
+- Daily stories (2 per day, 7 days a week, ≈60 stories/month)
+- Reels, carousels, and stories produced for you
+- Click Desk AI dashboard
+- Advanced Google Business Profile setup
+- Review request automation and response management
+- Lapsed client win-back sequences
+- CRM integration
+- Influencer outreach
+- Multi-language support
+- Professional website design
+- Professional SEO/GEO
+- Dedicated account manager
+- Monthly strategy call (60 min)
+- 14-day trial from go-live, no monthly fee during trial
 
-**Voice + WhatsApp:**
-- Everything in Click Pro
-- 5,000 minutes/month included (voice + WhatsApp combined)
-- Custom AI workflows — bespoke call flows for complex business logic
-- Multi-location routing (calls directed to correct branch/team)
-- Priority SLA — 2-hour response time on any issue
-- Dedicated phone number(s) per location
+*Custom AI workflow builds are NOT included. They are scoped, priced, and delivered separately when negotiated.*
 
-**Social media + content:**
-- 15+ posts per week across all relevant platforms
-- Full content production (photography direction, video scripts, carousel design)
-- Influencer/partnership outreach support
-- Paid social ad creative (design + copy, client manages ad spend)
-- Brand guidelines enforcement across all channels
-
-**Automation:**
-- Everything in Click Pro
-- Custom AI workflow builds (up to 3 new workflows per quarter)
-- CRM integration (HubSpot, GoHighLevel, or equivalent)
-- Multi-location reporting with cross-branch comparisons
-- Weekly strategy call (30 min) with dedicated account manager
-- Quarterly business review with performance analysis and roadmap
-
-**Ideal client:** Multi-location businesses, restaurant chains, dental/clinic groups, franchises. Businesses spending £5K+ on staff for tasks AI can handle.
+**Ideal client:** Multi-location service businesses, restaurant groups, dental/clinic groups, aesthetic clinic groups. Businesses spending £5K+ on staff for tasks AI can handle.
 
 **Standalone value if purchased separately:** £5,500+/mo
 
@@ -211,13 +162,14 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 ## Pricing summary
 
-| Package | Monthly | Setup (launch) | Setup (standard) | Minutes | Social posts/wk | Value stack |
-|---|---|---|---|---|---|---|
-| Click Voice | £290 | £100 | £350 | 1,000 | None | £600+ |
-| Click | £497 | — | £500 | 500 | 4 (templates) | £900+ |
-| Click+ | £797 | — | £750 | 1,000 | 8 (original) | £1,800+ |
-| Click Pro | £1,297 | — | £1,000 | 2,500 | 12 (multi-platform) | £3,200+ |
-| Click Elite | £1,997 | — | £1,500 | 5,000 | 15+ (custom) | £5,500+ |
+| Package | Monthly | Setup (launch) | Setup (standard) | Discount | Minutes | Social posts/wk | Value stack |
+|---|---|---|---|---|---|---|---|
+| Click Voice | £290 | £100 | £350 | 71% off | 1,000 | None | £600+ |
+| Click+ | £790 | £150 | £500 | 70% off | 1,500 | 4 (Insta + FB) | £1,800+ |
+| Click Pro | £1,290 | £250 | £850 | 71% off | 3,000 | 8-10 (3 platforms) | £3,200+ |
+| Click Elite | £1,990 | £350 | £1,200 | 71% off | Up to 10,000 + fair-use | 10-12 (3 platforms) + 60 stories/mo | £5,500+ |
+
+All launch setup pricing labelled publicly as "70% off founding cohort launch pricing" — actual % varies 70-71% by tier due to clean rounding.
 
 ---
 
@@ -225,7 +177,7 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 | Item | Rate | Notes |
 |---|---|---|
-| Voice minutes (over plan) | £0.20/min | Billed monthly in arrears |
+| Voice minutes (over plan) | £0.20/min | Billed monthly in arrears. Click Voice overage is £0.30/min. |
 | WhatsApp messages (over plan) | £0.05/msg | Billed monthly in arrears |
 | Additional phone number | £10/mo | Per number, any country |
 | Additional social platform | £150/mo | Per platform added to any tier |
@@ -258,16 +210,26 @@ The highest volume, deepest customisation, and a dedicated account manager. Cust
 
 | Add-on | Price | Notes |
 |---|---|---|
-| CRM integration (HubSpot/GHL) | £400 one-time | Included in Click Elite |
+| CRM integration | £400 one-time | Included in Click Elite |
 | Custom N8N workflow build | £200/workflow | Bespoke automation |
 | Email marketing automation | £200/mo | Sequences, templates, triggers |
 | Website chatbot | £150/mo | AI chatbot with lead capture |
+
+### Bespoke services (quoted separately, NOT in any standard tier)
+
+| Service | Notes |
+|---|---|
+| Full WhatsApp automation | Bespoke build. Different scope per business type, takes time to design correctly. Scoped, priced, and delivered separately when negotiated. |
+| Community management (DMs and comments) | Retired from standard tiers 15 May 2026. Available as bespoke service if required. |
+| Custom AI workflow builds (Click Elite tier) | Scoped, priced, and delivered separately when negotiated. Not included in the standard Elite monthly fee. |
 
 ---
 
 ## Copy and positioning notes for Jodie
 
-- Package names: Click, Click+, Click Pro, Click Elite — use consistently. Never use "basic" or "premium." Never use the old names: Core, Drive, Turbo, Nitro.
+- Package names: Click Voice, Click+, Click Pro, Click Elite — use consistently. Never use "basic" or "premium." Never use the old names: Core, Drive, Turbo, Nitro (or "Click" — retired 15 May 2026).
+- Setup fees must be displayed UNDER the package name and monthly price, NOT in the feature list.
+- Founding cohort framing for setup discount: "70% off launch pricing" — limited time. Internal target: 20 closes across all tiers before reverting to standard setup. Never publish the cohort size externally.
 - Lead with the outcome, not the technology. "Never miss a call again" beats "AI voice agent with NLP."
 - The unified bundle is the differentiator. Every competitor sells voice OR social. We sell the full engine.
 - Minutes are included, not sold. Frame as "your AI handles up to 500 calls and messages a month" not "500 minutes."

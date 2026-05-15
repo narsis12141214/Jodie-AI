@@ -3,6 +3,52 @@
 Last updated: 2026-05-13
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
+## MONDAY 18 MAY — Day 48 of 60
+
+**PRIORITY 1 (Agency): Record aesthetic + fitness 60-sec clips (production blocker for cold email sends)**
+**PRIORITY 2 (Agency): Build n8n + Instantly email automation per Section 7 of email scripts (4-6 hrs)**
+**PRIORITY 3 (Agency): Brief Zizi on new DM scripts**
+
+Agency — Cold email implementation (priority 1):
+- [ ] Record 60-sec clip: AI handling Botox enquiry (aesthetic segment) — Hadi
+- [ ] Record 60-sec clip: AI handling new-member fitness enquiry (fitness segment) — Hadi
+- [ ] Host clips with clean URLs — Hadi
+- [ ] Build CSV → Instantly importer with deterministic variable merge (see Section 7) — Hadi/Arman
+- [ ] Postcode → location_area lookup table (top 30 London postcodes)
+- [ ] Category parser for {category_phrase} / {specialism} / {treatment_focus} / {discipline}
+- [ ] Encode-clean step (strip u003e, %20 artefacts from Lead Engine output)
+- [ ] Set up all 12 Instantly templates per email scripts file
+- [ ] End-to-end test on 10 sample leads per segment
+- [ ] Lock the new cadence rule in Instantly: Mon-Thu only, never Fri/Sat/Sun
+
+Agency — DM channel:
+- [ ] Brief Zizi on Sections 1 + 6 of outreach-scripts-dm.md
+- [ ] Update Workflow 2 prompt in n8n with new positioning (see Section 7 of DM file)
+- [ ] Test Workflow 2 on 3 sample Instagram leads
+
+Agency — Landing page cleanup:
+- [ ] Lovable update: remove "Click Voice not available for [segment]" lines from dental, aesthetic, fitness landing pages
+- [ ] Lovable update: fix "AI receptionist" → "AI phone answering" body copy on restaurants/cafes landing page
+
+Agency — Active deals:
+- [ ] Ace Monday 10am callback (from 7:30pm Fri text — assuming he picks Mon)
+- [ ] Hanna email reply monitoring
+- [ ] Kish 19 May check-in (Tuesday — step-back message protocol)
+
+## FRIDAY 15 MAY — Day 45 of 60 — COMPLETED
+
+Strategic + operational marathon today:
+1. Pricing restructure (Click+/Pro/Elite refined) — canonical packages file updated + Lovable site update applied
+2. Cold email research dispatched + completed (UK SMB outreach, 8 questions answered with sourced data)
+3. ALL 4 email outreach segments rebuilt step-by-step (12 templates total): restaurants, dental, aesthetic clinics, fitness/gyms
+4. New cadence rule (Mon-Thu only, never Fri/Sat/Sun) replaces generic +4 rule
+5. Strategic decision: Click Voice extended to all service segments (was restaurants-only v1)
+6. Ace 20-second call + 7:30pm text scheduled
+
+Full email playbook ready at: projects/agency/15-05-26/outreach-scripts-email.md
+DM playbook ready at: projects/agency/15-05-26/outreach-scripts-dm.md
+Research backing at: projects/agency/15-05-26/cold-email-research.md
+
 ## FRIDAY 15 MAY — Day 45 of 60
 
 **PRIORITY 1 (Agency): Outreach script rewrite (Zizi) — now the bottleneck. 5 landing pages live with new positioning, but cold pitches still using old language.**
