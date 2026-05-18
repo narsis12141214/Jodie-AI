@@ -3,6 +3,57 @@
 Last updated: 2026-05-13
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
+## TUESDAY 19 MAY — Day 49 of 60
+
+**PRIORITY 1 (Agency): Send Sabib owner email (warm-referral, drafted)**
+**PRIORITY 2 (Agency): Kish 19 May check-in (step-back protocol message ready)**
+**PRIORITY 3 (Agency): Try Ace again (missed Mon, increasingly stalled)**
+
+Agency — Outreach actions:
+- [ ] Send Sabib email — final draft in conversation, fill [MANAGER NAME] + [OWNER NAME] placeholders — Hadi
+- [ ] Kish 19 May check-in — message ready at projects/agency/12-05-26/kish-restaurant-step-back.md
+- [ ] Try Ace by phone (afternoon window 2:30-3:30pm or 5pm). If no answer → send Closer Alternative 1 WhatsApp: "Hey [name], gave you a ring earlier. Any update on the contract your end?"
+- [ ] Hanna — re-engage with Option 2 pricing once value gap is closed
+- [ ] Molana — friendly hold-the-thread touch around day 8-9 of the 10-day partner wait
+
+Agency — Open strategic conversations (resume when Hadi is back):
+- [ ] Performance measurement mechanism — agree on the "AI bookings during hours when human line wasn't answered within 60 seconds" approach. Brief Arman on the 2-3 hr dev work to add recovery attribution tagging to Click Desk dashboard.
+- [ ] Phone-order use case — restaurants take takeaway orders by phone too. Scope whether Click Voice should handle this in a future variant.
+- [ ] Pricing canonical update — should the Option 2 restaurant pricing (£190 intro / £290 standard / £100 setup / rolling) replace what's currently in shared/click-ai-agency-packages.md? Decision held by Hadi.
+- [ ] photography/seo structural review — 6+ quality log entries, pending since April
+
+Agency — Cold email automation monitoring:
+- [ ] Check Instantly volume Tuesday morning ~10am. Expecting 20-30 campaign sends today after warmup reduction.
+- [ ] If under 15 by lunch, deeper Instantly issue to investigate.
+
+Agency — Production blockers:
+- [ ] Record 60-sec aesthetic clip (Botox enquiry) — gates A-EMAIL-1 send
+- [ ] Record 60-sec fitness clip (new-member enquiry) — gates F-EMAIL-1 send
+
+Agency — Carry-over:
+- [ ] Brief Arman on Click Voice tenant provisioning (Haleh onboarding gate)
+- [ ] Brief Zizi on new DM scripts
+- [ ] Lovable update: remove "Click Voice not available for [segment]" lines from dental/aesthetic/fitness landing pages; fix "AI receptionist" → "AI phone answering" on restaurants landing page
+
+Photography:
+- [ ] Confirm N8N SEO pipeline ran for week ending 5/22 next Monday (already ran for 5/15)
+- [ ] Watch position drops on "alternative wedding photography london" and "couple photography" in 5/22 data — if continued regression, deeper investigation needed
+- [ ] Three internal-link fixes already applied to micro wedding blog (allotment, blog #3, blog #4) by Hadi 18 May
+
+## MONDAY 18 MAY — Day 48 of 60 — COMPLETED
+
+Done today:
+- Cold email outreach LIVE (424 restaurants queued, 2 accounts, Mon-Thu cadence). Day-1 capacity diagnosed + fixed (warmup reduced to 7/account/day to free campaign slots).
+- Tier 1/Tier 2 Closer dispatch rule locked in CLAUDE.md.
+- Strategic pattern recognised: 4-of-4 restaurant meetings raised price as obstacle. Diagnosis: value perception, not price magnitude.
+- Option 2 restaurant pricing framework locked (£190 intro → £290 standard, rolling, performance anchor).
+- Performance measurement mechanism designed (recovery attribution via call-time analysis on Click Desk dashboard).
+- 4 in-person meetings completed: Molana (warm, 10-day partner wait), Sabib (manager referral to owner email), Rozay (price concern, callback expected), Hanna (price not value — negotiable).
+- 2 quality log entries added: "allotment" anchor SEO miss (live post fixed + agent rules updated), Jodie git fetch error (new rule logged).
+- Local repo synced with origin. SEO data for week ending 5/15 reviewed — negative week, position drops, hold the line.
+- Sabib warm-referral email drafted via Outreach Copywriter dispatch.
+- Closer Alternative 1 WhatsApp drafted for Ace (held — Hadi to try calling first).
+
 ## MONDAY 18 MAY — Day 48 of 60
 
 **PRIORITY 1 (Agency): Record aesthetic + fitness 60-sec clips (production blocker for cold email sends)**

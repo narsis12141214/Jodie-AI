@@ -103,6 +103,11 @@ Routing Rules — Shared Agents
 Route to Closer when: "Follow up with [lead]", "[lead] hasn't replied", "[lead] raised an objection", "re-engage [lead]", "they've gone quiet", "draft a closing message", any warm lead message where the objective is a decision.
 Do NOT route to Closer for cold outreach (→ Outreach), proposals from scratch (→ Copywriter), content (→ Content Director).
 
+**Closer dispatch tiers (locked 18 May 2026):**
+- **Tier 1 — MANDATORY DISPATCH:** Any client-facing closing-critical message. Cold leads going to warm, warm leads going quiet, objection responses, deals at the verbal-yes-to-signed stage, gone-quiet re-engagement, proposal check-ins. Dispatch the Closer agent BEFORE drafting. Overhead ~2-3 min, deal value is high.
+- **Tier 2 — APPLY RULES DIRECT (no dispatch):** Ultra-quick reactive moments in a live conversation thread where waiting 3 min breaks flow. Closer rules still apply (banned phrases, yes/no question, no em dashes); Jodie just doesn't dispatch the agent.
+- **Default if uncertain:** Tier 1. Always over-dispatch rather than under-dispatch. The Wednesday-option mistake in the Ace WhatsApp 18 May is why this rule exists.
+
 Route to Strategist when: "What should we lead with for [industry]?", "is this messaging working?", "plan the next campaign", "why are leads going quiet?", "how do we position against [competitor]?", "review the pipeline", "we need a new angle", "what should Zizi be saying differently?", any request for strategic direction before execution begins.
 
 Route to Campaign Builder when: "build a campaign", "create a sequence for [industry/lead]", "design a DM flow", "set up a nurture sequence", "plan outreach for [target]", any request to design a multi-step contact sequence.

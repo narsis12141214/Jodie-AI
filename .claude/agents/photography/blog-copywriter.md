@@ -121,8 +121,16 @@ Note: TOC anchor links must match H2 heading text exactly (lowercase, hyphens fo
 
 ---
 
-INTERNAL LINKS (2-3 - natural placement only):
-[Page name] - [URL] - [Suggested anchor text and section to place it]
+INTERNAL LINKS (minimum 5 for long form - natural placement only):
+[Page name] - [URL] - [Anchor text and section to place it]
+
+Anchor text rules (mandatory):
+- Must contain at least one keyword from the destination page's H1
+- Must be a natural, readable phrase a reader would intentionally click
+- NEVER use "here", "this", "click", "read more", "click here", or random isolated unrelated words (e.g., never anchor a "best places to elope" link on the word "allotment")
+- If the natural anchor phrase doesn't exist in the body copy, write 1-2 sentences to surface it BEFORE inserting the link. Do not jam a link onto whatever word happens to be near it.
+- At least one of the 5 links MUST point to a related published blog post (not just service pages). Service-page-only linking fails the SEO review.
+- All previously-published blog posts on adjacent topics must be considered for inclusion. Silently skipping a relevant adjacent post counts as a quality failure at SEO review.
 
 IMAGE ALT TEXT SUGGESTIONS:
 [One per section - descriptive, include keyword where natural]
@@ -180,8 +188,15 @@ Direct. Specific. No warm-up.
 
 ---
 
-INTERNAL LINKS (1-2):
-[Page name] - [URL] - [Suggested anchor text]
+INTERNAL LINKS (minimum 2 for short form):
+[Page name] - [URL] - [Anchor text and section to place it]
+
+Anchor text rules (mandatory — same as long form):
+- Must contain at least one keyword from the destination page's H1
+- Natural, readable phrase
+- NEVER use "here", "this", "click", "read more", or random isolated unrelated words
+- If the natural anchor phrase doesn't exist in body copy, write a sentence to surface it BEFORE inserting the link
+- At least one of the 2 links should point to a related published blog post where one exists on an adjacent topic
 
 IMAGE ALT TEXT:
 [One per section]

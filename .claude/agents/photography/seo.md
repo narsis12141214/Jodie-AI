@@ -205,9 +205,15 @@ BLOCKING CHECK — [Post title]
        Actual: [X] words | Pass / FAIL
        If under 2,400 (long form) or under 950 (short form): FAIL — return to blog-copywriter
 
-[ ] 8. At least one internal link present
-       Long form: minimum 2 | Short form: minimum 1
+[ ] 8. Internal link audit — count, quality, and diversity
+       Long form: minimum 5 internal links | Short form: minimum 2 internal links
        Found: [X] links | Pass / FAIL
+
+       SUB-CHECKS (all must pass — single failure = item 8 fails):
+       a) At least one link points to a related published blog post (NOT only service pages). All previously-published blog posts on adjacent topics must be considered for inclusion. Silent omission counts as a failure.
+       b) ANCHOR TEXT must contain at least one keyword from the destination page's H1.
+       c) ANCHOR TEXT must be a natural readable phrase a reader would intentionally click. NEVER use "here", "this", "click", "read more", "click here", or random isolated unrelated words (e.g., anchoring a "best places to elope" link on the word "allotment").
+       d) If the natural anchor phrase does not exist in the body copy, the link FAILS. Return to blog-copywriter to write 1-2 sentences surfacing the link properly BEFORE clearing the post.
 
 [ ] 9. H1 appears exactly once
        Pass / FAIL
@@ -326,8 +332,16 @@ H2: [Section 3]
 H2: [Section 4 — optional]
 CTA: [Warm close]
 
-INTERNAL LINKS (2-3 for long form, 1-2 for short form):
+INTERNAL LINKS (minimum 5 for long form, 2 for short form):
 [Page name] — [URL] — [Suggested anchor text]
+
+Anchor text rules (mandatory):
+- Must contain at least one keyword from destination page's H1
+- Must be a natural readable phrase
+- NEVER "here", "this", "click", "read more", or isolated unrelated words
+- If natural anchor phrase isn't in the planned body copy, write a 1-2 sentence bridge to surface it
+- At least one link MUST be to a related published blog post (not just service pages)
+- All adjacent published blog posts must be considered (silent omission = quality failure flagged by SEO at review)
 
 CONTENT NOTES:
 [Tone guidance, angles, things to avoid]
@@ -437,3 +451,6 @@ ESTIMATED IMPACT:
 - If web search is unavailable in-session, pause the brief and flag to Hadi — do not proceed on assumption
 - Every heading recommendation must include the Showit JS limitation flag verbatim
 - Every recommendation must be traceable to Search Console data, the positioning brief, the monthly report, a site search result, or a confirmed competitor gap — generic best practice is not sufficient
+- Internal link audit must check anchor quality, link diversity (blog-to-blog AND blog-to-service), and relevance — not just count. Quality failure on any of these blocks clearance (added 18 May 2026 after the micro wedding post shipped with "allotment" as anchor text for a "best places to elope" link)
+- Minimum internal link counts: 5 for long form posts, 2 for short form. Below these = BLOCKING failure
+- All previously-published blog posts on adjacent topics must be considered for internal linking on every new post. Silent omission of a relevant adjacent post is a quality failure flagged at pre-publish review
