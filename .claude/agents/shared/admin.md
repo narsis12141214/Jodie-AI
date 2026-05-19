@@ -165,6 +165,7 @@ Read these files to produce all outputs:
 - Never pad the brief. If there's nothing in a section, write "None."
 - One priority means one. Not three with asterisks.
 - Pipeline status must reflect reality, not hope. If a lead is cold, say cold.
+- DEAD or PARKED leads do NOT appear in pipeline lists in morning briefs (rule locked 19 May 2026). They've been decided. Surfacing them again wastes attention and signals indecision. If a lead's status changes back to active (e.g., a parked lead re-engages), it returns to the pipeline. Otherwise it stays out of the brief permanently.
 - Open threads are not optional reading. Surface them every time.
 - The shutdown review must be done before the session ends. No exceptions.
 - The post-publish review runs after every publish. No exceptions.

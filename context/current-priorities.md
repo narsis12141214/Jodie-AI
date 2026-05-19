@@ -1,7 +1,21 @@
 # Current Priorities
 
-Last updated: 2026-05-13
+Last updated: 2026-05-19
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
+
+## WEDNESDAY 20 MAY — Day 50 of 60 (TOMORROW'S CARRY-FORWARDS)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Kish check-in** — Hadi to send the step-back message between 2pm-4pm tomorrow. File: projects/agency/12-05-26/kish-restaurant-step-back.md
+2. **Pricing framework discussion** — Hadi has notes and ideas on the Option 2 restaurant pricing locked this morning (£190 intro → £290 standard / £100 setup / 30-day rolling / performance anchor). Block time for this conversation, treat as a TOP priority for the day. Likely outcomes: canonical packages file update, performance anchor calibration, tier-segmentation rules.
+3. **Photography content rebuild** — posts + reels paused ~2 weeks. Hadi has flagged this as TOP priority alongside the pricing discussion. Resume Pillar work (story bank → content formats). Restart points: 30 London Locations series scripts (already drafted), "Things I say on a shoot that make couples cry" series, Hadi-on-camera reels minimum 3/week. Story bank at projects/photography/story-bank.md.
+
+Other carry-forwards (lower priority but on deck):
+- Ace decision point (24hr watch ending EOD 20 May)
+- Open strategic conversations from the 19 May block below (performance measurement mechanism, phone-order use case, pricing canonical update, photography/seo structural review)
+- Production blockers: aesthetic + fitness 60-sec clips (gating cold email sends)
+
+---
 
 ## TUESDAY 19 MAY — Day 49 of 60
 
@@ -10,14 +24,15 @@ Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 
 **PRIORITY 3 (Agency): Try Ace again (missed Mon, increasingly stalled)**
 
 Agency — Outreach actions:
-- [ ] Send Sabib email — final draft in conversation, fill [MANAGER NAME] + [OWNER NAME] placeholders — Hadi
-- [ ] Kish 19 May check-in — message ready at projects/agency/12-05-26/kish-restaurant-step-back.md
-- [ ] Try Ace by phone (afternoon window 2:30-3:30pm or 5pm). If no answer → send Closer Alternative 1 WhatsApp: "Hey [name], gave you a ring earlier. Any update on the contract your end?"
+- [x] Sabib warm-referral email SENT to owner (manager Ali introduced) — 19 May
+- [~] Kish check-in MOVED to Wednesday 20 May, 2-4pm window — Hadi to send. Message ready at projects/agency/12-05-26/kish-restaurant-step-back.md
+- [x] Tried Ace by phone 19 May — no answer. Closer Alternative 1 WhatsApp sent ("gave you a ring earlier. Any update on the contract your end?"). Awaiting reply.
+- [ ] Ace 24hr watch: if no reply by EOD 20 May, escalate. Options at that point: (a) in-person walk-in if Hadi will be near the salon, (b) one final voice note with a soft close-the-loop, (c) accept loss and remove from active pipeline. Decide on 20 May based on reply state.
 - [ ] Hanna — re-engage with Option 2 pricing once value gap is closed
 - [ ] Molana — friendly hold-the-thread touch around day 8-9 of the 10-day partner wait
 
 Agency — Open strategic conversations (resume when Hadi is back):
-- [ ] Performance measurement mechanism — agree on the "AI bookings during hours when human line wasn't answered within 60 seconds" approach. Brief Arman on the 2-3 hr dev work to add recovery attribution tagging to Click Desk dashboard.
+- [x] Performance measurement mechanism — DESIGNED + DEV BRIEF WRITTEN 19 May. Full Arman brief at projects/agency/19-05-26/arman-brief-performance-anchor.md. Six decisions locked, logged in decisions.md. Next step: Hadi to forward brief to Arman.
 - [ ] Phone-order use case — restaurants take takeaway orders by phone too. Scope whether Click Voice should handle this in a future variant.
 - [ ] Pricing canonical update — should the Option 2 restaurant pricing (£190 intro / £290 standard / £100 setup / rolling) replace what's currently in shared/click-ai-agency-packages.md? Decision held by Hadi.
 - [ ] photography/seo structural review — 6+ quality log entries, pending since April
