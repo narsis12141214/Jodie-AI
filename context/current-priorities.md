@@ -1,19 +1,51 @@
 # Current Priorities
 
-Last updated: 2026-05-19
+Last updated: 2026-05-20
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## WEDNESDAY 20 MAY — Day 50 of 60 (TOMORROW'S CARRY-FORWARDS)
+## THURSDAY 21 MAY — Day 51 of 60 (TOMORROW)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
-1. **Kish check-in** — Hadi to send the step-back message between 2pm-4pm tomorrow. File: projects/agency/12-05-26/kish-restaurant-step-back.md
-2. **Pricing framework discussion** — Hadi has notes and ideas on the Option 2 restaurant pricing locked this morning (£190 intro → £290 standard / £100 setup / 30-day rolling / performance anchor). Block time for this conversation, treat as a TOP priority for the day. Likely outcomes: canonical packages file update, performance anchor calibration, tier-segmentation rules.
-3. **Photography content rebuild** — posts + reels paused ~2 weeks. Hadi has flagged this as TOP priority alongside the pricing discussion. Resume Pillar work (story bank → content formats). Restart points: 30 London Locations series scripts (already drafted), "Things I say on a shoot that make couples cry" series, Hadi-on-camera reels minimum 3/week. Story bank at projects/photography/story-bank.md.
+1. **Hadi has updates to share** — flagged at shutdown: "there are so much updates I'll share tomorrow." Block time for the download FIRST before any execution.
+2. **Pricing framework lock** — 5 open questions from strategist stress test waiting for Hadi's decision. Highest leverage: (a) setup fee £100 → £290 or dated launch incentive, (b) FLIP framing to "£290 standard, £100/month launch discount" (same maths, removes month-4 53% raise psychology), (c) pre-sale qualifier (100+ inbound calls/month) vs tiered anchor, (d) off-ramp logic (5-9 = credit + optimisation, 0-4 = exit), (e) Click+ restaurants needs its own non-refund anchor. Full strategist output in conversation history from 20 May session. Once decided, log to decisions.md + update shared/click-ai-agency-packages.md.
+3. **Photography content rebuild** — STILL untouched. Two days flagged TOP priority and still zero progress. Force a decision tomorrow: ship one content format this week (30 London Locations is most ready) or accept a third day of pause.
 
-Other carry-forwards (lower priority but on deck):
-- Ace decision point (24hr watch ending EOD 20 May)
-- Open strategic conversations from the 19 May block below (performance measurement mechanism, phone-order use case, pricing canonical update, photography/seo structural review)
-- Production blockers: aesthetic + fitness 60-sec clips (gating cold email sends)
+Status checks needed at session start:
+- Ace WhatsApp (sent 19 May) — any reply? Decision point overdue. If silent: in-person walk-in / final voice note / accept loss.
+- Kish — did the 20 May 2-4pm step-back message go out? Confirm.
+- Sabib — any reply from owner on warm-referral email (sent 19 May)?
+- Cold email Instantly volume — yesterday's actual send count vs the ~46/day capacity target.
+
+Carry-forwards on deck:
+- Forward Arman performance anchor dev brief (projects/agency/19-05-26/arman-brief-performance-anchor.md)
+- Brief Arman on Click Voice tenant provisioning (Haleh onboarding gate)
+- Brief Zizi on new DM scripts
+- Record 60-sec aesthetic + fitness clips (blocking A-EMAIL-1 + F-EMAIL-1 sends)
+- Lovable cleanup: remove "Click Voice not available" lines from dental/aesthetic/fitness pages + fix "AI receptionist" → "AI phone answering" on restaurants page
+- photography/seo structural review — 6+ quality log entries, overdue since April
+- Phone-order use case for Click Voice (future variant scope)
+- Hanna re-engage with Option 2 (once framing is locked tomorrow)
+- Molana day 8-9 hold-the-thread touch (≈27-28 May, not yet)
+
+Photography pipeline — active bookings:
+- **Mozhgan Mehrabi** — repeat client (booked twice before). Portrait session confirmed Friday 22 May 3:30pm, RHS Chelsea Flower Show. Cash on shoot day. Confirmation email sent 20 May.
+
+---
+
+## WEDNESDAY 20 MAY — Day 50 of 60 — COMPLETED
+
+Done today:
+- Mozhgan Mehrabi photography booking confirmed (Friday 22 May, Chelsea Flower Show, repeat client, cash on day)
+- Pricing framework discussion opened — Hadi verbally locked 4 refinements (restaurant-specific, anchor on Click Voice only, drop 14-day trial, no interaction with Click+)
+- Strategist agent dispatched, returned full structured stress test
+- Top findings presented to Hadi — 5 decisions queued for tomorrow
+
+Not done — carried forward:
+- Strategist's 5 open questions → Thursday
+- Kish step-back send status unclear → Thursday confirm
+- Ace 24hr watch decision → Thursday confirm
+- Photography content rebuild → Thursday (third day flagged, still untouched)
+- All other carry-forwards as listed in Thursday block
 
 ---
 
