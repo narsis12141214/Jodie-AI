@@ -71,13 +71,13 @@ When Twilio sends a webhook for an inbound call to a tenant's number, classify i
 1. **Check reception hours** for that tenant in their timezone, for `started_at`.
    - If the call time falls **outside** all configured reception-hour windows for that day → `routing_classification = 'outside_hours'`. Route the call straight to the AI agent. Done.
 
-2. **Inside reception hours** → attempt human transfer. Start a 60-second timer.
-   - If a human answers within 60 seconds → `routing_classification = 'human_answered'`. Set `human_answer_attempted_at` and `human_answer_elapsed_seconds`.
-   - If 60 seconds elapse with no human answer → `routing_classification = 'human_no_answer'`. Hand off to the AI agent. Set `human_answer_attempted_at` to the start of the attempt and `human_answer_elapsed_seconds = 60`.
+2. **Inside reception hours** → attempt human transfer. Start a 12-second timer (= ~4 rings on a mobile, verified by real test).
+   - If a human answers within 12 seconds → `routing_classification = 'human_answered'`. Set `human_answer_attempted_at` and `human_answer_elapsed_seconds`.
+   - If 12 seconds elapse with no human answer → `routing_classification = 'human_no_answer'`. Hand off to the AI agent. Set `human_answer_attempted_at` to the start of the attempt and `human_answer_elapsed_seconds = 12`.
 
 3. Anything that doesn't fit (test calls, system errors, voicemail-only, etc.) → `routing_classification = 'other'`. Log `classification_reason`.
 
-The 60-second threshold is configurable per-tenant in the future. For v0.5 hard-code it as a constant (`HUMAN_ANSWER_TIMEOUT_SECONDS = 60`) so we can change it in one place.
+The 12-second threshold is configurable per-tenant. For v0.5 hard-code it as a constant (`HUMAN_ANSWER_TIMEOUT_SECONDS = 12`, expressed in seconds) so we can change it in one place. Acceptable per-tenant override range is 10-20 seconds — values outside this should be rejected by the admin UI.
 
 ### 2b. Booking attribution
 
@@ -160,7 +160,7 @@ The feature is done when all of the following are true:
 
 1. I (Hadi) can log into the admin panel, pick a tenant, and add/edit/delete that tenant's reception hours.
 2. A call arriving outside the configured reception hours is logged with `routing_classification = 'outside_hours'` and routed to the AI agent.
-3. A call arriving inside reception hours waits up to 60 seconds for a human, then either marks `human_answered` (with elapsed seconds) or `human_no_answer` (at 60s exactly).
+3. A call arriving inside reception hours waits up to 12 seconds (~4 rings on mobile) for a human, then either marks `human_answered` (with elapsed seconds) or `human_no_answer` (at 12s exactly).
 4. A booking created by the AI agent gets `is_recovered = true` and the correct `recovery_reason` when the source call was outside hours or human-no-answer.
 5. The client dashboard overview page shows four KPI cards: Total Bookings, Bookings Made, Recovered Reservations, Busy Hour Bookings — and the numbers reconcile (Recovered ≥ Busy Hour, both ≤ Total).
 6. The client's settings page shows reception hours as a read-only table.
@@ -174,7 +174,7 @@ Do not build any of the following in this round:
 
 - Stripe refund automation. Refunds are issued manually by Hadi if a tenant misses the 10-booking threshold in Month 1.
 - Client self-serve editing of reception hours.
-- Per-tenant configurable human-answer timeout (use the 60-second constant).
+- Client-facing UI to adjust the human-answer timeout (admin-only configurability is enough for v0.5; clients cannot edit).
 - Email/SMS alerts when the recovered count crosses a threshold.
 - Historical re-classification of calls that happened before this feature ships.
 - A "10 Recovered Bookings Progress" goal widget — we'll add this in v1 once we have a few weeks of real data.

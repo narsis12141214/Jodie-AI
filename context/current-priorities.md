@@ -1,14 +1,72 @@
 # Current Priorities
 
-Last updated: 2026-05-20
+Last updated: 2026-05-21
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## THURSDAY 21 MAY — Day 51 of 60 (TOMORROW)
+## FRIDAY 22 MAY — Day 52 of 60 (TOMORROW)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
-1. **Hadi has updates to share** — flagged at shutdown: "there are so much updates I'll share tomorrow." Block time for the download FIRST before any execution.
-2. **Pricing framework lock** — 5 open questions from strategist stress test waiting for Hadi's decision. Highest leverage: (a) setup fee £100 → £290 or dated launch incentive, (b) FLIP framing to "£290 standard, £100/month launch discount" (same maths, removes month-4 53% raise psychology), (c) pre-sale qualifier (100+ inbound calls/month) vs tiered anchor, (d) off-ramp logic (5-9 = credit + optimisation, 0-4 = exit), (e) Click+ restaurants needs its own non-refund anchor. Full strategist output in conversation history from 20 May session. Once decided, log to decisions.md + update shared/click-ai-agency-packages.md.
-3. **Photography content rebuild** — STILL untouched. Two days flagged TOP priority and still zero progress. Force a decision tomorrow: ship one content format this week (30 London Locations is most ready) or accept a third day of pause.
+1. **Mozhgan photography shoot — TODAY 3:30pm RHS Chelsea Flower Show.** Cash collection on the day. Light planning for late-afternoon flowers + crowd factor (busiest day of the show).
+2. **Heny contract send** — waiting for her email address. Send the modified PDF as soon as her email arrives. File: projects/agency/21-05-26/heny-aesthetic-clinic-agreement.pdf
+3. **Photography content rebuild — REAL DECISION DAY.** Fourth consecutive day flagged TOP priority, fourth day untouched. Options: (a) ship one format this week (30 London Locations is most ready — Hadi-on-camera reels) or (b) honestly park it until pricing + first-deal closes are complete. Don't keep flagging without action — pick a path.
+
+Status checks at session start:
+- Heny email — has it arrived?
+- Ace WhatsApp — any reply since 19 May? (Beyond the 24hr watch window now, decision overdue)
+- Sabib — any reply on owner email (sent 19 May)?
+- Kish go-live date — confirmed yet? (Locks week 2 + week 3 check-ins)
+- Heny go-live date — confirmed yet? (Same)
+
+Tomorrow's executable carry-forwards (lower priority but on deck):
+- Forward Arman dev brief (still not sent — performance anchor + reception hours + 12s timeout)
+- Brief Arman on Click Voice tenant provisioning + Heny aesthetic data model (treatments knowledge base structure)
+- Hanna re-engage with Option 2 pricing (framework locked enough now to action)
+- Lovable cleanup: remove "Click Voice not available for [segment]" lines from dental/aesthetic/fitness pages; fix "AI receptionist" → "AI phone answering" on restaurants page
+- Build full objection-handling document (3 reframes captured for "we call them back", add more as Hadi surfaces them)
+- Record 60-sec aesthetic + fitness clips (production blocker for A-EMAIL-1 + F-EMAIL-1 sends; aesthetics clip also useful for Heny pitch validation)
+- photography/seo structural review — 6+ entries, overdue since April
+- Phone-order use case for Click Voice (future variant scope)
+- Molana day 3 of 10-day wait (touch around day 8-9, not yet)
+
+Photography pipeline — active bookings:
+- **Mozhgan Mehrabi** — TODAY Friday 22 May 3:30pm, RHS Chelsea Flower Show, cash on shoot day. Repeat client (booked twice prior).
+
+Agency pipeline — current state:
+- **Heny Aesthetic Clinic** — VERBAL CLOSE 21 May. Contract drafted, modified, awaiting her email. Click Voice Aesthetics Launch Tier (£190 m1-3 / £290 m4+ / £100 setup). Single-practitioner. Voice agent name TBD. Go-live TBD.
+- **Kish** — RECOVERY DEAL locked 20 May after Rendezvous-sabotage story resolved. Voice-only + Click Desk only, setup waived, payment month-end, no signed contract, anchor preserved. Go-live TBD.
+- **Haleh Cake** — closed, in onboarding (Click+ tier signed 11 May)
+- **Ace** — verbal yes since 15 May, WhatsApp sent 19 May, no update since. 6 days post-verbal-yes. Decision point overdue.
+- **Sabib** — warm-referral owner email sent 19 May, no reply yet
+- **Hanna** — price objection (NOT value rejection per Hadi correction), held. Ready to re-engage with Option 2 framework.
+- **Molana** — day 3 of 10-day partner wait. Touch around day 8-9.
+- **Rozay** — awaiting callback "in a couple of days" (was promised 18 May)
+- **Randeszvous** — DEAD (sabotaged Kish deal via mutual friend, confirmed 20 May). Do not engage even if they reach out.
+
+---
+
+## THURSDAY 21 MAY — Day 51 of 60 — COMPLETED
+
+Done today:
+- Kish recovery story fully explained (Rendezvous-sabotage via mutual friend)
+- Kish recovery deal locked (verbal, month-end payment, scope reduced, anchor preserved)
+- Heny Aesthetic Clinic verbally closed (Click Voice Aesthetics Launch Tier)
+- Cross-segment pricing rule locked (entry-tier universal, anchor restaurant-only)
+- Performance anchor mechanism fully finalised (10 floor / 12s timeout / off-ramp tiers)
+- Arman dev brief updated (12s timeout, 10-20s admin range)
+- Heny contract PDF generated + bug-fixed (black-on-black headers) + modified by Hadi
+- Mozhgan photography booking confirmed for tomorrow
+- Strategist stress-test of pricing framework absorbed
+- Zizi briefed on new DM scripts
+- 3 objection reframes captured for the meeting objection-handling document
+
+Not done (carried forward):
+- Send Heny contract — awaiting her email
+- Photography content rebuild — 4th day untouched, real decision needed tomorrow
+- Forward Arman brief, Lovable cleanup, Hanna re-engage, aesthetic + fitness clips, objection-handling document build, photography/seo structural review
+
+Note: Hadi feeling unwell at end of day. Rest first, send Heny contract when email arrives, make real call on photography content.
+
+---
 
 Status checks needed at session start:
 - Ace WhatsApp (sent 19 May) — any reply? Decision point overdue. If silent: in-person walk-in / final voice note / accept loss.
