@@ -1,9 +1,76 @@
 # Current Priorities
 
-Last updated: 2026-05-21
+Last updated: 2026-05-27
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## FRIDAY 22 MAY — Day 52 of 60 (TOMORROW)
+## THURSDAY 28 MAY — Day 58 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Heny follow-up meeting** — she scheduled this to learn about other services beyond Click Voice. Likely afternoon. Be ready to discuss upsell path (multi-practitioner, social, content) without pushing — relationship-led, not sales-led.
+2. **photography/seo structural review** — confirmed for tomorrow. Pair with the immediate fixes from today's audit verification: /london-elopement-packages broken title tag + banned-words meta, sitemap rebuild, CTR diagnostic, blog cadence restart.
+3. **Photography content rebuild — REAL DECISION DAY (5th time flagged).** Either ship one content format this week or formally park it. Don't keep flagging.
+
+Status checks at session start:
+- Heny email — has it arrived? (Contract still ready to send when it does)
+- Did Hadi revoke the two exposed GitHub PATs from yesterday? (ghp_Jw9y... + ghp_ojl2...)
+- Kish onboarding — still on track for Friday 29 May?
+- Any reply from Ace / Sabib / Hanna in the gap?
+
+Immediate SEO fixes (for the structural review session):
+- /london-elopement-packages — EMPTY <title> tag, meta uses banned "luxury" + "cinematic". Highest leverage fix.
+- /portrait-photographer-london — weak generic meta, no brand voice
+- /london-elopement-photography — returns 200 but redirects to homepage (intentional or accidental?)
+- WordPress sitemap broken — /page-sitemap.xml returns HTML not XML
+- Blog cadence — 3 weeks zero posts since blog #7 (~7 May)
+- Site-wide CTR 0.40% (industry 2-3%) — meta description rewrites didn't move the needle, deeper diagnostic needed
+
+Tomorrow's executable carry-forwards (lower priority but on deck):
+- Send Heny contract (when email arrives)
+- Forward Arman dev brief (still not sent)
+- Update shared/click-ai-agency-packages.md with cross-segment pricing rule + Heny launch tier
+- Hanna re-engage with Option 2 (framework locked)
+- Lovable cleanup (Click Voice availability + AI receptionist terminology)
+- Record 60-sec aesthetic + fitness clips (also useful for Heny upsell pitch)
+- Build full objection-handling document (3 reframes captured, more to come)
+- Phone-order use case for Click Voice (future variant scope)
+
+Photography pipeline — recent bookings:
+- **Mozhgan Mehrabi** — repeat client. Friday 22 May 3:30pm Chelsea Flower Show shoot completed, went well, cash collected.
+
+Agency pipeline — current state:
+- **Heny Aesthetic Clinic** — verbal close 21 May. Meeting tomorrow to discuss broader services. Contract drafted, awaiting her email.
+- **Kish** — RECOVERY DEAL locked 20 May. Click Desk app last-stage prep. Friday 29 May onboarding target. Week 2 + week 3 check-ins to lock when go-live confirmed.
+- **Haleh Cake** — closed, in onboarding (Click+ tier signed 11 May)
+- **2 new restaurant prospects** — early contact, Hadi filtering for keen ones before sharing details
+- **Ace** — silent since 19 May WhatsApp (12 days). De facto loss.
+- **Sabib** — silent since 19 May warm-referral email (8 days)
+- **Hanna** — held, ready to re-engage with Option 2 framework
+- **Molana** — day 9 of 10-day partner wait (touch around 30 May)
+- **Rozay** — silent since 18 May, callback "in a couple of days" never came
+- **Randeszvous** — DEAD (Rendezvous-sabotage of Kish confirmed 20 May). Do not engage.
+
+---
+
+## WEDNESDAY 27 MAY — Day 57 of 60 — COMPLETED
+
+Done today:
+- 6-day gap from 21 May bridged with pipeline status update
+- N8N SEO pipeline v2 built + deployed (4 patches: site totals, rowLimit 1000, fixed sort, traffic concentration)
+- Security issue surfaced: 2 exposed GitHub PATs in v1 JSON
+- v2 first run produced real data: 10 clicks, 2,489 impressions, 533 keywords, 90% from long tail, 0.40% CTR
+- 5 May SEO audit action plan verified against live site (most done, sitemap + /london-elopement-packages + blog cadence are gaps)
+- Quality log entry added for Jodie analysis pattern (now at 3 entries — process structural review flagged)
+
+Not done — carried forward:
+- All carry-forwards listed in Thursday block above
+
+---
+
+## FRIDAY 22 MAY — Day 52 of 60 — COMPLETED (Mozhgan shoot done, went well)
+
+## OLDER (Day 51 and prior — see session log for detail)
+
+## FRIDAY 22 MAY — Day 52 of 60 (ORIGINAL PLAN)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Mozhgan photography shoot — TODAY 3:30pm RHS Chelsea Flower Show.** Cash collection on the day. Light planning for late-afternoon flowers + crowd factor (busiest day of the show).
