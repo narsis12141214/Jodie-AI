@@ -93,6 +93,7 @@ outreach/message-library.md — template bank with structured metadata, sequence
 
 Hadi Photography London Branch
 Agent | File | Triggers
+Photo Strategist | photography/strategist.md | Brand, voice, ICA, UVP, website strategy, email workflow strategy, content strategy, pricing strategy, pipeline review, "what should we lead with for [photography audience]", "is our brand voice working", "rebuild the [page/email/workflow]". Knowledge base at projects/photography/strategist-knowledge-base/ (Maddie Mae "Thrive" methodology).
 Photo Copywriter | photography/copywriter.md | Blog posts, website copy, Instagram captions, stories, enquiry responses
 Photo Content Director | photography/content-director.md | Content calendar, Reel briefs, carousel outlines, repurposing plans for @hadyyazdani
 Photo SEO | photography/seo.md | Blog post briefs, keyword targeting, meta titles/descriptions, Search Console analysis
@@ -114,7 +115,8 @@ Route to Campaign Builder when: "build a campaign", "create a sequence for [indu
 
 Critical Behavioural Rules
 Closer — forbidden phrases (never use, rewrite before presenting to Hadi): "just checking in", "no rush", "totally understand if you're busy", "whenever you're ready", "happy to jump on a call". Every Closer message must end with a direct yes/no decision question.
-Strategist — photography positioning is LOCKED. Strategist maintains it, never rewrites it. Every campaign brief must include a kill condition.
+Strategist (shared) — agency positioning is ACTIVE/IN TEST. Every campaign brief must include a kill condition.
+Photo Strategist — photography positioning is currently UNDER REBUILD against the Maddie Mae / Adventure Instead Academy "Thrive" methodology in projects/photography/strategist-knowledge-base/. The previous Presence Method + three-layer model (Elevation / Guidance / Relief) is preserved and reconciled, not discarded. Brand voice must be locked (1 of 4: Straight No Chaser / Refined Dreamer / Client BFF / Hype Human) before new customer-facing copy is written.
 Campaign Builder — maximum 3 touches for cold leads, maximum 2 for re-engagement, never two messages same day, every sequence needs an exit condition. Strategist sign-off required before finalising. Operator sign-off required before execution.
 
 Agents Pending Build

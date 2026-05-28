@@ -1,9 +1,87 @@
 # Current Priorities
 
-Last updated: 2026-05-27
+Last updated: 2026-05-28
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## THURSDAY 28 MAY — Day 58 of 60 (TOMORROW)
+## FRIDAY 29 MAY — Day 59 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Kish Friday onboarding — TODAY** (was target locked Wed 27 May). Status check at session start. Click Desk app last-stage prep should be complete.
+2. **Brand foundation Section 4 (Specialty) — RESUME HERE.** Hadi owes me a/b/c answer: (a) lock his 3 picked differentiators (20yr photojournalism / anticipation eye / repeat international clients sight-unseen); (b) swap one of those for Persian/Iranian + London bi-cultural heritage; (c) see both versions side-by-side. Then through Sections 5-11 (Primary ICA / Secondary ICA / UVP / Brand Voice (1 of 4) / Brand Story / Reconciliation / Validation). Clean 3hr block could land all of Phase 1.
+3. **Workbook-first methodology now locked** — all photography brand drafting strictly follows Maddie Mae Thrive structures. No off-piste Jodie invention. Reference: projects/photography/strategist-knowledge-base/
+
+Status checks at session start:
+- Did Heny meeting happen Thu 28 May? (No status reported by Hadi yet.) Email arrived?
+- Kish onboarding on track for today?
+- The exposed GitHub PATs (ghp_Jw9y... + ghp_ojl2...) — revoked yet?
+- Photography content rebuild decision (A/B/C from action plan) — Hadi to confirm.
+- 3 past clients pick for interviews — Hadi to share names so Jodie can draft interview emails.
+
+Phase 1 Brand Foundation status:
+- ✓ Section 1 Vision LOCKED 28 May
+- ✓ Section 2 Mission LOCKED 28 May (Draft 3b)
+- ✓ Section 3 Values LOCKED 28 May (modified Set C, 5 values)
+- ◐ Section 4 Specialty IN PROGRESS — workbook Template #1 + 3 differentiators picked, awaiting final a/b/c lock
+- ○ Section 5 ICA — ahead
+- ○ Section 6 UVP — ahead
+- ○ Section 7 Brand Voice (1 of 4) — ahead
+- ○ Section 8 Brand Story (StoryBrand) — ahead
+- ○ Section 9 Reconciliation with Presence Method + three-layer model — ahead
+Draft file: projects/photography/28-05-26/brand-foundation-draft.md
+
+Tomorrow's executable carry-forwards (lower priority but on deck):
+- photography/seo structural review (planned for today, didn't happen — brand work took whole session)
+- /london-elopement-packages immediate fix (empty title tag + banned-words meta) — doesn't wait on Phase 2
+- WordPress sitemap rebuild (returning HTML not XML) — doesn't wait on Phase 2
+- Send Heny contract (when her email arrives)
+- Forward Arman dev brief
+- Update shared/click-ai-agency-packages.md with cross-segment rule + Heny launch tier
+- Hanna re-engage with Option 2 (framework now locked)
+- Lovable cleanup
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Phone-order use case for Click Voice
+
+Agency pipeline — current state:
+- **Heny Aesthetic Clinic** — meeting 28 May (status not reported). Contract drafted, awaiting her email.
+- **Kish** — RECOVERY DEAL locked 20 May. Friday 29 May onboarding TODAY.
+- **Haleh Cake** — closed, in onboarding.
+- **2 new restaurant prospects** — early contact, Hadi filtering.
+- **Ace/Sabib/Hanna** — silent. Hanna ready to re-engage with Option 2.
+- **Molana** — day 10 of 10-day partner wait (touch around 30-31 May)
+- **Randeszvous** — DEAD.
+
+Photography pipeline:
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client.
+- SEO: 10 clicks week ending 5/24, 0.40% sitewide CTR remains the diagnostic priority.
+
+---
+
+## THURSDAY 28 MAY — Day 58 of 60 — COMPLETED
+
+Done today:
+- Created photography knowledge base folder + read 17 Maddie Mae files
+- Created photography/strategist.md agent + registered in CLAUDE.md
+- Replaced "photography positioning LOCKED" with "UNDER REBUILD" rule
+- Wrote 5-phase rebuild action plan
+- Dispatched strategist subagent for brand foundation draft
+- Worked through brand foundation with 3-draft format
+- LOCKED Sections 1-3 (Vision / Mission / Values)
+- Section 4 Specialty in progress (workbook Template #1 + 3 differentiators picked)
+- Workbook-first methodology locked
+- Pre-wedding blog post miss acknowledged + logged to quality log (Jodie now at 4 entries — same root-cause class)
+- Architectural decision logged to decisions.md
+
+Not done — carried forward:
+- Section 4 Specialty final lock + Sections 5-11
+- photography/seo structural review (didn't happen)
+- All agency carry-forwards
+- Photography content decision (A/B/C)
+- 3 past clients pick
+
+---
+
+## THURSDAY 28 MAY — Day 58 of 60 (ORIGINAL PLAN)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Heny follow-up meeting** — she scheduled this to learn about other services beyond Click Voice. Likely afternoon. Be ready to discuss upsell path (multi-practitioner, social, content) without pushing — relationship-led, not sales-led.
