@@ -1,9 +1,96 @@
 # Current Priorities
 
-Last updated: 2026-05-28
+Last updated: 2026-06-01
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## FRIDAY 29 MAY — Day 59 of 60 (TOMORROW)
+## TUESDAY 2 JUNE — Window 2 Day 3 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Brand Foundation Section 6 (Secondary ICA) — RESUME HERE.** Hadi to pick A/B/C: (A) destination couple no London ties, (B) returned-to-London couple Jodie recommends, (C) multi-day destination wedding. Then expand chosen one to full workbook profile. Then push through Sections 7-11 (UVP, Brand Voice 1 of 4, Brand Story StoryBrand, Reconciliation, Validation).
+2. **Heny meeting Thursday this week** — prep upsell conversation (multi-practitioner, social, content). Contract still ready to send when her email arrives.
+3. **Window 2 monitoring kicks in this week** — cold email reply-rate check (4% kill threshold), 7-day silent-yes kill rule active, weekly sequencing discipline.
+
+Status checks at session start:
+- Heny email arrived?
+- Kish staying live + producing bookings cleanly?
+- Any reply from Sabib / Hanna / Rozay?
+- 2 new restaurant prospects — any progression?
+- Cold email send count Tuesday morning + any reply data?
+
+Phase 1 Brand Foundation status:
+- ✓ Section 1 Vision LOCKED 28 May
+- ✓ Section 2 Mission LOCKED 28 May (Draft 3b)
+- ✓ Section 3 Values LOCKED 28 May (modified Set C, 5 values)
+- ✓ Section 4 Specialty LOCKED 1 June (Maddie Mae Template #1, 3 differentiators)
+- ✓ Section 5 Primary ICA LOCKED 1 June ("Sarah and James" London-led)
+- ◐ Section 6 Secondary ICA IN PROGRESS — 3 sub-angles drafted, awaiting A/B/C
+- ○ Section 7 UVP — ahead
+- ○ Section 8 Brand Voice (1 of 4) — ahead
+- ○ Section 9 Brand Story (StoryBrand) — ahead
+- ○ Section 10 Reconciliation with Presence Method + three-layer model — ahead
+- ○ Section 11 Validation — ahead
+Draft file: projects/photography/28-05-26/brand-foundation-draft.md
+
+Window 2 Executable Carry-Forwards (Days 3-60):
+- Forward Arman dev brief (12s timeout + reception hours config) + decide whether to deploy human-first routing before next restaurant onboards (Kish AI-first means inclusive recovery definition data isn't collected; next client should be human-first to get full data)
+- /london-elopement-packages immediate fix (empty title tag + banned-words meta) — doesn't wait on Phase 2
+- WordPress sitemap rebuild — doesn't wait on Phase 2
+- Send Heny contract (when email arrives)
+- Update shared/click-ai-agency-packages.md with cross-segment rule + Heny launch tier
+- Hanna re-engage with Option 2 pricing
+- Build full objection-handling document (3 reframes captured)
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup (Click Voice availability + AI receptionist terminology)
+- Restart blog cadence (1 post per 2 weeks minimum, Window 2 target)
+- Cold email reply-rate monitoring (kill condition <4% across 200+ sends)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C from action plan — Jodie recommends C)
+
+Agency pipeline — current state:
+- **Haleh Cake** — closed, in onboarding (Click+ tier)
+- **Kish** — LIVE in production. AI ("Arman" voice agent) capturing 2 outside-hours recoveries + 8 during-hours bookings over 2-3 days. AI-first routing means inclusive recovery definition can't apply to this client. Strict extrapolation still hits anchor.
+- **Heny Aesthetic Clinic** — meeting THIS THURSDAY (moved from 28 May). Contract drafted, awaiting her email.
+- **2 new restaurant prospects** — early contact, Hadi filtering.
+- **Ace** — silent (de facto loss).
+- **Sabib** — silent.
+- **Hanna** — held, ready to re-engage with Option 2.
+- **Rozay** — silent (callback never came).
+- **Molana** — partner-wait window passed without re-engagement.
+- **Randeszvous** — DEAD (Rendezvous-sabotage confirmed).
+
+Photography pipeline:
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client.
+- SEO: 10 clicks week ending 5/24, 0.40% sitewide CTR remains diagnostic priority. CTR fix is Phase 2 lever.
+- Brand rebuild Phase 1: 5 of 11 sections locked.
+
+Window 2 Targets (locked today, from Day 60 review):
+- Agency: 10 paid clients by 30 July (Hadi pushed up from 5), £2-3K MRR, ~46/day cold email sustained
+- Photography: Phase 1 locked by 7 June, Phase 2 by 14 June, CTR 0.7%+, blog 1/2 weeks
+- Cross-cutting: weekly sequencing (2 agency / 1 photo / 2 dev / 2 off), 7-day silent-yes kill, monthly checkpoints
+
+---
+
+## MONDAY 1 JUNE — Window 2 Day 2 — COMPLETED
+
+Done today:
+- Day 60 Review delivered (brief + .md + PDF at projects/01-06-26/)
+- Kish anchor data correction taken (AI-first routing, 2 outside-hours unambiguous, 8 during-hours don't count under inclusive without human-attempt-first)
+- Window 2 targets locked (10 clients pushed up from 5)
+- Pace decision: grind mode for now
+- Brand Foundation Section 4 (Specialty) LOCKED
+- Brand Foundation Section 5 (Primary ICA "Sarah and James") LOCKED
+- Section 6 Secondary ICA: 3 sub-angles drafted (A/B/C)
+- Brand foundation draft file updated
+- Day 60 review files + PDF in projects/01-06-26/
+- Todo list cleaned for Window 2
+
+Not done — carried forward:
+- Section 6 A/B/C answer + Sections 7-11
+- All Window 2 executable items listed in Tuesday block above
+
+---
+
+## FRIDAY 29 MAY — Day 59 of 60 — STALE
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Kish Friday onboarding — TODAY** (was target locked Wed 27 May). Status check at session start. Click Desk app last-stage prep should be complete.

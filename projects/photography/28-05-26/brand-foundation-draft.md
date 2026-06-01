@@ -14,7 +14,9 @@
   3. Direction, not documentation (swapped in from Set A)
   4. The relationship outlasts the shoot
   5. Earned calm (swapped in from Set A)
-- Section 4 Specialty: workbook Template #1 chosen, 3 differentiators picked (20yr photojournalism / anticipation eye / repeat international clients sight-unseen). Awaiting Hadi's a/b/c on whether to keep those 3 or swap in Persian/Iranian heritage angle. NEXT SESSION RESUMES HERE.
+- Section 4 Specialty: LOCKED 1 June. Template #1, three differentiators: (1) twenty years of photojournalism background; (2) a photojournalist's eye trained for both anticipation and composition; (3) ten years of working London — knowing its locations, light, and rhythms.
+- Section 5 (numbered #6 in file) Primary ICA: LOCKED 1 June as "Sarah and James" — London-led, city as third character.
+- Section 6 Secondary ICA + Section 7 UVP + Sections 8-11 ahead.
 
 A note on method: every section below is built from the story bank, your client reviews, the existing positioning work, and observable pipeline patterns. Where a claim leans on a specific source, the source is referenced (e.g. "story bank entry #7"). Where a claim is inferred from limited data, it is flagged.
 
@@ -140,60 +142,77 @@ Inferred from the same material plus the pipeline pattern:
 
 ---
 
-## 6. Primary Ideal Client Avatar
+## 6. Primary Ideal Client Avatar — LOCKED 1 June 2026
 
-### PRIMARY ICA — "Nadia and James"
+### PRIMARY ICA — "Sarah and James" (London-led: city as third character)
 
 **Description — Who**
 
-- **Names / pronouns:** Nadia (she/her) and James (he/him) — names representative, not literal
-- **Ages:** 32 and 35
-- **Location:** Greater London or visiting London from Western Europe / North America
-- **Education:** Both university-educated, often postgraduate
-- **Occupations:** Professional — one in healthcare, finance, law, tech, or creative direction. The other in a similar bracket.
-- **Combined income:** £90,000–£180,000
-- **Relationship:** Together 4–8 years. Engaged. Often have already lived together.
-- **Cultural background:** Mixed. Often one or both partners have international or diaspora background (Persian, Iranian, South Asian, Mediterranean, Latin American, East Asian — the unifier is "not the white English wedding script"). Open to non-traditional weddings.
+- **Names & pronouns:** Sarah (she/her) and James (he/him). Representative names. Actual primary couples vary across British, European, American, Canadian, Middle Eastern, Australian backgrounds.
+- **Ages:** 28-36 (within the broader 25-42 range Hadi sees)
+- **Occupations:** Two demanding professional careers. Most common patterns: medical (consultant, surgeon, doctor); legal (lawyer, barrister); aviation (pilot); tech (CTO, head of engineering, founder); leadership (CEO, founder, senior business leader); adjacent fields (architect, designer, finance, consulting). Almost always two demanding careers, not one professional + one supporting partner.
+- **Location:** Either London-based (Hampstead, Notting Hill, Marylebone, South Kensington, Islington, Greenwich, Richmond, Chelsea, Wandsworth) OR international with London ties (US East Coast, California, Toronto, Vancouver, Paris, Berlin, Stockholm, Amsterdam, Dubai, Sydney).
+- **Education:** Highly educated. Both partners typically have undergraduate degrees from reputable universities. Many have masters, MBAs, medical degrees, or professional qualifications.
+- **Combined income:** £150,000-£400,000+
+- **Relationship:** Together 2-10 years. Many have lived together 1-3+ years before engagement. The relationship has weathered career moves, geographic moves, big decisions.
+- **Cultural background:** Mixed. Often one or both partners have diaspora background. Unifier is cosmopolitan outlook, comfort across cultures, not bound to a single traditional wedding script.
 
-**Behaviour and personality — What**
+**Behaviour & personality — What**
 
-- **Hobbies:** Walks in Hampstead, Greenwich, or along the Regent's Canal. Restaurants in Soho, Marylebone, Mayfair. Travel — a long-haul holiday once a year, two short European trips. One of them reads serious nonfiction. Both follow design / lifestyle / food content on Instagram.
-- **Spending pattern:** Quality over quantity. Will pay for a tailor over a chain. A flat-white-from-the-good-place habit. Sleeps in a hotel rated by Mr & Mrs Smith or Standard, not by TripAdvisor stars. Drives a smaller premium car or an EV, often shared.
-- **Sources of information:** Google. Instagram. Direct referrals from friends. The Cut, Monocle, Kinfolk, Cereal, occasionally The Times weekend supplement. Not Pinterest-heavy. Not wedding-blog readers — they find wedding content fatiguing.
-- **Personal style:** Restrained. Neutral palette. Considered. Avoids logos. Their home looks like Kinfolk staged it.
+- **Hobbies & interests:** Walk the city for fun (Hampstead Heath, Greenwich, Regent's Canal, Hyde Park, Richmond Park). Favourite restaurants in Soho, Marylebone, Mayfair, Chelsea, Borough Market. Long-haul travel multiple times a year plus European weekends. One usually reads serious nonfiction; both follow design, food, travel content on Instagram. Cultural events. Socialise in small groups, not large parties.
+- **Spending pattern:** Travel non-negotiable. Hotels rated by Mr & Mrs Smith or The Standard. Will pay for the chef's table. Considered home design, each piece chosen. Quality clothing without logos. They will pay for craft. They will not pay for marketing.
+- **Sources of information:** Google for research. Instagram for inspiration, filtered aggressively. Direct referrals from friends (primary source for service decisions like photography). The Cut, Monocle, Cereal, Kinfolk, FT Weekend, Times Saturday supplement. NOT Pinterest. NOT wedding blogs.
+- **Personal style:** Restrained, considered, neutral palette, no logos. Their home looks like a quiet design magazine spread.
 
 **Motivators — Why**
 
-**What they want from their wedding / photography:**
-They want a small, well-thought-out day. They have decided against the big wedding for specific reasons — cost, family complexity, the feeling that bigger does not equal more meaningful. They want photographs they can look at in ten years and not flinch at. They want a photographer who will lead them through the day so they can be in it, not running it.
+**Goals, desires, values for their wedding/elopement:**
+- Want the day to feel like THEM, not a template or someone else's wedding
+- Want photographs that hold what actually happened: real expression, not arranged smiles
+- **Want London to BE part of the day, not just the location.** The city is something they love. They want it in the photographs as a third character.
+- Want to actually be present on the day, not running it
+- Want photographs they will look at in ten years and still feel something
+- Want a photographer whose tone matches theirs: considered, not flashy
 
-**Their biggest priorities:**
-Being present on the day. Not feeling watched. Photographs that look like them and not like a styled set. Having a photographer they actually like.
+**What they want family and friends thinking:**
+- "That felt like watching the two of you."
+- "I've never seen them like that."
+- "London looked like London in those photos, not a stock-photo London."
 
-**Values:**
-Quietly self-aware. Anti-performative. Value craft over flash. Value being treated as a person, not a client. Suspicious of anything overproduced.
-
-**What they want family and friends to think:**
-That the day felt like them. Not "that was a beautiful wedding," but "that felt like watching the two of you."
+**Core values shown in their life choices:**
+- Quality over quantity
+- Craft over flash
+- Restraint over performance
+- Being present over documenting
+- Travel as discovery, not status
+- London as home, even when they live elsewhere
 
 **Challenges / pain points:**
-- Both partners are quietly self-conscious in front of a camera. Often one is significantly more reluctant than the other (see entry #11 — the camera-shy husband pattern).
-- They are sceptical of "wedding photography" as a category. They have seen too many overworked images, too many staged moments. They cannot tell which photographers are different.
-- They feel the wedding industry is built for someone else — for a louder, more performative couple than they are.
-- They have a limited time budget. One of them is overworked.
-- If they are international, they have not met any photographer in person and the risk of getting it wrong feels material.
+- Time. Both partners overworked. Wedding planning cannot be a full-time project.
+- Distance if international: planning across timezones and continents
+- The wedding industry does not speak their language: most wedding content is built for someone louder, more performative, more conventional
+- Family expectations, particularly if one or both have cultural pressure about what a wedding "should" be
+- Choosing a photographer they have never met (especially if international): the risk feels material
+- Choosing locations in London they cannot easily scout themselves
+- They have seen beautiful wedding photographs and then realised the same photographer did 100 weddings that all look the same. The fear of looking like everyone else.
 
 **Fears, internal struggles:**
-- "I am going to look stiff in the photos." (review pattern #1, 11 of 17 reviewed clients)
-- "I am going to be too self-conscious to actually enjoy this."
-- "We are going to spend a lot of money and end up with photos that look like everyone else's."
-- "We do not know how to choose a photographer. We do not have the expertise to tell the good ones apart."
-- "If we book the wrong person, the day itself becomes worse."
+- "I am going to look stiff in the photos."
+- "We will spend a lot of money and end up with photos that look like everyone else's."
+- "We do not have the expertise to tell good photographers apart."
+- "If we book the wrong person, the day itself becomes worse, with no recovery."
+- For international couples: "We are trusting someone we have never met, in a country we may not live in, with the most important day of our lives."
+- "We chose London because we love it. What if the photographer does not understand WHY we chose London?"
+- "The wedding industry assumes we want something we do not want. How do we find someone who actually listens?"
 
 **Possible objections:**
-- "Why is this more expensive than [the photographer on Instagram who looks similar]?" — the entry #8 conversation about what they are paying for
-- "We were thinking of just two hours. Is that enough?" — they underestimate how the day compresses
-- "Do you need a pre-wedding shoot? We are already nervous enough about the wedding day."
+- "Why is this more expensive than the photographer on Instagram whose work looks similar?"
+- "We were thinking of just 2-3 hours. Is that enough?"
+- "Do we really need a pre-wedding shoot? Our schedules are brutal."
+- "We do not want this to feel cinematic or styled. Can you actually do that?"
+- "Can you photograph London in a way that does not look like every other photographer's London?"
+- For international: "How do we know you will show up? How do we know you understand what we want without meeting?"
+- "Can you handle the planning so we do not have to manage it?"
 
 ### SECONDARY ICA — "The international couple coming to London"
 
