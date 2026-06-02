@@ -1,9 +1,90 @@
 # Current Priorities
 
-Last updated: 2026-06-01
+Last updated: 2026-06-02
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## TUESDAY 2 JUNE — Window 2 Day 3 of 60 (TOMORROW)
+## WEDNESDAY 3 JUNE — Window 2 Day 4 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Brand Foundation Section 8 (Brand Voice) — RESUME HERE.** Hadi's overnight thinking turns into a pick. Real tension: Refined Dreamer matches the locked UVP ("Your love has a city"), Straight No Chaser matches Hadi's natural conversational voice (story bank, client emails, Hedy opener). Three questions surfaced for him to think through last night. Once locked, push through Sections 9 (Brand Story / StoryBrand framework) → 10 (Reconciliation with Presence Method + three-layer model) → 11 (Validation list). Phase 1 lockable by 7 June still achievable.
+2. **Heny meeting THIS THURSDAY** — prep upsell conversation (multi-practitioner, social, content). Contract still ready when her email arrives.
+3. **Hedy + Omid reply watch** — opener sent 2 June. 4-day watch window. If silent past 6 June, one friendly nudge.
+
+Status checks at session start:
+- Hedy email reply?
+- Heny email arrived for contract send?
+- Kish staying live + producing cleanly?
+- Cold email reply data starting to surface this week (4% kill threshold active)
+- 2 new restaurant prospects — any progression?
+
+Phase 1 Brand Foundation status:
+- ✓ Section 1 Vision LOCKED 28 May
+- ✓ Section 2 Mission LOCKED 28 May (Draft 3b)
+- ✓ Section 3 Values LOCKED 28 May (modified Set C, 5 values)
+- ✓ Section 4 Specialty LOCKED 1 June
+- ✓ Section 5 Primary ICA LOCKED 1 June ("Sarah and James" London-led)
+- ✓ Section 6 Secondary ICA LOCKED 2 June ("Sophie and Marcus" Returned-to-London)
+- ✓ Section 6 Tertiary ICA LOCKED 2 June ("Emma and Ryan" Destination)
+- ✓ Section 7 UVP LOCKED 2 June ("Your love has a city...")
+- ◐ Section 8 Brand Voice IN PROGRESS — 4 options presented, Hadi thinking overnight
+- ○ Section 9 Brand Story (StoryBrand) — ahead
+- ○ Section 10 Reconciliation with Presence Method + three-layer model — ahead
+- ○ Section 11 Validation — ahead
+Draft file: projects/photography/28-05-26/brand-foundation-draft.md
+
+Window 2 Executable Carry-Forwards (Days 4-60):
+- Forward Arman dev brief + decide on human-first routing before next restaurant client (Kish AI-first means inclusive recovery data isn't collected)
+- /london-elopement-packages immediate fix (empty title tag + banned-words meta)
+- WordPress sitemap rebuild
+- Send Heny contract (when email arrives)
+- Update shared/click-ai-agency-packages.md with cross-segment rule + Heny launch tier
+- Hanna re-engage with Option 2
+- Build full objection-handling document (3 reframes captured)
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup (Click Voice availability + AI receptionist terminology)
+- Restart blog cadence (1 post per 2 weeks minimum, Window 2 target)
+- Cold email reply-rate monitoring (kill condition <4% across 200+ sends)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews (after brand foundation locks)
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding (Click+ tier)
+- **Kish** — LIVE in production. AI-first routing, so inclusive recovery doesn't apply. 2 outside-hours + 8 during-hours over 2-3 days.
+- **Heny Aesthetic Clinic** — meeting THIS THURSDAY (moved from 28 May). Contract drafted, awaiting email.
+- **2 new restaurant prospects** — early contact, Hadi filtering.
+- **Ace** — silent (de facto loss).
+- **Sabib** — silent.
+- **Hanna** — held, ready to re-engage with Option 2.
+- **Rozay** — silent.
+- **Molana** — partner-wait window passed without re-engagement.
+- **Randeszvous** — DEAD.
+
+Photography pipeline:
+- **Hedy Rafii + Omid Mohareri** — opener sent 2 June. Engagement session 24 June in London. 4-day watch window from 2 June (silent past 6 June = one friendly nudge).
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client.
+- SEO: 10 clicks week ending 5/24, 0.40% sitewide CTR remains diagnostic priority. CTR fix is Phase 2 lever.
+- Brand rebuild Phase 1: 8 of 11 sections locked.
+
+---
+
+## TUESDAY 2 JUNE — Window 2 Day 3 — COMPLETED
+
+Done today:
+- NEW INBOUND PHOTOGRAPHY ENQUIRY (Hedy + Omid, San Francisco, engagement 24 June in London, Hedy studied here where they started dating 10+ years ago) — opener sent, logged
+- Brand Foundation: Sections 6 (Secondary + Tertiary ICAs) + 7 (UVP "Your love has a city") LOCKED
+- Section 8 Brand Voice introduced (4-voice framework presented, real tension flagged, 3 questions for overnight thinking)
+- Quality log entry added for Jodie pattern (feature-led drafts when emotional needed) — new rule embedded for customer-facing voice work
+- Phase 1: 8 of 11 sections locked
+
+Not done — carried forward:
+- Section 8 Brand Voice pick (Hadi overnight thinking)
+- Sections 9-11
+- All Window 2 executable items listed in Wednesday block above
+
+---
+
+## TUESDAY 2 JUNE — Window 2 Day 3 (ORIGINAL PLAN)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Brand Foundation Section 6 (Secondary ICA) — RESUME HERE.** Hadi to pick A/B/C: (A) destination couple no London ties, (B) returned-to-London couple Jodie recommends, (C) multi-day destination wedding. Then expand chosen one to full workbook profile. Then push through Sections 7-11 (UVP, Brand Voice 1 of 4, Brand Story StoryBrand, Reconciliation, Validation).
@@ -59,6 +140,7 @@ Agency pipeline — current state:
 - **Randeszvous** — DEAD (Rendezvous-sabotage confirmed).
 
 Photography pipeline:
+- **Hedy Rafii + Omid Mohareri** — NEW enquiry 2 June. San Francisco couple, engagement session in London 24 June (window 23-27). Perfect ICA match (Primary London-loving + Secondary B Returned-to-London — Hedy studied in London, where they started dating 10+ years ago). Persian/Iranian heritage. Opener sent 2 June with availability confirmed + 4 questions on London study area / date flex / time of day / specific spots. Awaiting reply. Price not quoted (comes after location + timing discussion).
 - **Mozhgan Mehrabi** — shoot complete 22 May, repeat client.
 - SEO: 10 clicks week ending 5/24, 0.40% sitewide CTR remains diagnostic priority. CTR fix is Phase 2 lever.
 - Brand rebuild Phase 1: 5 of 11 sections locked.

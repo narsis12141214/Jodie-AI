@@ -214,53 +214,146 @@ Inferred from the same material plus the pipeline pattern:
 - For international: "How do we know you will show up? How do we know you understand what we want without meeting?"
 - "Can you handle the planning so we do not have to manage it?"
 
-### SECONDARY ICA — "The international couple coming to London"
+### SECONDARY ICA — "Sophie and Marcus" (Returned to London) — LOCKED 2 June 2026
 
 **Description — Who**
 
-- US (East Coast, California), Canadian, Australian, or Western European couples
-- 30–45 years old
-- Higher combined income — often £150,000+ equivalent
-- Often have a London connection (one partner studied here, lived here, has family here, met their partner here — like Josh and Catherine in entry #15)
-- Sometimes eloping in London specifically to escape the home-country wedding expectation
+- **Names & pronouns:** Sophie (she/her) and Marcus (he/him). Representative. Actual returned couples come from US (East Coast, California), Canada, Western Europe, Middle East, Australia.
+- **Ages:** 31-40. Slightly older than Primary because the London chapter was in their 20s and they're returning years later.
+- **Occupations:** Professional — medical (consultant, surgeon), legal (international law, M&A), aviation, tech (CTO, founder), finance (banking, asset management, private equity), leadership (CEO, founder), or creative-professional. London chapter often during university (UCL, LSE, Imperial, KCL, SOAS) OR 2-5 years early-career work.
+- **Where they live now:** US East Coast, California, Toronto, Vancouver, Paris, Berlin, Stockholm, Amsterdam, Singapore, Sydney, Dubai.
+- **Where they USED to live in London:** Zones 1-3 (Bloomsbury, South Kensington, Chelsea, Marylebone, Notting Hill, Hampstead, Islington, Shoreditch).
+- **Education:** Highly educated. Often masters, MBA, JD, MD obtained in London or later.
+- **Combined income:** £180,000-£500,000+ (higher than Primary — further along in careers).
+- **Relationship length:** Together 7-15 years. Relationship STARTED in London or was substantially shaped by London years.
+- **Cultural & family background:** Often international heritage. London years were when they figured out who they wanted to be.
 
-**What they need:**
-- Trust on the line. They are hiring someone they have never met, in a country they may not live in. (Reviews #6, #8, #12 all explicitly name this.)
-- A photographer who will run a process at distance — emails that read like a person, an explicit plan, response speed.
-- Local knowledge of London locations they cannot have on their own.
+**Behaviour & personality — What**
 
-**Fears:**
-- Being scammed or let down with no recourse
-- Looking like tourists in their own wedding photos
-- The photographer not getting "what London means" to them
+- **Hobbies:** Travel often. Have favourite spots from their London years they still visit. Read serious publications. Often have a "London friend group" they see on visits. Cultural events when in London (Tate, Royal Opera House, Sadler's Wells, Barbican).
+- **Spending pattern:** Travel non-negotiable. Business class long-haul. Boutique hotels with character. Will pay for "the London they remember." Established taste, considered choices. Higher-spend than Primary.
+- **Sources of information:** Google. Direct referrals INCLUDING old London friends. The Cut, Monocle, FT Weekend, Times Saturday. NOT Pinterest, NOT wedding blogs.
+- **Personal style:** Settled, considered, established. Home reads as someone who has lived in multiple cities and brought favourites from each.
 
-This ICA is well-documented in the existing reviews and Josh and Catherine's story. It is a real second segment, not an imagined one.
+**Motivators — Why**
 
-### TERTIARY ICA — held for review
+**Goals, desires, values:**
+- The day is partly a HOMECOMING. London is part of the love origin.
+- Want photographs that hold what London meant to them at the earlier chapter, plus what it means now
+- Want a photographer who UNDERSTANDS why they chose London (many haven't articulated this fully)
+- Want to revisit places that mattered (the pub where one first asked the other out, the bench, the cafe where they planned their futures)
 
-A third ICA could plausibly be the **Persian / Iranian London couple** — Mozhgan, Heny-network, repeat-relationship-led referrals. They share most attributes of the primary ICA but operate on a stronger trust-and-community network: TRUST > VALUE > PRICE, as the Kish recovery deal made explicit on the agency side (decisions log 21 May).
+**What they want family and friends thinking:**
+- "Of course they went back to London. That's where it started."
+- "Those photographs feel like THEM, not generic engagement photos."
+- "London looks like London-the-place-they-loved, not London-the-stock-image."
 
-The question Hadi needs to answer: is this a distinct ICA worth profiling separately, or is it a referral channel for the primary ICA? Both readings are defensible.
+**Core values:**
+- Returns over conquests
+- Substance over style
+- Personal history over public spectacle
+- The relationship outlasts the chapter
+
+**Challenges / pain points:**
+- Planning from another country, often another timezone
+- The locations that mattered may have changed
+- Limited time in London (4-7 days)
+- The wedding industry has no template for "come back to your former city"
+
+**Fears, internal struggles:**
+- "Will the photographer understand this isn't just 'a London engagement shoot'?"
+- "Will they make us look like tourists in our own former city?"
+- "What if the spots that mattered don't photograph the way they felt?"
+- "We're trusting someone we've never met, in a country we used to live in, with the day that maps the chapter that defined us."
+
+**Possible objections:**
+- "How do we know you'll understand WHY these specific locations matter?"
+- "Will you take suggestions, or push us toward your favourite spots?"
+- "Can we plan this entirely remotely?"
+- "Pre-wedding shoot the day before — do we have time?"
+
+**Live pipeline example:** Hedy Rafii + Omid Mohareri (enquiry 2 June 2026) fits this Secondary ICA almost exactly. Josh and Catherine (story bank entry #15) is the documented prior case.
+
+### TERTIARY ICA — "Emma and Ryan" (Destination Couple, No London History) — LOCKED 2 June 2026
+
+**Description — Who**
+
+- **Names & pronouns:** Emma (she/her) and Ryan (he/him). Representative. Actual destination couples come from US, Canada, Western Europe, Middle East, Australia, Hong Kong, Singapore.
+- **Ages:** 28-42.
+- **Occupations:** Same professional bracket — medical, legal, aviation, tech, leadership, finance, creative-professional. Both partners with careers.
+- **Where they live:** Anywhere except London. NEVER lived in the UK.
+- **Education:** Highly educated. Often masters or professional qualifications obtained at home.
+- **Combined income:** £150,000-£400,000+
+- **Relationship length:** Together 3-10 years.
+- **Cultural & family background:** Mixed. Unifier: cosmopolitan outlook + love of cities + deliberate love of London.
+
+**Behaviour & personality — What**
+
+- **Hobbies:** Travel as a way of life. London is one of several cities on a list. Have visited London 2-5 times before booking. Follow London-related content. City-curious, read travel content, follow architecture and food on Instagram.
+- **Spending pattern:** High travel spend. Business class long-haul. Central London hotels (Bloomsbury, Marylebone, Covent Garden, Mayfair, Shoreditch). Will pay for craft and considered work. Travel itself is the indulgence.
+- **Sources of information:** Google, Instagram for inspiration, Monocle, Cereal, Wallpaper, FT How to Spend It, NYT Travel. NOT Pinterest, NOT wedding blogs.
+- **Personal style:** Considered, well-travelled, refined. Home shows influence of multiple cities.
+
+**Motivators — Why**
+
+**Goals, desires, values:**
+- London as DELIBERATE destination — they chose it
+- Want the session to feel European, layered, not standard American engagement photography
+- Want the photographer to introduce them to the London the postcards miss
+- Engagement session often part of a larger trip (1-2 weeks)
+- Will want a few iconic shots for family + the less-obvious work for themselves
+
+**What they want family and friends thinking:**
+- "They actually went TO London for engagement photos. That's commitment."
+- "These photographs look like Europe, not like a stock-photo London shoot."
+
+**Core values:**
+- Travel as discovery
+- Cities as identity
+- Choose unusual things deliberately
+
+**Challenges / pain points:**
+- They don't know London. Have visited but haven't lived it.
+- Depend ENTIRELY on the photographer's knowledge of locations
+- Tight schedule in London (4-7 days, much of which is touristing or work)
+- The wedding industry assumes destination = big production. They're choosing the opposite.
+- Trust at distance is the central challenge
+
+**Fears, internal struggles:**
+- "Will the photographer take us to interesting London or generic-tourist London?"
+- "We've never met this person. We're flying eight hours for this."
+- "We don't speak London. How do we communicate what we want?"
+- "What if the weather is bad and the day gets ruined?"
+
+**Possible objections:**
+- "Why book you specifically rather than another London photographer?"
+- "Can you show us examples of locations you'd take us to?"
+- "What if it rains?"
+- "We've seen photographers in [home country] who'd fly over for less. Why is this priced where it is?"
 
 ---
 
-## 7. Unique Value Proposition
+## 7. Unique Value Proposition — LOCKED 2 June 2026
 
-**Draft UVP:**
+**Locked UVP (Draft 6 — "London as witness"):**
 
-**For couples who quietly dread being photographed on the day that matters most, I am a London elopement photographer who runs the room — pre-shoot conversation, mid-session direction, twenty years of reading people in high-pressure conditions — so the camera disappears and you actually get to be there.**
+> **"Your love has a city. Whether you found it in London, came back to London for it, or are bringing it to London for the first time, my work is to photograph the day so the city stands as a witness to the relationship, not a backdrop for it."**
 
-Why this passes the "sea of sameness" test:
-- "Quietly dread being photographed" is specific — most UVPs say "feel comfortable" or "be yourself" without naming the fear. This names the fear.
-- "Runs the room" is Hadi-specific language pulled directly from reviews ("walked me through," "guided," "directed"). No other London photographer's UVP uses that phrase.
-- "Twenty years of reading people in high-pressure conditions" is a defensible single claim that very few London elopement photographers can make. Photojournalism background is rare in this market.
-- "The camera disappears and you actually get to be there" maps to the nervousness-to-ease transformation, the single strongest signal in the reviews.
+**Why this works:**
+- Speaks to all three locked ICAs in their own emotional language: Sarah and James ("the city you love"), Sophie and Marcus ("came back to London for it"), Emma and Ryan ("bringing it to London for the first time")
+- "Your love has a city" is a sentence almost no one in the competitive set would write — too poetic for a feature-led photographer, too direct for a generic wedding photographer
+- Directly addresses the deepest fear in the Primary ICA profile: *"What if the photographer doesn't understand WHY we chose London?"*
+- No banned words. No em dashes.
 
-No banned words. No "intimate," "moments," "captured," "story," "authentic," "documentary." No "luxury," "cinematic," "high-end."
+**Preserved alternates** (Hadi flagged 2 June for potential revisit):
 
-A second, shorter alternative for use in headlines:
+*Alternate 1 (Draft 4 — the "what you're really choosing" angle):*
+> "You are not just choosing a photographer for your day in London. You are choosing a city you love over a city that is convenient, a day you cannot redo over photographs you might never look at again. I will treat both choices with the seriousness they ask for."
 
-**"London elopement photography for couples who want to be in their day, not perform it."**
+*Alternate 2 (Draft 5 — the "you will be seen" angle):*
+> "Twenty years of photographing people on the most important days of their lives has taught me one thing: the photographs you will not flinch at in ten years are the ones where you were actually seen, not just looked at. That is what I am here to do for you in London."
+
+**Note on the original strategist draft** (replaced 2 June): the strategist's earlier UVP led with "couples who quietly dread being photographed" — Hadi pushed back hard on deficit framing across multiple sections (2 June) and the locked Draft 6 has zero deficit framing.
 
 ---
 
