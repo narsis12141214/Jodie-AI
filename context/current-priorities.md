@@ -3,7 +3,88 @@
 Last updated: 2026-06-04
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## THURSDAY 4 JUNE — Window 2 Day 5 of 60 (TOMORROW)
+## FRIDAY 5 JUNE — Window 2 Day 6 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Phase 2 Website Rebuild — homepage rewrite starts today.** Scaffolding ready: Hero (UVP "Your love has a city..."), Elevation (Character + Problem from Brand Story), Guidance (Guide + Plan), Relief (Avoided Failure + Achieved Success + 100 reviews), CTA "Begin with a message." All in Refined Dreamer voice. Banned-word audit on every draft.
+2. **Hedy + Omid reply check** — Day 4 of 4-day window. If silent, send friendly nudge in Refined Dreamer voice.
+3. **Sitemap status from Arman** — was escalated yesterday with full brief. Check if he's made progress.
+
+Status checks at session start:
+- Hedy email reply?
+- Arman sitemap fix status?
+- Kish staying live + producing cleanly?
+- Cold email reply data this week?
+- 2 new restaurant prospects — any movement?
+- Verify all /london-elopement-packages changes (meta + redirects) still applied post-restore
+
+Phase 1 Brand Foundation: ✓ COMPLETE 4 June (3 days ahead of target)
+- All 11 sections locked
+- Voice: Refined Dreamer (no mixing)
+- Brand Story: full StoryBrand framework
+- Canonical reference: projects/photography/28-05-26/brand-foundation-draft.md
+
+Phase 2 Website Rebuild — Week 4 (5-11 June):
+- **Homepage rewrite** (using locked UVP + three-layer macro structure)
+- Showit/WordPress implementation after lock
+- Submit /london-elopement-packages URL Inspection to GSC for re-crawl (post-restore)
+
+Window 2 Executable Carry-Forwards:
+- Forward Arman dev brief on Click Voice routing (separate from sitemap brief)
+- Restart blog cadence (first post next week, Refined Dreamer voice)
+- WordPress sitemap fix waiting on Arman
+- Update shared/click-ai-agency-packages.md with cross-segment rule + Heny launch tier (Heny PARKED but framework still valid)
+- Hanna re-engage with Option 2
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring (kill condition <4%)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews (now unblocked)
+- Update context/goals.md with Window 2 targets
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings (10+ in 2-3 days)
+- **Heny Aesthetic Clinic** — PARKED 4 June. Cancelled meeting again at last minute despite 48-hour notice rule. Dropped from active pursuit. Can return on her own terms.
+- **2 new restaurant prospects** — early contact, Hadi filtering
+- **Ace/Sabib/Rozay** — silent (de facto losses)
+- **Hanna** — held, ready to re-engage with Option 2
+- **Molana** — partner-wait window passed without re-engagement
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Hedy Rafii + Omid Mohareri** — opener sent 2 June. Engagement 24 June. Day 4 of 4-day watch window (nudge if silent past 6 June)
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- SEO: 7 clicks week ending 5/29, CTR 0.30% (continuing to deteriorate). Rankings improving but CTR is the diagnostic priority.
+- Brand rebuild Phase 1: ✓ COMPLETE 4 June. Phase 2 starts 5 June.
+
+---
+
+## THURSDAY 4 JUNE — Window 2 Day 5 — COMPLETED (substantial day)
+
+Done across the full day:
+- PHASE 1 BRAND FOUNDATION FULLY LOCKED (all 11 sections, 3 days ahead of 7 June target)
+- Brand Voice: Refined Dreamer (no mixing)
+- Brand Story: full StoryBrand drafted, locked section by section
+- Reconciliation: Presence Method retired publicly, three-layer model preserved
+- Validation: kill conditions, Phase 2 handoff ready
+- /london-elopement-packages meta description fixed (Refined Dreamer Draft B applied)
+- SEO weekly review: clicks 10→7, CTR 0.40%→0.30%, rankings improving, CTR is the bottleneck
+- WordPress sitemap escalated to Arman (full brief, can't be fixed from WP Admin)
+- Redirect plugin emergency: deleted accidentally, restored via Showit support database backup. All 2 known redirects + meta fix verified back working.
+- Heny PARKED (dropped from active pursuit after 2nd cancelled meeting)
+- Quality log: 5th entry in confident-claims-from-partial-verification pattern (three SEO verification misses this session)
+
+Not done — carried forward:
+- Phase 2 Website Rebuild homepage rewrite → tomorrow
+- Blog cadence restart → tomorrow
+- All other Window 2 carry-forwards
+
+---
+
+## THURSDAY 4 JUNE — Window 2 Day 5 of 60 (ORIGINAL PLAN)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Brand Foundation Section 9 (Brand Story) — RESUME HERE.** Full StoryBrand drafted in Refined Dreamer voice — Character + Problem (Draft B locked), Guide, Plan (Presence Method), Call to Action, Avoided Failure, Achieved Success. Hadi to review the full draft and lock or refine. Drafts A and C of Character + Problem preserved as alternates.
@@ -56,7 +137,7 @@ Window 2 Executable Carry-Forwards (Days 5-60):
 Agency pipeline:
 - **Haleh Cake** — closed, in onboarding
 - **Kish** — LIVE, AI-first routing, producing bookings
-- **Heny Aesthetic Clinic** — meeting was today 4 June, outcome to surface
+- **Heny Aesthetic Clinic** — PARKED 4 June. Cancelled meeting again at last minute despite Hadi's stated 48-hour notice rule. Pattern: moved meeting twice without sending email/contract despite verbal close 21 May. Hadi has dropped her from active pursuit. She can return on her own terms; will not be targeted further. Click Voice Aesthetics Launch Tier pricing framework (£190 m1-3 / £290 m4+ / £100 setup, no anchor) stays valid for future aesthetics clients.
 - **2 new restaurant prospects** — early contact, Hadi filtering
 - **Ace/Sabib/Rozay** — silent (de facto losses)
 - **Hanna** — held, ready to re-engage with Option 2

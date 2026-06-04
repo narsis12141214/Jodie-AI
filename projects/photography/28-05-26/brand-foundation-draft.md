@@ -3,20 +3,25 @@
 **Drafted by:** Photography Strategist (Jodie)
 **Date:** 28 May 2026
 **Framework:** Maddie Mae / Adventure Instead "Thrive" — `Brand - Creating Your Irresistible Brand.md`
-**Status:** PROGRESS. Sections 1-3 LOCKED with Hadi 28 May 2026. Section 4 IN PROGRESS (workbook Template #1 + 3 differentiators picked, awaiting final lock). Sections 5-11 ahead.
+**Status:** PHASE 1 COMPLETE. All 11 sections LOCKED between 28 May and 4 June 2026 (3 days ahead of 7 June target).
 
-**Locking session 28 May 2026:**
-- Section 1 Vision: LOCKED as Draft 1 (people-first + legacy)
-- Section 2 Mission: LOCKED as Draft 3b (craft-led, broader format, "every shoot I take on")
-- Section 3 Values: LOCKED as modified Set C, 5 values:
-  1. People first, pictures second
-  2. The conversation is the work
-  3. Direction, not documentation (swapped in from Set A)
-  4. The relationship outlasts the shoot
-  5. Earned calm (swapped in from Set A)
-- Section 4 Specialty: LOCKED 1 June. Template #1, three differentiators: (1) twenty years of photojournalism background; (2) a photojournalist's eye trained for both anticipation and composition; (3) ten years of working London — knowing its locations, light, and rhythms.
-- Section 5 (numbered #6 in file) Primary ICA: LOCKED 1 June as "Sarah and James" — London-led, city as third character.
-- Section 6 Secondary ICA + Section 7 UVP + Sections 8-11 ahead.
+**Final lock summary:**
+- Section 1 Vision — LOCKED 28 May (Draft 1, people-first + legacy)
+- Section 2 Mission — LOCKED 28 May (Draft 3b, craft-led, "every shoot I take on")
+- Section 3 Values (5) — LOCKED 28 May (modified Set C: people first / conversation is the work / direction not documentation / relationship outlasts / earned calm)
+- Section 4 Specialty — LOCKED 1 June (Maddie Mae Template #1, 3 differentiators: 20yr photojournalism / eye for anticipation + composition / 10yr working London)
+- Section 5 Primary ICA — LOCKED 1 June ("Sarah and James" — London-led, city as third character)
+- Section 6 Secondary ICA — LOCKED 2 June ("Sophie and Marcus" — Returned-to-London couples)
+- Section 6 Tertiary ICA — LOCKED 2 June ("Emma and Ryan" — Destination couples, no London history)
+- Section 7 UVP — LOCKED 2 June ("Your love has a city...")
+- Section 8 Brand Voice — LOCKED 4 June (Refined Dreamer, no mixing)
+- Section 9 Brand Story — LOCKED 4 June (full StoryBrand: Character + Problem / Guide / Plan / CTA / Avoided Failure / Achieved Success)
+- Section 10 Reconciliation — LOCKED 4 June (Presence Method retired publicly, three-layer model preserved, old tagline retired, nervousness framing retired internally)
+- Section 11 Validation — LOCKED 4 June (kill conditions set, Phase 2 handoff ready)
+
+**Phase 2 starts 5 June 2026:** Website Rebuild (homepage rewrite first, per the photography rebuild action plan at projects/photography/28-05-26/photography-rebuild-action-plan.md).
+
+**Canonical reference rule:** Every piece of customer-facing copy (meta descriptions, inquiry replies, blog posts, captions, pricing page, contact form, contracts, signatures) traces back to THIS document. Cross-check locked elements before clearing copy. Strict banned-word audit on every draft.
 
 A note on method: every section below is built from the story bank, your client reviews, the existing positioning work, and observable pipeline patterns. Where a claim leans on a specific source, the source is referenced (e.g. "story bank entry #7"). Where a claim is inferred from limited data, it is flagged.
 
