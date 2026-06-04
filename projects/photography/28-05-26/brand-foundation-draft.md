@@ -357,34 +357,36 @@ Inferred from the same material plus the pipeline pattern:
 
 ---
 
-## 8. Brand Voice Recommendation
+## 8. Brand Voice — LOCKED 4 June 2026: REFINED DREAMER
 
-**Recommended voice: Straight No Chaser, with one element borrowed from Refined Dreamer.**
+**Locked voice: Refined Dreamer.**
 
-The choice is not "Refined Dreamer" — although the existing copy leans that way. The problem with Refined Dreamer for Hadi is that it puts the photographer in the position of the aesthete writing poetic descriptions of feelings, and Hadi's actual voice is much more direct than that. Look at how he talks in the story bank:
+Per Maddie Mae's framework, all customer-facing copy must commit to ONE voice — mixing creates inconsistency. Hadi locked Refined Dreamer after hearing the same Mission + UVP content written in all 4 voices side by side.
 
-- "A staged shoot has no friction. Weddings do." (entry #8)
-- "You're not paying for 8 hours of photography. You're paying for 20 years of experience compressed into one day." (entry #8)
-- "Most people notice the kiss, the hug, the laugh. I notice the half-second before that." (entry #18)
-- "Stare at each other. A lot." (entry #14)
-- "I don't just see people. I see anticipation." (entry #18)
+**Why Refined Dreamer:**
+- Matches the register of the locked UVP ("Your love has a city")
+- Matches the emotional weight of the decision the couples are making (spending thousands on a wedding day in a city far from family and friends)
+- Provides emotional resonance that Straight No Chaser was too cold to deliver
+- Reads as appropriate to the £1,400-£5,100 commission range
 
-That is Straight No Chaser. Short sentences. Direct claims. Earned authority. No hedging. No flowery construction.
+**Reference paragraph in the locked voice** (Mission + UVP combined):
 
-The Refined Dreamer element to borrow: a willingness to slow down and describe a single specific observation when the moment calls for it — the tube observation, the half-second before the kiss, the breath in. Used sparingly, this is what stops the voice from being purely transactional.
+> Your love has a city. Perhaps you found it in London, walking the same Bloomsbury streets year after year. Perhaps you came back to London for it, the city quietly holding the chapter that shaped you. Perhaps you are bringing it to London for the first time, choosing the city the way some couples choose each other: slowly, deliberately, with the sense that some places hold meaning long before you arrive in them. My work is to photograph the day so the city stands as a witness to the relationship. Twenty years of photojournalism have trained me to notice the half-second before the gesture, the breath before the laugh. The photographs hold what was actually there.
 
-**Three sentences in the chosen voice (Straight No Chaser):**
-- "Most couples arrive nervous. The good ones admit it. The rest of the day takes care of itself."
-- "I have spent twenty years learning how to be in the right place at the right second. That is the job."
-- "I send my couples one thing the night before the shoot: stare at each other, a lot. That is the brief."
+**Critical implementation rules:**
 
-**Contrast — the same idea in the other three voices, to show what we are choosing against:**
+1. **No mixing with other voices.** Inquiry replies, captions, pricing pages, contact thank-you pages, contracts, signatures — all in Refined Dreamer from here forward.
+2. **Banned-word vigilance is non-negotiable.** Refined Dreamer's risk is drifting into the exact cliché vocabulary the brand must avoid (intimate, moments, story, authentic, capture, memories, etc.). Every draft from here forward gets a strict Control-F check before clearing.
+3. **The Hedy opener sent 2 June was Straight No Chaser**, not Refined Dreamer. It still works for that one message, but the inquiry workflow rebuild in Phase 3 will be in Refined Dreamer.
+4. **What "Refined Dreamer" means in practice for this brand:** poetic but considered, sensory but restrained, emotional but not precious. Slightly elevated vocabulary without slipping into wedding-photographer cliché. Pace can breathe. Sentences can extend when emotion calls for it. Specific over abstract — name the Bloomsbury street, not "a quiet street in London."
 
-- **Refined Dreamer:** "There is a quiet, almost imperceptible shift that happens in a couple before the camera comes up — the breath, the lean, the slow turn of a shoulder. That is where the photographs live."
-- **Client BFF:** "Honestly? Most of my couples turn up a bit nervous and I love that, because it means we get to break the ice together before the camera even comes out."
-- **Hype Human:** "These shoots are SO MUCH FUN — by the end you are going to be wondering why you were ever worried about being on camera in the first place!"
+**Discarded options and why:**
 
-The Hype Human voice is obviously wrong for Hadi. The Refined Dreamer is what the existing site already does and it has produced underperforming CTR (0.4% sitewide vs industry 2–3%, per 27 May SEO pipeline). The Client BFF voice is too casual for the £1,400–£5,100 commission range. Straight No Chaser fits the work, the price point, and the way Hadi actually speaks.
+- **Straight No Chaser** — closest to Hadi's natural conversational voice, but reads too cold against the emotional weight of the UVP and the locked ICAs' fears (looking stiff, not being seen, spending money on photos that look like everyone else's). Strong on substance, weaker on emotional warmth.
+- **Client BFF** — too casual for the £1,400-£5,100 commission level. The ICAs are looking for craft and seriousness, not friendliness.
+- **Hype Human** — wrong category, wrong client base.
+
+**Original strategist recommendation** (replaced 4 June): the strategist had recommended Straight No Chaser with a borrowed Refined Dreamer element. Hadi's decision after hearing all 4 voices on the same content was the opposite call — Refined Dreamer as the foundation, with the discipline of Straight No Chaser's short sentences available when needed.
 
 ---
 

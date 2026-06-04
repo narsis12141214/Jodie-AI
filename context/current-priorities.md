@@ -1,9 +1,94 @@
 # Current Priorities
 
-Last updated: 2026-06-02
+Last updated: 2026-06-04
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## WEDNESDAY 3 JUNE — Window 2 Day 4 of 60 (TOMORROW)
+## THURSDAY 4 JUNE — Window 2 Day 5 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Brand Foundation Section 9 (Brand Story) — RESUME HERE.** Full StoryBrand drafted in Refined Dreamer voice — Character + Problem (Draft B locked), Guide, Plan (Presence Method), Call to Action, Avoided Failure, Achieved Success. Hadi to review the full draft and lock or refine. Drafts A and C of Character + Problem preserved as alternates.
+2. **Sections 10 (Reconciliation with Presence Method + three-layer model) and 11 (Validation) ahead.** **Phase 1 lockable by 7 June within reach** — could close tomorrow if clean review session.
+3. **Heny meeting OUTCOME** — was today (4 June Thursday). Hadi to share status at session start. Contract send if her email arrives.
+
+Status checks at session start:
+- Heny meeting outcome + any upsell discussion + contract send status
+- Hedy + Omid email reply? (Day 3 of 4-day window from 2 June; nudge if silent past 6 June)
+- Kish staying live + producing cleanly?
+- Cold email reply data starting to surface this week (4% kill threshold active)
+- 2 new restaurant prospects — any movement?
+
+Phase 1 Brand Foundation status:
+- ✓ Section 1 Vision LOCKED 28 May
+- ✓ Section 2 Mission LOCKED 28 May
+- ✓ Section 3 Values LOCKED 28 May
+- ✓ Section 4 Specialty LOCKED 1 June
+- ✓ Section 5 Primary ICA LOCKED 1 June
+- ✓ Section 6 Secondary ICA LOCKED 2 June
+- ✓ Section 6 Tertiary ICA LOCKED 2 June
+- ✓ Section 7 UVP LOCKED 2 June
+- ✓ Section 8 Brand Voice LOCKED 4 June (Refined Dreamer)
+- ◐ Section 9 Brand Story IN PROGRESS — Character + Problem locked Draft B, full StoryBrand drafted, awaiting Hadi's review
+- ○ Section 10 Reconciliation with Presence Method + three-layer model — ahead
+- ○ Section 11 Validation — ahead
+Draft file: projects/photography/28-05-26/brand-foundation-draft.md
+
+REFINED DREAMER VOICE NOW IN FORCE:
+- ALL customer-facing copy committed to Refined Dreamer (inquiry replies, captions, pricing, contact, contracts, signatures)
+- Banned-word vigilance critical (Refined Dreamer's risk is cliché drift: intimate, moments, story, authentic, capture, memories)
+- Hedy opener sent 2 June was Straight No Chaser; inquiry workflow rebuild in Phase 3 will be in Refined Dreamer
+- Reference paragraph (Mission + UVP combined) in brand foundation file Section 8
+
+Window 2 Executable Carry-Forwards (Days 5-60):
+- Forward Arman dev brief + human-first routing decision for next restaurant
+- /london-elopement-packages immediate fix
+- WordPress sitemap rebuild
+- Update shared/click-ai-agency-packages.md with cross-segment rule + Heny launch tier
+- Hanna re-engage with Option 2
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Restart blog cadence (1 post per 2 weeks Window 2 target)
+- Cold email reply-rate monitoring (kill condition <4%)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews (after brand foundation locks)
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings
+- **Heny Aesthetic Clinic** — meeting was today 4 June, outcome to surface
+- **2 new restaurant prospects** — early contact, Hadi filtering
+- **Ace/Sabib/Rozay** — silent (de facto losses)
+- **Hanna** — held, ready to re-engage with Option 2
+- **Molana** — partner-wait window passed without re-engagement
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Hedy Rafii + Omid Mohareri** — opener sent 2 June. Engagement session 24 June in London. Day 3 of 4-day watch window (silent past 6 June = nudge)
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- SEO: CTR diagnostic priority for Phase 2 lever
+- Brand rebuild Phase 1: 9 of 11 sections locked
+
+---
+
+## WEDNESDAY 3 - THURSDAY 4 JUNE — Window 2 Days 4-5 — COMPLETED
+
+Done across the session:
+- Brand Voice LOCKED Refined Dreamer (after Hadi heard all 4 voices on same content)
+- Brand Story Character + Problem LOCKED Draft B (London as character)
+- Full StoryBrand drafted (Guide / Plan / CTA / Avoided Failure / Achieved Success) in Refined Dreamer voice
+- Brand foundation file updated with voice lock + Brand Story full draft + alternates preserved
+- Phase 1: 9 of 11 sections locked
+
+Not done — carried forward:
+- Brand Story full review and final lock (Hadi to confirm tomorrow)
+- Sections 10 and 11
+- All Window 2 executable items
+- Heny meeting outcome surface
+
+---
+
+## WEDNESDAY 3 JUNE — Window 2 Day 4 of 60 (ORIGINAL PLAN)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Brand Foundation Section 8 (Brand Voice) — RESUME HERE.** Hadi's overnight thinking turns into a pick. Real tension: Refined Dreamer matches the locked UVP ("Your love has a city"), Straight No Chaser matches Hadi's natural conversational voice (story bank, client emails, Hedy opener). Three questions surfaced for him to think through last night. Once locked, push through Sections 9 (Brand Story / StoryBrand framework) → 10 (Reconciliation with Presence Method + three-layer model) → 11 (Validation list). Phase 1 lockable by 7 June still achievable.
