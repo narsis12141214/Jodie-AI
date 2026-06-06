@@ -1,9 +1,88 @@
 # Current Priorities
 
-Last updated: 2026-06-04
+Last updated: 2026-06-06
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## FRIDAY 5 JUNE — Window 2 Day 6 of 60 (TOMORROW)
+## SATURDAY 6 JUNE — Window 2 Day 7 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Phase 2 Homepage rewrite continues — Block 2 (Elevation) needs Hadi's pick.** 3 drafts presented (multi-scenario / problem-led / quiet witness-led). Jodie recommends Draft A. Once locked, move through Blocks 3, 4, 5.
+2. **Two TIER inquiries awaiting reply** — Hedy follow-up sent 5 June (no timeline now, just wait), Max tier-1 reply sent 5 June (£3,500-£5,100 range — high signal, watch closely).
+3. **Showit Support response on sitemap** — sent 5 June, response time unknown.
+
+Status checks at session start:
+- Hedy + Omid email reply?
+- Max email reply? (tier-1 — high priority watch)
+- Showit Support response on sitemap?
+- Cold email reply data this week?
+- 2 new restaurant prospects — any movement?
+
+PHASE 2 HOMEPAGE STATUS:
+- ✓ Block 1 Hero LOCKED 5 June
+  - Headline: "Your love has a city. / Let it live in the photographs the way it lives in you."
+  - Subhead: "London weddings and elopements, photographed so the city stands as a witness to the relationship, not a backdrop for it."
+  - CTA: "Begin with a message"
+- ◐ Block 2 Elevation — 3 drafts presented, awaiting Hadi's pick
+- ○ Block 3 Guidance — ahead (Guide + Plan from Brand Story)
+- ○ Block 4 Relief — ahead (Avoided Failure + Achieved Success + 100 reviews)
+- ○ Block 5 CTA — ahead
+
+WINDOW 2 CARRY-FORWARDS:
+- Restart blog cadence (1 post per 2 weeks Window 2 target — currently behind)
+- Submit /london-elopement-packages URL Inspection to GSC
+- WordPress sitemap fix: pending Showit Support, fallback WordPress freelancer
+- Update shared/click-ai-agency-packages.md with cross-segment rule + Heny launch tier (Heny PARKED but framework valid for future aesthetics clients)
+- Hanna re-engage with Option 2
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring (kill condition <4%)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews (now unblocked)
+- Update context/goals.md with Window 2 targets
+
+ARMAN ROLE — CLARIFICATION LOGGED 5 JUNE:
+- Arman is the AI voice agent name used by Kish's restaurant, NOT a developer
+- Multiple prior session entries incorrectly assigned Arman dev tasks
+- WordPress / Click Desk dev work needs an actual human dev resource (TBD by Hadi) or outsourced
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings
+- **Heny Aesthetic Clinic** — PARKED 4 June. Can return on her own terms.
+- **2 new restaurant prospects** — early contact, Hadi filtering
+- **Ace/Sabib/Rozay** — silent (de facto losses)
+- **Hanna** — held, ready to re-engage with Option 2
+- **Molana** — partner-wait window passed without re-engagement
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Max** — NEW TIER 1 INQUIRY 5 June. 5 September Dorchester + Brompton Oratory wedding, 100 guests. Initial reply with The Glow (£3,500) and The Odyssey (£5,100) pricing sent. POTENTIAL HIGHEST-VALUE SINGLE BOOKING IN PIPELINE HISTORY if it closes.
+- **Hedy Rafii + Omid Mohareri** — opener sent 2 June, follow-up sent 5 June. Awaiting reply (no specific timeline now).
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- SEO: CTR 0.30% continuing to decline (May meta rewrites not moving the needle). Phase 2 work is the lever.
+- Brand rebuild Phase 1: ✓ COMPLETE. Phase 2 Homepage Block 1 (Hero) ✓ LOCKED.
+
+---
+
+## FRIDAY 5 JUNE — Window 2 Day 6 — COMPLETED
+
+Done across the day:
+- Three emails shipped (Showit Support, Hedy follow-up, Max tier-1 reply)
+- Arman role correction logged
+- Phase 2 Block 1 Hero LOCKED (Option 1, two-line headline)
+- Phase 2 Block 2 Elevation drafted (3 versions)
+- Quality log: 6th entry in confident-claims-from-partial-verification pattern (Arman role assumption)
+
+Not done — carried forward:
+- Block 2 Elevation pick
+- Blocks 3, 4, 5
+- All Window 2 carry-forwards
+
+---
+
+## FRIDAY 5 JUNE — Window 2 Day 6 (ORIGINAL PLAN)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Phase 2 Website Rebuild — homepage rewrite starts today.** Scaffolding ready: Hero (UVP "Your love has a city..."), Elevation (Character + Problem from Brand Story), Guidance (Guide + Plan), Relief (Avoided Failure + Achieved Success + 100 reviews), CTA "Begin with a message." All in Refined Dreamer voice. Banned-word audit on every draft.
