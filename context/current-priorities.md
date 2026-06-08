@@ -1,9 +1,91 @@
 # Current Priorities
 
-Last updated: 2026-06-06
+Last updated: 2026-06-08
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## SATURDAY 6 JUNE — Window 2 Day 7 of 60 (TOMORROW)
+## TUESDAY 9 JUNE — Window 2 Day 10 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Phase 2 Homepage Block 2 (Emotional Hook) — Hadi picks Draft 1, 2 or 3.** Drafts in 8 June session log. Once locked, push into Block 3 Myth-Busting (Maddie Mae optional block — natural home for the positioning weapon angle).
+2. **Tactical SEO fix queued — wedding photography packages london.** Position 1.4, 61 impressions, 0 clicks. Whatever URL Google ranks for that query has weak title/meta. 10-min Refined Dreamer rewrite this week.
+3. **Tier-1 watch — Max.** Hadi flagged ghosting suspicion 8 June (4 days silent). One soft nudge or accept loss — decide at session start.
+
+Status checks at session start:
+- Max reply?
+- Hedy + Omid reply?
+- Cold email reply data?
+- 2 new restaurant prospects movement?
+
+PHASE 2 HOMEPAGE STATUS (NEW STRUCTURE — Option 2 LOCKED 8 June):
+- ✓ Block 1 Hero LOCKED 5 June
+- ◐ Block 2 Emotional Hook — 3 drafts presented 8 June, awaiting Hadi's pick. Jodie recommends Draft 3 (question hook + SEO twice).
+- ○ Block 3 Myth-Busting — ahead (Draft B "Most London wedding photography shows you the city, not the relationship" lives here)
+- ○ Block 4 Testimonials batch 1 — 2-3 client quotes with names + photos
+- ○ Block 5 About Me — Hadi intro, 20yr photojournalism, 10yr London, way of working ("I work quietly", documentary posture fair game now)
+- ○ Block 6 Testimonials batch 2 — 2-3 more quotes
+- ○ Block 7 Offer / Pricing intro — Presence Method as plan + CTA to pricing
+- ○ Block 8 How It Works — 3-4 simple steps
+- ○ Block 9 FAQ — optional, SEO surface for long-tail queries
+- ○ Block 10 Final CTA — warm closing + contact form
+
+PHASE 2 TIMELINE: 3-4 week build target (vs 1-2 weeks for old 5-block structure). Trade-off accepted for more SEO surface area + more conversion checkpoints + space for the myth-busting positioning weapon.
+
+WINDOW 2 CARRY-FORWARDS:
+- Restart blog cadence (1 post per 2 weeks Window 2 target — currently behind)
+- Submit /london-elopement-packages URL Inspection to GSC
+- Tactical SEO fix — wedding photography packages london (pos 1.4, 0 clicks — title/meta rewrite)
+- Update shared/click-ai-agency-packages.md with cross-segment rule
+- Hanna re-engage with Option 2 pricing
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring (kill condition <4%)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews
+- Identify actual dev resource for WordPress + Click Desk work
+- Update context/goals.md with Window 2 targets
+
+SITEMAP STATUS: ✓ RESOLVED 8 June (Showit Support). Sub-sitemaps now appearing correctly.
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings
+- **Heny Aesthetic Clinic** — PARKED 4 June
+- **2 new restaurant prospects** — early contact, Hadi filtering
+- **Ace/Sabib/Rozay** — silent (de facto losses)
+- **Hanna** — held, ready to re-engage with Option 2
+- **Molana** — partner-wait window passed without re-engagement
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Max** — Day 4 silent since 5 June tier-1 reply. Hadi suspects ghosting. Decision point at next session.
+- **Hedy + Omid** — silent since 5 June follow-up
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- SEO: HUGE positive week ending 6/5 — clicks 7→14 (+100%), CTR 0.30%→0.69% (+130%), 12+ Page 1 entries this week. Homepage producing 93% of clicks at 0.83% CTR. CTR thesis validated. Phase 2 work will compound this.
+- Brand rebuild Phase 1: ✓ COMPLETE. Phase 2 Homepage Block 1 (Hero) ✓ LOCKED. Block 2 awaiting Hadi's pick.
+
+---
+
+## MONDAY 8 JUNE — Window 2 Day 9 — COMPLETED
+
+Done across the day:
+- N8N GitHub OAuth fixed (Hadi reconnected credential)
+- SEO weekly review week ending 6/5: best single-week movement since rebuild. Clicks doubled (7→14), CTR doubled (0.30%→0.69%), 12+ Page 1 entries. Homepage carrying 93% of clicks at 0.83% CTR.
+- Maddie Mae Home Page Copy/Flow Template pulled and read. Discovered prior Phase 2 macro structure (5-block Elevation/Guidance/Relief/CTA) was Brand-Story-derived, not Maddie-Mae-homepage-derived. Friday's Block 2 drafts were structurally wrong against her template.
+- Phase 2 macro structure CHANGED — Option 2 (8-10 block Maddie Mae fuller template) locked over Option 1 (5-block lean).
+- Banned-word rule RECALIBRATED — not absolute prohibition. Words like documentary, intimate, personal are fair game when most accurate. Vigilance is against cliché crutches, not accurate vocabulary.
+- Block 2 (Emotional Hook) properly drafted in 3 versions: Draft 1 "What you actually want from a London wedding photographer" / Draft 2 "A London wedding photographer who lets the day be the day" / Draft 3 question hook (Jodie recommends).
+- Sitemap RESOLVED (Hadi confirmed via Showit Support).
+
+Not done — carry forward:
+- Block 2 pick
+- Blocks 3-10 of Option 2 homepage
+- All Window 2 carry-forwards (tactical SEO fix, blog cadence restart, packages file update, Hanna re-engage, etc.)
+
+---
+
+## SATURDAY 6 JUNE — Window 2 Day 7 of 60 (STALE)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Phase 2 Homepage rewrite continues — Block 2 (Elevation) needs Hadi's pick.** 3 drafts presented (multi-scenario / problem-led / quiet witness-led). Jodie recommends Draft A. Once locked, move through Blocks 3, 4, 5.
