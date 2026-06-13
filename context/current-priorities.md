@@ -1,9 +1,90 @@
 # Current Priorities
 
-Last updated: 2026-06-08
+Last updated: 2026-06-13
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## TUESDAY 9 JUNE — Window 2 Day 10 of 60 (TOMORROW)
+## SUNDAY 14 JUNE — Window 2 Day 15 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Phase 2 Homepage Block 2 (Emotional Hook) — REVIEW the indirect future-looking draft ("Five years from now, you will open the gallery on a phone.") and lock or ask for alternative angle.** Two redrafts done 12 June after Hadi corrected: (a) "no one is directing you" was inaccurate positioning — he DOES direct, but with emotional prompts not pose instructions; (b) second draft sounded like teaching/method-explaining — wanted indirect, not direct. Current draft is observation-led, future-looking, no method talk. Father-of-the-bride anecdote saved for Block 5 About Me.
+2. **6 restaurant prospects in talks — 2 likely closes on BOOKING SYSTEM ONLY configuration (no voice agent).** Current pricing framework has no spec for this tier. Needs a 15-min pricing conversation before either of those two close. Worth surfacing this week.
+3. **Cold email trending toward kill condition.** Week+ running. Zero substantive replies. Only auto-replies + 2 unsubs. Need to count actual sends vs replies against the 4% threshold — if we are below, kill or pivot the campaign.
+
+Status checks at session start:
+- Restaurants — any progress on the 2 booking-system-only closes?
+- Click Desk app — Hadi heads-down on it, status update when ready
+- Cold email reply data — count this week
+
+PHASE 2 HOMEPAGE STATUS:
+- ✓ Block 1 Hero LOCKED 5 June
+- ◐ Block 2 Emotional Hook — two redrafts done 12 June. Current candidate is indirect/future-looking ("Five years from now..."). Awaiting Hadi's lock or pivot.
+- ○ Block 3 Myth-Busting — ahead
+- ○ Block 4 Testimonials batch 1 — ahead
+- ○ Block 5 About Me — ahead. **Include father-of-the-bride direction-prompt story as anchor anecdote.**
+- ○ Block 6 Testimonials batch 2 — ahead
+- ○ Block 7 Offer / Pricing intro — ahead
+- ○ Block 8 How It Works — ahead
+- ○ Block 9 FAQ — ahead
+- ○ Block 10 Final CTA — ahead
+
+WINDOW 2 CARRY-FORWARDS:
+- Restart blog cadence (1 post per 2 weeks Window 2 target — currently behind)
+- Submit /london-elopement-packages URL Inspection to GSC
+- Tactical SEO fix — wedding photography packages london (pos 1.4, 0 clicks — title/meta rewrite)
+- NEW: Define booking-system-only tier for restaurants + add to packages file
+- Update shared/click-ai-agency-packages.md with cross-segment rule
+- Hanna re-engage with Option 2 pricing
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring (kill condition <4% — trending bad)
+- Monthly checkpoints: 30 June + 30 July
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews
+- Identify actual dev resource for WordPress + Click Desk work
+- Update context/goals.md with Window 2 targets
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings
+- **Heny Aesthetic Clinic** — PARKED 4 June
+- **6 restaurant prospects** — in talks. 2 likely closes on booking-system-only (NEW configuration, no pricing spec yet).
+- **Ace/Sabib/Rozay** — silent (de facto losses)
+- **Hanna** — held, ready to re-engage with Option 2
+- **Molana** — partner-wait window passed without re-engagement
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Max** — REMOVED from active watch 12 June. 7 days silent, accepted as loss.
+- **Hedy + Omid** — REMOVED from active watch 12 June. 7 days silent after follow-up, accepted as cold.
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- No new inbound during 9-12 June gap
+- SEO: huge positive week ending 6/5 banked (clicks +100%, CTR +130%, 12+ Page 1 entries). Next data pull Mon 15 June.
+- Brand rebuild Phase 1: ✓ COMPLETE. Phase 2 Homepage Block 1 ✓ LOCKED. Block 2 awaiting Hadi's review.
+
+---
+
+## FRIDAY 12 JUNE — Window 2 Day 13 — COMPLETED (3-day gap from Mon 8 June)
+
+Done across the session:
+- Morning brief delivered after 3-day gap (Hadi heads-down on Click Desk app)
+- Pipeline status absorbed: Max accepted loss, Hedy + Omid accepted cold, 6 restaurant prospects in talks targeting 2 booking-system-only closes, no new photography inbound, Click Desk advancing
+- Cold email status: zero substantive replies, only auto-replies + 2 unsubs. Trending toward kill condition.
+- Phase 2 Block 2 redrafted TWICE based on Hadi's corrections:
+  - Round 1: corrected "no one is directing you" framing — Hadi DOES direct, with emotional prompts not pose instructions. Father-of-the-bride story shared as the canonical example ("Are you ready to see your beautiful daughter, single for the last time?"). Round 1 redraft: "What if the right London wedding photographer is the one who knows what to say to you, not where to put you?" question hook with prompt-not-pose framing.
+  - Round 2: Hadi corrected Round 1 — sounded like he was teaching his method to a couple. Wanted INDIRECT, not direct. Round 2 redraft: "Five years from now, you will open the gallery on a phone." — observation-led, future-looking, no method talk.
+- Father-of-the-bride anecdote earmarked for Block 5 About Me where it earns the space.
+- New configuration emerging — "booking-system-only" tier for restaurants. Needs pricing definition.
+
+Not done — carried forward:
+- Block 2 lock (Hadi to review indirect draft)
+- All Block 3-10 work
+- All Window 2 carry-forwards
+- Quality observation logged
+
+---
+
+## TUESDAY 9 JUNE — Window 2 Day 10 of 60 (STALE — superseded by 12 June)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Phase 2 Homepage Block 2 (Emotional Hook) — Hadi picks Draft 1, 2 or 3.** Drafts in 8 June session log. Once locked, push into Block 3 Myth-Busting (Maddie Mae optional block — natural home for the positioning weapon angle).
