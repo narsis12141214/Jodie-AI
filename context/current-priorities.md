@@ -1,9 +1,95 @@
 # Current Priorities
 
-Last updated: 2026-06-13
+Last updated: 2026-06-16
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## SUNDAY 14 JUNE — Window 2 Day 15 of 60 (TOMORROW)
+## TUESDAY 16 JUNE — Window 2 Day 17 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **Hadi has "more info to share in the morning" — open with this.** Likely Galleria deal terms, Elan Cafe progression, or restaurant meeting from yesterday afternoon.
+2. **Strategist Session 2 is WEDNESDAY MORNING (17 June).** Tomorrow's work should orient toward preparing for it. Open agenda: Galleria 3-product bundle terms, booking-system-only tier, online ordering add-on, AI-receptionist-as-order-taker for cafes, engagement price testing, courier integration scope (Uber Direct + Stuart), canonical packages drift.
+3. **Phase 2 Homepage Block 2 (Emotional Hook) still awaiting Hadi's review.** Indirect future-looking draft ("Five years from now, you will open the gallery on a phone.") is on the table. Lock or pivot at the next session, otherwise the photography rebuild stalls again.
+
+Status checks at session start:
+- Galleria deal terms (tier, setup, performance anchor, go-live, online ordering scope) — Hadi said "I will update you regarding payment later"
+- Elan Cafe progression
+- Yesterday's restaurant meeting outcome
+- Iranian engagement enquiry — any reply to the £650 quote?
+- Cold email reply data — still trending toward kill condition?
+
+PHASE 2 HOMEPAGE STATUS:
+- ✓ Block 1 Hero LOCKED 5 June
+- ◐ Block 2 Emotional Hook — indirect draft awaiting Hadi's lock
+- ○ Blocks 3-10 — all ahead
+
+URGENT AGENCY WORK (post-Galleria close shift):
+- Strategist Session 2 prep (Wed 17 June morning)
+- Galleria onboarding (Hadi handling)
+- Uber Direct partner deck prep (1-page, lead with merchant pipeline — see brief at projects/agency/15-06-26/uber-direct-uk-partner-brief.md)
+- Click Desk dev resource identification — now CRITICAL PATH for Uber Direct integration
+- Build courier abstraction layer in Click Desk (Uber Direct adapter + Stuart adapter behind one interface)
+- Sandbox dev against public Uber Direct API in parallel with partner application
+
+WINDOW 2 CARRY-FORWARDS:
+- Restart blog cadence (1 post per 2 weeks Window 2 target — currently 2+ weeks behind)
+- Submit /london-elopement-packages URL Inspection to GSC
+- Tactical SEO fix — wedding photography packages london (pos 1.4 → 28.3 in one week — volatility)
+- Update shared/click-ai-agency-packages.md AFTER Strategist Session 2 (booking-only tier, online ordering add-on, courier scope)
+- Update shared/presence-method-packages.md with engagement tier (canonical £680, £650 community pricing test)
+- Hanna re-engage with Option 2 pricing
+- Build full objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring (kill condition <4% — count this week)
+- Monthly checkpoints: 30 June + 30 July (14 days to first)
+- Photography content decision (A/B/C — Jodie recommends C)
+- 3 past clients pick for interviews
+- Identify actual dev resource for WordPress + Click Desk work (CRITICAL given Uber Direct dev work needed)
+- Update context/goals.md with Window 2 targets
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings
+- **Galleria** — CLOSED 15 JUNE — voice receptionist + online booking + online ordering (3 product lines bundled). Deal terms TBC. Setup ahead.
+- **Elan Cafe** — IN TALKS. One of biggest cafes in London. AI receptionist for phone orders. SIGNATURE CLIENT POTENTIAL.
+- **5+ more restaurants** — in active talks
+- **Heny Aesthetic Clinic** — PARKED 4 June
+- **Ace/Sabib/Rozay** — silent (de facto losses)
+- **Hanna** — held, ready to re-engage with Option 2
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Iranian engagement enquiry** — £650 quote sent 15 June. Awaiting reply.
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- SEO week ending 6/12: clicks 14→12 (slight pullback), CTR 0.69%→0.62% (holding May gain), avg position 28.3→26.7 (continued improvement). Last week was outlier — 12+ Page 1 entries reverted. Underlying trend still positive. 0 clicks on top 10 keywords by impressions — all clicks from long tail.
+- Brand rebuild Phase 1: ✓ COMPLETE. Phase 2 Block 1 Hero LOCKED. Block 2 awaiting Hadi's review.
+
+WINDOW 2 PICTURE (UPDATED 15 JUNE):
+- Paid agency clients: **3** (Haleh + Kish + Galleria). Was 2 last session.
+- Active agency talks: **6+** (Elan + 5 restaurants).
+- Path to 10 client target: 7 more needed in 44 days. Mathematically reachable.
+- £2-3K MRR target depends on Galleria + Elan bundle pricing — Strategist Session 2 will clarify.
+
+---
+
+## MONDAY 15 JUNE — Window 2 Day 16 — COMPLETED (massive day)
+
+Done across the day:
+- SEO weekly review for week ending 6/12 — last week's outlier reverted, but underlying trend positive (avg position 26.7, CTR holding 0.62%). 12 clicks, all from long tail. Top 10 keywords by impressions all 0 clicks (head terms too far down).
+- **GALLERIA RESTAURANT CLOSED** — three product lines bundled: voice receptionist + online booking + online ordering. First multi-product agency close. Validates bundle-not-feature thesis.
+- **Elan Cafe in talks** — one of biggest cafes in London. AI receptionist for phone orders. Signature client potential.
+- Iranian engagement enquiry — drafted + sent £650 reply (deliberate community pricing test vs £680 canonical floor)
+- Uber Direct UK partnership brief produced via research agent. Full brief saved at projects/agency/15-06-26/uber-direct-uk-partner-brief.md.
+- Strategist Session 2 scheduled for Wednesday morning (17 June).
+
+Not done — carried forward:
+- Phase 2 Block 2 review (still)
+- All Window 2 carry-forwards
+- Galleria deal terms collection
+
+---
+
+## SUNDAY 14 JUNE — Window 2 Day 15 of 60 (STALE — superseded by 15 June)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Phase 2 Homepage Block 2 (Emotional Hook) — REVIEW the indirect future-looking draft ("Five years from now, you will open the gallery on a phone.") and lock or ask for alternative angle.** Two redrafts done 12 June after Hadi corrected: (a) "no one is directing you" was inaccurate positioning — he DOES direct, but with emotional prompts not pose instructions; (b) second draft sounded like teaching/method-explaining — wanted indirect, not direct. Current draft is observation-led, future-looking, no method talk. Father-of-the-bride anecdote saved for Block 5 About Me.
