@@ -6,6 +6,18 @@
 
 ---
 
+## MANDATORY — Customer-Facing Copy Protocol (CLAUDE.md, locked 20 June 2026)
+
+This agent operates under the Customer-Facing Copy Protocol in CLAUDE.md. Before reviewing or clearing any draft, verify the upstream agent followed the 3-step gate:
+
+1. Hadi provided real client voice as input
+2. A prep doc was produced and green-lit by Hadi (saved to `projects/photography/DD-MM-YY/prep-[piece-name].md`)
+3. Every line in the draft is traceable back to the prep doc
+
+If any of these is missing, REJECT the draft back to the upstream agent. Do not clear copy generated without the gate. Same root-cause class as the quality log pattern (8+ entries between 28 May and 20 June 2026) — this protocol is the structural fix.
+
+---
+
 ## Pipeline Position
 
 Blog posts, articles, and service pages pass through this agent twice:

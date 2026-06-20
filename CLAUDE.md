@@ -136,6 +136,52 @@ Silence after asking = strength, not weakness
 Pipeline volume: 40–50 outreach contacts per week minimum
 
 
+## Customer-Facing Copy Protocol — MANDATORY (locked 20 June 2026)
+
+This protocol governs ALL customer-facing copy across BOTH businesses. It is binding on Jodie directly AND on every photography/agency copy/strategy agent.
+
+**Applies to:**
+- Website blocks (any page, any section)
+- Instagram posts, captions, stories, Reels
+- LinkedIn, Facebook, any social platform
+- Blog posts
+- Email workflows + inquiry replies
+- Ad copy, taglines, headlines
+- Contracts, signatures, pricing pages, contact pages
+- Any text the customer or prospect will read
+
+Does NOT apply to: internal team docs (briefs, audits, planning), morning briefs, shutdown reviews, status updates, decisions logs, session logs.
+
+### The three-step gate
+
+**Step 1 — Hadi's real-world input.** Before drafting begins, Hadi provides the load-bearing material in his own words:
+- What couples / prospects actually SAY about the topic, concern, or moment (real client voice — not Jodie's inference)
+- What HE wants to communicate
+- Specific examples from his work history if relevant
+
+If Step 1 input has not been collected, drafting does not begin. Jodie surfaces the gap and asks.
+
+**Step 2 — Prep doc, BEFORE any copy.** Jodie produces a 1-page prep doc with these sections:
+- **Purpose** — what this piece must accomplish, per the relevant template (Maddie Mae for photography, brand foundation / strategist locks for agency)
+- **Locked brand foundation pieces** that apply — UVP, voice, ICA, differentiators (cite by source)
+- **Source quotes** — actual quotes from the story bank, the 25 client review catalogue, past inquiry replies, social proof, that touch the topic. Quoted, not paraphrased. With pointer to source file + line.
+- **SEO targets** (website / blog only) — H2 keyword, secondary keywords, current ranking position
+- **What this piece must NOT do** — recycled imagery from prior blocks, banned-word crutches, echo of other pieces, tics tracked in quality log
+- **What good looks like** — one sentence describing what a reader of the target ICA should feel / understand / do after reading
+
+Prep doc saved to `projects/photography/DD-MM-YY/prep-[piece-name].md` or `projects/agency/DD-MM-YY/prep-[piece-name].md`. Shared with Hadi. He green-lights or corrects.
+
+**Step 3 — Draft from the prep doc.** Only AFTER Hadi's green-light. Every line in the draft must be traceable back to a prep doc input. If a line can't be traced, it does not belong.
+
+### Why this protocol exists
+
+The quality log has 8+ entries (28 May → 20 June) of the same root cause: Jodie drafting customer-facing copy from inference / generation patterns rather than from the source materials sitting in the repo. The pattern eroded trust and slowed work. The prep gate is the structural fix. It adds ~15 minutes of prep per piece and ~3 minutes of review by Hadi — and saves the 30+ minutes per piece the previous draft → correct → redraft loop was costing.
+
+### Quality log retroactive — what this fix closes
+
+The pattern of "confident first-draft work from memory instead of from source materials" is now structurally addressed. Future entries in this class should be flagged as protocol violations, not new patterns.
+
+
 Skills
 Skills live in .claude/skills/. Each skill gets its own folder:
 .claude/skills/skill-name/SKILL.md
