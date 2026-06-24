@@ -1,9 +1,100 @@
 # Current Priorities
 
-Last updated: 2026-06-16
+Last updated: 2026-06-24
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## TUESDAY 16 JUNE — Window 2 Day 17 of 60 (TOMORROW)
+## THURSDAY 25 JUNE — Window 2 Day 26 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **ELAN CAFE MEETING TODAY (25 June) — signature client potential.** Hadi meeting the owner. If closed, household-name proof point that changes every subsequent restaurant conversation. AI receptionist for phone orders. Surface outcome immediately at session start.
+2. **Maria Khan reactivation — reply sent 24 June.** The Glow £3,500 recommended, no video call offered, additional hour £350. Wedding 1 August 2026 at The Shard. Monitor for response — likely 24-48 hours.
+3. **Customer-Facing Copy Protocol now LIVE.** First real-world application 24 June on Maria reply. Worked once Hadi pushed me back to the Maddie wedding template. Going forward: every customer-facing piece requires Step 1 input + Step 2 prep doc + Step 3 draft. No shortcuts.
+
+Status checks at session start:
+- ELAN CAFE meeting outcome
+- Maria Khan response
+- Galleria deal terms (still TBC — Hadi handling)
+- Strategist Session 2 reschedule (missed Saturday 20 June — needs new slot)
+- Iranian engagement enquiry (15 June, now 9 days silent — soft nudge or accept loss?)
+
+PHASE 2 HOMEPAGE STATUS:
+- ✓ Block 1 Hero LOCKED 5 June
+- ✓ Block 2 Emotional Hook LOCKED 20 June (Option A — "The photographs you will love most...")
+- ◐ Block 3 Myth-Busting — final draft presented 20 June. Awaiting Hadi's lock.
+- ○ Blocks 4-10 ahead. Each needs prep doc per Customer-Facing Copy Protocol.
+
+CUSTOMER-FACING COPY PROTOCOL (locked 20 June, CLAUDE.md):
+- Step 1: Hadi provides real client/prospect voice
+- Step 2: Jodie produces prep doc, Hadi green-lights (saved to `projects/[business]/DD-MM-YY/prep-[piece-name].md`)
+- Step 3: Jodie drafts only after green-light, every line traceable
+- Applies to ALL customer-facing copy (website, social, email, blog, contracts, captions, etc.)
+
+WINDOW 2 CARRY-FORWARDS:
+- Strategist Session 2 reschedule (agenda: Galleria 3-product terms, booking-only tier, online ordering, cafe order-taker, engagement price testing, courier scope, packages drift)
+- Uber Direct partner deck prep + sandbox dev (Click Desk dev resource still CRITICAL PATH)
+- Restart blog cadence (now 3+ weeks behind Window 2 target)
+- Tactical SEO fix — wedding photography packages london
+- Submit /london-elopement-packages URL Inspection to GSC
+- Hanna re-engage with Option 2 pricing
+- Build objection-handling document (extend shared/objections.md)
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring (kill condition <4% — trending bad)
+- **Monthly checkpoint 30 JUNE — 6 DAYS AWAY.** First Window 2 milestone read.
+- Photography content decision (A/B/C)
+- 3 past clients pick for interviews
+- Identify dev resource for WordPress + Click Desk
+- Update context/goals.md with Window 2 targets
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE, AI-first routing, producing bookings
+- **Galleria** — CLOSED 15 JUNE (voice receptionist + online booking + online ordering bundle). Terms TBC.
+- **Elan Cafe** — MEETING 25 JUNE. Signature client potential.
+- **5+ more restaurants** — in active talks
+- **Heny Aesthetic Clinic** — PARKED 4 June
+- **Hanna** — held, ready to re-engage
+- **Ace/Sabib/Rozay/Molana** — silent (de facto losses)
+- **Randeszvous** — DEAD
+
+Photography pipeline:
+- **Maria Khan** — REACTIVATED 23 June after 2 months silent. The Shard wedding 1 August 2026, 50 guests, ceremony + reception. The Glow £3,500 quoted 24 June. Awaiting response.
+- **Iranian engagement enquiry** — silent 9 days. Decision point.
+- **Mozhgan Mehrabi** — shoot complete 22 May, repeat client
+- **Hedy/Omid + Max** — REMOVED from active watch 12 June (cold/lost)
+- SEO: week ending 6/12 showed pullback after 6/5 outlier but underlying trend positive (avg pos 26.7, CTR 0.62%). Next data Mon 29 June.
+- Brand rebuild Phase 1: ✓ COMPLETE. Phase 2 Block 1 LOCKED, Block 2 LOCKED, Block 3 awaiting lock.
+
+WINDOW 2 PICTURE (Day 26):
+- Paid agency clients: **3** (Haleh + Kish + Galleria). 7 to go in 34 days.
+- Active agency talks: **6+** (Elan + 5 restaurants). Need ~50% conversion.
+- Mathematically reachable. Elan would be the 4th close.
+- 30 June checkpoint will give first real read.
+
+---
+
+## TUESDAY 23 - WEDNESDAY 24 JUNE — Window 2 Day 24-25 — COMPLETED
+
+Done across the session:
+- Maria Khan REACTIVATED — came back after 2 months silent with detailed brief (1 Aug Shard wedding, 50 guests, ceremony + reception, 3-6 hours coverage)
+- Maria reply v1 drafted in natural conversational voice (March-April pattern). **Hadi pushed back: "check out the Maddie workbook and ensure we follow the instruction given."** Protocol violation — first since Customer-Facing Copy Protocol locked 20 June.
+- Read Maddie's Wedding Inquiry-to-Booking Email Templates file in full
+- Maria reply v2 redrafted in Refined Dreamer voice per Maddie's structure (personalised opener, venue knowledge demo at Level 34, The Glow recommendation with bullets, Bloom alternative, £350 additional hour rate, no video call per Hadi's instruction, direct path to contract)
+- Hadi sent v2
+
+Key decisions:
+- Maria reactivation: The Glow recommended (£3,500), no video call offered, additional hour £350
+- Conscious deviation from Maddie's strong consult-call recommendation (Hadi's call given Maria's history + warm reactivation context)
+
+Not done — carried forward:
+- All Strategist Session 2 carry-forwards
+- Block 3 lock
+- Iranian engagement enquiry decision
+- Cold email kill condition decision
+
+---
+
+## TUESDAY 16 JUNE — Window 2 Day 17 of 60 (STALE — superseded by later dates)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **Hadi has "more info to share in the morning" — open with this.** Likely Galleria deal terms, Elan Cafe progression, or restaurant meeting from yesterday afternoon.
