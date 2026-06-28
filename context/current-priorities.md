@@ -3,7 +3,86 @@
 Last updated: 2026-06-24
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## THURSDAY 25 JUNE — Window 2 Day 26 of 60 (TOMORROW)
+## MONDAY 29 JUNE — Window 2 Day 30 of 60 (TOMORROW)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **MONTHLY CHECKPOINT 30 JUNE — 1 DAY AWAY.** First real Window 2 milestone. Half-window mark approaching. Pipeline state, MRR projection, photography rebuild progress, kill conditions check.
+2. **Airbnb / Kate — Hadi sent Draft A 28 June (sole channel position).** Watch for Kate's reply. Three possible signals: clean accept (Hadi's read was right), polite push-back (Airbnb procurement is harder than her tone), escalation to legal (policy is fixed and we need to flex or let it go).
+3. **Maria Khan — silent 4 days now** since the £1,750 / 4-hour Vow offer (sent 25 June). Likely deliberating. Soft nudge in 2-3 days if still silent.
+4. **Elan Cafe meeting (25 June) — outcome STILL not surfaced by Hadi.** Multiple sessions have passed. Surface at session start.
+
+Status checks at session start:
+- Elan Cafe meeting outcome (still pending update)
+- Kate / Airbnb response
+- Maria Khan response
+- Galleria deal terms (still TBC)
+- Iranian engagement enquiry — silent 13 days now, accept loss
+- Strategist Session 2 — STILL NOT HELD. Needs to be locked.
+
+PHASE 2 HOMEPAGE STATUS:
+- ✓ Block 1 Hero LOCKED 5 June
+- ✓ Block 2 Emotional Hook LOCKED 20 June
+- ◐ Block 3 Myth-Busting — final draft 20 June. STILL awaiting Hadi's lock (9 days now).
+- ○ Blocks 4-10 ahead.
+
+WINDOW 2 CARRY-FORWARDS:
+- 30 June monthly checkpoint prep
+- Strategist Session 2 (overdue)
+- Uber Direct partner deck + sandbox dev
+- Restart blog cadence (4+ weeks behind)
+- Tactical SEO fix — wedding photography packages london
+- Submit /london-elopement-packages URL Inspection to GSC
+- Hanna re-engage with Option 2 pricing
+- Build objection-handling document
+- Record 60-sec aesthetic + fitness clips
+- Lovable cleanup
+- Cold email reply-rate monitoring
+- Photography content decision (A/B/C)
+- 3 past clients pick for interviews
+- Identify dev resource for WordPress + Click Desk
+- Update context/goals.md with Window 2 targets
+
+Agency pipeline:
+- **Haleh Cake** — closed, in onboarding
+- **Kish** — LIVE
+- **Galleria** — CLOSED 15 JUNE (terms TBC)
+- **Elan Cafe** — MEETING outcome from 25 June pending
+- **5+ more restaurants** — in talks
+- **Heny** — PARKED
+- **Hanna** — held
+- **Ace/Sabib/Rozay/Molana** — silent (de facto losses)
+
+Photography pipeline:
+- **Maria Khan** — £1,750 / 4hr Vow offer sent 25 June. Silent 4 days.
+- **Airbnb / Kate** — Hadi sent Draft A 28 June. Awaiting response.
+- **Iranian engagement enquiry** — silent 13 days. Accept loss.
+- **Mozhgan** — repeat client, complete
+- SEO: weekly data pulls Monday morning. Next data Mon 29 June.
+- Brand rebuild Phase 2 Block 3 still awaiting lock.
+
+WINDOW 2 PICTURE (Day 30 — half-window mark):
+- Paid agency clients: **3** (Haleh + Kish + Galleria). 7 to go in 30 days.
+- Active agency talks: 6+ (Elan + 5 restaurants + Airbnb deal on photography side).
+- Mathematically reachable but pressure rising.
+- 30 June checkpoint will give first real read.
+
+---
+
+## THURSDAY 25 - SUNDAY 28 JUNE — Window 2 Day 26-29 — COMPLETED
+
+Done across the multi-day stretch:
+- Airbnb / Kate back-and-forth: Kate asked for direct contact with model (DocuSign + payment to her). Jodie flagged industry-norm read + recommended facilitation (Draft B). Hadi pushed back: he has model release, model is a friend, he wants sole channel. Hadi sent Draft A 28 June.
+- Maria Khan offered £1,750 / 4-hour Vow (Vow + 1 paid hour at £350 + 1 gifted hour as gesture). Sent 25 June. Silent 4 days at session close.
+- Elan Cafe meeting 25 June — outcome NOT surfaced by Hadi across multiple sessions.
+- Iranian engagement enquiry — silent 13 days. Effectively lost.
+- Strategist Session 2 — still not held. Carry-forward into next week.
+
+Not done:
+- All carry-forwards remain pending. Block 3 lock. Strategist Session 2.
+
+---
+
+## THURSDAY 25 JUNE — Window 2 Day 26 of 60 (STALE — superseded)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **ELAN CAFE MEETING TODAY (25 June) — signature client potential.** Hadi meeting the owner. If closed, household-name proof point that changes every subsequent restaurant conversation. AI receptionist for phone orders. Surface outcome immediately at session start.
