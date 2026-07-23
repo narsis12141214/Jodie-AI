@@ -1,1 +1,12 @@
-{}
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m pip install reportlab --quiet)",
+      "Bash(python3 -c \"import reportlab; print\\(reportlab.Version\\)\")",
+      "Bash(python3 -m venv /Users/hadi/Developer/Jodie-AI/.venv)",
+      "Bash(/Users/hadi/Developer/Jodie-AI/.venv/bin/pip install *)",
+      "Bash(/Users/hadi/Developer/Jodie-AI/.venv/bin/python -c \"import reportlab; print\\('reportlab', reportlab.Version\\)\")",
+      "Bash(/Users/hadi/Developer/Jodie-AI/.venv/bin/python generate-elan-proposal.py)"
+    ]
+  }
+}
