@@ -1,29 +1,31 @@
 # Current Priorities
 
-Last updated: 2026-07-24
+Last updated: 2026-07-24 (end of day)
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## FRIDAY 25 JULY — Window 2 Day ~56 of 60 (TOMORROW, 5 days to window close)
+## SATURDAY 25 JULY — Window 2 Day ~56 of 60 (TOMORROW, 5 days to window close)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
-1. **ELAN PROPOSAL v3 — Elan brand palette rebuild.** Hadi to send screenshot of Elan Cafe website. Rebuild PDF from charcoal/gold to Elan's actual brand colours. Everything else in v2 stays (all 8 copy adjustments, layout, dedicated account manager, £0.25/min overage, 85% usage alert, 24/7 + concurrent answering, Stripe payout cadence, kitchen order-image, IP/licence, £5,000 + £500/mo). Ship v3 same day so Ali can be sent it fast — go-live target 1 August is 7 days out.
-2. **Samantha Salvati follow-up decision.** Day-3 follow-up drafted 23 July but I didn't confirm with Hadi whether it was sent. Silent since 18 July inquiry. Day-7 mark = 25 July. Either send the day-3 draft tomorrow OR fold it into a day-7 send. Ask Hadi at session start.
-3. **Window 2 closes 30 July — 5 days out.** Verified state: 3 paid agency clients (Haleh + Galleria in trial + Kish LIVE), Elan proposal out ≈ 24-25 July, cold email running but dead per Hadi ("not delivering anything"), Zizi's pitches failing on SevenRooms/OpenTable objection, Hanna + Heny still holding. Photography: Kate parked (project on hold), Maria Khan lost, only Samantha in pipeline. Final read against original 10-client target coming — the honest number is 3 and the Elan close is the swing.
+1. **COLD EMAIL REWRITE — Hadi's explicit priority for tomorrow.** Lead with live proof (Kish LIVE, Galleria in trial, Elan quoted at £6,500). Pre-empt the SevenRooms/OpenTable objection in the copy itself ("this isn't another booking system, it answers the calls your booking system can't"). Ship a full rewrite: subject lines + 3-touch sequence, ideally across all 4 segments (restaurants/dental/aesthetics/fitness). 2-week test, then kill or scale decision.
+2. **"Other things we've been delaying" — surface at session start.** Hadi flagged plural items. Ask him which specifically. Candidates: Zizi SevenRooms/OpenTable objection one-pager, Click Pro briefing from Hadi, remaining re-brief items (Block 3 lock, Strategist Session 2, SEO state, blog cadence, 30 June checkpoint). Let Hadi name them.
+3. **Elan / Ali reply watch.** Proposal sent 24 July with yes/no ask ("Have a proper read this week, then let's lock in the demo date with your business partner"). If silent by 31 July, surface for nudge. Any objection / questions / partner-demo scheduling → dispatch or handle in-session.
+4. **Samantha reply watch.** Day-6 follow-up sent 24 July in the SAME thread as the 18 July inquiry reply. If still silent by 1 August, Maddie workbook day-14 close-out lands then ("wishing you both all the best" style, same thread).
 
-Standing carry-forwards (mostly still pending from June, may be superseded post-re-brief):
-- Cold email rewrite (lead with Kish/Galleria/Elan live proof, pre-empt SevenRooms/OpenTable objection in copy) + Zizi SevenRooms/OpenTable objection one-pager. Both slated for after Elan ships.
-- Full re-brief still owed for 29 June-17 July + 18-22 July gap (partial re-brief received 23 July on Elan, agency state, Kate, Maria — Block 3 lock, Strategist Session 2, SEO state, blog cadence still unclear).
-- Click Pro briefing — Hadi to walk Jodie through it (hospitality app: booking, POS, loyalty). Needed for pitch language across all restaurant proposals.
+Live pipeline (as of 24 July close):
+- **Agency paid: 3** — Haleh onboarding + Kish LIVE + Galleria 30-day trial.
+- **Agency proposal OUT: Elan** — £6,500 implementation + £500/mo, 12-month partnership, 1 August go-live target, roadmap section attached, awaiting Ali's reply + partner demo date.
+- **Agency parked: Hanna, Heny.**
+- **Agency lost/dead: Ace, Sabib, Rozay, Molana, Randeszvous** + 5+ restaurant prospects lost on SevenRooms/OpenTable objection.
+- **Cold email: dead in effect** — final rewrite attempt tomorrow, 2-week test, then kill.
+- **Photography inbound: Samantha Salvati** (Miami, 10 Nov couples session, £680 quoted, day-6 follow-up sent 24 July).
+- **Photography lost/parked: Kate/Airbnb** (on hold their side), **Maria Khan** (gone).
+
+Standing carry-forwards (still open):
+- Zizi SevenRooms/OpenTable objection one-pager (same strategic problem as cold email rewrite, natural pair).
+- Click Pro briefing from Hadi — needed for pitch language across all restaurant proposals.
+- Re-brief still owed: Block 3 lock, Strategist Session 2, SEO state, blog cadence, 30 June checkpoint results.
 - Galleria: 30-day trial running, POS interest, Click Desk app in Apple review queue.
-
-Pipeline snapshot (23 July, as briefed):
-- **Agency paid: 3** (Haleh onboarding + Kish LIVE + Galleria in 30-day trial). Elan proposal imminent.
-- **Agency active: Elan** (proposal v3 ships tomorrow, second-partner demo pending, go-live 1 Aug).
-- **Agency parked: Hanna** (owner still not sure, needs more time), **Heny** (not ready yet).
-- **Agency lost/dead: Ace, Sabib, Rozay, Molana, Randeszvous** (silent or classified problem-makers), plus 5+ restaurant prospects Zizi couldn't close on SevenRooms/OpenTable objection.
-- **Cold email: dead in effect** — running but zero substantive replies. Kill or rewrite decision on the table (Hadi opted for rewrite once Elan is out).
-- **Photography inbound: Samantha Salvati only** (Miami, 10 Nov couples session, £680 quoted, silent since 18 July).
-- **Photography lost/parked: Kate/Airbnb** (project on hold), **Maria Khan** (silent, gone).
+- Window 2 final read: 30 July, 5 days out. Honest number is 3 paid + Elan swing.
 
 ---
 
