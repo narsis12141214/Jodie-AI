@@ -1,15 +1,16 @@
 # Current Priorities
 
-Last updated: 2026-07-24 (end of day)
+Last updated: 2026-07-28 (Tue, end of brief check-in)
 Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
 
-## SATURDAY 25 JULY — Window 2 Day ~56 of 60 (TOMORROW, 5 days to window close)
+## WEDNESDAY 29 JULY — Window 2 Day 60 of 60 (TOMORROW, WINDOW CLOSES 30 JULY = 1 day after)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
-1. **COLD EMAIL REWRITE — Hadi's explicit priority for tomorrow.** Lead with live proof (Kish LIVE, Galleria in trial, Elan quoted at £6,500). Pre-empt the SevenRooms/OpenTable objection in the copy itself ("this isn't another booking system, it answers the calls your booking system can't"). Ship a full rewrite: subject lines + 3-touch sequence, ideally across all 4 segments (restaurants/dental/aesthetics/fitness). 2-week test, then kill or scale decision.
-2. **"Other things we've been delaying" — surface at session start.** Hadi flagged plural items. Ask him which specifically. Candidates: Zizi SevenRooms/OpenTable objection one-pager, Click Pro briefing from Hadi, remaining re-brief items (Block 3 lock, Strategist Session 2, SEO state, blog cadence, 30 June checkpoint). Let Hadi name them.
-3. **Elan / Ali reply watch.** Proposal sent 24 July with yes/no ask ("Have a proper read this week, then let's lock in the demo date with your business partner"). If silent by 31 July, surface for nudge. Any objection / questions / partner-demo scheduling → dispatch or handle in-session.
-4. **Samantha reply watch.** Day-6 follow-up sent 24 July in the SAME thread as the 18 July inquiry reply. If still silent by 1 August, Maddie workbook day-14 close-out lands then ("wishing you both all the best" style, same thread).
+1. **FULL TO-DO REASSESSMENT + NEW PLAN.** Hadi's explicit ask (28 July). Walk the full carry-forward list at session start, prioritise fresh against current state (Window 2 closing, Elan pending, cold email dead, several delayed items still open). Output: a rewritten priority list Hadi signs off on before we execute anything else.
+2. **COLD EMAIL REWRITE — the working session.** Hadi wants to sit down properly and build it. Lead with live proof (Kish LIVE, Galleria trial, Elan quoted £6,500), pre-empt SevenRooms/OpenTable objection in the copy itself. Full rewrite: subject lines + 3-touch sequence, ideally across all 4 segments (restaurants/dental/aesthetics/fitness). 2-week test window, then kill or scale.
+3. **ELAN / ALI — Day 4 silent as of 28 July close.** Proposal sent Fri 24 July, Hadi sent a written follow-up + attempted a phone call Mon 27 July, no talk connected. Not yet at the 7-day silent-yes kill mark. **1 August go-live is 4 days out and mathematically slipping.** Options if still silent by end of Wed 29 July: (a) accept slip to 8 August or beyond, (b) short WhatsApp text, (c) in-person if Hadi is near Elan's location, (d) accept the deal may be internally stalled and wait. Decide Wednesday.
+4. **Samantha silent since 18 July.** Day-6 follow-up sent 24 July in the SAME thread. Maddie workbook day-14 close-out lands Fri 1 August if still silent.
+5. **30 JULY WINDOW CLOSE = 2 DAYS AWAY.** First hard Window 2 read due. Honest count: 3 paid agency clients (Haleh + Kish + Galleria trial) against original 10-client target. Elan is the swing that hasn't closed yet.
 
 Live pipeline (as of 24 July close):
 - **Agency paid: 3** — Haleh onboarding + Kish LIVE + Galleria 30-day trial.
