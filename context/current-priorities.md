@@ -1,7 +1,35 @@
 # Current Priorities
 
-Last updated: 2026-07-28 (Tue, end of brief check-in)
-Note: Sections below the WEDNESDAY 13 MAY block are stale (last full refresh 17 April). Full rewrite pending — Hadi to schedule.
+Last updated: 2026-08-11 (Mon evening, brief close-out — pending Hadi full re-brief)
+Note: This file is significantly stale below. Full rewrite pending on Hadi's re-brief. Window 2 (which closed 30 July) never got a final read. Window 3 has begun with no formal targets set.
+
+## TUESDAY 12 AUGUST — Window 3 open, no formal targets yet
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **HADI HAS PENDING UPDATES.** He flagged plural updates at 11 Aug close-out ("been a tremendous time, been busy with lots of stuff") but did not share them yet. Do NOT proceed with any planning or execution before capturing the re-brief. Priority questions to walk him through: (a) LaMure — has the contract been signed and £350 setup fee received? Any changes to the deal terms since 8 Aug? (b) Second aesthetic clinic — brief still owed (Hadi mentioned 3 new clients on 8 Aug: 2 aesthetics + 1 restaurant; only LaMure walked through). (c) First restaurant client — brief still owed. (d) Elan / Ali — silent since ~27 July, now ~15 days past. 1 Aug go-live target is 10 days overdue. Status? (e) Samantha — silent since 18 July inquiry (day-6 follow-up sent 24 July). Workbook day-14 close-out was due 1 Aug — was it sent? (f) All other stale items still open.
+2. **Set Window 3 targets after the re-brief.** Window 2 (1 June – 30 July) closed without a final read. Rough count at 24 July: 3 paid agency clients (Haleh + Kish + Galleria trial) vs original 10-client target. Elan is still the swing. LaMure now adds to the pipeline (contract sent, awaiting signature). Need to agree a fresh Window 3 target set + cadence once real state is known.
+3. **LaMure onboarding sequence if signed.** If the contract has been signed since 8 Aug: setup work begins immediately per the payment schedule; through August we configure voice agent + Click Desk Pro + calendars + payments + ad accounts; a few days before 1 September we run the full onboarding session with practitioners/doctors; team stays close through the first weeks of go-live. Confirm this timeline holds or if the 1 September go-live date has shifted.
+
+Standing carry-forwards (still open, likely revisited after re-brief):
+- Cold email rewrite (lead with Kish/Galleria/Elan/LaMure live proof; pre-empt SevenRooms/OpenTable objection). Never happened Fri 25 July or since.
+- Zizi SevenRooms/OpenTable objection one-pager.
+- Click Pro briefing from Hadi.
+- Second aesthetic clinic + restaurant client briefs.
+- Re-brief still owed on the June-July gap: Block 3 lock, Strategist Session 2, SEO state, blog cadence, 30 June checkpoint results.
+- Window 2 final read (never produced).
+
+Live pipeline (as of 8 Aug, largely unverified since):
+- **Agency paid: 3** — Haleh onboarding + Kish LIVE + Galleria (30-day trial state uncertain).
+- **Agency contract SENT: LaMure Aesthetic Clinic (Chelsea)** — £1,690/mo bundle (£1,490 first month with £200 welcome credit) + £350 setup + 12-month term + rolling 30-day notice. 4 service lines: Meta+WhatsApp ads (£400 ad spend inclusive) + Google ads (£400 ad spend inclusive) + Content creation (£400) + Voice + Click Desk Pro (£490). Target go-live 1 Sept 2026. Signature status unknown as of 11 Aug. Contract, cover email, WhatsApp welcome message all delivered 8 Aug.
+- **Agency proposal OUT: Elan** — £6,500 implementation + £500/mo, silent since ~27 July (15 days past kill mark). Status unknown.
+- **Agency parked: Hanna, Heny.**
+- **Agency lost/dead: Ace, Sabib, Rozay, Molana, Randeszvous** + 5+ restaurant prospects on SevenRooms/OpenTable objection.
+- **Agency pending brief: 1 more aesthetic clinic + 1 restaurant.**
+- **Cold email: dead in effect** — rewrite never happened.
+- **Photography inbound: Samantha Salvati** (Miami, 10 Nov couples, £680 quoted). Day-6 follow-up sent 24 July. Day-14 close-out due 1 Aug — sent status unknown.
+- **Photography lost/parked: Kate/Airbnb** (on hold their side), **Maria Khan** (gone).
+
+---
 
 ## WEDNESDAY 29 JULY — Window 2 Day 60 of 60 (TOMORROW, WINDOW CLOSES 30 JULY = 1 day after)
 
