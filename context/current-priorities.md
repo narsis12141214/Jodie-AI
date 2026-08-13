@@ -1,9 +1,43 @@
 # Current Priorities
 
-Last updated: 2026-08-11 (Mon evening, brief close-out — pending Hadi full re-brief)
-Note: This file is significantly stale below. Full rewrite pending on Hadi's re-brief. Window 2 (which closed 30 July) never got a final read. Window 3 has begun with no formal targets set.
+Last updated: 2026-08-13 (Thu evening close-out)
+Note: This file is significantly stale below. Full rewrite pending. Window 2 (which closed 30 July) never got a final read. Window 3 has begun with no formal targets set — pending Hadi's decision.
 
-## TUESDAY 12 AUGUST — Window 3 open, no formal targets yet
+## THURSDAY 14 AUGUST — TOMORROW
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **LAMURE — Thursday is DEADLINE day (today per Hadi).** Contract sent 8 Aug. Hadi's read was: LaMure would come back by Thursday 14 Aug with either signed + £350 setup fee, or we move on. Watch the day. If signed: kick off Aug build sequence immediately for 1 Sept go-live. If silent by EOD: accept loss cleanly (no chase per Hadi's stated position).
+2. **STEVA BOOKING PAYMENT + AGREEMENT — Hadi sending the booking contract Thursday morning.** New photography booking confirmed 13 Aug: Steva Alexander & Percy Jacks, The Bloom £2,300 for 10 October 2026 (Bexleyheath, civil ceremony, historic house, immediate family). Repeat client. Deposit rate confirmed 30% = **£690**. Hadi has the standard booking contract, sends in the morning. If Hadi wants help drafting the deposit request email to accompany the contract, we can do that at session start.
+3. **KANAKA REPLY WATCH — Greenwich engagement session 22 Aug 4pm.** She pushed back on 90min/£680 asking for shorter/cheaper. We held the line 12 Aug: framed 90-min minimum as commitment to craft not pricing, active CTA to secure the date, gentle offramp if not aligned. Awaiting her response. Day-2 tomorrow (14 Aug). Timing is CRITICAL: shoot is 22 Aug, so if silent past day 5-6 (17-18 Aug) we've effectively lost the booking. Phone call escalation at day 5 if still silent.
+4. **ELAN — technical brief for IT meeting still owed.** Ali confirmed 12 Aug: they're OK with the price, waiting for partner #2 back from holiday, IT team meeting to discuss integrations/security. Hadi confirmed we should prep the technical brief. Not started yet — queue for tomorrow if time allows after LaMure decision + Steva agreement work.
+5. **WEBSITE SPAM FILTER — real issue flagged 12 Aug.** Steva's original form inquiry landed in Hadi's Gmail spam folder. She reached out again via direct email or would have been lost. Worth 15 minutes of Hadi's time to: (a) check spam folder for other missed inquiries, (b) safelist the form-sender address so this stops happening. Not fixed yet.
+
+Standing carry-forwards (still open):
+- Chic Salon & Clinic (Willesden) contract draft — £690/mo (£400 website + £400 IG content + £290 voice + Click Desk Pro) + £400 website one-off. Contract term structure, voice minutes/overage, and Chic service categories all pending Hadi's confirmation before drafting.
+- Monsieur (North Finchley) restaurant contract draft — £290/mo voice + Click Desk Pro + £350 website one-off. Same open questions as Chic.
+- Elan technical brief for IT meeting (queued).
+- Zizi SevenRooms/OpenTable objection one-pager.
+- Cold email rewrite (never happened).
+- Click Pro briefing from Hadi.
+- Window 3 targets — still not set (deferred by Hadi 12 Aug: "let's talk about it later").
+- Re-brief still owed on the June-July gap: Block 3 lock, Strategist Session 2, SEO state, blog cadence, 30 June checkpoint results.
+- Photography ops for Steva: planning conversation to diarise for week of 22 Sept (2-3 weeks pre-shoot per Maddie workbook); style guide PDF (does Hadi have one, or do we build?).
+
+Live pipeline (as of 13 Aug close):
+- **Agency paid: 3** — Haleh onboarding + Kish LIVE + Galleria (30-day trial state uncertain).
+- **Agency contract SENT: LaMure Aesthetic Clinic (Chelsea)** — £1,690/mo bundle + £350 setup + 12-month term. Awaiting sign-or-move-on decision by Thursday 14 Aug (Hadi's own read).
+- **Agency proposal OUT: Elan** — £6,500 implementation + £500/mo. NOT silent-stalled: on price, waiting for partner return from holiday + IT team due diligence meeting. Technical brief owed on our side.
+- **Agency parked: Hanna, Heny.**
+- **Agency lost/dead: Ace, Sabib, Rozay, Molana, Randeszvous, Samantha** + 5+ restaurant prospects on SevenRooms/OpenTable objection.
+- **Agency pending contract drafts: Chic Salon & Clinic (Willesden), Monsieur (North Finchley).**
+- **Cold email: dead in effect** — rewrite never happened.
+- **PHOTOGRAPHY BOOKED: Steva Alexander & Percy Jacks** — **The Bloom £2,300, 10 Oct 2026, Bexleyheath civil ceremony at historic house.** Repeat client. Deposit 30% = £690. Booking contract from Hadi Thursday morning. Planning conversation to diarise week of 22 Sept.
+- **Photography inbound (in play): Kanaka Bhamidipaty & Prashant** — Greenwich engagement session 22 Aug 4pm, £680 (Presence Method pre-wedding standalone). Pushed back on length/price, we held. Awaiting reply. CRITICAL timing — shoot is 9 days out.
+- **Photography lost/parked: Kate/Airbnb** (on hold their side), **Maria Khan** (gone), **Samantha Salvati** (closed as lost per Hadi 12 Aug).
+
+---
+
+## TUESDAY 12 AUGUST — Window 3 open, no formal targets yet (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **HADI HAS PENDING UPDATES.** He flagged plural updates at 11 Aug close-out ("been a tremendous time, been busy with lots of stuff") but did not share them yet. Do NOT proceed with any planning or execution before capturing the re-brief. Priority questions to walk him through: (a) LaMure — has the contract been signed and £350 setup fee received? Any changes to the deal terms since 8 Aug? (b) Second aesthetic clinic — brief still owed (Hadi mentioned 3 new clients on 8 Aug: 2 aesthetics + 1 restaurant; only LaMure walked through). (c) First restaurant client — brief still owed. (d) Elan / Ali — silent since ~27 July, now ~15 days past. 1 Aug go-live target is 10 days overdue. Status? (e) Samantha — silent since 18 July inquiry (day-6 follow-up sent 24 July). Workbook day-14 close-out was due 1 Aug — was it sent? (f) All other stale items still open.
