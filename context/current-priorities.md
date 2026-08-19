@@ -1,9 +1,41 @@
 # Current Priorities
 
-Last updated: 2026-08-13 (Thu evening close-out)
+Last updated: 2026-08-19 (Tue evening close-out)
 Note: This file is significantly stale below. Full rewrite pending. Window 2 (which closed 30 July) never got a final read. Window 3 has begun with no formal targets set — pending Hadi's decision.
 
-## THURSDAY 14 AUGUST — TOMORROW
+## WEDNESDAY 20 AUGUST — PIVOT DAY: SEO + CONTENT CREATION FOR BOTH BUSINESSES
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **HADI'S EXPLICIT FOCUS FOR TOMORROW: SEO + content creation for BOTH Photography AND Click AI Agency.** Big axis shift from the client-close / contract cadence of the last two weeks. At session start, help Hadi pick a starting point:
+   - Photography SEO (blog cadence, existing 4 posts, GSC state) OR photography content (@hadyyazdani IG rebuild, reels)?
+   - Agency SEO (landing pages, blog for agency) OR agency content (@clickaiagency IG + LinkedIn, case studies)?
+   - New case-study material available: **Chic Salon & Clinic** (closed 14 Aug, in delivery — first proper full-service aesthetics case study coming). LaMure lost so no case study there. Elan pending sign-off.
+   - Photography case study: **Steva booking** (repeat client, upsold £1,400 → £2,300 via educational reply — real proof point that the workbook + Refined Dreamer voice works). Also Mozhgan's Chelsea Flower Show shoot from 22 May.
+2. **Elan IT meeting Friday 21 August 11:30 with Nader (Head of IT) + Ali CC'd — 2 DAYS AWAY.** Waiting on: (a) Nader's reply confirming what he most wants to cover, (b) coder briefing from Hadi so I can prep with real technical detail not placeholders. Both are load-bearing for a good meeting. Coder briefing especially — if Wed passes without it, Thu becomes the last chance.
+3. **Monsieur restaurant contract still to draft** — all deal info gathered 14 Aug but never built. Fastest quick-win when Hadi has 20 mins.
+4. **Chic contract signature status** — was drafted 14 Aug but I don't know if it was sent/signed. Ask at session start. Chic has already paid £400 for the website and work is in progress WITHOUT paper. Same lesson as LaMure applies — get it signed.
+
+Standing carry-forwards (still open):
+- Cold email rewrite (3+ weeks overdue, still never happened)
+- Zizi SevenRooms/OpenTable objection one-pager (natural pair with cold email)
+- Click Pro briefing from Hadi
+- Website spam filter fix (Hadi's own ops, real leaked-leads risk until done)
+- Window 3 targets — still not set. Given actuals so far this window, worth a 15-min reset conversation
+- Photography ops for Steva: Mon 21 Sept diarise planning conversation trigger, Wed 9 Sept diarise balance reminder (£1,610), style guide PDF (existing or build?)
+
+Live pipeline (as of 19 Aug close):
+- **Agency paid: 4** — Haleh onboarding + Kish LIVE + Galleria (30-day trial state uncertain) + **Chic Salon & Clinic (Willesden) — CLOSED 14 Aug, in delivery**.
+- **Agency in play: Elan** — IT meeting Fri 21 Aug 11:30. On price. Waiting for partner return + IT walkthrough.
+- **Agency pending contract draft: Monsieur (North Finchley) restaurant** — £340/mo + £350 website + 1-month trial.
+- **Agency parked: Hanna, Heny.**
+- **Agency lost/dead: Ace, Sabib, Rozay, Molana, Randeszvous, Samantha, LaMure Aesthetic Clinic (Chelsea).**
+- **Cold email: dead in effect** — rewrite never happened.
+- **PHOTOGRAPHY BOOKED: Steva Alexander & Percy Jacks** — The Bloom £2,300, 10 Oct 2026, LOCKED (signed + £690 deposit paid). Small discount offered per Hadi's call (does not affect the win record).
+- **Photography lost/parked: Kate/Airbnb, Maria Khan, Samantha Salvati, Kanaka Bhamidipaty.**
+
+---
+
+## THURSDAY 14 AUGUST — TOMORROW (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **LAMURE — Thursday is DEADLINE day (today per Hadi).** Contract sent 8 Aug. Hadi's read was: LaMure would come back by Thursday 14 Aug with either signed + £350 setup fee, or we move on. Watch the day. If signed: kick off Aug build sequence immediately for 1 Sept go-live. If silent by EOD: accept loss cleanly (no chase per Hadi's stated position).
