@@ -1,0 +1,564 @@
+{
+  "name": "Content Studio — Reference Ingestion v1",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "1UI6wGhef82TmC4g2kDKEXVAhPG7vS421",
+          "mode": "id"
+        },
+        "event": "fileCreated",
+        "options": {}
+      },
+      "name": "Drive Trigger Interior",
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        -128,
+        0
+      ],
+      "id": "7200b0ed-0818-4349-8e6f-7f254241a076",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "12OLoprLVxhhEYdoFhx55zeQqfmV3plLf",
+          "mode": "id"
+        },
+        "event": "fileCreated",
+        "options": {}
+      },
+      "name": "Drive Trigger Style",
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        -128,
+        272
+      ],
+      "id": "f177b99d-aa9d-4637-ba6a-d6039668dffb",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fc5d525-b146-4b31-85aa-bfcafeaabc12",
+              "name": "reference_type",
+              "value": "interior",
+              "type": "string"
+            },
+            {
+              "id": "d1949d87-58f0-430f-9991-7a935e9dc82a",
+              "name": "tenant_id",
+              "value": "dc57d7e8-2978-4c08-9026-ed2a4ccde4a1",
+              "type": "string"
+            },
+            {
+              "id": "d32fd40d-ef14-4ce9-bf7f-469b28ef8950",
+              "name": "tenant_slug",
+              "value": "rendezvous",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "name": "Tag As Interior",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        96,
+        0
+      ],
+      "id": "08e8493e-d4b3-48e8-849b-613a7dd9ccf6"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6b055003-60f0-4fa6-9387-af62b60a7ebf",
+              "name": "reference_type",
+              "value": "style",
+              "type": "string"
+            },
+            {
+              "id": "0d7e3530-e899-4ac5-8c51-51e88d968f66",
+              "name": "tenant_id",
+              "value": "dc57d7e8-2978-4c08-9026-ed2a4ccde4a1",
+              "type": "string"
+            },
+            {
+              "id": "797fafc4-d71d-4b55-957d-9e89a5c6e74c",
+              "name": "tenant_slug",
+              "value": "rendezvous",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "name": "Tag As Style",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        96,
+        272
+      ],
+      "id": "c4be6d9d-78c1-4aef-85b0-ea0fb558f72a"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7338ab6e-a3a5-4ade-87b2-83ae506e7d11",
+              "name": "file_id",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "2a076df1-251a-4911-90dd-430526563cfa",
+              "name": "file_name",
+              "value": "={{ $json.name }}",
+              "type": "string"
+            },
+            {
+              "id": "226a7f49-3504-461a-835c-7458d9e4d8af",
+              "name": "reference_type",
+              "value": "={{ $json.reference_type }}",
+              "type": "string"
+            },
+            {
+              "id": "9a5529f0-3956-4e82-82b0-30f982c20375",
+              "name": "tenant_id",
+              "value": "={{ $json.tenant_id }}",
+              "type": "string"
+            },
+            {
+              "id": "42037242-0345-4228-9b9a-1846dfacb275",
+              "name": "tenant_slug",
+              "value": "={{ $json.tenant_slug }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "name": "Set Reference Context",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        448,
+        144
+      ],
+      "id": "065924fe-934f-4e89-bf76-7060c88055f9"
+    },
+    {
+      "parameters": {
+        "operation": "share",
+        "fileId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.file_id }}"
+        },
+        "permissionsUi": {
+          "permissionsValues": {
+            "role": "reader",
+            "type": "anyone"
+          }
+        },
+        "options": {}
+      },
+      "name": "Drive Share Reference",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        672,
+        144
+      ],
+      "id": "6482358f-0d60-423e-8396-5b51cc9d4859",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5aa29d17-f01d-449d-a382-a0affb42377c",
+              "name": "reference_url",
+              "value": "=https://lh3.googleusercontent.com/d/{{ $('Set Reference Context').item.json.file_id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "name": "Build Reference URL",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        880,
+        144
+      ],
+      "id": "d8a7d777-1fc5-4989-9e73-aef5084b18d5"
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_studio_config",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "tenant_id",
+              "value": "=eq.{{ $('Set Reference Context').item.json.tenant_id }}"
+            },
+            {
+              "name": "select",
+              "value": "tenant_id,config"
+            },
+            {
+              "name": "limit",
+              "value": "1"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Lookup Tenant Config",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        400
+      ],
+      "id": "da1642db-199a-4523-9185-65e24c59604d"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_studio_config",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "tenant_id",
+              "value": "=eq.{{ $json.tenant_id }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Prefer",
+              "value": "return=representation"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"config\": {{ JSON.stringify($json.config) }}\n}",
+        "options": {}
+      },
+      "name": "Update Tenant Config",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1328,
+        400
+      ],
+      "id": "f0271b24-dd10-4853-9a7c-c46a6684e192"
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first().json;\n\nconst interiorPrompt = `You are a visual analyst for a hospitality content system. Analyze the provided restaurant interior reference image and return structured metadata that will compose image-generation prompts for in-situ food photography.\nReturn ONLY a JSON object matching this schema:\n{\n  \"summary\": \"one sentence describing the space, max 25 words\",\n  \"palette\": [\"3-6 dominant colors in plain English, e.g. 'deep navy', 'warm brass'\"],\n  \"lighting\": \"light source, color temperature, shadow quality\",\n  \"materials\": [\"3-6 architectural/upholstery materials, e.g. 'dark walnut wood', 'red velvet upholstery'\"],\n  \"mood\": \"3-5 descriptors comma-separated, e.g. 'intimate, opulent, evening'\",\n  \"composition_cues\": \"spatial layering, depth, what is visible in background\"\n}\nRules:\n- Be specific to what is actually in the image. 'Warm brass chandeliers' beats 'lighting fixtures'.\n- Describe what IS visible, not generic restaurant tropes.\n- No prose outside the JSON object.`;\n\nconst stylePrompt = `You are a visual analyst for a hospitality content system. Analyze the provided food-styling reference image and return structured metadata that will compose image-generation prompts for plated dish photography.\nReturn ONLY a JSON object matching this schema:\n{\n  \"summary\": \"one sentence describing the styling approach, max 25 words\",\n  \"plating_style\": \"geometry, layering, negative space, height profile\",\n  \"surface\": \"what the dish sits on - material, texture, color (slate, linen, marble, weathered wood, etc.)\",\n  \"props\": [\"cutlery, glassware, fabric, jars, herbs in frame beyond the dish itself\"],\n  \"garnish\": \"herb, sauce dot, oil sheen, dust pattern - finishing touches on the food\",\n  \"lighting_on_food\": \"direction, hardness, highlight quality on the dish\",\n  \"mood\": \"3-5 descriptors comma-separated\"\n}\nRules:\n- Be specific to what is in this image.\n- No prose outside the JSON object.`;\n\nconst systemPrompt = item.category === 'interior' ? interiorPrompt : stylePrompt;\n\n// Build the full OpenAI Vision payload as a JS object here, so the downstream\n// HTTP node can JSON.stringify() it natively. This avoids the n8n fixed-mode body\n// bug where multi-line systemPrompt with embedded newlines/quotes shreds JSON\n// validity at the [item 0] validator.\nconst requestBody = {\n  model: 'gpt-4o-2024-08-06',\n  response_format: { type: 'json_object' },\n  max_tokens: 600,\n  messages: [\n    {\n      role: 'user',\n      content: [\n        { type: 'text', text: systemPrompt },\n        { type: 'image_url', image_url: { url: item.reference_url } }\n      ]\n    }\n  ]\n};\n\nreturn [{\n  json: {\n    ...item,\n    systemPrompt,   // kept in output for downstream debug/inspection\n    requestBody\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1088,
+        144
+      ],
+      "id": "070b0d66-166a-4419-974d-025c8b4aa31c",
+      "name": "Build Vision Request"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.requestBody) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        448,
+        400
+      ],
+      "id": "a802a873-9e43-40d5-a466-9d8e8beec906",
+      "name": "Vision Analyze Reference",
+      "credentials": {
+        "openAiApi": {
+          "id": "bM5k35qHgY126dzI",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const apiResponse = $input.first().json;\nconst ctx = $('Build Vision Request').first().json;\n\nconst visionRaw = apiResponse?.choices?.[0]?.message?.content;\nif (!visionRaw) {\n  throw new Error(`Vision API returned no content. Response: ${JSON.stringify(apiResponse).slice(0, 300)}`);\n}\n\nlet parsed;\ntry {\n  parsed = JSON.parse(visionRaw);\n} catch (e) {\n  throw new Error(`Vision returned non-JSON: ${visionRaw.slice(0, 200)}`);\n}\n\n// Tag As Interior / Tag As Style sets `reference_type` upstream, but Drive Share Reference\n// (HTTP node) replaces the item with its API response, dropping it. Fetch it directly from\n// whichever Tag node ran for this execution. Defensive try/catch in case n8n throws when\n// referencing a node that didn't run on this path.\nlet category = null;\ntry { category = $('Tag As Interior').first()?.json?.reference_type ?? null; } catch (_) {}\nif (!category) {\n  try { category = $('Tag As Style').first()?.json?.reference_type ?? null; } catch (_) {}\n}\nif (!category) {\n  throw new Error(`Could not determine category — neither Tag As Interior nor Tag As Style produced a reference_type`);\n}\n\nconst referenceMetadata = {\n  url: ctx.reference_url,   // was ctx.referenceUrl — snake_case is correct\n  category,\n  ...parsed,\n  added_at: new Date().toISOString()\n};\n\nreturn [{\n  json: {\n    ...ctx,\n    category,             // expose at top level so Merge can read ctx.category\n    referenceMetadata\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        656,
+        400
+      ],
+      "id": "7d937a46-b35a-420d-9e1e-c35bcd84a481",
+      "name": "Parse Vision Response"
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first().json;\nconst ctx = $('Parse Vision Response').first().json;\n\n// Deep-clone existing config so we don't mutate input\nconst config = JSON.parse(JSON.stringify(item.config || {}));\nconfig.references = config.references || {};\nconfig.references.interior = config.references.interior || [];\nconfig.references.style = config.references.style || [];\n\nconst category = ctx.category;\nconst newMeta = ctx.referenceMetadata;\nconst targetArray = config.references[category];\n\n// Dedup by url — handle both legacy bare-string and v1.1 object entries\nconst existingUrls = targetArray.map(entry =>\n  typeof entry === 'string' ? entry : entry.url\n);\n\nlet action;\nif (existingUrls.includes(newMeta.url)) {\n  action = 'skipped_duplicate';\n} else {\n  targetArray.push(newMeta);\n  action = 'appended';\n}\n\nreturn [{\n  json: {\n    ...item,                  // preserve Lookup Tenant Config output (id, tenant_id, etc.)\n    config,                   // overwrite with mutated config\n    action,\n    referenceMetadata: newMeta  // expose for downstream visibility / logging\n  }\n}];"
+      },
+      "name": "Merge Reference Into Config V2",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1104,
+        400
+      ],
+      "id": "ceadece0-1bc4-4764-9b6c-f567b614dcc9"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Drive Trigger Interior": {
+      "main": [
+        [
+          {
+            "node": "Tag As Interior",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Trigger Style": {
+      "main": [
+        [
+          {
+            "node": "Tag As Style",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag As Interior": {
+      "main": [
+        [
+          {
+            "node": "Set Reference Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag As Style": {
+      "main": [
+        [
+          {
+            "node": "Set Reference Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Reference Context": {
+      "main": [
+        [
+          {
+            "node": "Drive Share Reference",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Share Reference": {
+      "main": [
+        [
+          {
+            "node": "Build Reference URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Reference URL": {
+      "main": [
+        [
+          {
+            "node": "Build Vision Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lookup Tenant Config": {
+      "main": [
+        [
+          {
+            "node": "Merge Reference Into Config V2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Vision Request": {
+      "main": [
+        [
+          {
+            "node": "Vision Analyze Reference",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vision Analyze Reference": {
+      "main": [
+        [
+          {
+            "node": "Parse Vision Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Vision Response": {
+      "main": [
+        [
+          {
+            "node": "Lookup Tenant Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Reference Into Config V2": {
+      "main": [
+        [
+          {
+            "node": "Update Tenant Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "2b85ca73-17fd-4d5b-803c-ef9c4cba4ce6",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1417e0b59edc3afb3d5838cbf6a079bdbac13828695e425b5a8adce64da3515b"
+  },
+  "id": "3Yta1IOl0gDt8g1J",
+  "tags": [
+    {
+      "updatedAt": "2026-05-06T13:53:49.544Z",
+      "createdAt": "2026-05-06T13:53:49.544Z",
+      "id": "22mf1hDnE8pPmwgU",
+      "name": "content-studio"
+    },
+    {
+      "updatedAt": "2026-05-06T17:27:43.475Z",
+      "createdAt": "2026-05-06T17:27:43.475Z",
+      "id": "qmpLf1qVbiH5eTcf",
+      "name": "reference-ingestion"
+    }
+  ]
+}

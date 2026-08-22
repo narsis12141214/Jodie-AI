@@ -1,0 +1,1058 @@
+{
+  "name": "Content Studio — Generation v2 (Bake-off)",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "b63bdac5-43dc-4370-8430-9c425561193a",
+        "formTitle": "Content Studio — Source Upload",
+        "formDescription": "Upload dish photos and we'll generate the 8-variant bake-off set.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Tenant Email",
+              "fieldType": "email",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Source Photos",
+              "fieldType": "file",
+              "acceptFileTypes": ".jpg,.jpeg,.png,.webp",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Form Trigger",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2,
+      "position": [
+        -1760,
+        144
+      ],
+      "id": "6446b8db-7bf1-4d82-a9e4-5245180833b7",
+      "webhookId": "b63bdac5-43dc-4370-8430-9c425561193a"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Re-key form-uploaded binaries to predictable data_<i> keys.\nconst items = $input.all();\nconst out = [];\nfor (const item of items) {\n  const newItem = { json: { ...item.json }, binary: {} };\n  let i = 0;\n  if (item.binary) {\n    for (const key of Object.keys(item.binary)) {\n      newItem.binary[`data_${i}`] = item.binary[key];\n      i++;\n    }\n  }\n  newItem.json.source_count = i;\n  out.push(newItem);\n}\nreturn out;\n"
+      },
+      "name": "Normalize Binary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1536,
+        144
+      ],
+      "id": "26f4d80c-b019-4af4-a8f4-38444314739e"
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/tenants",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "owner_email",
+              "value": "=eq.{{ $json['Tenant Email'] }}"
+            },
+            {
+              "name": "select",
+              "value": "id,business_name,slug,tier"
+            },
+            {
+              "name": "limit",
+              "value": "1"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Lookup Tenant",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1328,
+        144
+      ],
+      "id": "ea822667-c608-4e62-b3b7-65bcff370744"
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_studio_config",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "tenant_id",
+              "value": "=eq.{{ $json.id }}"
+            },
+            {
+              "name": "select",
+              "value": "config"
+            },
+            {
+              "name": "limit",
+              "value": "1"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Load Tenant Config",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1104,
+        144
+      ],
+      "id": "e3f61f98-c81b-47e8-9e0b-e253361e9404"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Consolidate tenant lookup + config onto a single object.\n// PostgREST single-row arrays are flattened by n8n HTTP node v4 — use $json.id, not $json[0].id.\nconst incoming = $('Normalize Binary').item;\nconst tenant = $('Lookup Tenant').item.json;\nconst cfgRow = $('Load Tenant Config').item.json;\n\nreturn [{\n  json: {\n    ...incoming.json,\n    tenant_id:    tenant.id,\n    tenant_slug:  tenant.slug,\n    tenant_name:  tenant.business_name,\n    tenant_tier:  tenant.tier,\n    config:       cfgRow.config || {}\n  },\n  binary: incoming.binary || {}\n}];\n"
+      },
+      "name": "Merge Tenant Context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -880,
+        144
+      ],
+      "id": "824a7172-67b1-4105-8613-51594a48cc07"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_batches",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Prefer",
+              "value": "return=representation"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"tenant_id\": \"{{ $json.tenant_id }}\",\n  \"status\": \"processing\",\n  \"source_count\": {{ $json.source_count }},\n  \"review_token\": \"{{ Date.now().toString(36) + Math.random().toString(36).slice(2, 14) }}\"\n}",
+        "options": {}
+      },
+      "name": "Create Batch",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -656,
+        144
+      ],
+      "id": "a3d18e3c-0b3d-4f9e-a8ed-7952e1933f53"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Fan binaries into per-source items. Binary is fetched from Merge Tenant Context\n// because intervening HTTP nodes drop binary from the data chain.\nconst upstream = $('Merge Tenant Context').first();\nconst batchRow = $input.first().json;\nconst binaries = upstream.binary || {};\nconst keys = Object.keys(binaries).filter(k => k.startsWith('data_'));\n\nconst out = [];\nfor (let i = 0; i < keys.length; i++) {\n  out.push({\n    json: {\n      ...upstream.json,\n      batch_id:     batchRow.id,\n      review_token: batchRow.review_token,\n      source_index: i,\n      binary_key:   keys[i]\n    },\n    binary: { data: binaries[keys[i]] }\n  });\n}\nreturn out;"
+      },
+      "name": "Stage Sources",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -448,
+        144
+      ],
+      "id": "d200f1fc-c939-476d-ac20-886f4ecec8a1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Loop Sources",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -16,
+        144
+      ],
+      "id": "66f5e760-f083-4a1e-a662-1316bb1e5300"
+    },
+    {
+      "parameters": {
+        "name": "={{ $('Create Batch').item.json.id }}_source_{{ $json.source_index }}.jpg",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1ttGQlVmAi9vjIx8HyibOWV3d02NmrVoM",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "name": "Drive Upload Source",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        208,
+        304
+      ],
+      "id": "10a081ec-f62a-423e-9387-5e48ef83a04f",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "share",
+        "fileId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.id }}"
+        },
+        "permissionsUi": {
+          "permissionsValues": {
+            "role": "reader",
+            "type": "anyone"
+          }
+        },
+        "options": {}
+      },
+      "name": "Drive Share Source",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        432,
+        304
+      ],
+      "id": "dd885f46-4ffb-4e1b-a1de-34f29cc6d160",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a4cea929-9c8b-4a49-a38b-89d64cf5b5c4",
+              "name": "source_drive_id",
+              "value": "={{ $('Drive Upload Source').item.json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "a756367d-4270-4ee4-b00f-cb5918ea5001",
+              "name": "source_drive_url",
+              "value": "=https://lh3.googleusercontent.com/d/{{ $('Drive Upload Source').item.json.id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "name": "Build Source URL",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        656,
+        304
+      ],
+      "id": "c0873af1-4115-4a1a-ae44-79122ffa9abe"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.OPENAI_API_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"gpt-4o-2024-08-06\",\n  \"messages\": [\n    { \"role\": \"user\", \"content\": [\n        { \"type\": \"text\", \"text\": \"You are a food photography stylist analyzing a dish photo. Return ONLY a JSON object with this exact shape, no prose:\\n{\\n  \\\"dish_name\\\": \\\"specific dish name (English)\\\",\\n  \\\"components\\\": [\\\"main visible ingredients/elements\\\"],\\n  \\\"distinctive_features\\\": [\\\"what makes this specific dish visually distinctive\\\"],\\n  \\\"plating\\\": \\\"how the food is arranged\\\",\\n  \\\"vessel\\\": \\\"what it is served in or on (plate, bowl, board, etc)\\\"\\n}\\nBe specific and concrete. Example: dish_name 'Persian mixed grill platter', components ['lamb koobideh','chicken joojeh','saffron rice','grilled tomato','green chilli'].\" },\n        { \"type\": \"image_url\", \"image_url\": { \"url\": \"{{ $json.source_drive_url }}\" } }\n    ] }\n  ],\n  \"response_format\": { \"type\": \"json_object\" },\n  \"max_tokens\": 600\n}",
+        "options": {}
+      },
+      "name": "Vision Pass",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        304
+      ],
+      "id": "896fcdd9-5a56-4276-bf0a-2b1c357e6efb"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Parse GPT-4o Vision response into a rich dish object.\nconst j = $input.item.json;\nconst raw = j.choices?.[0]?.message?.content || '{}';\n\nlet dish = {};\ntry {\n  const cleaned = raw.replace(/```json|```/g, '').trim();\n  dish = JSON.parse(cleaned);\n} catch (e) {\n  dish = { dish_name: 'Unknown dish', components: [], distinctive_features: [], plating: '', vessel: '' };\n}\n\nconst components = (dish.components || []).join(', ');\nconst dish_description = `${dish.dish_name || 'a dish'}${components ? ': ' + components : ''}`;\n\nreturn {\n  json: {\n    ...j,\n    dish,\n    dish_description,\n    recommended_shot_types: ['hero_moody']\n  }\n};"
+      },
+      "name": "Parse Vision",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1088,
+        304
+      ],
+      "id": "d0e1a4f7-a439-4575-a7b1-ee2a28e014c2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_batch_items",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Prefer",
+              "value": "return=representation"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"batch_id\": \"{{ $('Create Batch').item.json.id }}\",\n  \"source_url\": \"{{ $('Build Source URL').item.json.source_drive_url }}\",\n  \"dish_description\": \"{{ $json.dish_description }}\",\n  \"recommended_shot_types\": {{ JSON.stringify($json.recommended_shot_types) }},\n  \"status\": \"generating\",\n  \"approval_state\": \"unreviewed\"\n}",
+        "options": {}
+      },
+      "name": "Insert Item Row",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        304
+      ],
+      "id": "01cff76a-6919-421b-a4a7-d69f64fd30f6"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Pin all per-source context that downstream variant nodes need.\n// CRITICAL: must carry the rich `dish` object — bake-off Build Prompt depends on it.\nconst inserted = $input.item.json;\nconst itemId = inserted.id || (Array.isArray(inserted) ? inserted[0]?.id : null);\n\nreturn {\n  json: {\n    item_id:          itemId,\n    batch_id:         $('Create Batch').item.json.id,\n    tenant_id:        $('Merge Tenant Context').item.json.tenant_id,\n    tenant_slug:      $('Merge Tenant Context').item.json.tenant_slug,\n    source_drive_url: $('Build Source URL').item.json.source_drive_url,\n    source_drive_id:  $('Build Source URL').item.json.source_drive_id,\n    dish:             $('Parse Vision').item.json.dish,\n    dish_description: $('Parse Vision').item.json.dish_description,\n    config:           $('Merge Tenant Context').item.json.config\n  }\n};\n"
+      },
+      "name": "Pin Item Context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1536,
+        304
+      ],
+      "id": "8016e570-1f81-4169-a45e-99a145b0d408"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Full bake-off — fans out to 8 prompt variants per source.\nconst variants = [\n  { variant_slug: 'hero_moody',      variant_name: 'Hero — Moody Editorial' },\n  { variant_slug: 'hero_bright',     variant_name: 'Hero — Bright Daylight' },\n  { variant_slug: 'topdown_props',   variant_name: 'Top-down — Editorial Flat-lay' },\n  { variant_slug: 'topdown_minimal', variant_name: 'Top-down — Minimal' },\n  { variant_slug: 'pullback_table',  variant_name: 'Pull-back — Restaurant Table' },\n  { variant_slug: 'detail_macro',    variant_name: 'Detail — Macro Texture' },\n  { variant_slug: 'insitu_interior', variant_name: 'In-situ — Restaurant Interior' },\n  { variant_slug: 'human_element',   variant_name: 'Human Element — Hand / Fork' }\n];\n\nconst incoming = $input.first().json;\n\nreturn variants.map(v => ({\n  json: {\n    ...incoming,\n    variant_slug: v.variant_slug,\n    variant_name: v.variant_name\n  }\n}));"
+      },
+      "name": "Generate Variants",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1824,
+        912
+      ],
+      "id": "6259e086-9b7e-4966-bde1-0bdd2573bb22"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// n8n Code node — \"Build Prompt\" (v3.4 / tabletop material isolation)\n//\n// v3.4 change vs v3.3:\n// - composeInteriorSceneBlock now SEPARATES the table surface from other room materials.\n//   Vision flattens everything in the room (chair frames, floors, trim, walls) into a\n//   single `materials` array alongside the actual table surface. The model then can't\n//   distinguish \"marble table\" from \"dark wood [chair frames]\" and renders the wrong\n//   surface. Fix: regex-extract the table-tagged entry as TABLETOP MATERIAL, label the\n//   rest as OTHER MATERIALS IN SPACE (atmosphere only).\n// - SURFACE directive in all 3 interior-driven overrides (insitu_interior, pullback_table,\n//   human_element) now points to TABLETOP MATERIAL specifically, with explicit guidance\n//   that OTHER MATERIALS IN SPACE must NOT drive the table surface.\n// - Long-term fix is at Vision ingest (dedicated tabletop_material field in the response\n//   schema) — parked for tomorrow. v3.4 patches the symptom in Build Prompt.\n//\n// v3.3 (carried forward):\n// - pullback_table = abundance / restaurant-marketing spread\n// - insitu_interior tightened to clean dish-in-venue\n// - HARD source-dish preservation language across all 5 reference-using variants\n// - Prescriptive surface directives in hero_moody and topdown_props\n//\n// v3.2 (carried forward):\n// - human_element editorial elevation with 3 locked scenarios (chef / server / diner)\n//\n// v3.1 (carried forward):\n// - Style-ref selection (sortByRecency + active newest) and composeStyleSceneBlock\n// - 5 of 8 variants reference-driven:\n//     - hero_moody       (style-driven)\n//     - topdown_props    (style-driven)\n//     - pullback_table   (interior-driven)\n//     - insitu_interior  (interior-driven)\n//     - human_element    (interior-driven)\n// - 3 variants on v4.1 statics (deferred): hero_bright, topdown_minimal, detail_macro\n// - Falls back to v4.1 statics if no relevant ref metadata present (cold-start safety)\n\nconst j = $input.item.json;\nconst ctx = $('Pin Item Context').item.json;\n\nconst dish = ctx.dish || {};\nconst variant = j.variant_slug || 'hero_moody';\nconst sourceUrl = ctx.source_drive_url;\n\n// ===================================================================\n// Subject construction (unchanged from v4.1)\n// ===================================================================\nconst components  = (dish.components || []).join(', ');\nconst distinctive = (dish.distinctive_features || []).join('. ');\nconst subjectParts = [\n  dish.dish_name || 'a dish',\n  components ? ` — ${components}` : '',\n  distinctive ? `. ${distinctive}` : '',\n  dish.plating ? `. Plating: ${dish.plating}` : '',\n  dish.vessel ? `. Served in/on: ${dish.vessel}` : ''\n];\nconst subject = subjectParts.join('').trim().replace(/\\.+$/, '') + '.';\n\n// ===================================================================\n// Reference metadata extraction & scene-block composition\n// ===================================================================\nconst sortByRecency = (arr) => (arr || [])\n  .filter(r => typeof r === 'object' && r !== null && r.url && r.summary)\n  .sort((a, b) => new Date(b.added_at || 0) - new Date(a.added_at || 0));\n\n// --- Interior refs (v3) -------------------------------------------------\nconst interiorRefs = sortByRecency(ctx.config?.references?.interior);\nconst activeInterior = interiorRefs[0] || null;\n\nconst composeInteriorSceneBlock = (ref) => {\n  if (!ref) return null;\n  const lines = [`REFERENCE SCENE: ${ref.summary}`];\n  if (ref.palette?.length)   lines.push(`COLOUR PALETTE: ${ref.palette.join(', ')}`);\n  if (ref.lighting)          lines.push(`LIGHTING CHARACTER: ${ref.lighting}`);\n\n  // v3.4: Vision tends to flatten \"the table material\" with \"other things in the room\n  // made of various materials\" (chair frames, floors, trim, walls, fixtures) into one\n  // undifferentiated array. The model then can't tell which entry describes the table.\n  // Fix: regex-extract the table-tagged entry; relabel the rest as atmospheric context only.\n  const tableRegex = /\\b(table|tabletop|surface|countertop)\\b/i;\n  const allMaterials = ref.materials || [];\n  const tableMaterial = allMaterials.find(m => tableRegex.test(m));\n  const otherMaterials = allMaterials.filter(m => !tableRegex.test(m));\n\n  if (tableMaterial) {\n    lines.push(`TABLETOP MATERIAL (THE ACTUAL TABLE SURFACE — use this and ONLY this for the table): ${tableMaterial}`);\n  } else if (allMaterials.length) {\n    lines.push(`TABLETOP MATERIAL (THE ACTUAL TABLE SURFACE): premium restaurant tabletop consistent with the venue's character — NOT walnut or dark wood unless explicitly indicated`);\n  }\n  if (otherMaterials.length) {\n    lines.push(`OTHER MATERIALS IN SPACE (atmospheric context only — these describe walls, chairs, frames, floors, fixtures; they MUST NOT drive the table surface): ${otherMaterials.join(', ')}`);\n  }\n\n  if (ref.mood)              lines.push(`AMBIENT MOOD: ${ref.mood}`);\n  if (ref.composition_cues)  lines.push(`SCENE COMPOSITION: ${ref.composition_cues}`);\n  return lines.join('\\n');\n};\n\nconst interiorBlock = composeInteriorSceneBlock(activeInterior);\n\n// --- Style refs (v3.1, NEW) --------------------------------------------\nconst styleRefs = sortByRecency(ctx.config?.references?.style);\nconst activeStyle = styleRefs[0] || null;\n\nconst composeStyleSceneBlock = (ref) => {\n  if (!ref) return null;\n  const lines = [`REFERENCE STYLING: ${ref.summary}`];\n  if (ref.palette?.length)   lines.push(`COLOUR PALETTE: ${ref.palette.join(', ')}`);\n  if (ref.plating_style)     lines.push(`PLATING STYLE: ${ref.plating_style}`);\n  if (ref.lighting_on_food)  lines.push(`LIGHTING ON FOOD: ${ref.lighting_on_food}`);\n  if (ref.surface)           lines.push(`SURFACE: ${ref.surface}`);\n  if (ref.mood)              lines.push(`STYLING MOOD: ${ref.mood}`);\n  if (ref.composition_cues)  lines.push(`STYLING COMPOSITION: ${ref.composition_cues}`);\n  return lines.join('\\n');\n};\n\nconst styleBlock = composeStyleSceneBlock(activeStyle);\n\n// ===================================================================\n// Variant prompt templates\n// 5 of 8 conditionally overridden below when relevant metadata is present.\n// 3 stay on v4.1 statics (deferred): hero_bright, topdown_minimal, detail_macro\n// ===================================================================\nconst PROMPTS = {\n  hero_moody: `Editorial close-up food photography, restaurant magazine cover quality.\n\nSUBJECT: ${subject}\n\nCOMPOSITION: Tight close-up — the dish fills 70% of the frame. Slight overhead 30-40 degree angle. Single hero subject.\n\nCAMERA: 85mm or 100mm macro lens equivalent, f/2.0, very shallow depth of field. Dish in razor-sharp focus, background dissolves into creamy bokeh.\n\nLIGHTING: Dramatic directional side light from camera-left, warm tungsten temperature. Deep sculptural shadows on the food's textures. Golden glistening highlights on sauces, oils, glazes. Subtle rim-light edge separating the dish from the background.\n\nBACKGROUND: Dark, moody, character-rich surface — weathered dark wood grain, slate, charcoal stone, or dark ceramic. Heavily blurred bokeh. Optional: scattered cooking herbs or whole spices in soft-focus background.\n\nMOOD: Rich, appetising, sensual. Saturated food colours, deep blacks, high micro-contrast on food textures (steam, char, glaze, garnish detail). Like a hero shot from Bon Appétit or a Michelin-restaurant Instagram feed.\n\nABSOLUTELY NOT: white seamless background, studio sterility, clean negative space, people, text, logos, watermarks. Photorealistic.`,\n\n  hero_bright: `Bright contemporary food photography, modern restaurant editorial.\n\nSUBJECT: ${subject}\n\nCOMPOSITION: Tight close-up — dish fills 65% of frame. Slight overhead 35 degree angle. Single hero subject. Generous soft negative space framing the dish.\n\nCAMERA: 85mm equivalent, f/2.8, shallow depth of field. Dish razor-sharp, background gently soft.\n\nLIGHTING: Soft directional natural daylight from camera-left, mid-morning quality. Cool-neutral colour temperature with warm highlights on food. Gentle wraparound shadows — no hard contrast. Diffused window-light feel as if shot near a north-facing window.\n\nBACKGROUND: Light textured surface — pale linen, off-white linen tablecloth, light-stained oak, cream-toned ceramic, or weathered concrete. Soft natural shadows. Optional: a sprig of fresh herbs or a folded linen napkin softly out of focus.\n\nMOOD: Fresh, clean, appetising, contemporary. Bright but not sterile. Saturated food colours against a calm neutral palette. Like a Cereal magazine spread, Kinfolk, or a modern brunch-spot Instagram.\n\nABSOLUTELY NOT: dark moody background, candlelight, tungsten warmth, harsh studio strobes, sterile white seamless, people, text, logos, watermarks. Photorealistic.`,\n\n  topdown_props: `Top-down editorial food photography flat-lay, magazine spread aesthetic.\n\nCENTERPIECE: ${subject}\n\nCOMPOSITION: 90-degree overhead. Centerpiece dish positioned slightly off-centre for editorial dynamism. Generous dark negative space framing the scene. Rule-of-thirds anchored.\n\nSURROUNDING ELEMENTS (in soft focus, organically scattered): fresh herbs (parsley, mint, coriander), citrus halves and wedges, whole spices, garlic cloves, sliced raw vegetables relevant to the cuisine, scattered salt and peppercorns, drizzles of olive oil. Edge of a small ceramic ramekin, a wooden spoon, or linen napkin partially in frame.\n\nSURFACE: Dark and textural — weathered dark wood planks, slate, charcoal stone, dark stained boards. NEVER white, NEVER seamless.\n\nLIGHTING: Directional natural top-light with soft side-shadows. Warm colour temperature. Gentle dark vignette pulling focus to the dish. Atmospheric, cinematic.\n\nCAMERA: 35mm equivalent, f/4. Centre dish in sharpest focus; surrounding ingredients slightly softer for depth.\n\nMOOD: Storytelling, abundant, lush. Like a Saveur, Bon Appétit, or premium restaurant Instagram editorial. Photorealistic.\n\nABSOLUTELY NOT: white background, sterile studio, isolated dish, people, text, logos.`,\n\n  topdown_minimal: `Minimalist top-down food photography, clean editorial restraint.\n\nCENTERPIECE: ${subject}\n\nCOMPOSITION: Strict 90-degree overhead. Dish centred or precisely off-centre on the rule-of-thirds. Maximum negative space — dish occupies only 35-45% of the frame. Architectural symmetry.\n\nSURROUNDING ELEMENTS: None or near-none. At most a single linen napkin softly diagonal in one corner, or a single lit beeswax taper candle just visible at frame edge. The dish must read as the only event in the frame.\n\nSURFACE: Single-tone textural surface — dark walnut, polished slate, raw charcoal stone, deep concrete, or dark matte ceramic. Surface must be uncluttered.\n\nLIGHTING: Even diffused top-light, slightly directional from one side for dimensional shadow. Warm but restrained colour temperature. Soft falloff to a dark vignette at frame edges.\n\nCAMERA: 50mm equivalent, f/4.5. Whole dish in even sharp focus.\n\nMOOD: Calm, considered, design-led, expensive-feeling. Like a Toogood Studio still life, an Apartamento food spread, or a high-end Japanese restaurant menu image. Photorealistic.\n\nABSOLUTELY NOT: scattered props, ingredients in frame, white seamless, busy compositions, multiple dishes, people, text, logos.`,\n\n  pullback_table: `Editorial pull-back food photography, restaurant table-context shot.\n\nPRIMARY SUBJECT: ${subject}\n\nCOMPOSITION: 3/4 angle, approximately 30 degrees above the table. Dish occupies the central 50% of the frame; table edge and surrounding context fill the remaining frame. Dish in sharp focus; background falls off into bokeh. Cinematic horizontal framing.\n\nCONTEXTUAL ELEMENTS (soft-focus, ambient): a wine glass with red or amber liquid, a water glass, a small ramekin of sauce, a folded dark linen napkin, a candle flame as a soft-focus highlight in the background, the corner of a second plate. Nothing competes with the hero dish for attention.\n\nSURFACE: Dark wooden restaurant table — walnut, oak, or dark-stained timber with visible grain. Reflective sheen subtly catching candlelight.\n\nLIGHTING: Dim restaurant ambiance — warm tungsten and candle-glow as the dominant light sources. Highlights on the dish from a single warm key light camera-left. Background lights bloom into soft bokeh orbs.\n\nCAMERA: 50mm equivalent, f/2.0. Razor-sharp on the dish, dreamy bokeh on the surrounding scene.\n\nMOOD: Intimate, warm, restaurant-storytelling. Like a candid editorial from a Michelin guide review or a high-end restaurant Instagram capturing a real table moment. Photorealistic.\n\nABSOLUTELY NOT: bright daylight, white tablecloth, sterile setting, people in frame, text, logos, watermarks.`,\n\n  detail_macro: `Macro-detail food photography, single-texture hero.\n\nSUBJECT: An extreme close-up of a single texture from ${subject} — char marks on grilled meat, a glistening sauce drip, rising steam, a glaze sheen, a charred crust edge, or a single garnish element catching light. The dish as a whole is not visible — only the chosen texture fills the frame.\n\nCOMPOSITION: Macro framing. The chosen texture fills 85% of the frame. Tight cropping intentionally truncates the dish — no horizon, no plate edge, no context. Pure surface and light.\n\nCAMERA: 100mm macro lens equivalent, f/2.8, extreme shallow depth of field. A 1-2cm focal plane in razor-sharp focus, falloff to dreamy soft blur on either side.\n\nLIGHTING: Single warm directional side light raking across the texture from camera-left to reveal three-dimensional surface detail. Specular highlights on glaze, oil, or sauce. Deep shadows in the recesses of char or pastry crust.\n\nMOOD: Sensory, almost edible-feeling. Like the cover macro of a Bon Appétit feature article or a Le Creuset campaign close-up. Photorealistic.\n\nABSOLUTELY NOT: full dish visible, plate edge, table context, multiple subjects, people, text, logos.`,\n\n  // v4.1 fallbacks for insitu_interior and human_element — used only when no interior metadata present.\n  insitu_interior: `In-situ restaurant food photography — the dish presented inside the EXACT restaurant interior shown in the provided reference images.\n\nINPUT IMAGE ROLES:\n- Image 1 (source): the dish photograph. Preserve its identity, components, plating, vessel, and food detail exactly. This is the primary subject.\n- Images 2+: reference photographs of the actual Rendezvous restaurant interior. The background of this shot MUST replicate THIS interior — wall finishes and colour, lighting fixture types and placement, table material and tone, ambient colour temperature, and overall design language. Do NOT invent generic restaurant elements. Do NOT synthesise a generic \"dark restaurant\" — match what is actually shown in the reference images.\n\nSUBJECT: ${subject}\n\nCOMPOSITION: 3/4 angle from a seated diner's perspective. Dish occupies the lower foreground (40-50% of frame). Behind it, the restaurant interior from the reference images falls off into atmospheric bokeh — recognisably the same room as the references, but defocused.\n\nLIGHTING: Match the lighting character of the reference interior — colour temperature, fixture style, ambient warmth, intensity falloff. The dish receives an implied warm key from camera-left, foreground exposed brighter than the background falloff to keep the food readable.\n\nSURFACE: Dark walnut restaurant table with visible grain, consistent with the table style visible in the reference images.\n\nCAMERA: 35mm equivalent, f/2.0. Dish razor-sharp; interior softly out of focus.\n\nMOOD: Photorealistic. Intimate, lived-in, evening dining moment. The viewer should feel they are seated at a real Rendezvous table during service.\n\nABSOLUTELY NOT: studio backdrop, white walls, daylight, generic dark restaurant that doesn't match the references, full faces, identifiable celebrities, text, logos, watermarks. The interior must match the reference images specifically — not a generic interpretation of \"dark restaurant\".`,\n\n  human_element: `Editorial high-end food photography — a refined human moment with the dish. Magazine-cover quality. Bon Appétit / Saveur / Cereal editorial register.\n\nPRIMARY SUBJECT: ${subject}, captured at a single decisive moment.\n\nEDITORIAL SCENARIO — choose ONE of the three below and commit fully (do NOT blend scenarios):\n\nA) THE CHEF'S FINISHING TOUCH\nA chef's hand finishing the plate — pinching herbs or microgreens onto the dish, drizzling oil from a small ceramic cruet, sprinkling finishing salt, or placing a final garnish with culinary precision. White chef-coat sleeve OR clean dark prep-uniform sleeve visible. Movement is trained, deliberate, intimate to the food.\n\nB) THE SERVER'S PRESENTATION\nA server presenting the dish forward to camera — both hands cradling the plate or bowl at chest height, dish offered toward the viewer. Dark formal waistcoat sleeve or crisp white shirt sleeve, suggestive of restaurant front-of-house. Posture upright and attentive. The figure becomes a soft-focus backdrop framing the dish.\n\nC) THE REFINED DINER'S MOMENT\nA guest mid-action — pouring sauce from a small jug, lifting a single intentional forkful, or squeezing a citrus wedge over the dish from above. Tailored sleeve — fine wool, cashmere, crisp cotton, or refined knit. Subtle styling consistent with a premium-restaurant guest.\n\nUNIVERSAL RULES (all scenarios):\n- Hand or sleeve only — never a full face or full body. The human reads through hand, sleeve, posture, and uniform.\n- Hands well-kept and naturalistic. Subtle styling consistent with the persona — natural or muted manicure acceptable; no flashy jewellery, no conspicuous watch, no branded items, no logos.\n- Anatomically correct — five fingers, natural proportion, no deformity.\n- Skin tone neutral and realistic.\n\nCOMPOSITION: Cinematic editorial framing. The chosen gesture paused at peak motion — sauce mid-pour, herb mid-drop, fork lifted just above the plate, plate held forward at chest. Hand or sleeve enters the frame from a direction that suits the action (overhead for pour/sprinkle/squeeze, side-right for fork lift, frontal-centred for presentation). The dish remains the primary subject in razor-sharp focus.\n\nSURFACE: Dark wooden restaurant table — walnut or dark-stained oak. For Scenario B (server presentation), the surface may be implied or absent — the uniform itself becomes the backdrop.\n\nLIGHTING: Warm directional restaurant lighting, single dominant key with cinematic falloff. Background falls off into soft bokeh. Light catches specular highlights on sauce, glaze, steam, condensation, or cutlery.\n\nCAMERA: 50mm or 85mm equivalent, f/2.0–f/2.8. Razor-sharp on the action point (the pour, the lift, the presentation, the herb-drop), creamy falloff elsewhere. Editorial three-dimensionality.\n\nMOOD: Refined, quietly luxurious, \"you are here\" — the kind of frame that would lead a magazine spread or a Michelin-tier restaurant Instagram feed. Photorealistic.\n\nABSOLUTELY NOT: full faces, full bodies, identifiable celebrities, branded clothing or logos, branded jewellery or watches, smartphone photography aesthetics, casual phone-snap framing, stock-photo flatness, deformed hands, extra fingers, missing fingers, white background, studio sterility, text, watermarks.`\n};\n\n// ===================================================================\n// v3 OVERRIDES (interior-driven) — fire when an active interior ref is present.\n// v3.1 adds pullback_table to this group.\n// ===================================================================\nif (interiorBlock) {\n  PROMPTS.insitu_interior = `In-situ restaurant food photography — a singular hero dish presented in the foreground of the EXACT restaurant interior described below and shown in the reference images. Clean, dish-dominant composition with the venue as soft-focus backdrop.\n\nINPUT IMAGE ROLES:\n- Image 1 (source): the dish photograph. ABSOLUTE SUBJECT. Preserve its identity, components, plating, vessel, and food detail exactly.\n- Images 2+: reference photographs of the actual restaurant interior. The background of this shot MUST replicate THIS interior — match wall finishes, lighting fixtures, table material, ambient colour temperature, and design language exactly.\n\nCRITICAL — DISH IDENTITY:\nThe dish in Image 1 is the absolute subject. NEVER substitute it with any food shown in the reference images. Reference images guide ONLY interior/scene/material/lighting cues — never the food. If a reference contains other dishes or food elements, IGNORE them entirely.\n\nSUBJECT: ${subject}\n\n${interiorBlock}\n\nCOMPOSITION: 3/4 angle from a seated diner's perspective. The dish is the dominant foreground subject — it occupies 50-60% of the frame. The table around it is CLEAN — at most a single folded napkin or a discreet glass on the periphery. NO competing props, NO scattered ingredients, NO secondary plates. The restaurant interior from the reference images falls off into atmospheric bokeh behind — recognisably the same room as the references, but defocused. Use the SCENE COMPOSITION above as the spatial guide for what is visible in the background.\n\nLIGHTING: Match the LIGHTING CHARACTER above exactly — same colour temperature, fixture style, intensity falloff. The dish receives an implied warm key consistent with the reference, foreground exposed brighter than background falloff so the food remains readable.\n\nSURFACE: Use the TABLETOP MATERIAL line above as the literal table surface — that line specifically describes the table. The OTHER MATERIALS IN SPACE describe walls, chairs, fixtures, floors, and atmospheric elements — they MUST NOT drive the table surface. If TABLETOP MATERIAL says marble, render marble. If concrete, render concrete. The TABLETOP MATERIAL is non-negotiable. Walnut and dark wood are forbidden as the table surface unless TABLETOP MATERIAL itself explicitly names them.\n\nCAMERA: 35mm equivalent, f/2.0. Dish razor-sharp; interior softly out of focus.\n\nMOOD: Photorealistic. Match the AMBIENT MOOD above. The viewer should feel they are seated at a real table in this specific restaurant, with the dish placed in front of them — clean, focused, unambiguous about which dish is the subject.\n\nABSOLUTELY NOT: substituting the source dish for any other food, multiple dishes competing for attention, scattered props or garnishes on the table around the dish, studio backdrop, white walls, daylight unless the reference shows daylight, walnut tables unless TABLETOP MATERIAL explicitly says walnut, generic restaurant tropes that don't match the references, full faces, identifiable celebrities, text, logos, watermarks.`;\n\n  PROMPTS.human_element = `Editorial high-end food photography — a refined human moment with the dish, set within the EXACT restaurant interior described below and shown in the reference images. Magazine-cover quality. Bon Appétit / Saveur / Cereal editorial register.\n\nINPUT IMAGE ROLES:\n- Image 1 (source): the dish photograph. ABSOLUTE SUBJECT. Preserve identity, components, plating, vessel, and food detail exactly.\n- Images 2+: reference photographs of the actual restaurant interior. Lighting, materials, palette, and surrounding context MUST match these references — not a generic restaurant interpretation.\n\nCRITICAL — DISH IDENTITY:\nThe dish in Image 1 is the absolute subject. NEVER substitute it with any food shown in the reference images. References guide ONLY interior/scene/material/lighting cues — never the food. If references contain other dishes or food elements, IGNORE them entirely.\n\nPRIMARY SUBJECT: ${subject}, captured at a single decisive moment.\n\nEDITORIAL SCENARIO — choose ONE of the three below and commit fully (do NOT blend scenarios):\n\nA) THE CHEF'S FINISHING TOUCH\nA chef's hand finishing the plate — pinching herbs or microgreens onto the dish, drizzling oil from a small ceramic cruet, sprinkling finishing salt, or placing a final garnish with culinary precision. White chef-coat sleeve OR clean dark prep-uniform sleeve visible. Movement is trained, deliberate, intimate to the food.\n\nB) THE SERVER'S PRESENTATION\nA server presenting the dish forward to camera — both hands cradling the plate or bowl at chest height, dish offered toward the viewer. Dark formal waistcoat sleeve or crisp white shirt sleeve, suggestive of restaurant front-of-house. Posture upright and attentive. The figure becomes a soft-focus backdrop framing the dish.\n\nC) THE REFINED DINER'S MOMENT\nA guest mid-action — pouring sauce from a small jug, lifting a single intentional forkful, or squeezing a citrus wedge over the dish from above. Tailored sleeve — fine wool, cashmere, crisp cotton, or refined knit. Subtle styling consistent with a premium-restaurant guest.\n\nUNIVERSAL RULES (all scenarios):\n- Hand or sleeve only — never a full face or full body. The human reads through hand, sleeve, posture, and uniform.\n- Hands well-kept and naturalistic. Subtle styling consistent with the persona — natural or muted manicure acceptable; no flashy jewellery, no conspicuous watch, no branded items, no logos.\n- Anatomically correct — five fingers, natural proportion, no deformity.\n- Skin tone neutral and realistic.\n\n${interiorBlock}\n\nCOMPOSITION: Cinematic editorial framing. The chosen gesture paused at peak motion — sauce mid-pour, herb mid-drop, fork lifted just above the plate, plate held forward at chest. Hand or sleeve enters the frame from a direction that suits the action (overhead for pour/sprinkle/squeeze, side-right for fork lift, frontal-centred for presentation). The dish remains the primary subject in razor-sharp focus. Background context consistent with SCENE COMPOSITION above.\n\nSURFACE: Use the TABLETOP MATERIAL line above as the literal table surface — that line specifically describes the table. The OTHER MATERIALS IN SPACE describe walls, chairs, fixtures, floors, and atmospheric elements — they MUST NOT drive the table surface. For Scenario B (server presentation), the surface may be implied or absent — the uniform itself becomes the backdrop. Walnut and dark wood are forbidden as the table surface unless TABLETOP MATERIAL itself explicitly names them.\n\nLIGHTING: Match the LIGHTING CHARACTER above. Single dominant directional key with cinematic falloff. Background bokeh consistent with SCENE COMPOSITION. Light catches specular highlights on sauce, glaze, steam, condensation, or cutlery.\n\nCAMERA: 50mm or 85mm equivalent, f/2.0–f/2.8. Razor-sharp on the action point (the pour, the lift, the presentation, the herb-drop), creamy falloff elsewhere. Editorial three-dimensionality.\n\nMOOD: Match AMBIENT MOOD above. Photorealistic. Refined, quietly luxurious, \"you are here\" — the kind of frame that would lead a magazine spread or a Michelin-tier restaurant Instagram feed.\n\nABSOLUTELY NOT: full faces, full bodies, identifiable celebrities, branded clothing or logos, branded jewellery or watches, smartphone photography aesthetics, casual phone-snap framing, stock-photo flatness, deformed hands, extra fingers, missing fingers, bright daylight unless the reference shows daylight, walnut tables unless the reference shows walnut, generic restaurant scenes that don't match the references, text, watermarks.`;\n\n  // --- v3.3 REPURPOSED: pullback_table = abundance / restaurant-marketing spread -------\n  PROMPTS.pullback_table = `Editorial restaurant-marketing photography — an abundant table-spread scene with the source dish as the visual centerpiece, set inside the EXACT restaurant interior described below. Magazine-cover register, like a luxe restaurant menu cover or \"what to order\" feature spread.\n\nINPUT IMAGE ROLES:\n- Image 1 (source): the dish photograph. THE CENTERPIECE. Preserve identity, components, plating, vessel, and food detail exactly.\n- Images 2+: reference photographs of the actual restaurant interior. Tabletop material, ambient lighting, palette, and surrounding context MUST match these references.\n\nCRITICAL — DISH IDENTITY:\nThe dish in Image 1 is the absolute centerpiece. NEVER substitute it or alter it. Reference images guide ONLY scene/material/lighting/palette cues — never the food. If references contain other dishes or food elements, IGNORE them — render only the source dish.\n\nPRIMARY SUBJECT: ${subject} as the visual centerpiece of an abundant, considered table arrangement.\n\n${interiorBlock}\n\nCOMPOSITION: 3/4 elevated angle, approximately 35-45 degrees above the table. The source dish anchors the scene — slightly off-centre, in the foreground or mid-frame, sharp and well-lit. Around it on the same table: a generous arrangement of restaurant elements — a wine glass with red or amber liquid, a water glass, a small condiment ramekin or sauce dish, a folded linen napkin in a tone consistent with the COLOUR PALETTE above, an accompaniment basket (bread, flatbread, or similar suitable to the cuisine), scattered fresh herbs or garnishes, optionally a small floral arrangement or sprig at the table edge, a softly-out-of-focus bottle (wine or olive oil) further back. The arrangement reads as abundant and considered — generous but never cluttered, every element earns its place.\n\nSURFACE: Use the TABLETOP MATERIAL line above as the literal table surface — that line specifically describes the table. The OTHER MATERIALS IN SPACE describe walls, chairs, fixtures, floors, and atmospheric elements — they MUST NOT drive the table surface. If TABLETOP MATERIAL says marble, render marble. If concrete, render concrete. The TABLETOP MATERIAL is non-negotiable. Walnut and dark wood are forbidden as the table surface unless TABLETOP MATERIAL itself explicitly names them.\n\nLIGHTING: Match the LIGHTING CHARACTER above. Single dominant directional key — the centerpiece dish brightest, surrounding elements softer-lit, background restaurant context falling off into dreamy bokeh. Atmospheric and rich.\n\nCAMERA: 35mm equivalent, f/2.8. Centerpiece dish razor-sharp; surrounding props softly out of focus; background restaurant fully bokeh'd.\n\nMOOD: Match AMBIENT MOOD above. Photorealistic. Abundant, generous, restaurant-marketing register — the kind of cover frame for a restaurant's menu spread, an Instagram showcase shot, or a \"what to order\" feature.\n\nABSOLUTELY NOT: substituting the source dish for any food shown in references, modifying the source dish in any way, a single isolated plate (the abundance is the point), bare table with no surrounding props, walnut tabletops unless the reference explicitly shows walnut, sterile setting, full faces, identifiable celebrities, text, logos, watermarks.`;\n}\n\n// ===================================================================\n// v3.1 OVERRIDES (style-driven) — fire when an active style ref is present.\n// ===================================================================\nif (styleBlock) {\n  PROMPTS.hero_moody = `Editorial close-up food photography, restaurant magazine cover quality. Plating, surface, lighting, and palette language are guided by the styling reference described below and shown in the reference images.\n\nINPUT IMAGE ROLES:\n- Image 1 (source): the dish photograph. ABSOLUTE SUBJECT. Preserve its identity, components, plating arrangement, vessel, and food detail exactly.\n- Images 2+: reference photographs of the venue's food-styling language. Use these for plating geometry, surface character, lighting direction, palette, and overall mood ONLY.\n\nCRITICAL — DISH IDENTITY:\nThe dish in Image 1 is the absolute subject. NEVER substitute it with any food shown in the style references. If the references show sashimi, steak, pasta, or any other cuisine, that food is IRRELEVANT — render only the source dish. The references guide style/lighting/surface — never the food itself.\n\nSUBJECT: ${subject}\n\n${styleBlock}\n\nCOMPOSITION: Tight close-up — the dish fills 70% of the frame. Slight overhead 30-40 degree angle. Single hero subject.\n\nCAMERA: 85mm or 100mm macro lens equivalent, f/2.0, very shallow depth of field. Dish in razor-sharp focus, background dissolves into creamy bokeh.\n\nLIGHTING: Match the LIGHTING ON FOOD above — same direction, colour temperature, contrast, and quality. Where the reference shows soft side light, render soft side light; where it shows directional key light, render that. Sculptural shadows on the food's textures consistent with the reference.\n\nSURFACE / BACKGROUND (mandatory directive): Use the surface and background tone described in SURFACE and COLOUR PALETTE above. If SURFACE says marble, render marble. If it says concrete, render concrete. If it says light stone, render light stone. Walnut, dark-stained wood, slate, and charcoal stone are FORBIDDEN unless the reference explicitly names them. The reference surface is non-negotiable. Heavily blurred bokeh on whatever surface the reference dictates.\n\nMOOD: Match the STYLING MOOD above. Saturated food colours, micro-contrast on food textures (steam, char, glaze, garnish detail), tonally consistent with the reference's character.\n\nABSOLUTELY NOT: substituting the source dish for any food in the references, white seamless background, studio sterility, dark walnut surfaces unless the reference explicitly shows walnut, generic dark-moody tropes that don't match the reference, people, text, logos, watermarks. Photorealistic.`;\n\n  PROMPTS.topdown_props = `Top-down editorial food photography flat-lay, magazine spread aesthetic. Surface, props, palette, and styling language are guided by the styling reference described below and shown in the reference images.\n\nINPUT IMAGE ROLES:\n- Image 1 (source): the dish photograph. ABSOLUTE CENTERPIECE. Preserve identity, components, plating, vessel, and food detail exactly.\n- Images 2+: reference photographs of the venue's food-styling language. Use these for surface material, prop arrangement, garnish rhythm, and palette ONLY.\n\nCRITICAL — DISH IDENTITY:\nThe dish in Image 1 is the absolute centerpiece. NEVER substitute it with any food shown in the style references. If references show sashimi, steak, pasta, or other cuisines, that food is IRRELEVANT — render only the source dish. References guide staging/surface/props — never the food itself.\n\nCENTERPIECE: ${subject}\n\n${styleBlock}\n\nCOMPOSITION: 90-degree overhead. Centerpiece dish positioned slightly off-centre for editorial dynamism. Generous negative space framing the scene. Use STYLING COMPOSITION above as the spatial guide for what props sit around the plate and how they're arranged.\n\nSURROUNDING ELEMENTS (in soft focus, organically scattered): props consistent with STYLING COMPOSITION and STYLING MOOD above — herbs, citrus, spices, vegetables, ramekins, cutlery, glassware, or linens as the reference suggests. Do NOT default to scattered parsley, citrus halves, and olive oil drizzles unless the reference shows that staging.\n\nSURFACE (mandatory directive): Use the tabletop material described in SURFACE above. If it says marble, render marble. If it says concrete, render concrete. If it says light stone, render light stone. Dark wood, weathered walnut, slate, and charcoal stone are FORBIDDEN unless the reference explicitly names them. NEVER white, NEVER seamless. The reference surface is non-negotiable.\n\nLIGHTING: Match the LIGHTING ON FOOD above — directional quality, colour temperature, shadow character. Vignette intensity consistent with STYLING MOOD.\n\nCAMERA: 35mm equivalent, f/4. Centre dish in sharpest focus; surrounding props slightly softer for depth.\n\nMOOD: Match STYLING MOOD above. Storytelling, abundant, lush — but tonally consistent with the reference, not a default Bon Appétit dark-wood-and-herbs aesthetic.\n\nABSOLUTELY NOT: substituting the source dish for any food in the references, white background, sterile studio, dark wood unless the reference explicitly shows dark wood, generic herb-and-citrus scatter unless the reference shows that, isolated dish on plain background, people, text, logos.`;\n}\n\nconst finalPrompt = PROMPTS[variant] || PROMPTS.hero_moody;\n\n// ===================================================================\n// Image inputs\n// - Source dish always passed\n// - Interior refs passed for: insitu_interior, human_element, pullback_table  (v3.1)\n// - Style refs passed for:    hero_moody, topdown_props                       (v3.1)\n// - Up to 2 most-recent refs per bucket (mirroring v3 cap)\n// ===================================================================\nconst useInteriorRefs = (\n  variant === 'insitu_interior' ||\n  variant === 'human_element' ||\n  variant === 'pullback_table'\n);\n\nconst useStyleRefs = (\n  variant === 'hero_moody' ||\n  variant === 'topdown_props'\n);\n\nconst interiorRefUrls = useInteriorRefs\n  ? interiorRefs.slice(0, 2).map(r => r.url)\n  : [];\n\nconst styleRefUrls = useStyleRefs\n  ? styleRefs.slice(0, 2).map(r => r.url)\n  : [];\n\nconst imageInputs = [sourceUrl, ...interiorRefUrls, ...styleRefUrls].filter(Boolean);\n\nreturn {\n  json: {\n    ...j,\n    final_prompt: finalPrompt,\n    image_inputs: imageInputs,\n    debug: {\n      variant,\n      interior_ref_count: interiorRefs.length,\n      style_ref_count: styleRefs.length,\n      active_interior_summary: activeInterior?.summary || null,\n      active_style_summary: activeStyle?.summary || null,\n      used_dynamic_prompt:\n        (!!interiorBlock && useInteriorRefs) ||\n        (!!styleBlock && useStyleRefs),\n      used_interior_refs: useInteriorRefs,\n      used_style_refs: useStyleRefs\n    }\n  }\n};"
+      },
+      "name": "Build Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1408,
+        912
+      ],
+      "id": "12652c63-bc83-466c-ad9d-53672ff91258"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.replicate.com/v1/models/google/nano-banana-pro/predictions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Token {{ $env.REPLICATE_API_TOKEN }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Prefer",
+              "value": "wait=0"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": {{ JSON.stringify($json.final_prompt) }},\n    \"image_input\": {{ JSON.stringify($json.image_inputs) }}\n  }\n}",
+        "options": {}
+      },
+      "name": "Replicate Create",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1184,
+        912
+      ],
+      "id": "84688f00-5720-4a6e-b9e1-c068fcbad204"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Extract polling URL from Replicate's create response.\nconst j = $input.item.json;\nreturn { json: { ...j, polling_url: j.urls?.get } };\n"
+      },
+      "name": "Prep Polling",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -960,
+        912
+      ],
+      "id": "4d53e7fb-cc95-4f0e-8c86-8f682e02c612"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Active polling against Replicate prediction endpoint.\n// Uses this.helpers.httpRequest (NOT $http.request — that is not exposed in this n8n version).\nconst j = $input.item.json;\nconst url = j.polling_url;\nconst headers = { Authorization: `Token ${$env.REPLICATE_API_TOKEN}` };\n\nlet status = 'starting';\nlet result = null;\nconst maxAttempts = 24;       // 24 × 10s = 4 min ceiling per prediction\nconst intervalMs = 10000;\n\nfor (let i = 0; i < maxAttempts; i++) {\n  await new Promise(r => setTimeout(r, intervalMs));\n  result = await this.helpers.httpRequest({ method: 'GET', url, headers, json: true });\n  status = result.status;\n  if (status === 'succeeded' || status === 'failed' || status === 'canceled') break;\n}\n\nif (status !== 'succeeded') {\n  throw new Error(`Replicate prediction ${status}: ${result?.error || 'no error message'}`);\n}\n\nconst output = Array.isArray(result.output) ? result.output[0] : result.output;\n\nreturn {\n  json: {\n    ...j,\n    replicate_status: status,\n    replicate_output_url: output\n  }\n};\n"
+      },
+      "name": "Poll Replicate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -736,
+        912
+      ],
+      "id": "753ed484-0dd8-4521-80f8-0516facf3b9a"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.replicate_output_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "name": "Download Output",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -528,
+        912
+      ],
+      "id": "0dbd98fc-e0a7-489e-bc5f-5df4b234448b"
+    },
+    {
+      "parameters": {
+        "name": "={{ $('Pin Item Context').item.json.batch_id }}_{{ $json.variant_slug }}.png",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1mgjuv_BhXI5-Gxgnnwh15oe1grsTusEw",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "name": "Drive Upload Output",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -304,
+        912
+      ],
+      "id": "c28629f6-e869-4e7d-98b4-0367ec6e79b7",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "share",
+        "fileId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.id }}"
+        },
+        "permissionsUi": {
+          "permissionsValues": {
+            "role": "reader",
+            "type": "anyone"
+          }
+        },
+        "options": {}
+      },
+      "name": "Drive Share Output",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -80,
+        912
+      ],
+      "id": "9f77f2bf-843e-4cac-935b-05e88582b287",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "C4rT8ywcRQP8NznL",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// After Drive Upload + Share, capture the public lh3 URL for the output.\nconst j = $input.item.json;\nconst fileId = j.id || j.fileId;\nreturn {\n  json: {\n    ...j,\n    output_drive_id: fileId,\n    output_drive_url: `https://lh3.googleusercontent.com/d/${fileId}`\n  }\n};\n"
+      },
+      "name": "Stitch Output URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        144,
+        912
+      ],
+      "id": "49e381cb-a6b8-4f5f-9993-eddfd343b309"
+    },
+    {
+      "parameters": {
+        "jsCode": "// n8n Code node — \"Aggregate Variants\"\n// Replaces \"Aggregate Shot Set\" in Generation v1.\n// Collapses N per-variant outputs into one shot_set jsonb keyed by variant_slug,\n// ready to write back into content_batch_items.shot_set.\n//\n// Field-name assumptions (adjust if your upstream nodes use different keys):\n//   j.output_drive_url — public Drive URL of the generated image\n//   j.output_drive_id  — Drive file ID\n//   j.final_prompt     — the prompt that was sent to Replicate\n\nconst items = $input.all();\nconst ctx = $('Pin Item Context').item.json;\n\nconst shot_set = {};\n\nfor (const it of items) {\n  const j = it.json;\n  if (!j.variant_slug) continue;\n\n  shot_set[j.variant_slug] = {\n    variant_name: j.variant_name,\n    drive_url:    j.output_drive_url || null,\n    drive_id:     j.output_drive_id  || null,\n    prompt:       j.final_prompt     || null,\n    generated_at: new Date().toISOString()\n  };\n}\n\nreturn [{\n  json: {\n    item_id:   ctx.item_id,\n    batch_id:  ctx.batch_id,\n    tenant_id: ctx.tenant_id,\n    shot_set\n  }\n}];\n"
+      },
+      "name": "Aggregate Variants",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        352,
+        912
+      ],
+      "id": "5b0790b3-064e-46aa-915c-8fe69b2e78ed"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_batch_items",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "id",
+              "value": "=eq.{{ $json.item_id }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"shot_set\": {{ JSON.stringify($json.shot_set) }},\n  \"status\": \"ready\"\n}",
+        "options": {}
+      },
+      "name": "Update Item Row",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1872,
+        592
+      ],
+      "id": "0a33e949-ad24-4e05-98c7-0fed6b7f4c5f"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ $env.SUPABASE_URL }}/rest/v1/content_batches",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "id",
+              "value": "=eq.{{ $('Create Batch').item.json.id }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.SUPABASE_SERVICE_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"status\": \"awaiting_review\"\n}",
+        "options": {}
+      },
+      "name": "Update Batch",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "6e66a384-783a-4d5c-ab9b-efba155ac02b"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "aeb72c2c-6ae9-4a71-a952-9746380940b6",
+              "leftValue": "={{ ['hero_moody', 'pullback_table', 'insitu_interior', 'human_element'].includes($json.variant_slug) }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -1616,
+        960
+      ],
+      "id": "5918bed3-3b75-4a4a-8935-5885df4efa45",
+      "name": "If"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Form Trigger": {
+      "main": [
+        [
+          {
+            "node": "Normalize Binary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Binary": {
+      "main": [
+        [
+          {
+            "node": "Lookup Tenant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lookup Tenant": {
+      "main": [
+        [
+          {
+            "node": "Load Tenant Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Load Tenant Config": {
+      "main": [
+        [
+          {
+            "node": "Merge Tenant Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Tenant Context": {
+      "main": [
+        [
+          {
+            "node": "Create Batch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Batch": {
+      "main": [
+        [
+          {
+            "node": "Stage Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stage Sources": {
+      "main": [
+        [
+          {
+            "node": "Loop Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Sources": {
+      "main": [
+        [
+          {
+            "node": "Update Batch",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Drive Upload Source",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Upload Source": {
+      "main": [
+        [
+          {
+            "node": "Drive Share Source",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Share Source": {
+      "main": [
+        [
+          {
+            "node": "Build Source URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Source URL": {
+      "main": [
+        [
+          {
+            "node": "Vision Pass",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vision Pass": {
+      "main": [
+        [
+          {
+            "node": "Parse Vision",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Vision": {
+      "main": [
+        [
+          {
+            "node": "Insert Item Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert Item Row": {
+      "main": [
+        [
+          {
+            "node": "Pin Item Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pin Item Context": {
+      "main": [
+        [
+          {
+            "node": "Generate Variants",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Variants": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Prompt": {
+      "main": [
+        [
+          {
+            "node": "Replicate Create",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replicate Create": {
+      "main": [
+        [
+          {
+            "node": "Prep Polling",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prep Polling": {
+      "main": [
+        [
+          {
+            "node": "Poll Replicate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Poll Replicate": {
+      "main": [
+        [
+          {
+            "node": "Download Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Output": {
+      "main": [
+        [
+          {
+            "node": "Drive Upload Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Upload Output": {
+      "main": [
+        [
+          {
+            "node": "Drive Share Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Share Output": {
+      "main": [
+        [
+          {
+            "node": "Stitch Output URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stitch Output URL": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Variants",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Variants": {
+      "main": [
+        [
+          {
+            "node": "Update Item Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Item Row": {
+      "main": [
+        [
+          {
+            "node": "Loop Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Build Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "c32e0459-e71d-44bc-9d60-fa1fdeef0f5a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1417e0b59edc3afb3d5838cbf6a079bdbac13828695e425b5a8adce64da3515b"
+  },
+  "id": "eZE9eMIQ5Sl6ZFMf",
+  "tags": [
+    {
+      "updatedAt": "2026-05-06T13:53:49.544Z",
+      "createdAt": "2026-05-06T13:53:49.544Z",
+      "id": "22mf1hDnE8pPmwgU",
+      "name": "content-studio"
+    },
+    {
+      "updatedAt": "2026-05-06T13:53:49.547Z",
+      "createdAt": "2026-05-06T13:53:49.547Z",
+      "id": "WbNHSek0XCX0CY2X",
+      "name": "bake-off"
+    }
+  ]
+}
