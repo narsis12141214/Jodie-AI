@@ -190,6 +190,7 @@ Active Skills
 .claude/skills/ceo/ — CEO Router (routing logic detail)
 .claude/skills/research/ — Research workflow
 .claude/skills/seo-monthly-roundup/ — SEO reporting
+.claude/skills/seo-playbook/ — Evidence-based SEO methodology (hard gates, CTR benchmarks, phased playbook, local SEO, diagnosis protocols). MANDATORY load before any SEO work for either business. Built 22 Aug 2026 from cross-checked research.
 .claude/skills/idea-mining/ — Idea extraction
 
 Skills Backlog
