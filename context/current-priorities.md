@@ -1,9 +1,31 @@
 # Current Priorities
 
-Last updated: 2026-08-19 (Tue evening close-out)
-Note: This file is significantly stale below. Full rewrite pending. Window 2 (which closed 30 July) never got a final read. Window 3 has begun with no formal targets set — pending Hadi's decision.
+Last updated: 2026-08-23 (Sun evening close-out)
+Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## WEDNESDAY 20 AUGUST — PIVOT DAY: SEO + CONTENT CREATION FOR BOTH BUSINESSES
+## MONDAY 24 AUGUST — SEO EXECUTION WEEK 1 BEGINS (per the 90-day scorecard)
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **SEO WEEK 1-2 EXECUTION STARTS — Hadi committed ("I'm fully ready to take my part").** The new evidence-based playbook is live (.claude/skills/seo-playbook/), the 90-day scorecard is pre-registered (projects/photography/22-08-26/seo-90-day-scorecard.md). Week 1-2 block: (a) migration forensics — crawl pre-Nov-2024 URL inventory via Wayback/old sitemap, repair redirects, canonical/hostname audit; (b) verify BOTH sitemaps (Showit + WordPress) valid + submitted; (c) branded-query artifact check (30-min checklist); (d) GBP completeness pass + review velocity restart; (e) first venue pages briefed (Old Marylebone Town Hall + Chelsea Old Town Hall are Hadi's named venues; venue pages need NO cooperation from venues); (f) find the Wall Street Journal interview link (~3 years ago, Hadi gave an interview) — E-E-A-T asset for About page + GBP + future press pitches; (g) build venue/vendor link-ask list.
+2. **CONTENT STUDIO TEST — still pending from Saturday.** System fully mapped + JSONs committed (projects/agency/content-studio/). Before test: check n8n credentials (Drive OAuth + Supabase/OpenAI/Replicate env keys). Then run a test batch through the form (Rendezvous test tenant). Known pre-work for real deployment: retenant the hardcoded Rendezvous references, fix Rendezvous name in insitu fallback prompt, decide on re-enabling the 4 gated variants, do the parked tabletop_material Vision-schema TODO.
+3. **SELINA & MARLI reply watch.** Final reply sent 23 Aug: date options (4 Sept available, Sunday 6 Sept 3:30pm recommended, Sat 5th possible), delivery cadence stated (proofs 2-3 days, 50 images, finals 2 weeks from selection), planning call positioned POST-booking per new tiering rule. Awaiting date pick. Shoot is ~2 weeks out — if silent by Wed 26 Aug, nudge.
+4. **ELAN — partner returns from trip ~end of this week.** IT meeting (21 Aug, Nader) went well; Nader delivering verdict to the business partner; second demo to main owner/partner then contract. Hadi's hope: everything done by end of next week. No action until partner returns; prep second-demo support materials if Hadi asks.
+5. **Perplexity API key still missing** — /Users/hadi/Developer/Jodie-AI/.env needs recreating with PERPLEXITY_API_KEY for the research agent infra. Second credential casualty this month (GSC pipeline was first — n8n Google credential died again, Hadi manually re-ran 22 Aug; needs a permanent fix or a Monday-morning freshness check habit).
+
+Standing watches / diarised:
+- **Steva (locked, £2,300):** Wed 9 Sept — balance reminder (£1,610). Mon 21 Sept — schedule planning conversation for week of 22 Sept. Style guide PDF status unknown (existing or build?).
+- Monsieur contract build (all terms gathered 14 Aug, not yet drafted). Chic contract signature status unconfirmed.
+- Cold email rewrite, Zizi objection one-pager, Click Pro briefing, website spam-filter fix, Window 3 targets — all still open.
+
+Live pipeline (as of 23 Aug close):
+- **Agency paid: 4** — Haleh + Kish LIVE + Galleria + Chic (in delivery).
+- **Agency in play: Elan** — post-IT-meeting, awaiting partner return + final demo. Monsieur pending contract.
+- **Agency parked: Hanna, Heny.** Lost/dead: Ace, Sabib, Rozay, Molana, Randeszvous, LaMure.
+- **Photography locked: Steva £2,300 (10 Oct).** In play: **Selina & Marli £680** (date pick pending). Lost: Kanaka, Samantha, Maria, Kate parked.
+
+---
+
+## WEDNESDAY 20 AUGUST — PIVOT DAY: SEO + CONTENT CREATION FOR BOTH BUSINESSES (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **HADI'S EXPLICIT FOCUS FOR TOMORROW: SEO + content creation for BOTH Photography AND Click AI Agency.** Big axis shift from the client-close / contract cadence of the last two weeks. At session start, help Hadi pick a starting point:
