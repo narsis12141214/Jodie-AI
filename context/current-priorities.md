@@ -1,9 +1,29 @@
 # Current Priorities
 
-Last updated: 2026-08-23 (Sun evening close-out)
+Last updated: 2026-08-24 (Mon close-out)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## MONDAY 24 AUGUST — SEO EXECUTION WEEK 1 BEGINS (per the 90-day scorecard)
+## TUESDAY 25 AUGUST
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **SELINA & MARLI — SIGNED BUT NOT PAID.** Contract signed 24 Aug (Bond-with-ITMFL-traces, one outfit, Sunday 6 Sept 3:30pm planned start, "Your Photographs" license clause added). Booking is NOT secured until payment lands, per Hadi's own rule, and the LaMure lesson (19 Aug decision) says never let a signature sit without the money. If payment hasn't arrived by midday, send a light warm nudge (payment link re-share, "so I can lock the 6th for you both"). On payment: diarise planning call, 48h weather check Fri 4 Sept, 5 clean placeholder proofs commitment; log booking value per the collection chosen (Grace, per proposal).
+2. **SEO EXECUTION WEEK 1 — slipped from Monday, starts Tuesday.** Full block per the 90-day scorecard: migration forensics (Wayback + old sitemap crawl, redirect repairs, canonical/hostname audit), both sitemaps verified + submitted, branded-query artifact check, GBP completeness pass + review velocity restart, first venue pages (Old Marylebone Town Hall, Chelsea Old Town Hall), WSJ interview link hunt, venue/vendor link-ask list. The scorecard clock effectively starts when execution starts — one day's slip is fine, a week's slip is a pattern.
+3. **Content Studio test — still pending** (credential check in n8n, then test batch through the form, Rendezvous test tenant).
+4. **Elan** — partner back ~end of week; second demo then contract. No action until then.
+5. **Perplexity .env** recreation (5 min, Hadi).
+
+Standing watches / diarised:
+- **Steva (locked, £2,300):** Wed 9 Sept balance reminder (£1,610). Mon 21 Sept planning-call trigger. Style guide PDF status unknown.
+- **"Grace collection" naming** — new client-facing collection name used with Selina, not in shared/presence-method-packages.md; get details from Hadi and update the canonical file (canonical-vs-live drift prevention).
+- Monsieur contract build. Chic contract signature status. Cold email rewrite. Zizi one-pager. Click Pro briefing. Spam-filter fix. Window 3 targets.
+
+Live pipeline (as of 24 Aug close):
+- **Agency paid: 4** — Haleh + Kish LIVE + Galleria + Chic (in delivery). **In play: Elan** (partner return ~end of week). Monsieur pending contract. Parked: Hanna, Heny.
+- **Photography locked: Steva £2,300 (10 Oct).** **SIGNED-AWAITING-PAYMENT: Selina & Marli (6 Sept, Grace collection).** Lost: Kanaka, Samantha, Maria; Kate parked.
+
+---
+
+## MONDAY 24 AUGUST — SEO EXECUTION WEEK 1 BEGINS (per the 90-day scorecard) (SUPERSEDED — SEO start slipped to Tue 25; day went to Selina closing thread)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **SEO WEEK 1-2 EXECUTION STARTS — Hadi committed ("I'm fully ready to take my part").** The new evidence-based playbook is live (.claude/skills/seo-playbook/), the 90-day scorecard is pre-registered (projects/photography/22-08-26/seo-90-day-scorecard.md). Week 1-2 block: (a) migration forensics — crawl pre-Nov-2024 URL inventory via Wayback/old sitemap, repair redirects, canonical/hostname audit; (b) verify BOTH sitemaps (Showit + WordPress) valid + submitted; (c) branded-query artifact check (30-min checklist); (d) GBP completeness pass + review velocity restart; (e) first venue pages briefed (Old Marylebone Town Hall + Chelsea Old Town Hall are Hadi's named venues; venue pages need NO cooperation from venues); (f) find the Wall Street Journal interview link (~3 years ago, Hadi gave an interview) — E-E-A-T asset for About page + GBP + future press pitches; (g) build venue/vendor link-ask list.
