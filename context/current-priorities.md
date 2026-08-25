@@ -1,9 +1,38 @@
 # Current Priorities
 
-Last updated: 2026-08-24 (Mon close-out)
+Last updated: 2026-08-26 (close-out)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## TUESDAY 25 AUGUST
+## THURSDAY 27 AUGUST
+
+**TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
+1. **HADI'S OPEN ITEMS — these unblock Jodie's next workstreams:**
+   - **VENUE BRAIN-DUMP (10 min, voice note).** Every venue shot in 10 years: name, roughly how many times, any standout weddings. Unblocks BOTH venue pages (content engine) and the venue link-ask list (authority engine). Highest-leverage 10 minutes available. Asked twice now — surface first.
+   - **WP REDIRECT SESSION (20 min).** Table ready at projects/photography/24-08-26/redirect-repoint-table.md. EXPORT RULES TO CSV FIRST (June wipe incident). 10 rules + Rank Math check on 2 excluded posts. Jodie verifies with curl sweep after.
+   - **GBP completeness pass** (30-45 min — Jodie to supply checklist when Hadi ready).
+   - Perplexity `.env` recreation (5 min).
+2. **SELINA & MARLI — questionnaire to send.** Booking PAID + secured 25 Aug (6 Sept, 3:30pm planned). Confirmation sent promising questionnaire "shortly". Canonical questionnaire built and ready: projects/photography/25-08-26/session-planning-questionnaire.md — Hadi to build in Dubsado/form tool and send. Watch for their answers, then session gets crafted from them.
+3. **Content Studio test — parked since Saturday.** Credential check in n8n (Drive OAuth + Supabase/OpenAI/Replicate env), then test batch via form. System map: projects/agency/content-studio/.
+4. **Two inquiries in flight (both sent 24 Aug):**
+   - **John Waite & Oksana Ryjouk** — 10 July 2027 wedding, Humble Grape Bridewell Place. Starting price £1,400 quoted, The Bloom (£2,300) is internal fit. Cadence: day-3 nudge 27 Aug, day-7 31 Aug, close-out 7 Sept.
+   - **Andrey Matvienko & Marie** — Oct 2026 UK wedding, Russia. SCAM MARKERS FLAGGED (fake Google Sites "calendar" link, no phone/IG, duplicated text). Reply sent defended: never engage their link, call arranged via our invite only, 3 legitimacy-test questions, £1,400 stated. If they progress: payment ONLY via standard invoice; any overpayment/cheque/third-party routing = stop immediately.
+5. **ELAN — partner back from trip ~this week.** Second demo to owner/partner, then contract. Watch for Ali/Nader contact.
+
+Standing watches / diarised:
+- **Fri 4 Sept:** Selina 48h weather check + confirm exact start time.
+- **~9 Sept:** Selina proofs (2-3 days post-shoot) + 5 clean watermark-free website placeholders.
+- **Wed 9 Sept:** Steva balance reminder (£1,610). **Mon 21 Sept:** Steva planning-conversation trigger.
+- Post-delivery review asks (GBP velocity restart — Selina first, then Steva).
+- "Grace collection" naming not in shared/presence-method-packages.md — canonical file needs updating.
+- Monsieur contract build. Chic contract signature status. Cold email rewrite. Zizi one-pager. Click Pro briefing. Website spam-filter fix. Window 3 targets.
+
+Live pipeline (as of 26 Aug):
+- **Agency paid: 4** — Haleh + Kish LIVE + Galleria + Chic. **In play: Elan.** Monsieur pending contract. Parked: Hanna, Heny.
+- **Photography booked: 2** — **Steva £2,300 (10 Oct)** + **Selina & Marli (6 Sept, Grace collection, PAID)**. In flight: John & Oksana (Jul 2027), Andrey (flagged). Lost: Kanaka, Samantha, Maria; Kate parked.
+
+---
+
+## TUESDAY 25 AUGUST (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **SELINA & MARLI — SIGNED BUT NOT PAID.** Contract signed 24 Aug (Bond-with-ITMFL-traces, one outfit, Sunday 6 Sept 3:30pm planned start, "Your Photographs" license clause added). Booking is NOT secured until payment lands, per Hadi's own rule, and the LaMure lesson (19 Aug decision) says never let a signature sit without the money. If payment hasn't arrived by midday, send a light warm nudge (payment link re-share, "so I can lock the 6th for you both"). On payment: diarise planning call, 48h weather check Fri 4 Sept, 5 clean placeholder proofs commitment; log booking value per the collection chosen (Grace, per proposal).
