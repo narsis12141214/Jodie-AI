@@ -15,8 +15,10 @@ Note: Window 3 targets still not formally set. Window 2 never got a final read.
 3. **Content Studio test — parked since Saturday.** Credential check in n8n (Drive OAuth + Supabase/OpenAI/Replicate env), then test batch via form. System map: projects/agency/content-studio/.
 4. **Two inquiries in flight (both sent 24 Aug):**
    - **John Waite & Oksana Ryjouk** — 10 July 2027 wedding, Humble Grape Bridewell Place. Starting price £1,400 quoted, The Bloom (£2,300) is internal fit. Cadence: day-3 nudge 27 Aug, day-7 31 Aug, close-out 7 Sept.
-   - **Andrey Matvienko & Marie** — Oct 2026 UK wedding, Russia. SCAM MARKERS FLAGGED (fake Google Sites "calendar" link, no phone/IG, duplicated text). Reply sent defended: never engage their link, call arranged via our invite only, 3 legitimacy-test questions, £1,400 stated. If they progress: payment ONLY via standard invoice; any overpayment/cheque/third-party routing = stop immediately.
-5. **ELAN — partner back from trip ~this week.** Second demo to owner/partner, then contract. Watch for Ali/Nader contact.
+   - **Andrey Matvienko & Marie — CLOSED AS SCAM (confirmed 29 Aug).** Never replied to the defended reply sent 24 Aug. Scam markers read correctly (fake Google Sites "calendar" link, no phone, no IG, duplicated copy-paste text). Cost: zero — no link clicked, no details exposed, no time lost. Off the pipeline. Pattern noted for future inquiry screening.
+5. **ELAN — partner STILL away as of 29 Aug, no time confirmed yet.** Nothing to chase; ball is legitimately theirs after a successful IT meeting. If no contact by end of week commencing 31 Aug, send a light touch to Ali. Otherwise wait.
+
+**Note on pace:** Hadi was unwell w/c 24 Aug, which is why the three unblockers carried. Not a discipline issue. Re-offer them plainly, don't stack pressure.
 
 Standing watches / diarised:
 - **Fri 4 Sept:** Selina 48h weather check + confirm exact start time.
