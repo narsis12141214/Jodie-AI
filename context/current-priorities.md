@@ -21,8 +21,11 @@ Note: Window 3 targets still not formally set. Window 2 never got a final read.
 **Note on pace:** Hadi was unwell w/c 24 Aug, which is why the three unblockers carried. Not a discipline issue. Re-offer them plainly, don't stack pressure.
 
 Standing watches / diarised:
-- **Fri 4 Sept:** Selina 48h weather check + confirm exact start time.
-- **~9 Sept:** Selina proofs (2-3 days post-shoot) + 5 clean watermark-free website placeholders.
+- **SELINA SHOOT MOVED: Sun 6 Sept → SATURDAY 12 SEPTEMBER, afternoon** (confirmed by client 3 Sept). Reason: Marli has health issues with heat, could not do 27C. Everything else unchanged — Grace collection, paid, Bond-leading mood with ITMFL traces, one outfit.
+- **THU 10 SEPT:** Selina 48h weather check + confirm exact start time (moved from Fri 4 Sept). Watch temperature specifically — if hot again, shift timing later for Marli's comfort.
+- **Route design must account for:** shade, indoor pauses, heat management for Marli. Offered proactively in the reschedule email.
+- **~15 SEPT:** Selina proofs (2-3 days post-shoot) + 5 clean watermark-free website placeholders.
+- **Selina questionnaire:** deadline released (was tied to 6 Sept shoot). Awaiting her answers, no pressure applied. On arrival: craft session, send plan ahead of the day.
 - **Wed 9 Sept:** Steva balance reminder (£1,610). **Mon 21 Sept:** Steva planning-conversation trigger.
 - Post-delivery review asks (GBP velocity restart — Selina first, then Steva).
 - "Grace collection" naming not in shared/presence-method-packages.md — canonical file needs updating.
