@@ -29,6 +29,12 @@ If you want to cover more ground than 90 minutes allows, we can extend the sessi
 
 **Your photographs.** 50 edited images in your collection. Your proof gallery arrives within 2 to 3 days of the shoot, you choose your 50 favourites, and your final edited high-resolution gallery is delivered within two weeks of your selection.
 
+One thing that might be useful while you are dreaming about this. I wrote a guide to the 25 best engagement photo locations in London, which covers Tower Bridge and St Katharine Docks, Westminster, St James's, and a few of the quieter places most visitors never find, like St Dunstan in the East:
+
+https://www.hadiphotographylondon.com/blog/best-engagement-photo-locations-london/
+
+Have a look and tell me which ones speak to you. It is a good way to build your route.
+
 Shall I hold Wednesday 23 September for you both?
 
 Warmly,
