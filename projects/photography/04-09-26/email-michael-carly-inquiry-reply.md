@@ -1,10 +1,11 @@
-# Photography inquiry reply v2 — Michael Curtis & Carly (two options)
+# Photography inquiry reply v3 — Michael Curtis & Carly (corrected local guidance)
 Date: 4 September 2026
 Recipients: Michael Curtis (michaelcurtis@srcurtis.com), +1 407 405 4389. Carly (@carlydriver).
 Visiting from Orlando, Florida. Requested: 23 September 2026, first light (~6:49) for crowd-free streets, 1-3 hours, landmarks + British streets + a park, candids plus polished portraits, newly engaged "soft launch", new to couples photography.
 Their four direct questions: availability, packages/pricing, number of edited images, turnaround.
-Hadi's availability: 23rd morning NOT available. 23rd afternoon available. **24th morning available.**
-v2 change: offering BOTH the 23rd afternoon and a first-light session on the 24th — gives them the sunrise they actually asked for.
+Hadi availability: 23rd morning NO. 23rd afternoon YES. 24th morning YES.
+
+**v3 CORRECTION (Hadi, 4 Sept):** v2 claimed early morning around Tower Bridge would be quiet. FACTUALLY WRONG. That area is dense with offices and 6:45am is commuter rush hour. Hadi's real guidance: afternoon into golden hour is the better call for these locations, and he knows quieter spots in that area that are not on the tourist path. Recommendation now REVERSED, with the honest reason given.
 
 ---
 
@@ -14,15 +15,13 @@ Hi Michael, hi Carly,
 
 Congratulations on the engagement, and what a way to mark it. A British homecoming with Carly seeing all of it properly for the first time, photographed as a soft launch. That is a lovely brief to be handed.
 
-Let me answer your questions directly.
+Let me answer your questions directly, starting with one piece of local advice that may surprise you.
 
-**Availability. I have two options for you.**
+**On timing.** Your instinct about crowds is a good one, but for the locations you have in mind, first light will not deliver what you are hoping for. The area around Tower Bridge is dense with offices, and by quarter to seven the streets are filling with people heading to work. Sunrise there is not a quiet city, it is rush hour with better light.
 
-**Wednesday 23 September, afternoon.** I would suggest running it late so we finish into golden hour. The sun sets around seven at this time of year, so the last stretch lands in the warmest, softest light of the day.
+What actually works is the opposite end of the day. **Wednesday 23 September, late afternoon into golden hour.** The sun sets around seven at this time of year, so we finish in the warmest light of the day, the commuter tide has gone the other way, and after ten years photographing this city I know the corners around Tower Bridge and the river that stay quiet while the obvious viewpoints fill up. That is where we will spend our time.
 
-**Thursday 24 September, first light.** If your dates allow a day's shift, this is the sunrise session you described, starting around 6:45. You were right to think about crowds. Big Ben and Tower Bridge are genuinely busy, and first light is the surest way to have them to yourselves. The mews are silent, the parks are empty, and the light is clean and low. If mornings are what you pictured, take this one.
-
-Either works beautifully. The 24th gives you the empty city; the 23rd gives you golden hour. Tell me which suits your trip and I will hold it.
+If mornings are genuinely what you pictured, I do also have **Thursday 24 September at first light** available, and I am happy to do it. I would simply be doing you a disservice not to tell you that the afternoon will give you the better photographs for the London you described.
 
 **The session.** £680, 60 to 90 minutes, across two or three locations planned around you. Includes a planning conversation beforehand, a style and outfit guide so nothing about what to wear is guesswork, and gentle guidance throughout. You mentioned you are new to this: almost everyone is, and it genuinely does not matter. I give you two something real to respond to and photograph what happens, rather than arranging you into poses. The candids you want come from that, and the polished portraits sit alongside them.
 
@@ -30,7 +29,7 @@ If you want to cover more ground than 90 minutes allows, we can extend the sessi
 
 **Your photographs.** 50 edited images in your collection. Your proof gallery arrives within 2 to 3 days of the shoot, you choose your 50 favourites, and your final edited high-resolution gallery is delivered within two weeks of your selection.
 
-Which of the two would you like me to hold?
+Shall I hold Wednesday 23 September for you both?
 
 Warmly,
 Hadi
@@ -39,17 +38,12 @@ Hadi
 
 ### Notes for record
 
-- **v2 offers the sunrise session on Thu 24 Sept** alongside the Wed 23rd afternoon. Materially stronger than v1: they asked for first light with a sound reason, and now they can have it. Removes the main risk of losing them to another photographer with a morning slot.
-- **Crowd counsel retained but repositioned** — no longer a defence of the afternoon, now a validation of their instinct that makes the 24th feel like expert agreement rather than a concession.
-- **Both options framed as genuinely good**, with the trade-off stated in one clean line ("the 24th gives you the empty city; the 23rd gives you golden hour"). Choice, not a menu of excuses.
-- Subject line kept referencing 23 September (their date) so the email is recognisable in their inbox; the 24th is introduced inside.
-- All four questions still answered directly and in order.
-- "Cinematic" not adopted as self-description (their word for our style; brand rule holds).
-- Nervousness pre-empted; prompt-not-pose shown not taught; longer coverage offered without inventing a price.
+- **v3 reverses v2's recommendation on correct local knowledge.** Tower Bridge sits in an office-dense area; 6:45am is commuter peak, not an empty city. v2's "the mews are silent, the parks are empty" was an assumption presented as fact and would have set a false expectation the client discovered on the day.
+- **The correction is the email's strongest asset.** A visiting couple assumed sunrise = quiet, which is true in many cities and false here. Telling them plainly, with the reason, is exactly the expertise they are paying for. It also demonstrates the "ten years working London" differentiator far better than any claim about it.
+- **Honest framing of the trade-off:** the 24th morning is still offered because it is available and it is their stated preference, but with a clear statement that the afternoon serves them better. "I would simply be doing you a disservice not to tell you" — counsel, not a sales push.
+- **Close now asks for the recommended date** (23rd), rather than a neutral either/or. They can still take the 24th; the recommendation is unambiguous.
+- All four questions answered directly. Prompt-not-pose shown not taught. Nervousness pre-empted. Longer coverage offered without inventing a price.
 - Refined Dreamer, no em dashes, no forbidden phrases.
 
-### Assumption flagged to Hadi
-Hadi said "not available on the morning of the 25th" — read as a slip for the 23rd, since that is the date they asked for and the morning we cannot cover. Offer built as: 23rd afternoon OR 24th morning. Confirm before sending if this is wrong.
-
 ### Follow-up cadence if silent
-Shoot window is ~19 days out. Day 3 (7 Sept), day 7 (11 Sept), day 14 close-out (18 Sept), same thread. They are visiting from the US on fixed travel dates, so if silent past day 5 a short phone call is worth it (+1 407 405 4389).
+Shoot ~19 days out. Day 3 (7 Sept), day 7 (11 Sept), day 14 close-out (18 Sept), same thread. Visiting from the US on fixed dates — if silent past day 5, phone (+1 407 405 4389) beats another email.
