@@ -1,9 +1,40 @@
 # Current Priorities
 
-Last updated: 2026-08-26 (close-out)
+Last updated: 2026-09-05 (close-out)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## THURSDAY 27 AUGUST
+## NEXT SESSION — Hadi flagged "catch up late tomorrow" (Sun 6 Sept or later)
+
+**TOP-OF-MORNING REMINDERS — surface at next session, do not skip:**
+
+1. **TIME-CRITICAL THIS WEEK — Selina & Marli shoot Sat 12 September (afternoon).**
+   - **THU 10 SEPT: 48-hour weather check + confirm exact start time.** Watch temperature specifically — Marli has health issues with heat, could not do 27C (this is why the shoot moved from 6 Sept). If hot again, shift timing later.
+   - **Questionnaire still outstanding** — she said "we'll send it shortly" on 2 Sept. Deadline was released when the shoot moved. If not received by ~Tue 8 Sept, a light nudge is fair since the session needs designing.
+   - **Route design must build in shade, indoor pauses, heat management** — offered proactively in the reschedule email.
+   - Bond-leading mood with In the Mood for Love traces, one outfit, Grace collection, PAID.
+2. **WED 9 SEPT: Steva balance reminder — £1,610 due** (£2,300 total less £690 deposit). Shoot 10 Oct.
+3. **MICHAEL & CARLY — reply sent 4 Sept**, offering Wed 23 Sept afternoon (recommended) or Thu 24 Sept first light. Visiting from Orlando, fixed travel dates, newly engaged, £680 quoted, 50 images, turnaround stated, linked to the 25-locations blog post. **Cadence: day-3 nudge 7 Sept, day-7 11 Sept, close-out 18 Sept. If silent past day 5, PHONE +1 407 405 4389 — they are travelling on fixed dates and email alone risks losing them.**
+4. **HADI'S OPEN UNBLOCKERS — carried since 24 Aug (Hadi was unwell, then catching up):**
+   - **VENUE BRAIN-DUMP (10 min voice note)** — unblocks venue pages AND link-ask list. Still the highest-leverage 10 minutes available. Asked five times; re-offer plainly, no pressure stacking.
+   - **WP REDIRECT SESSION (20 min)** — table at projects/photography/24-08-26/redirect-repoint-table.md. EXPORT CSV FIRST (June wipe incident). Also fixes the sitemap exclusion on the 25-locations post, which we just linked a client to — it is a strong post Google is not being told about.
+   - GBP completeness pass. Perplexity `.env`. Content Studio credential check + test batch.
+5. **JOHN & OKSANA — 12 days silent** (10 Jul 2027 wedding, Humble Grape). Day-14 close-out lands ~7 Sept. Wedding is 10 months out so no urgency; close-out or leave open, Hadi's call.
+6. **ELAN — partner still away as of 29 Aug.** If no contact by end of w/c 31 Aug (i.e. now overdue), a light touch to Ali is warranted.
+
+Standing watches / diarised:
+- **Thu 10 Sept:** Selina 48h weather check. **Sat 12 Sept:** Selina shoot. **~15 Sept:** Selina proofs + 5 clean watermark-free website placeholders.
+- **Wed 9 Sept:** Steva balance reminder (£1,610). **Mon 21 Sept:** Steva planning-conversation trigger. Steva shoot 10 Oct.
+- Post-delivery review asks (GBP velocity restart — Selina first, then Steva).
+- "Grace collection" naming still not in shared/presence-method-packages.md.
+- Monsieur contract build. Chic contract signature status. Cold email rewrite. Zizi one-pager. Click Pro briefing. Website spam-filter fix. Window 3 targets.
+
+Live pipeline (as of 5 Sept):
+- **Agency paid: 4** — Haleh + Kish LIVE + Galleria + Chic. **In play: Elan** (partner away, follow-up now warranted). Monsieur pending contract. Parked: Hanna, Heny.
+- **Photography booked: 2** — **Steva £2,300 (10 Oct)** + **Selina & Marli (12 Sept, Grace, PAID)**. In flight: **Michael & Carly** (23/24 Sept, replied 4 Sept), **John & Oksana** (Jul 2027, 12 days silent). Lost: Kanaka, Samantha, Maria, **Andrey (scam, closed)**; Kate parked.
+
+---
+
+## THURSDAY 27 AUGUST (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS — surface in tomorrow's brief, do not skip:**
 1. **HADI'S OPEN ITEMS — these unblock Jodie's next workstreams:**
