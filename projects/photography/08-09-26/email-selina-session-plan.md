@@ -41,6 +41,12 @@ A few practical things:
 - **Selina, bring the spare shoes**, exactly as you suggested. Heels for the photographs, comfortable pair for walking between them.
 - **Water for both of you**, and Marli, a bottle in my bag as well. We will have shade and places to sit throughout.
 
+**One more thing on layers.** If you have a shawl, a wrap, a long coat, anything you can put on and take off, please bring it. Layers do two things for photographs. They give us a second look from one outfit, and they move. A wrap catching the wind on the embankment, or being pulled around your shoulders as the evening cools, gives us something alive in the frame rather than two people standing still. Marli, the same goes for your jacket: on, off, over a shoulder, all three read differently. Nothing needs to match perfectly. Texture is what matters.
+
+**And a thought about props.** A small object you actually have a history with will do more for a photograph than anything I could bring. Yours is obvious, and I hope you will indulge me: **a packet of Sour Patch Kids.** Two people dressed like that, on the Thames at golden hour, eating petrol-station sweets from a South African motorway at 2am. That is the photograph that will make you laugh in ten years, and it is entirely yours.
+
+If you would like others, a classic black umbrella is very much the London of those films and useful whatever the sky does, sunglasses give Marli an instant switch of mood, and if a Fortnum's bag happens to cross your path, it belongs in this session more than most things would. None of it is required. One is plenty.
+
 That is Saturday. Come as you are, expect to talk more than you pose, and leave the rest to me.
 
 I will be in touch Thursday with your exact start time and where to meet.
@@ -66,6 +72,10 @@ Hadi
   - **Bow tie as an OPTION, not a correction.** Craig-era Bond wears a bow tie with a dinner jacket in the films they referenced; open collar is the off-duty version. Bringing one in a pocket gives two moods from one outfit at zero cost. Offered, never prescribed.
   - **Hands/nails** — they are newly engaged, this is a soft launch, there will be close frames with the ring. Small note, easily missed.
   - Spare shoes: Selina's own suggestion, endorsed. Water: ties to Marli's stated heat concern.
+- **Layering (v3, Hadi's standing advice to couples):** framed with the photographic reason rather than as an instruction — a second look from one outfit, plus movement in frame (wind off the river, wrap pulled close as evening cools). Marli's jacket on/off/over-shoulder gives three reads at zero cost. "Nothing needs to match perfectly, texture is what matters" keeps it low-pressure.
+- **Props (v3):** led with the one drawn from their own story rather than a generic list. **Sour Patch Kids** — from the South Africa drive (2am petrol stations, singing to stay awake, the bumper at 5am), the story they nominated as the one that sums them up. It also resolves the session's central tension: black-tie glamour versus Selina's own line, "we're always like two kids together." Formal wear plus petrol-station sweets on the Thames IS that sentence as a photograph, and it will be the frame they love most.
+  - Secondary options offered lightly and each with a reason: black umbrella (on-reference for the films, useful in any weather), sunglasses (instant mood switch for Marli, practical in sun), Fortnum's bag (Marli listed Fortnum & Mason as a meaningful place; iconic, elegant, genuinely theirs — but Piccadilly is a detour, hence "if it happens to cross your path").
+  - Closed with "none of it is required, one is plenty" so this reads as an invitation, not homework two days before a shoot.
 - Not used: Chinatown, Covent Garden, Primrose Hill, the canals etc. — plenty of meaningful places, but the route is Westminster and adding them would dilute it. Held for a future session or if they ask.
 - **"Cinematic" not used as self-description** — their word for their reference; described light and mood concretely instead.
 - Refined Dreamer, no em dashes, no forbidden phrases.
