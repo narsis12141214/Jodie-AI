@@ -232,3 +232,79 @@ Autumn is normally his busiest period, so the plan holds but the reasoning chang
 - **Cutover:** once the autumn shoot calendar clears, ahead of the winter proposal and engagement enquiry cycle.
 
 ⚠️ **Needed from Hadi:** what does the October and November shoot calendar actually look like? Steva is 10 Oct and Michael & Carly may land 23 or 24 Sept. Beyond that I do not know, and the cutover date should be chosen around it.
+
+---
+
+# ADDENDUM 2 — 11 Sept, Astro explainer + store decision
+
+**Hadi's decisions so far:** interested in Astro, wants to understand it before committing. **Store stays on WordPress**, linked from the site, possibly on a subdomain. **October has one booking (Steva, 10 Oct).**
+
+## The store decision — subdomain is not a preference, it is the thing that keeps this clean
+
+Hadi floated "a different domain or maybe a subdomain." That instinct is correct, and it is worth being precise about why, because the wrong version of this recreates the exact problem we are leaving.
+
+| Setup | Result |
+|---|---|
+| **Store at `shop.hadiphotographylondon.com`** ✅ | Two genuinely separate sites. Astro owns `www` and generates one complete sitemap. WordPress owns `shop` and generates its own. No overlap, nothing orphaned. Clean. |
+| **Store stays at `www.../shop/`** ❌ | Two systems on one domain again. Astro's sitemap will not know about `/shop/`, WordPress's will not know about the Astro pages. **This is the Showit problem rebuilt with new logos.** |
+
+So: WordPress moves wholesale to `shop.` and takes WooCommerce, the cart, checkout, my-account and the gift-card plugin with it. `www` becomes 100% Astro.
+
+**Cost:** the six `/shop/*` product URLs move, so they need 301s to their new subdomain homes. They rank for Lightroom-preset terms, not photography terms, so the stakes are genuinely low, as Hadi said. Subdomains are treated as somewhat separate by Google and will not pass authority to the main site, but the preset store was never building photography authority anyway.
+
+**The 13 blog posts come OUT of WordPress and into Astro**, keeping their exact `/blog/[slug]/` paths. That is the part that must be done carefully.
+
+## What Astro actually is
+
+**In one sentence:** Astro pre-builds every page of the site into a plain HTML file before anyone visits, so the server just hands over finished files instead of assembling each page on demand.
+
+That is the whole difference:
+
+| | **Showit / WordPress** | **Astro** |
+|---|---|---|
+| When the page is built | On every single visit | Once, when you publish |
+| What the visitor receives | Output of a database query plus PHP plus plugins | A finished HTML file |
+| What Google receives | Same, plus 492 KB of layout markup | Complete content, ~50 KB |
+| What can break at 2am | Database, PHP version, plugin conflict, licence | Nothing. They are files. |
+| Security surface | Logins, plugins, admin panel | None. There is nothing to hack. |
+
+### "Static" does not mean limited
+The usual worry. Contact forms, image galleries, animations, scroll effects, filtering, video, maps all work normally. Anything genuinely dynamic (the store) lives on the subdomain.
+
+### Design freedom is higher than Showit, not lower
+Astro imposes no look whatsoever. It is a blank canvas that renders whatever HTML and CSS you give it. Showit is drag-and-drop inside Showit's canvas, which is generous but bounded. Astro has no ceiling, and no theme to fight.
+
+### The sitemap, specifically
+`@astrojs/sitemap` reads the route manifest at build time and writes the sitemap from it. **If a page exists on the site, it is in the sitemap.** There is no plugin to configure and no second system to be blind to. The current defect becomes impossible rather than merely fixed.
+
+## What the day-to-day would actually look like
+
+- **New blog post:** Hadi briefs it, Jodie writes it, it lands in this repo as a markdown file, commit, site rebuilds and redeploys in about 30 seconds. Live.
+- **Copy change:** same loop, under a minute.
+- **New gallery:** built once, then images go in a folder.
+- **Optional:** a free git-based admin UI (Decap or Sveltia) can be bolted on at `/admin`, giving a visual editor that writes markdown into the repo. Worth having if Hadi wants to edit without going through Jodie. Not required.
+
+## The honest downsides
+
+1. **No drag-and-drop layout editing.** This is the real loss versus Showit. Moving a section or changing a layout is a code change, which means Jodie or a developer. He loses the ability to nudge the design himself.
+2. **Every change is a build and deploy.** Automated and ~30 seconds, but it is not "click save."
+3. **The site has to be built from scratch.** That is the 4 to 8 week piece.
+4. **Dependency.** Structural changes route through Jodie.
+
+**Weighing point 1 honestly:** the live homepage still carries pre-June brand copy and Phase 2 stalled at Block 3. The drag-and-drop autonomy exists but has not been used in months, so the practical cost may be lower than the theoretical one. Worth Hadi's own judgement, not mine.
+
+## Hosting
+A static site needs almost nothing. Nginx serving files on the existing Hostinger VPS is sufficient, alongside n8n. No database, no PHP, no additional cost.
+
+## Proposal: build a prototype instead of deciding on description
+
+Rather than more explanation, build **one page** and look at it.
+
+- Build the homepage in Astro using the **locked Phase 2 brand copy** that has been sitting unshipped since June.
+- Deploy to a staging URL on the VPS.
+- Hadi looks at it on his phone and his laptop and decides.
+
+**Cost if he hates it:** one day. **Benefit if he likes it:** the decision is made on evidence, and the Phase 2 homepage work finally ships.
+
+## Timing, updated
+October holds one booking. That is more build capacity than assumed. Sequence stands: prep now, build after Elan closes, cutover before the winter enquiry cycle. The renewal notice window remains the binding constraint and is still unchecked.
