@@ -3,11 +3,9 @@
 Last updated: 2026-09-11 (close-out)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## 🔴 UNRESOLVED TONIGHT — SELINA CONFIRMATION EMAIL NOT SENT
+## ✅ CLOSED 11 SEPT — Selina confirmation email SENT
 
-**The shoot is tomorrow at 17:30 and the confirmation email is still sitting unsent, waiting on ONE thing: the meeting point.**
-Draft is ready at `projects/photography/11-09-26/email-selina-start-time-confirmation.md`. Everything else in it is final. Hadi adds where to meet them and it goes.
-They were promised this on Thursday. It is now Friday night. **This cannot slip to the morning of the shoot.**
+Start time confirmed at 17:30 with the meeting point added by Hadi. Hadi: "everything is ready for tomorrow." Nothing outstanding on the client side before the shoot.
 
 ---
 
@@ -15,7 +13,7 @@ They were promised this on Thursday. It is now Friday night. **This cannot slip 
 
 **TOP-OF-MORNING REMINDERS:**
 
-1. **SELINA & MARLI SHOOT, 17:30, Westminster and the river.** Paid, planned, forecast verified (23.5C max, feels like 21.3C at half five, 1-4% rain, sunset 19:21, breeze 19km/h). Session runs 17:30-19:00 so the back half sits inside golden hour. Send the confirmation email first thing if it did not go tonight.
+1. **SELINA & MARLI SHOOT, 17:30, Westminster and the river.** Paid, planned, confirmed, email sent. Forecast verified (23.5C max, feels like 21.3C at half five, 1-4% rain, sunset 19:21, breeze 19km/h). Session runs 17:30-19:00 so the back half sits inside golden hour.
    - Shoot-day prompt material is in `projects/photography/08-09-26/email-selina-session-plan.md` under "Shoot-day prompt material" — the party couch, "it felt weird that it didn't feel weird", the week apart, South Africa Sour Patch Kids at 2am, the dance-floor twirling, "two kids together", the Oxford threshold.
    - **Post-shoot commitment: proofs + 5 clean watermark-free placeholders by ~15 Sept** for their website launch. Real deadline tied to a client's own launch.
 
