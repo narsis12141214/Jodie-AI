@@ -1,9 +1,58 @@
 # Current Priorities
 
-Last updated: 2026-09-05 (close-out)
+Last updated: 2026-09-11 (close-out)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## NEXT SESSION — Hadi flagged "catch up late tomorrow" (Sun 6 Sept or later)
+## 🔴 UNRESOLVED TONIGHT — SELINA CONFIRMATION EMAIL NOT SENT
+
+**The shoot is tomorrow at 17:30 and the confirmation email is still sitting unsent, waiting on ONE thing: the meeting point.**
+Draft is ready at `projects/photography/11-09-26/email-selina-start-time-confirmation.md`. Everything else in it is final. Hadi adds where to meet them and it goes.
+They were promised this on Thursday. It is now Friday night. **This cannot slip to the morning of the shoot.**
+
+---
+
+## SATURDAY 12 SEPTEMBER — SHOOT DAY
+
+**TOP-OF-MORNING REMINDERS:**
+
+1. **SELINA & MARLI SHOOT, 17:30, Westminster and the river.** Paid, planned, forecast verified (23.5C max, feels like 21.3C at half five, 1-4% rain, sunset 19:21, breeze 19km/h). Session runs 17:30-19:00 so the back half sits inside golden hour. Send the confirmation email first thing if it did not go tonight.
+   - Shoot-day prompt material is in `projects/photography/08-09-26/email-selina-session-plan.md` under "Shoot-day prompt material" — the party couch, "it felt weird that it didn't feel weird", the week apart, South Africa Sour Patch Kids at 2am, the dance-floor twirling, "two kids together", the Oxford threshold.
+   - **Post-shoot commitment: proofs + 5 clean watermark-free placeholders by ~15 Sept** for their website launch. Real deadline tied to a client's own launch.
+
+2. **WEBSITE REBUILD IS NOW A LIVE PROJECT.** Hadi reviewed the Astro prototype 11 Sept: *"it's 30% close to what I have in mind, but overall, I think this is the right approach. We have to do it... the sooner we do this, the better."*
+   - **He is sending reference websites and sections he likes.** Collect these, build a design direction doc from them, then iterate the prototype. This is the next working session.
+   - Prototype runs with `cd web && npm run dev` → http://localhost:4321
+   - **⏰ STILL UNCHECKED AND STILL BLOCKING: the Showit renewal notice window.** If that lapses we are locked in another year no matter what we build. Highest-urgency item on the whole project.
+
+3. **ELAN — partner meeting Wed or Thu next week (16/17 Sept).** IT cleared with no concerns. Second demo done with Ali. This is the closing meeting. £6,500 implementation + £500/mo. Ask Hadi what support he wants prepped for it.
+
+4. **MICHAEL & CARLY — day 7, no reply.** Replied 4 Sept offering Wed 23 Sept afternoon or Thu 24 morning. Past the day-5 phone escalation trigger. **Call +1 407 405 4389.** They travel from Orlando on fixed dates and the 23rd is 12 days out. Another email is the wrong instrument.
+
+5. **HADI'S SEO UNBLOCKERS — re-sorted by the migration decision:**
+   - **Still urgent, platform-agnostic:** GBP completeness pass + review velocity restart (32% + 20% of map-pack weight, touches no website). Venue brain-dump (10 min voice note, raw material). Link-ask list.
+   - **2-minute fix worth doing now:** Rank Math exclusion on `/blog/best-engagement-photo-locations-london/` — 4,039 words, live, in no sitemap, and it is the post we sent Michael & Carly to.
+   - **Now waits for the new platform:** venue pages, service pages, Phase 2 homepage blocks. Do not build Tier 1 content on Showit.
+   - **Folds into the migration:** the 10-rule WP redirect table becomes the seed of the cutover redirect map. Do it once, not twice. Export CSV first regardless.
+
+6. **Steva Alexander — balance £1,610 due 3 OCTOBER** (corrected 11 Sept; the 9 Sept date in earlier notes was wrong). Shoot 10 Oct. Planning-conversation trigger Mon 21 Sept.
+
+7. **John & Oksana — 18 days silent.** Jul 2027 wedding so no urgency. Close out or consciously park. Hadi's call.
+
+Standing / diarised:
+- **Sat 12 Sept 17:30:** Selina shoot. **~15 Sept:** proofs + 5 placeholders. Final gallery within 2 weeks of their 50-image selection, then the review ask (GBP velocity restart, Selina first).
+- **Wed/Thu 16-17 Sept:** Elan partner meeting. **Mon 21 Sept:** Steva planning trigger. **3 Oct:** Steva balance. **10 Oct:** Steva shoot.
+- Monsieur contract still never drafted (terms gathered 14 Aug, £340/mo + £350 website + 1-month trial). Cheapest revenue available, blocked only on Hadi's go-ahead.
+- Chic contract signature status still unconfirmed since 14 Aug.
+- Cold email rewrite: 48 days since first flagged. At some point this becomes a decision to kill the channel, not a carry-forward.
+- Perplexity `.env`. Content Studio credential check + test batch. "Grace collection" naming still not in shared/presence-method-packages.md. Window 3 targets.
+
+Live pipeline (11 Sept):
+- **Agency paid: 4** — Haleh, Kish LIVE, Galleria, Chic. **Elan at the closing meeting next week.** Monsieur pending contract. Parked: Hanna, Heny.
+- **Photography booked: 2** — Selina & Marli (12 Sept, PAID) + Steva £2,300 (10 Oct). In flight: Michael & Carly (day 7, phone). John & Oksana (18 days silent). Lost: Kanaka, Samantha, Maria, Andrey (scam). Kate parked.
+
+---
+
+## FRIDAY 5 SEPTEMBER (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS — surface at next session, do not skip:**
 
