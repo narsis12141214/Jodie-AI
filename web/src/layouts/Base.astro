@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+const {
+  title = 'London Elopement & Wedding Photographer | Hadi Photography',
+  description = 'London weddings and elopements, photographed so the city stands as a witness to the relationship, not a backdrop for it. 100 five-star reviews.',
+  image = '/img/hero-westminster.jpg',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(image, Astro.site).href} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "additionalType":"https://schema.org/Photograph",
+    "name":"Hadi Photography London",
+    "url":"https://www.hadiphotographylondon.com",
+    "image":"https://www.hadiphotographylondon.com/img/hero-westminster.jpg",
+    "description":"London wedding and elopement photographer.",
+    "areaServed":{"@type":"City","name":"London"},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"100"}
+  })} />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__mark" href="/">Hadi Photography</a>
+    <nav class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#hadi">About</a>
+      <a class="btn" href="#begin">Begin</a>
+    </nav>
+  </header>
+
+  <nav class="rail" id="rail" aria-label="Section navigation"></nav>
+
+  <main><slot /></main>
+
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <p>&copy; {new Date().getFullYear()} Hadi Photography London</p>
+      <div class="foot__nav">
+        <a href="#work">Work</a><a href="#approach">Approach</a>
+        <a href="#hadi">About</a><a href="#begin">Contact</a>
+      </div>
+      <p>London, United Kingdom</p>
+    </div>
+  </footer>
+
+  <script src="/js/motion.js" is:inline defer></script>
+</body>
+</html>

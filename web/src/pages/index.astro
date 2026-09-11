@@ -1,0 +1,202 @@
+---
+import Base from '../layouts/Base.astro';
+
+// Every line of copy below is traceable. Sources noted in web/BUILD-NOTES.md.
+const perhaps = [
+  { n: 'i',   img: '/img/westminster-stroll.jpg', alt: 'A couple walking by Westminster after their London wedding',
+    text: 'Perhaps you found it in London, walking the same Bloomsbury streets year after year.' },
+  { n: 'ii',  img: '/img/st-dunstan.jpg', alt: 'A couple in the ruined church garden at St Dunstan in the East',
+    text: 'Perhaps you came back to London for it, the city quietly holding the chapter that shaped you.' },
+  { n: 'iii', img: '/img/tower-bridge.jpg', alt: 'A couple photographed at Tower Bridge',
+    text: 'Perhaps you are bringing it to London for the first time, choosing the city the way some couples choose each other.' },
+];
+
+const concerns = [
+  { n: '01', h: 'You want London, not a postcard',
+    p: ['The landmark is not the subject. You are. London sits behind you doing what it does best, which is looking like nowhere else on earth.',
+        'The frames that end up on your wall are the ones where the city is unmistakably there and entirely beside the point.'] },
+  { n: '02', h: 'The crowds are already accounted for',
+    p: ['Ten years working this city means knowing which corner of a famous place stays quiet while the obvious viewpoint fills up, and what time it does so.',
+        'You will not be standing in a crowd wondering what to do with your hands.'] },
+  { n: '03', h: 'Rain changes the light, it does not ruin it',
+    p: ['Every version of London weather has been worked in. Some of the most striking frames come from grey skies and wet stone.',
+        'What matters is a plan: which locations have cover, which timing windows still work, and enough flexibility to move.'] },
+];
+
+const gallery = [
+  { src: '/img/marylebone.jpg',  cap: 'Old Marylebone Town Hall' },
+  { src: '/img/greenwich.jpg',   cap: 'Old Royal Naval College' },
+  { src: '/img/st-pauls.jpg',    cap: "St Paul's Cathedral" },
+  { src: '/img/pergola.jpg',     cap: 'The Pergola, Hampstead' },
+  { src: '/img/bigben.jpg',      cap: 'Westminster' },
+  { src: '/img/cuddling.jpg',    cap: 'Between locations' },
+  { src: '/img/alternative.jpg', cap: 'Shoreditch' },
+  { src: '/img/skyline.jpg',     cap: 'The river, last light' },
+];
+---
+<Base>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-chapter="Opening">
+    <div class="hero__media">
+      <img src="/img/hero-westminster.jpg" alt="A couple photographed in front of Big Ben and Westminster on their London wedding day" fetchpriority="high" width="1600" height="1067" />
+    </div>
+    <div class="hero__scrim"></div>
+    <div class="hero__inner">
+      <div class="lines">
+        <span class="eyebrow line"><span>London Weddings &amp; Elopements</span></span>
+      </div>
+      <h1 class="lines" style="margin-top:1.6rem">
+        <span class="line"><span>Your love has a city.</span></span>
+        <span class="line"><span><em>Let it live in the photographs</em></span></span>
+        <span class="line"><span><em>the way it lives in you.</em></span></span>
+      </h1>
+      <p class="hero__sub r r-d3">
+        London weddings and elopements, photographed so the city stands as a witness
+        to the relationship, not a backdrop for it.
+      </p>
+      <div class="hero__cta r r-d4">
+        <a class="btn btn--solid" href="#begin">Begin with a message</a>
+        <a class="btn" href="#work">See the work</a>
+      </div>
+    </div>
+    <div class="hero__cue"><i></i><span>Scroll</span></div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <div class="wrap">
+      <p class="lines">
+        <span class="line"><span>Twenty years of photojournalism</span></span>
+        <span class="line"><span>have trained me to notice</span></span>
+        <span class="line"><span>the half-second before the gesture,</span></span>
+        <span class="line"><span class="dim">the breath before the laugh.</span></span>
+      </p>
+      <p class="r r-d2" style="font-family:var(--body);font-size:var(--step-1);color:var(--bone);max-width:38ch;margin-top:2.6rem">
+        The photographs hold what was actually there.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PINNED THREE-WAY ============ -->
+  <section class="pin" data-chapter="Your London">
+    <div class="pin__stage">
+      {perhaps.map((p) => (
+        <div class="pin__layer"><img src={p.img} alt={p.alt} loading="lazy" /></div>
+      ))}
+      <div class="pin__copy">
+        <div class="pin__slot">
+          {perhaps.map((p) => (
+            <div>
+              <div class="pin__count"><b>{p.n}</b><i></i></div>
+              <p>{p.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    {perhaps.map(() => <div class="pin__spacer"></div>)}
+  </section>
+
+  <section class="pin__resolve">
+    <div class="wrap">
+      <p class="r">
+        My work is to photograph the day so the city stands as
+        <span class="accent"> a witness to the relationship</span>, not a backdrop for it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONCERNS ============ -->
+  <section class="concerns" id="approach" data-chapter="Approach">
+    <div class="wrap">
+      <span class="eyebrow r">The three things couples ask</span>
+      <h2 class="r r-d1">Everything you are quietly worried about has an answer.</h2>
+      <div class="concerns__grid">
+        {concerns.map((c, i) => (
+          <article class={`card r r-d${i + 1}`}>
+            <span class="card__n">{c.n}</span>
+            <h3>{c.h}</h3>
+            {c.p.map((t) => <p>{t}</p>)}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HORIZONTAL GALLERY ============ -->
+  <section class="gal" id="work" data-chapter="Work">
+    <div class="gal__sticky">
+      <div class="gal__head">
+        <span class="eyebrow r">Selected work</span>
+      </div>
+      <div class="gal__track">
+        {gallery.map((g) => (
+          <figure class="gal__item">
+            <img src={g.src} alt={`London wedding photography at ${g.cap}`} loading="lazy" />
+            <figcaption>{g.cap}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+    <div style="height:220svh"></div>
+  </section>
+
+  <!-- ============ GUIDE ============ -->
+  <section class="guide" id="hadi" data-chapter="Hadi">
+    <div class="wrap guide__grid">
+      <figure class="guide__fig r">
+        <img src="/img/portrait.jpg" alt="Hadi photographing a couple in London" loading="lazy" />
+      </figure>
+      <div>
+        <span class="eyebrow r">The person behind the camera</span>
+        <h2 class="r r-d1">You relax when someone runs the room for you.</h2>
+        <p class="r r-d2">
+          I have spent twenty years watching people on the most important days of their
+          lives, and I have noticed the same thing every time. Nobody needs to be told
+          where to put their hands. They need someone who has already thought about the
+          day, so they do not have to.
+        </p>
+        <p class="r r-d3">
+          I will not stand you in front of me and ask you to pose. I give you two something
+          to do, or something to talk about, and photograph what happens between you. The
+          pictures you will love most are the ones you did not know I was taking.
+        </p>
+        <div class="stats r r-d4">
+          <div class="stat"><b>20</b><span>Years photojournalism</span></div>
+          <div class="stat"><b>10</b><span>Years working London</span></div>
+          <div class="stat"><b>100</b><span>Five-star reviews</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF ============ -->
+  <section class="proof">
+    <div class="wrap">
+      <div class="proof__lead r">
+        <b>One hundred five-star reviews.</b>
+        <span>and the occasional write-up</span>
+      </div>
+      <div class="proof__row r r-d1">
+        <img src="/img/press/wsj.png" alt="The Wall Street Journal" loading="lazy" />
+        <img src="/img/press/forbes.png" alt="Forbes" loading="lazy" />
+        <img src="/img/press/airbnb.png" alt="Airbnb" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="begin" data-chapter="Begin">
+    <div class="cta__bg"><img src="/img/couple-2542.jpg" alt="" loading="lazy" /></div>
+    <div class="cta__inner wrap">
+      <h2 class="r">Tell me about the two of you.</h2>
+      <p class="r r-d1">
+        Send a message. We will talk about your day, your London, and whether this feels
+        like the right fit. No pressure either way.
+      </p>
+      <a class="btn btn--solid r r-d2" href="mailto:hello@hadiphotographylondon.com">Begin with a message</a>
+    </div>
+  </section>
+
+</Base>
