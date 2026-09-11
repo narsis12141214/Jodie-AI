@@ -150,3 +150,85 @@ Contract ends ~10 Nov. Working backwards: decision by end of September, prep thr
 2. Confirm the build does not start until Elan is closed.
 3. What did "get YouTube" mean?
 4. When do your enquiries actually peak?
+
+---
+
+# ADDENDUM — 11 Sept, after Hadi's response
+
+**Hadi's position, locked:** leaving Showit is certain. Not necessarily Lovable. Open to building in this repo and hosting on his own VPS. Finds WordPress limiting and unattractive. Build waits for Elan. "Get YouTube" was a transcription artifact, disregard. **Autumn is normally his busiest season.**
+
+## Two things the deeper audit turned up
+
+### 1. There is a live WooCommerce store, and it is unscoped migration work
+Six live products, plus a gift-card plugin:
+
+```
+/shop/the-signature-collection-dark-moody-lightroom-presets/
+/shop/the-adore-collection-lightroom-presets-pack/
+/shop/ultimate-professional-lightroom-presets-bundle-all-shop/
+/shop/cinematic-tone-male-fashion-lightroom-presets/
+/shop/happy-wedding/            (gift card)
+/shop/happy-anniversary/        (gift card)
+```
+Plus `/cart/`, `/checkout/`, `/my-account/`, `/gift-card/`, `/gift-card-balance/` and two product category pages.
+
+This has to be migrated, rehomed or consciously retired. It is exactly the kind of thing that gets discovered three days before cutover.
+
+### 2. The best post on the site is invisible to the sitemap
+`/blog/best-engagement-photo-locations-london/` — **4,039 words, returns 200, in no sitemap.** It is the longest and strongest piece of content on the domain, it covers Tower Bridge, St Katharine Docks, Westminster, St James's and St Dunstan, and it is the post we sent Michael & Carly to as proof of expertise.
+
+The post-sitemap carries 13 posts plus the homepage. This one is not among them. Confirmed in the 24 August forensics, unchanged today.
+
+**Two-minute Rank Math fix, worth doing this week regardless of migration.** It is a live ranking asset and it stays live for at least another 60 days.
+
+## Resolving the WordPress objection
+
+The objection is fair, and it is really an objection to the WordPress **front end**. But the deeper point is this:
+
+> **The sitemap defect is not a Showit bug. It is what having two systems does.** Any single-system architecture makes it structurally impossible, because the sitemap gets generated from the actual route list at build time rather than by a plugin guessing.
+
+That reframes the choice. The question is not "which platform has the best SEO." It is "which single system do we want."
+
+### The three real options
+
+| | **Astro / Next on VPS** | **Ghost on VPS** | **Headless WordPress** |
+|---|---|---|---|
+| Design ceiling | Unlimited | Good, theme-bound | Unlimited |
+| Sitemap defect | Impossible by construction | Impossible | Impossible |
+| Page weight vs today's 492 KB | ~50 KB | Light | Light |
+| Blog URLs preserved | Yes, by routing | Yes | Yes, trivially |
+| Store | Needs rehoming | Not suited | WooCommerce survives |
+| Editing | Markdown in this repo | Proper admin UI | WP admin |
+| Hosting | His VPS, £0 extra | His VPS, £0 extra | VPS + build host |
+| Needs a developer | Him + Jodie | Low | **Yes, and none identified** |
+| Risk of recreating a hybrid | None | **High** — marketing pages would need a second system | None |
+
+**Ghost is the trap.** It is lovely for a blog, but bespoke service and portfolio pages would need something alongside it, which rebuilds the exact two-system architecture we are escaping.
+
+**Headless WordPress** solves the design objection cleanly and keeps WooCommerce, but it is the most complex option and there is still no confirmed dev resource (logged 5 June — "Arman" was the voice agent, not a developer).
+
+## Recommendation: Astro, built in this repo, deployed to the VPS
+
+Reasons specific to this situation rather than generic:
+
+1. **Single system, so the sitemap defect cannot recur.** `@astrojs/sitemap` builds the sitemap from the route manifest. If a page exists, it is in the sitemap. That is Hadi's stated must-have, solved architecturally rather than by discipline.
+2. **Highest design ceiling of the three.** Nothing is theme-bound. This directly answers the WordPress objection.
+3. **492 KB to roughly 50 KB.** Fixes page weight as a side effect.
+4. **It matches how he already works.** He runs his business out of this git repo with an AI assistant. Publishing becomes "write the post, commit, auto-deploy" — plausibly a better workflow for him than a CMS admin panel, not a worse one.
+5. **£0 hosting** on the VPS he already pays for.
+6. **13 posts is a day of migration, not a project.**
+
+### Honest blockers
+- **The store needs a decision.** Cleanest answer is to retire WooCommerce entirely and sell the four preset packs through Stripe Payment Links or a Gumroad/Lemon Squeezy page. That removes cart, checkout, my-account and the gift-card plugin from the site completely. Gift cards need their own call.
+- **No dev resource.** This is Hadi plus Jodie. Realistic for a 13-post content site with a custom front end, but it should be said out loud rather than assumed.
+
+## ⏰ Time-sensitive, easy to miss
+**Check the Showit auto-renewal terms today.** Most annual plans auto-renew unless notice is given inside a window. If that window closes we are locked in for another year regardless of what we build. This is the single most urgent item on the whole migration.
+
+## Timing, corrected for Hadi's season
+Autumn is normally his busiest period, so the plan holds but the reasoning changes:
+- **Now to end September:** prep only. URL inventory, redirect map, store decision, auto-renewal check. Mostly Jodie, minimal Hadi time.
+- **After Elan closes:** design and build.
+- **Cutover:** once the autumn shoot calendar clears, ahead of the winter proposal and engagement enquiry cycle.
+
+⚠️ **Needed from Hadi:** what does the October and November shoot calendar actually look like? Steva is 10 Oct and Michael & Carly may land 23 or 24 Sept. Beyond that I do not know, and the cutover date should be chosen around it.
