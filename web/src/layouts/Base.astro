@@ -63,6 +63,17 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     </div>
   </footer>
 
+  <script>
+    // Lenis smooth scroll. Native scroll underneath, so sticky and the scroll-timeline bar keep working.
+    import Lenis from 'lenis';
+    import 'lenis/dist/lenis.css';
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const lenis = new Lenis({ lerp: 0.09, smoothWheel: true });
+      (window as any).lenis = lenis;
+      const raf = (t: number) => { lenis.raf(t); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+    }
+  </script>
   <script src="/js/motion.js" is:inline defer></script>
 </body>
 </html>

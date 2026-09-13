@@ -23,6 +23,18 @@ const concerns = [
         'What matters is a plan: which locations have cover, which timing windows still work, and enough flexibility to move.'] },
 ];
 
+// Zoom parallax — 7 images, index 0 is the one that ends up filling the screen
+const zoom = [
+  { src: '/img/bigben.jpg',      alt: 'A couple at Westminster on their wedding day' },
+  { src: '/img/st-dunstan.jpg',  alt: 'St Dunstan in the East' },
+  { src: '/img/greenwich.jpg',   alt: 'Old Royal Naval College, Greenwich' },
+  { src: '/img/marylebone.jpg',  alt: 'Old Marylebone Town Hall' },
+  { src: '/img/pergola.jpg',     alt: 'The Pergola, Hampstead' },
+  { src: '/img/st-pauls.jpg',    alt: "St Paul's Cathedral" },
+  { src: '/img/cuddling.jpg',    alt: 'Between locations' },
+];
+const zoomScales = [4, 5, 6, 5, 6, 8, 9];
+
 const gallery = [
   { src: '/img/marylebone.jpg',  cap: 'Old Marylebone Town Hall' },
   { src: '/img/greenwich.jpg',   cap: 'Old Royal Naval College' },
@@ -75,6 +87,17 @@ const gallery = [
       <p class="r r-d2" style="font-family:var(--body);font-size:var(--step-1);color:var(--bone);max-width:38ch;margin-top:2.6rem">
         The photographs hold what was actually there.
       </p>
+    </div>
+  </section>
+
+  <!-- ============ ZOOM PARALLAX ============ -->
+  <section class="zoom" data-chapter="Closer">
+    <div class="zoom__stage">
+      {zoom.map((z, i) => (
+        <div class="zoom__layer" data-scale={zoomScales[i]}>
+          <div class="zoom__img"><img src={z.src} alt={z.alt} loading="lazy" width="800" height="1000" /></div>
+        </div>
+      ))}
     </div>
   </section>
 

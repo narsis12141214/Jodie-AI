@@ -29,7 +29,7 @@
       const b = document.createElement('button');
       b.type = 'button';
       b.setAttribute('aria-label', s.dataset.chapter);
-      b.addEventListener('click', () => s.scrollIntoView({ behavior: 'smooth' }));
+      b.addEventListener('click', () => window.lenis ? window.lenis.scrollTo(s) : s.scrollIntoView({ behavior: 'smooth' }));
       rail.appendChild(b);
     });
     const dots = $$('button', rail);
@@ -50,6 +50,8 @@
   const gal       = $('.gal');
   const track     = $('.gal__track');
   const guideImg  = $('.guide__fig img');
+  const zoom      = $('.zoom');
+  const zoomLayers = $$('.zoom__layer').map((el) => ({ el, to: parseFloat(el.dataset.scale) || 4 }));
   const supportsSDA = CSS.supports('animation-timeline: scroll()');
 
   let vh = innerHeight, geo = {};
@@ -59,12 +61,14 @@
       pin:   pin   ? { top: pin.offsetTop,   h: pin.offsetHeight }   : null,
       gal:   gal   ? { top: gal.offsetTop,   h: gal.offsetHeight }   : null,
       guide: guideImg ? { top: guideImg.closest('.guide').offsetTop, h: guideImg.closest('.guide').offsetHeight } : null,
+      zoom:  zoom  ? { top: zoom.offsetTop,  h: zoom.offsetHeight }  : null,
       overflow: track ? Math.max(0, track.scrollWidth - innerWidth + 24) : 0,
       doc: document.documentElement.scrollHeight - vh,
     };
   };
   measure();
   addEventListener('resize', () => { measure(); frame(); }, { passive: true });
+  addEventListener('load',   () => { measure(); frame(); });
 
   /* ---------- 5. the single scroll pass ---------- */
   let active = -1;
@@ -87,6 +91,12 @@
         pinLayers.forEach((l, n) => l.classList.toggle('on', n === i));
         pinSlots.forEach((s, n) => s.classList.toggle('on', n === i));
       }
+    }
+
+    // zoom parallax: every layer scales from 1 to its target as you travel the section
+    if (geo.zoom && zoomLayers.length) {
+      const p = clamp((y - geo.zoom.top) / (geo.zoom.h - vh));
+      for (const { el, to } of zoomLayers) el.style.transform = `scale(${1 + p * (to - 1)})`;
     }
 
     // horizontal gallery driven by vertical scroll

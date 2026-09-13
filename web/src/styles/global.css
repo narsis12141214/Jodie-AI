@@ -32,7 +32,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%}
 body{
   margin:0;background:var(--ink);color:var(--paper);
   font-family:var(--body);font-size:var(--step-0);font-weight:300;
@@ -266,4 +266,24 @@ p{margin:0}
   .pin__slot{gap:2.5rem}
   .pin__slot > *{grid-area:auto}
   .hero__media,.guide__fig img,.gal__track{transform:none!important}
+}
+
+/* ---------- ZOOM PARALLAX (ported from the 21st.dev React component) ---------- */
+.zoom{position:relative;height:300vh;background:var(--ink)}
+.zoom__stage{position:sticky;top:0;height:100vh;overflow:hidden}
+.zoom__layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;will-change:transform}
+.zoom__img{position:relative;height:25vh;width:25vw}
+.zoom__img img{width:100%;height:100%;object-fit:cover}
+/* per-image offsets, 1:1 with the original's index rules */
+.zoom__layer:nth-child(2) .zoom__img{top:-30vh;left:5vw;height:30vh;width:35vw}
+.zoom__layer:nth-child(3) .zoom__img{top:-10vh;left:-25vw;height:45vh;width:20vw}
+.zoom__layer:nth-child(4) .zoom__img{left:27.5vw;height:25vh;width:25vw}
+.zoom__layer:nth-child(5) .zoom__img{top:27.5vh;left:5vw;height:25vh;width:20vw}
+.zoom__layer:nth-child(6) .zoom__img{top:27.5vh;left:-22.5vw;height:25vh;width:30vw}
+.zoom__layer:nth-child(7) .zoom__img{top:22.5vh;left:25vw;height:15vh;width:15vw}
+@media (prefers-reduced-motion:reduce){
+  .zoom{height:auto;padding:4rem var(--gutter)}
+  .zoom__stage{position:static;height:auto;display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+  .zoom__layer{position:static;display:block;transform:none!important}
+  .zoom__img{position:static;height:auto;width:auto;aspect-ratio:4/5}
 }
