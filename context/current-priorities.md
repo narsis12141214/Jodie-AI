@@ -1,15 +1,41 @@
 # Current Priorities
 
-Last updated: 2026-09-11 (close-out)
+Last updated: 2026-09-14 (close-out, early hours — session ran Sun 13 Sept)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## ✅ CLOSED 11 SEPT — Selina confirmation email SENT
+## MONDAY 14 SEPTEMBER — Hadi returns with website references
 
-Start time confirmed at 17:30 with the meeting point added by Hadi. Hadi: "everything is ready for tomorrow." Nothing outstanding on the client side before the shoot.
+**TOP-OF-MORNING REMINDERS:**
+
+1. **WEBSITE DESIGN DIRECTION SESSION.** Hadi has gathered references over the weekend and is sharing them Monday morning. Flow agreed: he sends URLs (plus a one-line note on the moment he likes), video via `web/references/` when a URL is not enough, screenshots for static looks, and 21st.dev / shadcn components directly. **Jodie logs every reference as it lands, then builds ONE design direction doc from the full set** (type, palette, motion language, image treatment, section rhythm) rather than reacting piece by piece. Hadi approves, then the prototype is rebuilt against it.
+   - **Standing technical rule (locked 13 Sept):** React/framer/Tailwind components get PORTED TO VANILLA, not dropped in via React islands. The zoom parallax port proved it: same effect, 23 KB total JS vs ~150 KB+. Flag any case where a vanilla port would genuinely lose something.
+   - **Confirmed for the site:** the zoom parallax ("definitely a piece that I want to add"). Lenis smooth scroll is now page-wide.
+   - **Open design question for Hadi:** two 300vh pinned sections back to back (zoom parallax then the three "Perhaps" panels) may be one long scroll too many before the first real copy. Ask which stays where.
+   - Prototype: `cd web && npm run dev` → http://localhost:4321
+   - UI/UX design library is available this session (font pairings, style references, GSAP presets). Use it AFTER the references are in, not before.
+
+2. **⏰ SHOWIT RENEWAL NOTICE WINDOW — 4th session unchecked.** Contract ends ~10 Nov. If the notice window lapses, another year locked in regardless of what we build. This is the single highest-urgency item on the whole project and it is a five-minute check. Ask directly at session start.
+
+3. **SELINA & MARLI — SHOOT DONE 12 Sept, went very well.** Hadi: "down-to-earth couple, we had a great time... the area was super busy, we had to take our time to make sure we get some quality images, and everything was perfect overall." **Proofs + 5 clean watermark-free placeholders due ~Tue 15 Sept** for their website launch. Confirm Hadi is on track or tell them today if it moves. Then: final gallery within 2 weeks of their 50-image selection, then the review ask (GBP velocity restart, Selina first).
+   - Local knowledge now on record from Hadi: Westminster / South Bank on a Saturday early evening is very busy. Build extra time into any future session there.
+
+4. **ELAN PARTNER MEETING — Wed 16 or Thu 17 Sept.** The closing meeting. IT cleared, second demo done. £6,500 + £500/mo. Ask what Hadi wants prepped.
+
+5. **MICHAEL & CARLY — day 10, silent.** Phone +1 407 405 4389. The 23rd is nine days out. Email is the wrong instrument now. If still nothing by Thursday, close out and release the slots.
+
+6. **SEO, platform-agnostic half, still open:** GBP completeness pass + review velocity restart. Venue brain-dump (10 min). Rank Math fix on the sitemap-excluded 4,039-word engagement-locations post (2 min). Link-ask list.
+
+Standing / diarised:
+- **~Tue 15 Sept:** Selina proofs + 5 placeholders. **Wed/Thu 16-17 Sept:** Elan partner meeting. **Mon 21 Sept:** Steva planning trigger. **~24 Sept:** SEO scorecard 30-day checkpoint. **3 Oct:** Steva balance £1,610. **10 Oct:** Steva shoot. **~10 Nov:** Showit contract ends.
+- Monsieur contract never drafted. Chic contract signature unconfirmed. Cold email rewrite 51 days open. Perplexity `.env`. Content Studio test. "Grace collection" in packages file. Window 3 targets. John & Oksana 21 days silent (Hadi's call).
+
+Live pipeline (14 Sept):
+- **Agency paid: 4** — Haleh, Kish LIVE, Galleria, Chic. **Elan at the closing meeting this week.** Monsieur pending contract. Parked: Hanna, Heny.
+- **Photography:** Selina & Marli SHOT 12 Sept (delivery phase). Steva £2,300 booked (10 Oct). Michael & Carly day 10 silent. John & Oksana 21 days silent. Lost: Kanaka, Samantha, Maria, Andrey. Kate parked.
 
 ---
 
-## SATURDAY 12 SEPTEMBER — SHOOT DAY
+## SATURDAY 12 SEPTEMBER (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS:**
 
