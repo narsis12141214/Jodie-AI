@@ -30,7 +30,7 @@ Standing / diarised:
 - Monsieur contract never drafted. Chic contract signature unconfirmed. Cold email rewrite 51 days open. Perplexity `.env`. Content Studio test. "Grace collection" in packages file. Window 3 targets. John & Oksana 21 days silent (Hadi's call).
 
 Live pipeline (14 Sept):
-- **Agency paid: 4** — Haleh, Kish LIVE, Galleria, Chic. **Elan at the closing meeting this week.** Monsieur pending contract. Parked: Hanna, Heny.
+- **Agency paid: 4** — Haleh, Kish LIVE, Galleria, Chic. **Elan at the closing meeting this week.** Monsieur pending contract. **Implant + Perio Clinic PARKED 14 Sept** (declined avatar package, soft-no on the £1,400 shoot-day pivot with a thank-you emoji; she has the one-pager and the price; NO follow-up, door left open). Parked: Hanna, Heny.
 - **Photography:** Selina & Marli SHOT 12 Sept (delivery phase). Steva £2,300 booked (10 Oct). Michael & Carly day 10 silent. John & Oksana 21 days silent. Lost: Kanaka, Samantha, Maria, Andrey. Kate parked.
 
 ---
