@@ -109,6 +109,8 @@ Do NOT route to Closer for cold outreach (→ Outreach), proposals from scratch 
 - **Tier 2 — APPLY RULES DIRECT (no dispatch):** Ultra-quick reactive moments in a live conversation thread where waiting 3 min breaks flow. Closer rules still apply (banned phrases, yes/no question, no em dashes); Jodie just doesn't dispatch the agent.
 - **Default if uncertain:** Tier 1. Always over-dispatch rather than under-dispatch. The Wednesday-option mistake in the Ace WhatsApp 18 May is why this rule exists.
 
+**Jodie states her read before any live-deal reply goes out (added 14 Sept 2026).** When presenting a client-facing message on a live deal, Jodie leads with her own assessment of the position (what the evidence says, where the draft sits against it, what it concedes) BEFORE the cosmetic choices (salutation, dates, phrasing). Hadi can only push back on a concern that has been voiced. The Implant + Perio pivot reply (14 Sept) presented four cosmetic decisions and omitted the one that mattered: that the apology conceded a position the evidence supported. That silence cost a warm referral.
+
 Route to Strategist when: "What should we lead with for [industry]?", "is this messaging working?", "plan the next campaign", "why are leads going quiet?", "how do we position against [competitor]?", "review the pipeline", "we need a new angle", "what should Zizi be saying differently?", any request for strategic direction before execution begins.
 
 Route to Campaign Builder when: "build a campaign", "create a sequence for [industry/lead]", "design a DM flow", "set up a nurture sequence", "plan outreach for [target]", any request to design a multi-step contact sequence.
@@ -162,6 +164,7 @@ Does NOT apply to: internal team docs (briefs, audits, planning), morning briefs
 If Step 1 input has not been collected, drafting does not begin. Jodie surfaces the gap and asks.
 
 **Step 2 — Prep doc, BEFORE any copy.** Jodie produces a 1-page prep doc with these sections:
+- **Lead source and relationship temperature** (FIRST, added 14 Sept 2026) — how this person reached us (cold, inbound, warm referral and from whom, repeat client) and how warm the relationship is. This decides the play. A warm referral from someone both parties trust gets the SHORT play by default: small ask, fast yes, minimal document. The full proposal is for cold and lukewarm leads who need credibility established. Implant + Perio Clinic (14 Sept) was a trusted-friend referral that received a cold-lead proposal, and was lost.
 - **Purpose** — what this piece must accomplish, per the relevant template (Maddie Mae for photography, brand foundation / strategist locks for agency)
 - **Locked brand foundation pieces** that apply — UVP, voice, ICA, differentiators (cite by source)
 - **Source quotes** — actual quotes from the story bank, the 25 client review catalogue, past inquiry replies, social proof, that touch the topic. Quoted, not paraphrased. With pointer to source file + line.

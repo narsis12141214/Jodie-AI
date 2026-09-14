@@ -26,6 +26,7 @@ Note: Window 3 targets still not formally set. Window 2 never got a final read.
 6. **SEO, platform-agnostic half, still open:** GBP completeness pass + review velocity restart. Venue brain-dump (10 min). Rank Math fix on the sitemap-excluded 4,039-word engagement-locations post (2 min). Link-ask list.
 
 Standing / diarised:
+- **First week of January 2027:** Implant + Perio Clinic, ONE line to Dr Tehrani, same thread: the shoot day offer stands if useful now. Her agency arrangement ends around then. Not an apology, not a chase. If no reply, closed for good.
 - **~Tue 15 Sept:** Selina proofs + 5 placeholders. **Wed/Thu 16-17 Sept:** Elan partner meeting. **Mon 21 Sept:** Steva planning trigger. **~24 Sept:** SEO scorecard 30-day checkpoint. **3 Oct:** Steva balance £1,610. **10 Oct:** Steva shoot. **~10 Nov:** Showit contract ends.
 - Monsieur contract never drafted. Chic contract signature unconfirmed. Cold email rewrite 51 days open. Perplexity `.env`. Content Studio test. "Grace collection" in packages file. Window 3 targets. John & Oksana 21 days silent (Hadi's call).
 
