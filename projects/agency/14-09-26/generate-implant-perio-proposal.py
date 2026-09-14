@@ -131,12 +131,10 @@ doc = SimpleDocTemplate(OUT, pagesize=A4, leftMargin=20*mm, rightMargin=20*mm,
 E = [Spacer(1, BAND_H + 10*mm - 24*mm)]
 
 # 1
-E += section(1, "Where you are, and where you want to be")
-E += [P("You told us something most clinics never say out loud: you are happy with the patients you have. The work is complex, the standards are high, and the people who find you are the right people.", "lead"),
-      P("What you want to change is how they find you."),
-      P("Today a meaningful share of your most valuable cases arrive through referral, and referral carries a cost that has nothing to do with the quality of the treatment. Your priority for 2027 is to be found directly, so that the patients who need what you do come to you first."),
-      P("That is a visibility problem, and it has a specific shape. Implant + Perio Clinic is an established specialist practice on Portland Place, trading for nearly two decades, with 150 five-star reviews and a team that has been together for over ten years. Online, the practice is close to invisible. The Instagram account has 213 followers. The website does not link to it."),
-      P("The gap between how good the clinic is and how findable it is, is the whole opportunity.", "pull")]
+E += section(1, "The gap, and why it matters now")
+E += [P("Implant + Perio Clinic is an established specialist practice in the Harley Street district with 150 five-star reviews. Online, it barely exists. The Instagram account has 213 followers, and the website does not link to it.", "lead"),
+      P("That gap matters more than it did two years ago. Patients look a practice up before they trust it, and increasingly they ask an AI rather than a search engine. The names that come back are the practices with a visible, consistent presence and a clear point of view. Reputation used to travel by referral. Now it travels through what can be found, and a brand that can be found holds more value than one that cannot, to patients and to anyone else who looks at it closely."),
+      P("You told us you are happy with the patients you have and want to change how they find you: directly, rather than through referral and the cost that comes with it. That is the right priority, and January is the right time to start it.", "pull")]
 
 # 2
 E += section(2, "The camera problem, solved")

@@ -2,21 +2,17 @@
 **Prepared for:** Dr Sanaz Tehrani
 **From:** Click AI Agency
 **Date:** September 2026
-**Status:** DRAFT v1 for Hadi review. Every line traces to the prep doc. Green-lit corrections applied: monthly rolling 30 days, two principal avatars + £450 third, addressed to Dr Tehrani, January start, independence framing from the meeting.
+**Status:** DRAFT v2 for Hadi review. Section 1 rewritten 14 Sept: problem-first, AI-era visibility, indirect brand-value line. Every line traces to the prep doc. Green-lit corrections applied: monthly rolling 30 days, two principal avatars + £450 third, addressed to Dr Tehrani, January start, independence framing from the meeting.
 
 ---
 
-## 1. Where you are, and where you want to be
+## 1. The gap, and why it matters now
 
-You told us something most clinics never say out loud: you are happy with the patients you have. The work is complex, the standards are high, and the people who find you are the right people.
+Implant + Perio Clinic is an established specialist practice in the Harley Street district with 150 five-star reviews. Online, it barely exists. The Instagram account has 213 followers, and the website does not link to it.
 
-What you want to change is how they find you.
+That gap matters more than it did two years ago. Patients look a practice up before they trust it, and increasingly they ask an AI rather than a search engine. The names that come back are the practices with a visible, consistent presence and a clear point of view. Reputation used to travel by referral. Now it travels through what can be found, and a brand that can be found holds more value than one that cannot, to patients and to anyone else who looks at it closely.
 
-Today a meaningful share of your most valuable cases arrive through referral, and referral carries a cost that has nothing to do with the quality of the treatment. Your priority for 2027 is to be found directly, so that the patients who need what you do come to you first.
-
-That is a visibility problem, and it has a specific shape. Implant + Perio Clinic is an established specialist practice on Portland Place, trading for nearly two decades, with 150 five-star reviews and a team that has been together for over ten years. Online, the practice is close to invisible. The Instagram account has 213 followers. The website does not link to it.
-
-The gap between how good the clinic is and how findable it is, is the whole opportunity.
+**You told us you are happy with the patients you have and want to change how they find you: directly, rather than through referral and the cost that comes with it. That is the right priority, and January is the right time to start it.**
 
 ## 2. The camera problem, solved
 
