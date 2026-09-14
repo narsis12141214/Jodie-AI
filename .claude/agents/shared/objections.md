@@ -70,7 +70,7 @@ Within 48 hours of the session, a sneak peek arrives, 5 to 10 fully edited image
 
 ---
 
-## CLICK AI AGENCY — 7 Core Objections
+## CLICK AI AGENCY — 9 Core Objections
 
 ---
 
@@ -148,6 +148,36 @@ The setup fee covers the work that makes everything function: training the AI on
 Completely understand, this affects how the clinic operates day to day, so it should be a considered decision. Send a one-page summary of exactly what the system does, what it costs, and what the setup process looks like, something they can share with whoever else needs to see it. Offer a second call with the full team so everyone can ask questions directly. Flag that onboarding slots fill up and keeping momentum without rushing the decision is the goal.
 
 *Closer:* Send the summary today, if it makes sense after that, book the team call and go from there.
+
+---
+
+**Objection 8: "We're not looking to become influencers / we don't want Instagram to become a second job."** (added 14 Sept 2026, from Implant + Perio Clinic)
+
+*Real concern:* They are a specialist, premium practice and they associate "content" with volume, performance and vanity. They fear looking like the practices they do not respect, and they fear the time cost landing on them.
+
+*Answer:*
+Agreed, and that is not what this is. A specialist practice does not need volume; it needs a small number of excellent pieces that say clearly who you are and what you are best at, so that when someone looks you up, or asks an AI, the right answer comes back. The work is done by our team, on your premises, on a schedule you set. Your involvement is the day we are there. Nothing lands on your desk afterwards.
+
+*Do NOT say:* engine, daily, volume, reels per week, "lead the conversation," "content machine." Do not lead with a cadence tier. Lead with craft, restraint and zero time cost to them.
+
+*Closer:* Offer the smallest unit that produces real assets (a single shoot day, priced per day) rather than a monthly package. Ask for the first date, not for a decision on a package.
+
+*Lesson behind this entry:* The 14 Sept proposal offered 8 or 16 reels a month to a Harley Street referral practice. She replied with this objection almost word for word. The concept (done-for-you content because they will not film themselves) was right; the volume packaging is what she rejected.
+
+---
+
+**Objection 9: "We already use SevenRooms / OpenTable, so we don't need this."** (added 14 Sept 2026; has cost 5+ restaurant prospects since June, Zizi one-pager never built)
+
+*Real concern:* They think the booking platform already answers the phone. It does not. They think adding us means replacing something that works. It does not.
+
+*Answer:*
+SevenRooms and OpenTable are excellent at taking bookings from people who are already on your website or their app. They do nothing for the person who picks up the phone. That call still rings in the restaurant, still goes unanswered during service, and still goes to a competitor. We sit in front of the platform, not instead of it: the voice agent answers the call, takes the booking, and writes it straight into your SevenRooms or OpenTable diary. Your system stays exactly as it is. You just stop losing the calls it cannot see.
+
+*Proof line:* "How many calls did you miss last Friday between seven and nine? Your platform cannot tell you. We can, and we can show you the bookings we recovered from them."
+
+*Closer:* Offer the performance anchor if it is a restaurant (10 recovered bookings in month one or no payment). Ask: "Shall we run it alongside SevenRooms for a month and count?"
+
+*Note for Zizi:* This objection means the prospect is qualified (they take bookings seriously enough to pay for a platform). It is a green flag, not a wall.
 
 ---
 

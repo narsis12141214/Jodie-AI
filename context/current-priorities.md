@@ -1,9 +1,41 @@
 # Current Priorities
 
-Last updated: 2026-09-14 (close-out, early hours — session ran Sun 13 Sept)
+Last updated: 2026-09-14 (close-out)
 Note: Window 3 targets still not formally set. Window 2 never got a final read.
 
-## MONDAY 14 SEPTEMBER — Hadi returns with website references
+## TUESDAY 15 SEPTEMBER
+
+**OPEN WITH THE PRE-MORTEM.** Hadi asked 14 Sept: "what else is missing that could cost us another client? Figure it out, give me the answer tomorrow." Answer is at `projects/14-09-26/client-loss-premortem.md`. Thirteen gaps across the client lifecycle, every one grounded in the record, ranked. Present the top five, then the one phone call. Do not read the whole document at him; give him the table and the file.
+
+**The top five (from the pre-mortem):**
+1. **Spam filter** — open 33 days, the only gap losing clients invisibly right now. 15 min.
+2. **Post-meeting debrief** — template built at `.claude/templates/post-meeting-debrief.md`. Would have caught Implant + Perio at source. 5 min per meeting.
+3. **Agreement page + payment link inside every proposal** — Jodie to build into the generator template. Closes the LaMure gap structurally. 1 hr.
+4. **Chic signature + Monsieur contract** — two LaMure-pattern exposures, 31 days each. Monsieur: Jodie drafts on go-ahead.
+5. **Check-in message to all four paid clients** — zero recorded check-ins since May. Jodie drafts, Hadi sends.
+Plus: **PHONE MICHAEL & CARLY, +1 407 405 4389. Day 11. The 23rd is eight days out.**
+
+**Built tonight, ready to use:** debrief template; objections 8 (influencer / second job) and 9 (SevenRooms / OpenTable) in shared/objections.md; review-ask + referral-ask standard paragraphs at `.claude/templates/delivery-email-standard-paragraphs.md`.
+
+**Other reminders:**
+- **Selina proofs + 5 placeholders due today (15 Sept).** Hadi said they go out today. The final-gallery email later this month is the FIRST use of the review + referral paragraphs.
+- **Elan partner meeting Wed 16 or Thu 17 Sept.** The closing meeting. £6,500 + £500/mo. Ask what Hadi wants prepped. Per pre-mortem item 3.1: bring the agreement page and payment link INTO the room this time.
+- **Website design direction** — Hadi has references gathered, not yet shared. When he sends them: log all, then one design direction doc, then rebuild. Prototype at `cd web && npm run dev`.
+- **Implant + Perio Clinic: PARKED.** Soft no (thank-you emoji) after the £1,400 shoot-day pivot. No follow-up. One line in the first week of January 2027. Lesson logged in three places (quality log x2, CLAUDE.md prep gate, closer.md).
+- Grace collection details still needed from Hadi for the canonical packages file (pre-mortem 3.3).
+
+Standing / diarised:
+- **First week of January 2027:** Implant + Perio one-line touch. **Tue 15 Sept:** Selina proofs. **Wed/Thu 16-17 Sept:** Elan partner meeting. **Mon 21 Sept:** Steva planning trigger. **~24 Sept:** SEO scorecard 30-day checkpoint. **3 Oct:** Steva balance £1,610. **10 Oct:** Steva shoot. **26 Nov:** Showit expires (no notice window, cancel any time).
+- SEO platform-agnostic half still open: GBP pass, review velocity (now structural via delivery paragraphs), venue brain-dump, Rank Math fix on the 4,039-word post.
+- Cold email rewrite 52 days open. Perplexity `.env`. Content Studio test. Window 3 targets. John & Oksana 21 days silent.
+
+Live pipeline (14 Sept close):
+- **Agency paid: 4** — Haleh, Kish LIVE, Galleria, Chic (signature unconfirmed). **Elan at the closing meeting this week.** Monsieur pending contract (31 days). Parked: Implant + Perio (14 Sept), Hanna, Heny.
+- **Photography:** Selina in delivery (proofs 15 Sept). Steva £2,300 booked (10 Oct). Michael & Carly day 11 silent, PHONE. John & Oksana 21 days silent. Lost: Kanaka, Samantha, Maria, Andrey. Kate parked.
+
+---
+
+## MONDAY 14 SEPTEMBER (SUPERSEDED)
 
 **TOP-OF-MORNING REMINDERS:**
 
