@@ -147,7 +147,11 @@ One line. One question. Done.
 **Different tone to agency — warmer, but still direct. Not chasing, not apologetic.**
 
 **Formula:**
-> Hey [Name] — just wanted to check in on your [elopement / session] date. I've got [date] available and wanted to make sure we hold it before it goes. Are you happy to go ahead?
+> Hi [Name], a quick note on your [elopement / session] date. I have [date] available and would like to hold it for you before it goes. Are you happy to go ahead?
+
+**No pre-booking call, ever, unless Hadi explicitly authorises it for that lead (locked 21 Sept 2026).** The next step in any photography message is securing the date. Never write "the next step is a conversation," "a no-pressure chat," or offer a call before commitment. The planning conversation is included in the collection and happens after booking; position it that way if the couple wants to talk: "once your date is secured, planning starts with a proper conversation about the day, and that is included."
+
+**Photography cadence is fixed:** day 3 nudge, day 7 nudge, day 14 close-out, same thread. Travelling couples on fixed dates get a text or WhatsApp alongside the email at every step.
 
 **If they're warm but hesitant:**
 > Happy to answer any questions before you commit — what would help you feel sure about it?

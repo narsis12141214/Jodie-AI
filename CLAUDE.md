@@ -129,6 +129,7 @@ Non-Negotiable Rules
 
 No new business ideas until at least one agency client is closed and paying
 No calendar links with warm leads — direct human conversations only
+No pre-booking call offered in any photography inquiry reply, at any tier, unless Hadi explicitly authorises it for that lead. Next step is always securing the date. Planning call comes AFTER booking, as an included part of the collection. (Locked 21 Sept 2026.)
 One priority per morning, not a list of ten
 Demo first, proposal second, close third
 Photography SEO: one new blog post per week minimum

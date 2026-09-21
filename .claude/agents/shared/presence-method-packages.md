@@ -144,6 +144,12 @@ Your love story, wherever it takes you. International elopements, multi-day cove
 
 ---
 
+
+## Film and video — wording locked 21 Sept 2026, specification PENDING
+- **Some collections include short reels and highlights.** [HADI TO SPECIFY: which collections, how many reels, what "highlights" means (length, delivery format, turnaround).] Until specified, client-facing wording is exactly: "some of my collections include short reels and highlights."
+- **Full videography:** Hadi teams up with a few trusted videomakers who work alongside him on the day, so the couple has one team rather than two. Details, names and pricing are shared in the planning phase, not in the inquiry reply.
+- Do not invent a video product, price or deliverable beyond the two lines above.
+
 ## Add-on menu
 
 These are available to any commission. Priced separately unless noted as included in a specific tier.

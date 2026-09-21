@@ -4,7 +4,7 @@ Date: 21 September 2026
 **Wedding:** Thursday 17 June 2027 (verified). Intimate legal wedding, the two of them + 2 guests. Islington Town Hall ceremony → photos on the Underground → Royal Exchange → dinner at the Waterhouse Project. They estimate ~4 hours. Also interested in videography.
 **Hadi:** "This is the kind of client I would die for."
 **Hadi's local knowledge, given 21 Sept and used in the reply:** Royal Exchange area is very busy around noon (City lunch) and again at the afternoon commute. Photographs in front of the building from the street are fine. The forecourt at the main entrance requires a photography permit that is usually not granted during working hours. "We will walk them through all the details to make sure they have a relaxed day."
-**Play:** wedding tier → consultation call IS the next step (23 Aug rule: pre-booking calls at Vow tier and above). Price named directly (no budget signal; a very considered plan). The Bloom £2,300 / 4 hours as the fit, The Glow mentioned once. Maddie initial-response structure. Refined Dreamer. No em dashes.
+**Play:** booking first, at every tier (Hadi, 21 Sept: no pre-booking call unless he explicitly authorises it). The planning consultation is INCLUDED in The Bloom and happens after the date is secured. Price named directly (no budget signal; a very considered plan). The Bloom £2,300 / 4 hours as the fit, The Glow mentioned once. Maddie initial-response structure. Refined Dreamer. No em dashes.
 
 ---
 
@@ -33,9 +33,11 @@ A little about how I work, since it matters for a day like this. I will not stan
 
 If, once we have mapped the route, four hours feels tight, The Glow gives you seven and includes a pre-wedding session in the spring. For a London couple that session is often the part they end up loving most, but it is a conversation for later, not a decision for today.
 
-[VIDEOGRAPHY LINE — Hadi to choose, see notes]
+**On film:** some of my collections include short reels and highlights, and where a couple wants full videography I team up with a few videomakers I trust, who work alongside me on the day so you have one team rather than two. I will share more on both once we are into planning.
 
-**The next step is a conversation.** For a wedding day, even a beautifully small one, I like to talk it through properly before anything is decided: the route, the timings, the two of you. There is nothing to decide on the call. I have [TIME A], [TIME B] and [TIME C] this week. Which suits you both?
+**The next step is simple.** If The Bloom feels right, I hold 17 June for you and send the agreement and deposit the same day. Planning starts from there, and it begins with a proper conversation about the route and the timings, which is included, so the Royal Exchange window, the Underground and the four-hour question are all settled long before June.
+
+Shall I hold 17 June for you both?
 
 Warmly,
 Hadi
@@ -56,20 +58,17 @@ To 07895 008349:
 ## Decisions for Hadi before sending
 
 1. **Is 17 June 2027 actually open?** The email says it is. Confirm.
-2. **Videography.** The canonical add-on menu has no video or reels line. The Charlotte Adams reply (23 April) mentioned a reels add-on and a videographer recommendation, but neither is in the canonical file. Two options for the line:
-   - **(A) Trusted videographer:** "For film, I work alongside a videographer I trust and can bring them onto the same day, so the two of us move as one team rather than two. I will introduce you on the call."
-   - **(B) Hadi's own video:** only if you actually offer it. Tell me what it is and what it costs and I will write it.
-   Whichever you pick, it should go into the canonical packages file this week (pre-mortem 3.3, canonical drift).
-3. **Three call times.** Fill [TIME A/B/C]. No calendar link, per the non-negotiable. Evenings likely suit a working London couple.
+2. **Videography line is now Hadi's own words:** some collections include short reels and highlights; full videography via trusted videomakers who work alongside him on the day; more in planning. **Still needed for the canonical file:** WHICH collections include reels/highlights, and what "highlights" means (length, delivery). Flagged in presence-method-packages.md.
+3. **The close is "Shall I hold 17 June for you both?"** When they say yes: agreement + deposit (30% = £690 per the Steva precedent) within the hour, same conversation (19 Aug rule). If you would rather put the deposit link IN this email, it goes after "send the agreement and deposit the same day." Your call; the established pattern for a cold £2,300 lead is ask first, link on the yes.
 4. **The Underground.** I have said nothing about photographing on the Tube, on purpose. If there is something they should know (permits, which stations work, how you handle it), tell me and I will add one line. Otherwise it is a call topic.
 5. **"Waterhouse Project"** is named as they wrote it, without characterisation. I do not know the venue.
 
 ## My read
-- **Lead source is cold Google, but the profile is the Primary ICA and the plan is already designed.** They are past "should we" and at "who." The call is the close mechanism at this tier, and the email earns it by demonstrating the ten-years-in-London knowledge before they have paid for it.
+- **Lead source is cold Google, but the profile is the Primary ICA and the plan is already designed.** They are past "should we" and at "who." The close is the date hold; the planning conversation is positioned AFTER booking as part of The Bloom, which is the same reframe used with Selina on 23 Aug.
 - **The Royal Exchange paragraph is the whole email.** It is your knowledge, given today, and it does what no claim could: it shows them the day going wrong and being quietly fixed by someone who has been there. It is framed as what works first (the street facade is always ours), then the constraint, then the solution. No "you can't."
 - **The Bloom named directly.** No budget signal, a considered plan, and a 4-hour estimate they wrote themselves. Starting-price-only would insult them. The Glow appears once, as a door, not a push.
 - **The Apple Store opener carries the emotional load.** It is also a positioning move: their memory IS the prompt-not-pose philosophy, so the "how I work" paragraph lands as recognition rather than teaching.
-- **Delivery timeline deliberately omitted from the email.** Standard is 4 to 6 weeks (canonical). Nine months out, it is a call detail, and putting "4 to 6 weeks" in a first email invites objection 6 before there is a relationship.
+- **Delivery timeline deliberately omitted from the email.** Standard is 4 to 6 weeks (canonical). Nine months out, it is a planning-phase detail, and putting "4 to 6 weeks" in a first email invites objection 6 before there is a relationship.
 - **Follow-up if silent:** day 3 (Thu 24), day 7 (Mon 28), day 14 close-out (5 Oct). Same thread. WhatsApp before the second email.
 
 ## What this could be worth
