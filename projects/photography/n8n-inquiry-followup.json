@@ -1,0 +1,200 @@
+{
+  "name": "Photography \u2014 Inquiry Follow-Up (Daily 9am)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "trig-1",
+      "name": "Daily 9am Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "PASTE_INQUIRY_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Inquiry Tracker",
+          "mode": "name"
+        },
+        "options": {}
+      },
+      "id": "sheet-1",
+      "name": "Read Inquiry Tracker",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [
+        460,
+        300
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "4DkURUdX5Xh0Qeyj",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// Photography inquiry follow-up \u2014 what is due today.\n// SELF-HEALING: keyed off \"Touches\" already sent + days since last contact,\n// not off exact day numbers. A day nobody acts is a nag repeated, never a touch lost.\n//\n// Sheet columns: Name | Partner | Email | Phone | Event Date | Track | Stage |\n//                Last Contact | Touches | Replied | Subject Line | Value | Notes\nconst today = new Date(); today.setHours(0,0,0,0);\nconst days = (a,b) => Math.round((a-b)/86400000);\nconst parseDate = (s) => { if(!s) return null; const d=new Date(s); return isNaN(d)?null:(d.setHours(0,0,0,0),d); };\nconst MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];\nconst pretty = (d, raw) => d ? `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}` : (raw || 'your date');\n\nconst out = [];\n\nfor (const item of $input.all()) {\n  const r = item.json;\n  const name = (r['Name']||'').trim();\n  if (!name) continue;\n\n  const stage   = (r['Stage']||'').toLowerCase().trim();\n  const replied = (r['Replied']||'').toLowerCase().trim();\n\n  // Stop rules.\n  if (replied === 'yes') continue;\n  if (['booked','closed','lost','flagged','done'].includes(stage)) continue;\n\n  const last = parseDate(r['Last Contact']);\n  if (!last) continue;\n  const gap = days(today, last);\n  if (gap < 1) continue;\n\n  const eventDate   = parseDate(r['Event Date']);\n  const daysToEvent = eventDate ? days(eventDate, today) : 999;\n  const notes       = (r['Notes']||'').toLowerCase();\n\n  // Event already passed and still not booked: it is over.\n  if (eventDate && daysToEvent < 0) continue;\n\n  let track = (r['Track']||'').toUpperCase().trim();\n  if (!['A','B','C'].includes(track)) {\n    if (stage === 'awaiting-payment') track = 'C';\n    else if (daysToEvent <= 21 || notes.includes('travel')) track = 'B';\n    else track = 'A';\n  }\n\n  const sent = parseInt(r['Touches']||'0', 10) || 0;\n\n  // [minimum gap in days before this touch, touch name] indexed by touches already sent.\n  const ladder = {\n    A: [[2,'email-1'], [3,'whatsapp'], [4,'email-2'], [5,'closeout']],\n    B: [[1,'whatsapp'], [1,'CALL'],    [2,'closeout']],\n    C: [[1,'CALL'],     [1,'deadline']],\n  }[track];\n\n  if (sent >= ladder.length) continue;          // cadence exhausted, nothing more\n  const [minGap, touch] = ladder[sent];\n  if (gap < minGap) continue;                   // not due yet\n\n  const first   = name.split(' ')[0];\n  const partner = (r['Partner']||'').trim();\n  const who     = partner ? `${name} and ${partner}` : name;\n  const evt     = pretty(eventDate, r['Event Date']);\n  const subject = (r['Subject Line']||'').trim();\n  const overdue = gap - minGap;\n\n  const T = {\n    'email-1': { channel:'EMAIL \u2014 reply in the SAME thread, SAME subject line',\n      text:`Hi ${first},\\n\\nMaking sure this reached you, since email has a habit of burying things.\\n\\n${evt} is still open and I would like to hold it for you.\\n\\nShall I?\\n\\nWarmly,\\nHadi` },\n    'whatsapp': { channel:`WHATSAPP to ${r['Phone']||'(no number on file)'}`,\n      text: track==='B'\n        ? `Hi ${first}, following up on ${evt}. It is close now so I wanted to make sure you had what you needed. The slot is still yours if you want it. Shall I hold it?`\n        : `Hi ${first}, Hadi here from Hadi Photography London. I wrote to you about ${evt} earlier in the week, worth a look in spam if it is not in your inbox. The date is still open. Would you like me to hold it?` },\n    'email-2': { channel:'EMAIL \u2014 same thread. Lead with something useful, not a chase.',\n      text:`Hi ${first},\\n\\nA week disappears quickly when you are planning something, so no need to apologise for the quiet.\\n\\n[ONE USEFUL THING: a note on the light at their time of year, a thought about their location, or a link to the relevant guide]\\n\\n${evt} is still free. Shall I hold it for you?\\n\\nWarmly,\\nHadi` },\n    'CALL': { channel:`*** PHONE CALL *** ${r['Phone']||'(no number on file)'} \u2014 not an email`,\n      text: track==='C'\n        ? `They have already said yes. Something practical is in the way: the link did not open, a card was declined, they are waiting on a partner, wrong timezone. Ninety seconds on the phone solves all of it. Email solves none of it.\\n\\n\"Hi ${first}, Hadi here. Just checking the booking link came through alright?\"`\n        : `Thirty seconds.\\n\\n\"Hi ${first}, Hadi here, the photographer. Just checking you got my email about ${evt}. Did you want to go ahead?\"\\n\\nVoicemail: leave one, then WhatsApp to say you called.` },\n    'deadline': { channel:'EMAIL \u2014 same thread. A real deadline, honestly stated.',\n      text:`Hi ${first},\\n\\nI have not managed to reach you and the booking has not come through, so ${evt} is still unheld.\\n\\nI will keep it for you until [time tomorrow], then release it back to the diary.\\n\\nWould you still like it?\\n\\nWarmly,\\nHadi` },\n    'closeout': { channel:'EMAIL \u2014 same thread. Final touch. Nothing after this.',\n      text: track==='B'\n        ? `Hi ${first}, I am releasing ${evt} since it is nearly here and I have not managed to reach you. If something changes, message me any time. Enjoy London either way.`\n        : `Hi ${first},\\n\\nI am going to close your enquiry so it stops sitting in your inbox, and release ${evt} back to the diary. Nothing needed from you.\\n\\nIf your plans firm up later, write to me and I will tell you honestly whether the date is still there. I would be glad to hear from you either way.\\n\\nWishing you both a wonderful year.\\n\\nWarmly,\\nHadi` },\n  }[touch];\n\n  out.push({ json: {\n    who, first, track, touch, gap, overdue, stage, sent,\n    channel: T.channel, text: T.text,\n    email: r['Email']||'', phone: r['Phone']||'',\n    subject: subject ? `Re: ${subject}` : '(use the original subject line)',\n    value: r['Value']||'', eventDate: evt, daysToEvent,\n    urgent: (touch === 'CALL' || track === 'C' || overdue >= 2),\n  }});\n}\n\nreturn out;\n"
+      },
+      "id": "code-1",
+      "name": "Decide What Is Due Today",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        680,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst items = $input.all().map(i => i.json);\nif (items.length === 0) return [{ json: { skip: true } }];\n\nitems.sort((a,b) => (b.urgent===true)-(a.urgent===true) || b.overdue-a.overdue);\n\nconst urgent = items.filter(i => i.urgent).length;\nconst subject = `Follow-ups due: ${urgent ? urgent + ' URGENT \u2014 ' : ''}${items.length} ${items.length===1?'person':'people'}`;\n\nlet body = `${items.length} follow-up${items.length===1?'':'s'} due today.\\n`;\nbody += `Text is ready to send. Reply in the SAME email thread so the original resurfaces.\\n`;\nbody += `\\n${'='.repeat(62)}\\n`;\n\nfor (const i of items) {\n  body += `\\n${i.urgent ? '>>> URGENT <<<  ' : ''}${i.who.toUpperCase()}\\n`;\n  body += `Track ${i.track} \u00b7 touch ${i.sent+1} \u00b7 ${i.gap} day${i.gap===1?'':'s'} since last contact`;\n  body += i.overdue > 0 ? `  (${i.overdue} day${i.overdue===1?'':'s'} OVERDUE)\\n` : `\\n`;\n  body += `${i.stage}${i.value ? ' \u00b7 ' + i.value : ''} \u00b7 event ${i.eventDate}`;\n  body += i.daysToEvent < 999 ? ` (${i.daysToEvent} days away)\\n` : `\\n`;\n  body += `${i.email}${i.phone ? '  |  ' + i.phone : ''}\\n`;\n  body += `Subject: ${i.subject}\\n\\n${i.channel}\\n`;\n  body += `${'-'.repeat(62)}\\n${i.text}\\n${'-'.repeat(62)}\\n\\n${'='.repeat(62)}\\n`;\n}\n\nbody += `\\nAfter you send: put today's date in Last Contact and add 1 to Touches.\\n`;\nbody += `If they reply: set Replied to yes. That stops everything.\\n`;\nbody += `\\nUntil the sheet is updated this email repeats daily. That is deliberate.\\n`;\nbody += `\\nPlaybook: .claude/templates/inquiry-follow-up-playbook.md\\n`;\nreturn [{ json: { subject, body, count: items.length } }];\n"
+      },
+      "id": "code-2",
+      "name": "Build Ready-To-Send Email",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        900,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.skip }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "notExists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-1",
+      "name": "Anything Due?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "hadiphotographylondon@gmail.com",
+        "subject": "={{ $json.subject }}",
+        "emailType": "text",
+        "message": "={{ $json.body }}",
+        "options": {}
+      },
+      "id": "mail-1",
+      "name": "Email Hadi",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1340,
+        220
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "xWk2aUg55zZdSPSw",
+          "name": "Gmail account 2"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 9am Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read Inquiry Tracker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Inquiry Tracker": {
+      "main": [
+        [
+          {
+            "node": "Decide What Is Due Today",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Decide What Is Due Today": {
+      "main": [
+        [
+          {
+            "node": "Build Ready-To-Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Ready-To-Send Email": {
+      "main": [
+        [
+          {
+            "node": "Anything Due?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anything Due?": {
+      "main": [
+        [
+          {
+            "node": "Email Hadi",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

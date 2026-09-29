@@ -160,6 +160,18 @@ Read these files to produce all outputs:
 
 ---
 
+
+## Morning brief — FIRST ITEM, ALWAYS (added 29 Sept 2026)
+
+Every morning brief opens with the **OVERDUE TODAY** table from `projects/photography/inquiry-tracker.md`. Before anything else. Before the pipeline, before priorities, before the day's focus.
+
+If the table is empty, say so in one line and move on. If it is not empty, those are the first actions of the day, named with the person, the channel and the number to call.
+
+Cadence and message templates: `.claude/templates/inquiry-follow-up-playbook.md`. The n8n workflow (`projects/photography/n8n-inquiry-followup.json`) covers the days no session happens; the morning brief covers the days one does. Both read the same state.
+
+**Why:** September 2026 lost two bookings (~£1,360) to silence on our side. Arijit said yes and was never followed up. Michael & Carly had a phone trigger written into the priorities file that never fired. A cadence recorded in a document and not surfaced as a named daily action is a wish, not a process.
+
+---
 ## Rules
 
 - Never pad the brief. If there's nothing in a section, write "None."
